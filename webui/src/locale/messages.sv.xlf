@@ -2613,7 +2613,7 @@
           <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.html</context>
           <context context-type="linenumber">31,34</context>
         </context-group>
-      <target state="translated">Delnät</target></trans-unit>
+      <target state="translated">Undernät</target></trans-unit>
       <trans-unit id="7857266940364448193" datatype="html">
         <source>Shared Networks</source>
         <context-group purpose="location">
@@ -2634,7 +2634,7 @@
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
           <context context-type="linenumber">52,55</context>
         </context-group>
-      <target state="translated">Rå konfiguration</target></trans-unit>
+      <target state="translated">Råkonfiguration</target></trans-unit>
       <trans-unit id="2614607010577950577" datatype="html">
         <source>Overview</source>
         <context-group purpose="location">
@@ -2680,7 +2680,7 @@
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
           <context context-type="linenumber">141,143</context>
         </context-group>
-      <target state="translated">Senast inläst</target></trans-unit>
+      <target state="translated">Senast omladdad</target></trans-unit>
       <trans-unit id="4884593790934938824" datatype="html">
         <source>Server Tag</source>
         <context-group purpose="location">
@@ -2694,7 +2694,7 @@
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
           <context context-type="linenumber">181,182</context>
         </context-group>
-      <target state="translated">Hookar</target></trans-unit>
+      <target state="translated">Krokar</target></trans-unit>
       <trans-unit id="8051952797585480987" datatype="html">
         <source>Access points</source>
         <context-group purpose="location">
