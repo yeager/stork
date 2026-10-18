@@ -2422,6 +2422,83 @@
           <context context-type="linenumber">281,283</context>
         </context-group>
       <target state="translated">Lås upp inställning av DHCP-alternativ för enskilda servrar.</target></trans-unit>
+      <trans-unit id="5510969049424406138" datatype="html">
+        <source>Shared Network <x id="INTERPOLATION" equiv-text="{{ sharedNetwork.name }}" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      <target state="translated">Delat nätverk <x id="INTERPOLATION" equiv-text="{{ sharedNetwork.name }}" /></target></trans-unit>
+      <trans-unit id="7585826646011739428" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      <target state="translated">Redigera</target></trans-unit>
+      <trans-unit id="7022070615528435141" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      <target state="translated">Ta bort</target></trans-unit>
+      <trans-unit id="1380395161278047833" datatype="html">
+        <source>DHCP Servers Using the Shared Network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      <target state="translated">DHCP-servrar som använder det delade nätverket</target></trans-unit>
+      <trans-unit id="819294309848780791" datatype="html">
+        <source>Subnets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">91,93</context>
+        </context-group>
+      <target state="translated">Delnät</target></trans-unit>
+      <trans-unit id="7413509252210192965" datatype="html">
+        <source>No subnets configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">99,103</context>
+        </context-group>
+      <target state="translated">Inga delnät har konfigurerats.</target></trans-unit>
+      <trans-unit id="8231861638104479971" datatype="html">
+        <source>Pools</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
+      <target state="translated">Pooler</target></trans-unit>
+      <trans-unit id="7198216137316685583" datatype="html">
+        <source>No pools configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">108,112</context>
+        </context-group>
+      <target state="translated">Inga pooler har konfigurerats.</target></trans-unit>
+      <trans-unit id="1069523139277190436" datatype="html">
+        <source>Statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      <target state="translated">Statistik</target></trans-unit>
+      <trans-unit id="514719710630649016" datatype="html">
+        <source>DHCP Parameters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+      <target state="translated">DHCP-parametrar</target></trans-unit>
+      <trans-unit id="6917842114109831962" datatype="html">
+        <source>DHCP Options /  <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualDhcpOptions()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                             entity=&quot;daemon&quot;                                             [showEntityName]=&quot;false&quot;                                             [attrs]=&quot;localSharedNetwork&quot;                                         &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">136,146</context>
+        </context-group>
+      <target state="translated">DHCP-alternativ /  Alla servrar <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualDhcpOptions()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                             entity=&quot;daemon&quot;                                             [showEntityName]=&quot;false&quot;                                             [attrs]=&quot;localSharedNetwork&quot;                                         &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
       <trans-unit id="subnets.dhcp-version" datatype="html">
         <source>DHCP Version</source>
         <context-group purpose="location">

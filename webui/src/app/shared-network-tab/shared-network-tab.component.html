@@ -4,7 +4,7 @@
         <div class="flex flex-column sm:flex-row w-full justify-content-between align-items-start">
             <div class="flex text-xl font-normal text-primary align-items-center">
                 <div class="fa fa-project-diagram mr-2"></div>
-                <div id="tab-title-span">Shared Network {{ sharedNetwork.name }}</div>
+                <div id="tab-title-span" i18n>Shared Network {{ sharedNetwork.name }}</div>
                 <div>
                     <app-help-tip subject="Shared Network View" width="40vw">
                         <p>
@@ -55,7 +55,7 @@
             <div class="flex flex-column sm:flex-row gap-2 my-2 sm:my-0">
                 @if (sharedNetwork.localSharedNetworks?.length > 0) {
                     <p-button
-                        label="Edit"
+                        i18n-label label="Edit"
                         icon="pi pi-pencil"
                         severity="info"
                         (click)="onSharedNetworkEditBegin()"
@@ -65,7 +65,7 @@
                 }
                 <p-button
                     [disabled]="sharedNetworkDeleting"
-                    label="Delete"
+                    i18n-label label="Delete"
                     icon="pi pi-times"
                     severity="danger"
                     (click)="confirmDeleteSharedNetwork(sharedNetwork.id.toString())"
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="my-4">
-            <p-fieldset id="daemons-fieldset" legend="DHCP Servers Using the Shared Network">
+            <p-fieldset id="daemons-fieldset" i18n-legend legend="DHCP Servers Using the Shared Network">
                 <p-table [value]="sharedNetwork.localSharedNetworks" styleClass="shared-network-servers-table">
                     <ng-template #body let-l>
                         <tr>
@@ -88,7 +88,7 @@
             </p-fieldset>
         </div>
         <div class="mb-4">
-            <p-fieldset legend="Subnets">
+            <p-fieldset i18n-legend legend="Subnets">
                 @if (sharedNetwork.subnets?.length > 0) {
                     <div>
                         @for (subnet of sharedNetwork.subnets; track subnet) {
@@ -96,29 +96,29 @@
                         }
                     </div>
                 } @else {
-                    <div>No subnets configured.</div>
+                    <div i18n>No subnets configured.</div>
                 }
             </p-fieldset>
         </div>
         <div class="mb-4">
-            <p-fieldset legend="Pools">
+            <p-fieldset i18n-legend legend="Pools">
                 @if (sharedNetwork.pools?.length > 0) {
                     <app-pool-bars [source]="sharedNetwork"> </app-pool-bars>
                 } @else {
-                    <div>No pools configured.</div>
+                    <div i18n>No pools configured.</div>
                 }
             </p-fieldset>
         </div>
         @if (sharedNetwork.addrUtilization || sharedNetwork.pdUtilization || sharedNetwork.stats) {
             <div class="flex flex-wrap" class="mb-4">
-                <p-fieldset id="stats-fieldset" legend="Statistics">
+                <p-fieldset id="stats-fieldset" i18n-legend legend="Statistics">
                     <app-utilization-stats-charts [network]="sharedNetwork"></app-utilization-stats-charts>
                 </p-fieldset>
             </div>
         }
         @if (sharedNetwork.localSharedNetworks?.length > 0) {
             <div class="mb-4">
-                <p-fieldset legend="DHCP Parameters" [toggleable]="true" collapsed="true">
+                <p-fieldset i18n-legend legend="DHCP Parameters" [toggleable]="true" collapsed="true">
                     <app-cascaded-parameters-board
                         [levels]="['Shared Network', 'Global']"
                         [data]="dhcpParameters"
@@ -133,7 +133,7 @@
                         <p-fieldset [toggleable]="true" collapsed="true">
                             <ng-template #header>
                                 <span class="stork-fieldset-legend-text"
-                                    >DHCP Options&nbsp;/&nbsp;
+                                    i18n>DHCP Options&nbsp;/&nbsp;
                                     @if (!allDaemonsHaveEqualDhcpOptions()) {
                                         <app-entity-link
                                             entity="daemon"
