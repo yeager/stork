@@ -34,11 +34,11 @@
 <app-tab-view
     routePath="/users/"
     firstTabRouteEnd="list"
-    firstTabTitle="Users"
+    i18n-firstTabTitle firstTabTitle="Users"
     [entityProvider]="userProvider"
     [entityTitleProvider]="tabTitleProvider"
     [newFormProvider]="userFormProvider"
-    entityTypeName="Account"
+    i18n-entityTypeName entityTypeName="Account"
     [tableQueryParamFilters]="{
         text: { type: 'string', matchMode: 'contains' },
     }"
@@ -90,7 +90,7 @@
                                             type="text"
                                             (input)="filterTable($event.target.value, filterMetadata)"
                                             [ngModel]="value"
-                                            placeholder="Search users"
+                                            i18n-placeholder placeholder="Search users"
                                         />
                                     </p-iconfield>
                                     <p-button
@@ -107,7 +107,7 @@
                     </ng-template>
                     <ng-template #buttons>
                         <p-button
-                            label="Create User Account"
+                            i18n-label label="Create User Account"
                             id="create-user-account-button"
                             icon="pi pi-plus"
                             routerLink="/users/new"
@@ -116,7 +116,7 @@
                             (appHasAccess)="canCreateUser.set($event)"
                         ></p-button>
                         <p-button
-                            label="Refresh List"
+                            i18n-label i18n-label label="Refresh List"
                             icon="pi pi-refresh"
                             (onClick)="loadUsers(table.createLazyLoadMetadata())"
                         />
@@ -135,27 +135,27 @@
             <ng-template #header>
                 <tr>
                     <th [pSortableColumn]="UserSortField.Login">
-                        <div class="flex gap-1">Login <p-sortIcon [field]="UserSortField.Login" /></div>
+                        <div class="flex gap-1" i18n>Login <p-sortIcon [field]="UserSortField.Login" /></div>
                     </th>
                     <th [pSortableColumn]="UserSortField.Email">
-                        <div class="flex gap-1">Email <p-sortIcon [field]="UserSortField.Email" /></div>
+                        <div class="flex gap-1" i18n>Email <p-sortIcon [field]="UserSortField.Email" /></div>
                     </th>
                     <th [pSortableColumn]="UserSortField.Name">
-                        <div class="flex gap-1 white-space-nowrap">
+                        <div class="flex gap-1 white-space-nowrap" i18n>
                             First name <p-sortIcon [field]="UserSortField.Name" />
                         </div>
                     </th>
                     <th [pSortableColumn]="UserSortField.Lastname">
-                        <div class="flex gap-1 white-space-nowrap">
+                        <div class="flex gap-1 white-space-nowrap" i18n>
                             Last name <p-sortIcon [field]="UserSortField.Lastname" />
                         </div>
                     </th>
-                    <th>Group</th>
+                    <th i18n>Group</th>
                     <th [pSortableColumn]="UserSortField.AuthMethod">
-                        <div class="flex gap-1">Authentication <p-sortIcon [field]="UserSortField.AuthMethod" /></div>
+                        <div class="flex gap-1" i18n>Authentication <p-sortIcon [field]="UserSortField.AuthMethod" /></div>
                     </th>
                     <th [pSortableColumn]="UserSortField.ExternalId">
-                        <div class="flex gap-1 white-space-nowrap">
+                        <div class="flex gap-1 white-space-nowrap" i18n>
                             External ID <p-sortIcon [field]="UserSortField.ExternalId" />
                         </div>
                     </th>
@@ -166,7 +166,7 @@
                     <td align="center">
                         <a routerLink="/users/{{ u.id }}">{{ u.login | placeholder }}</a>
                         @if (auth.currentUserValue.id === u.id) {
-                            <sup><p-tag styleClass="ml-1" severity="success" value="It's you" /></sup>
+                            <sup><p-tag styleClass="ml-1" severity="success" i18n-value value="It's you" /></sup>
                         }
                     </td>
                     <td align="center">
@@ -182,12 +182,12 @@
             <ng-template #emptymessage>
                 <tr>
                     <td colspan="7">
-                        No users found.
+                        <ng-container i18n>No users found.</ng-container>
                         @if (tableHasFilter(table)) {
                             <span>
-                                Clear filtering and try again.
+                                <ng-container i18n>Clear filtering and try again.</ng-container>
                                 <p-button
-                                    label="Clear"
+                                    i18n-label label="Clear"
                                     [outlined]="true"
                                     icon="pi pi-filter-slash"
                                     (click)="clearTableFiltering()"
@@ -207,56 +207,56 @@
         <div appAccessEntity="user">
             <div class="grid mt-2 max-w-50rem">
                 <div class="col-12 sm:col-3">
-                    <b>ID:</b>
+                    <b i18n>ID:</b>
                 </div>
                 <div class="col-12 sm:col-9 word-break-all">
                     {{ user.id }}
                 </div>
                 <div class="col-12 sm:col-3">
-                    <b>Login:</b>
+                    <b i18n>Login:</b>
                 </div>
                 <div class="col-12 sm:col-9 word-break-all">
                     {{ user.login }}
                 </div>
                 <div class="col-12 sm:col-3">
-                    <b>Email:</b>
+                    <b i18n>Email:</b>
                 </div>
                 <div class="col-12 sm:col-9 word-break-all">
                     {{ user.email | placeholder }}
                 </div>
                 <div class="col-12 sm:col-3">
-                    <b>Last name:</b>
+                    <b i18n>Last name:</b>
                 </div>
                 <div class="col-12 sm:col-9">
                     {{ user.lastname | placeholder }}
                 </div>
                 <div class="col-12 sm:col-3">
-                    <b>First name:</b>
+                    <b i18n>First name:</b>
                 </div>
                 <div class="col-12 sm:col-9">
                     {{ user.name | placeholder }}
                 </div>
                 <div class="col-12 sm:col-3">
-                    <b>Group:</b>
+                    <b i18n>Group:</b>
                 </div>
                 <div class="col-12 sm:col-9">
                     {{ getGroupNames(user.groups) }}
                 </div>
                 <div class="col-12 sm:col-3">
-                    <b>Authentication:</b>
+                    <b i18n>Authentication:</b>
                 </div>
                 <div class="col-12 sm:col-9 word-break-all">
                     {{ getAuthenticationMethodLabel(user.authenticationMethodId) }}
                 </div>
                 <div class="col-12 sm:col-3">
-                    <b>External ID:</b>
+                    <b i18n>External ID:</b>
                 </div>
                 <div class="col-12 sm:col-9 word-break-all">
                     {{ user.externalId | placeholder }}
                 </div>
                 @if (isInternalUser(user)) {
                     <div class="col-12 sm:col-3">
-                        <b>Needs to change password:</b>
+                        <b i18n>Needs to change password:</b>
                     </div>
                     <div class="col-12 sm:col-9">
                         <p-checkbox
@@ -269,7 +269,7 @@
                 }
                 <div class="col-12 flex gap-3">
                     <p-button
-                        label="Edit"
+                        i18n-label label="Edit"
                         id="edit-user-button"
                         icon="pi pi-pencil"
                         (click)="onUserEditBegin(user.id)"
@@ -277,7 +277,7 @@
                         appAccessType="update"
                     ></p-button>
                     <p-button
-                        label="Delete"
+                        i18n-label label="Delete"
                         severity="danger"
                         id="delete-user-button"
                         icon="pi pi-trash"

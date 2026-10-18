@@ -965,6 +965,10 @@
           <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
           <context context-type="linenumber">14,16</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
       <target state="translated">Uppdatera listan</target></trans-unit>
       <trans-unit id="3604386807230411192" datatype="html">
         <source>Start Date</source>
@@ -1463,6 +1467,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
           <context context-type="linenumber">167</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">191,192</context>
         </context-group>
       <target state="translated">Rensa</target></trans-unit>
       <trans-unit id="8748331192746026800" datatype="html">
@@ -2012,6 +2020,10 @@
           <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
           <context context-type="linenumber">114,115</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">273,274</context>
+        </context-group>
       <target state="translated">Redigera</target></trans-unit>
       <trans-unit id="7022070615528435141" datatype="html">
         <source>Delete</source>
@@ -2026,6 +2038,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
           <context context-type="linenumber">124,125</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">281,282</context>
         </context-group>
       <target state="translated">Ta bort</target></trans-unit>
       <trans-unit id="9080081276999503751" datatype="html">
@@ -3670,6 +3686,167 @@
           <context context-type="linenumber">238,240</context>
         </context-group>
       <target state="translated">Spara</target></trans-unit>
+      <trans-unit id="4555457172864212828" datatype="html">
+        <source>Users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      <target state="translated">Användare</target></trans-unit>
+      <trans-unit id="4086606389696938932" datatype="html">
+        <source>Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      <target state="translated">Konto</target></trans-unit>
+      <trans-unit id="3683640687452526553" datatype="html">
+        <source>Search users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">93,95</context>
+        </context-group>
+      <target state="translated">Sök användare</target></trans-unit>
+      <trans-unit id="2821246488949216212" datatype="html">
+        <source>Create User Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">110,112</context>
+        </context-group>
+      <target state="translated">Skapa användarkonto</target></trans-unit>
+      <trans-unit id="5962696781629308507" datatype="html">
+        <source>Login <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Login&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Login&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">138,139</context>
+        </context-group>
+      <target state="translated">Inloggning <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Login&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Login&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="6708852060148788987" datatype="html">
+        <source>Email <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Email&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Email&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">141,142</context>
+        </context-group>
+      <target state="translated">E-post <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Email&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Email&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="2806239675174851564" datatype="html">
+        <source> First name <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Name&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Name&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+      <target state="translated"> Förnamn <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Name&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Name&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="8820064364557920079" datatype="html">
+        <source> Last name <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Lastname&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Lastname&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">150,151</context>
+        </context-group>
+      <target state="translated"> Efternamn <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Lastname&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.Lastname&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="8623978917681527907" datatype="html">
+        <source>Group</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">153,154</context>
+        </context-group>
+      <target state="translated">Grupp</target></trans-unit>
+      <trans-unit id="4508176542504432290" datatype="html">
+        <source>Authentication <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.AuthMethod&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.AuthMethod&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">155,156</context>
+        </context-group>
+      <target state="translated">Autentisering <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.AuthMethod&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.AuthMethod&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="8595798024984321430" datatype="html">
+        <source> External ID <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.ExternalId&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.ExternalId&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">159,160</context>
+        </context-group>
+      <target state="translated"> Externt ID <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.ExternalId&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;UserSortField.ExternalId&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="2425271078110206871" datatype="html">
+        <source>It's you</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">169,172</context>
+        </context-group>
+      <target state="translated">Det är du</target></trans-unit>
+      <trans-unit id="770997973507726467" datatype="html">
+        <source>No users found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">185,187</context>
+        </context-group>
+      <target state="translated">Inga användare hittades.</target></trans-unit>
+      <trans-unit id="2734972295164905504" datatype="html">
+        <source>Clear filtering and try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">188,190</context>
+        </context-group>
+      <target state="translated">Rensa filtreringen och försök igen.</target></trans-unit>
+      <trans-unit id="1074038423230804155" datatype="html">
+        <source>ID:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">211,212</context>
+        </context-group>
+      <target state="translated">ID:</target></trans-unit>
+      <trans-unit id="9176569562112102455" datatype="html">
+        <source>Login:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">216,218</context>
+        </context-group>
+      <target state="translated">Inloggning:</target></trans-unit>
+      <trans-unit id="6631334172623029500" datatype="html">
+        <source>Email:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">222,224</context>
+        </context-group>
+      <target state="translated">E-post:</target></trans-unit>
+      <trans-unit id="5759985852212057755" datatype="html">
+        <source>Last name:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">228,231</context>
+        </context-group>
+      <target state="translated">Efternamn:</target></trans-unit>
+      <trans-unit id="2836854179267941399" datatype="html">
+        <source>First name:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">234,237</context>
+        </context-group>
+      <target state="translated">Förnamn:</target></trans-unit>
+      <trans-unit id="2539029148598374609" datatype="html">
+        <source>Group:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">240,243</context>
+        </context-group>
+      <target state="translated">Grupp:</target></trans-unit>
+      <trans-unit id="812159698178335063" datatype="html">
+        <source>Authentication:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">246,248</context>
+        </context-group>
+      <target state="translated">Autentisering:</target></trans-unit>
+      <trans-unit id="2937658856539339437" datatype="html">
+        <source>External ID:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">252,254</context>
+        </context-group>
+      <target state="translated">Externt ID:</target></trans-unit>
+      <trans-unit id="5876455352460633440" datatype="html">
+        <source>Needs to change password:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.html</context>
+          <context context-type="linenumber">259,261</context>
+        </context-group>
+      <target state="translated">Måste byta lösenord:</target></trans-unit>
       <trans-unit id="users.create-account" datatype="html">
         <source>Create User Account</source>
         <context-group purpose="location">
