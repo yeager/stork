@@ -5247,7 +5247,7 @@
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
           <context context-type="linenumber">120,122</context>
         </context-group>
-      <target state="translated">Serienumren skiljer sig mellan servrarna.</target></trans-unit>
+      <target state="translated">Serienumren skiljer sig mellan servrarna</target></trans-unit>
       <trans-unit id="zones.fetch-status-dialog" datatype="html">
         <source>Zones Fetch Status</source>
         <context-group purpose="location">
