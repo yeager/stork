@@ -192,8 +192,8 @@ export class SharedNetworkFormComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot create new transaction',
-                    detail: `Failed to create shared network: ` + msg,
+                summary: $localize`:@@shared-network.create-transaction-failed:Cannot create new transaction`,
+                detail: $localize`:@@shared-network.create-failed:Failed to create shared network: ${msg}:error message:`,
                     life: 10000,
                 })
                 this.state.setInitError(msg)
@@ -214,8 +214,8 @@ export class SharedNetworkFormComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot create new transaction',
-                    detail: `Failed to update shared network ${this.sharedNetworkId}: ` + msg,
+                summary: $localize`:@@shared-network.create-transaction-failed:Cannot create new transaction`,
+                detail: $localize`:@@shared-network.update-failed-with-id:Failed to update shared network ${this.sharedNetworkId}:shared network ID:: ${msg}:error message:`,
                     life: 10000,
                 })
                 this.state.setInitError(msg)
@@ -383,8 +383,8 @@ export class SharedNetworkFormComponent implements OnInit, OnDestroy {
         } catch (err) {
             this.messageService.add({
                 severity: 'error',
-                summary: 'Cannot commit the shared network',
-                detail: 'Failed to process the shared network form: ' + err,
+                summary: $localize`:@@shared-network.commit-failed:Cannot commit the shared network`,
+                detail: $localize`:@@shared-network.form-failed:Failed to process the shared network form: ${err}:error message:`,
                 life: 10000,
             })
             return
@@ -399,7 +399,7 @@ export class SharedNetworkFormComponent implements OnInit, OnDestroy {
                 .then(() => {
                     this.messageService.add({
                         severity: 'success',
-                        summary: 'Shared network successfully updated',
+                        summary: $localize`:@@shared-network.updated:Shared network successfully updated`,
                     })
                     // Notify the parent component about successful submission.
                     this.formSubmit.emit(this.state)
@@ -411,8 +411,8 @@ export class SharedNetworkFormComponent implements OnInit, OnDestroy {
                     }
                     this.messageService.add({
                         severity: 'error',
-                        summary: 'Cannot commit shared network updates',
-                        detail: 'Failed to update the shared network: ' + msg,
+                        summary: $localize`:@@shared-network.update-commit-failed:Cannot commit shared network updates`,
+                        detail: $localize`:@@shared-network.update-failed:Failed to update the shared network: ${msg}:error message:`,
                         life: 10000,
                     })
                 })
@@ -424,7 +424,7 @@ export class SharedNetworkFormComponent implements OnInit, OnDestroy {
             .then((data) => {
                 this.messageService.add({
                     severity: 'success',
-                    summary: 'Shared network successfully created',
+                    summary: $localize`:@@shared-network.created:Shared network successfully created`,
                 })
                 // Notify the parent component about successful submission.
                 this.state.sharedNetworkId = data.sharedNetworkId
@@ -434,8 +434,8 @@ export class SharedNetworkFormComponent implements OnInit, OnDestroy {
                 let msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot commit shared network',
-                    detail: 'Failed to create the shared network: ' + msg,
+                    summary: $localize`:@@shared-network.create-commit-failed:Cannot commit shared network`,
+                    detail: $localize`:@@shared-network.create-failed:Failed to create shared network: ${msg}:error message:`,
                     life: 10000,
                 })
             })

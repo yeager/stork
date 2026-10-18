@@ -94,8 +94,8 @@ export class ConfigMigrationTableComponent {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot get configuration migrations list',
-                    detail: 'Error getting configuration migrations list: ' + msg,
+                    summary: $localize`:@@config-migrations.list-failed:Cannot get configuration migrations list`,
+                    detail: $localize`:@@config-migrations.list-failed-detail:Error getting configuration migrations list: ${msg}:error message:`,
                     life: 10000,
                 })
             })

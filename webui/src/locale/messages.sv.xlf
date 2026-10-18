@@ -1404,6 +1404,20 @@
           <context context-type="linenumber">103,105</context>
         </context-group>
       <target state="translated">Avbryt migrering</target></trans-unit>
+      <trans-unit id="config-migrations.list-failed" datatype="html">
+        <source>Cannot get configuration migrations list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      <target state="translated">Kan inte hämta listan med konfigurationsmigreringar</target></trans-unit>
+      <trans-unit id="config-migrations.list-failed-detail" datatype="html">
+        <source>Error getting configuration migrations list: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av listan med konfigurationsmigreringar: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="daemon.filter.label" datatype="html">
         <source>Daemon (type or pick)</source>
         <context-group purpose="location">
@@ -5289,6 +5303,84 @@
           <context context-type="linenumber">281,283</context>
         </context-group>
       <target state="translated">Lås upp inställning av DHCP-alternativ för enskilda servrar.</target></trans-unit>
+      <trans-unit id="shared-network.create-transaction-failed" datatype="html">
+        <source>Cannot create new transaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+      <target state="translated">Kan inte skapa en ny transaktion</target></trans-unit>
+      <trans-unit id="shared-network.create-failed" datatype="html">
+        <source>Failed to create shared network: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa det delade nätverket: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="shared-network.update-failed-with-id" datatype="html">
+        <source>Failed to update shared network <x id="shared network ID" equiv-text="this.sharedNetworkId" />: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">218</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera det delade nätverket <x id="shared network ID" equiv-text="this.sharedNetworkId" />: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="shared-network.commit-failed" datatype="html">
+        <source>Cannot commit the shared network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+      <target state="translated">Kan inte verkställa det delade nätverket</target></trans-unit>
+      <trans-unit id="shared-network.form-failed" datatype="html">
+        <source>Failed to process the shared network form: <x id="error message" equiv-text="err" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">387</context>
+        </context-group>
+      <target state="translated">Det gick inte att behandla formuläret för det delade nätverket: <x id="error message" equiv-text="err" /></target></trans-unit>
+      <trans-unit id="shared-network.updated" datatype="html">
+        <source>Shared network successfully updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">402</context>
+        </context-group>
+      <target state="translated">Det delade nätverket har uppdaterats</target></trans-unit>
+      <trans-unit id="shared-network.update-commit-failed" datatype="html">
+        <source>Cannot commit shared network updates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">414</context>
+        </context-group>
+      <target state="translated">Kan inte verkställa uppdateringar av det delade nätverket</target></trans-unit>
+      <trans-unit id="shared-network.update-failed" datatype="html">
+        <source>Failed to update the shared network: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">415</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera det delade nätverket: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="shared-network.created" datatype="html">
+        <source>Shared network successfully created</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">427</context>
+        </context-group>
+      <target state="translated">Det delade nätverket har skapats</target></trans-unit>
+      <trans-unit id="shared-network.create-commit-failed" datatype="html">
+        <source>Cannot commit shared network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.ts</context>
+          <context context-type="linenumber">437</context>
+        </context-group>
+      <target state="translated">Kan inte verkställa det delade nätverket</target></trans-unit>
       <trans-unit id="5510969049424406138" datatype="html">
         <source>Shared Network <x id="INTERPOLATION" equiv-text="{{ sharedNetwork.name }}" /></source>
         <context-group purpose="location">
