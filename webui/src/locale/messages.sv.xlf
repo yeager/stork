@@ -2945,7 +2945,7 @@
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
           <context context-type="linenumber">336,337</context>
         </context-group>
-      <target state="translated">Events</target></trans-unit>
+      <target state="translated">Händelser</target></trans-unit>
       <trans-unit id="4661609117337319901" datatype="html">
         <source>This page displays the DHCP parameters and options configured at the global level.</source>
         <context-group purpose="location">
@@ -5255,7 +5255,7 @@
           <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
           <context context-type="linenumber">317,318</context>
         </context-group>
-      <target state="translated">Search</target></trans-unit>
+      <target state="translated">Sök</target></trans-unit>
       <trans-unit id="zone-transfers.include-local" datatype="html">
         <source>Include local transfers</source>
         <context-group purpose="location">
@@ -5423,7 +5423,7 @@
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
           <context context-type="linenumber">22,24</context>
         </context-group>
-      <target state="translated">Progress</target></trans-unit>
+      <target state="translated">Förlopp</target></trans-unit>
       <trans-unit id="zones.fetch-zones" datatype="html">
         <source>Fetch Zones</source>
         <context-group purpose="location">
