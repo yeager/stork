@@ -372,6 +372,69 @@
           <context context-type="linenumber">241</context>
         </context-group>
       <target state="translated">Det gick inte att logga ut användaren: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="daemon.overview" datatype="html">
+        <source>Overview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      <target state="translated">Översikt</target></trans-unit>
+      <trans-unit id="daemon.version" datatype="html">
+        <source>Version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      <target state="translated">Version</target></trans-unit>
+      <trans-unit id="daemon.uptime" datatype="html">
+        <source>Uptime</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      <target state="translated">Drifttid</target></trans-unit>
+      <trans-unit id="daemon.last-reloaded" datatype="html">
+        <source>Last Reloaded At</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      <target state="translated">Senast inläst</target></trans-unit>
+      <trans-unit id="bind.zone-config-count" datatype="html">
+        <source>Zone Configs Count</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      <target state="translated">Antal zonskonfigurationer</target></trans-unit>
+      <trans-unit id="daemon.access-points" datatype="html">
+        <source>Access points</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      <target state="translated">Åtkomstpunkter</target></trans-unit>
+      <trans-unit id="bind.view-statistics" datatype="html">
+        <source>view statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      <target state="translated">visningsstatistik</target></trans-unit>
+      <trans-unit id="bind.query-hit-ratio" datatype="html">
+        <source>Query Hit Ratio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      <target state="translated">Träffkvot för frågor</target></trans-unit>
+      <trans-unit id="daemon.events" datatype="html">
+        <source>Events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon/bind9-daemon.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      <target state="translated">Händelser</target></trans-unit>
       <trans-unit id="communication.page.help" datatype="html">
         <source> This page displays a tree of the daemons for which the Stork server reports communication problems. The faulty processes are color-coded and marked with a triangle icon. Hover the cursor over the icons to see the error details. </source>
         <context-group purpose="location">
