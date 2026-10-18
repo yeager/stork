@@ -15,7 +15,7 @@
                 <p-button
                     class="flex-none"
                     icon="fa fa-expand-alt"
-                    label="Expand"
+                    i18n-label label="Expand"
                     (click)="onClickToggleNodes()"
                     [disabled]="configuration === null"
                 ></p-button>
@@ -24,7 +24,7 @@
                 <p-button
                     class="flex-none"
                     icon="fa fa-compress-alt"
-                    label="Collapse"
+                    i18n-label label="Collapse"
                     (click)="onClickToggleNodes()"
                     [disabled]="configuration === null"
                 ></p-button>
@@ -34,14 +34,14 @@
             <p-button
                 class="flex-none"
                 icon="fa fa-sync"
-                label="Refresh"
+                i18n-label label="Refresh"
                 (click)="onClickRefresh()"
                 [disabled]="configuration === null && !failedFetch"
             ></p-button>
 
             <!-- Download button -->
             <a class="flex-none" [download]="downloadFilename" [href]="'/api/daemons/' + daemonId + '/config'">
-                <p-button icon="fa fa-download" label="Download" [disabled]="configuration === null"></p-button>
+                <p-button icon="fa fa-download" i18n-label label="Download" [disabled]="configuration === null"></p-button>
             </a>
         </div>
     </ng-template>
@@ -50,6 +50,6 @@
     @if (!failedFetch) {
         <app-json-tree-root [value]="configuration" [autoExpand]="autoExpand"></app-json-tree-root>
     } @else {
-        <p-message severity="warn" text="Fetching daemon configuration failed"></p-message>
+        <p-message severity="warn" i18n-text text="Fetching daemon configuration failed"></p-message>
     }
 </p-panel>

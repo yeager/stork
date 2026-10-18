@@ -63,7 +63,7 @@
                                         styleClass="w-12rem"
                                         (onChange)="filterRRsTable($event.value, filterConstraint)"
                                     />
-                                    <label for="rr-type">Type</label>
+                                    <label for="rr-type" i18n>Type</label>
                                 </p-floatlabel>
                                 <ng-container
                                     *ngTemplateOutlet="
@@ -90,7 +90,7 @@
                                         type="text"
                                         (input)="filterRRsTable($event.target.value, filterConstraint)"
                                         [ngModel]="value"
-                                        placeholder="Name or Data"
+                                        i18n-placeholder placeholder="Name or Data"
                                         class="max-w-13rem sm:w-18rem sm:max-w-18rem"
                                     />
                                 </p-iconfield>
@@ -109,8 +109,8 @@
                 </ng-template>
                 <ng-template #buttons>
                     <p-button
-                        label="Refresh from DNS"
-                        pTooltip="Refresh the zone contents from the DNS server using zone transfer (AXFR). The received data will be cached in Stork."
+                        i18n-label label="Refresh from DNS"
+                        i18n-pTooltip pTooltip="Refresh the zone contents from the DNS server using zone transfer (AXFR). The received data will be cached in Stork."
                         (click)="refreshRRsFromDNS()"
                         [disabled]="loading"
                     />
@@ -140,7 +140,7 @@
         </ng-template>
         <ng-template #emptymessage>
             <tr>
-                <td colspan="5">No data received</td>
+                <td colspan="5" i18n>No data received</td>
             </tr>
         </ng-template>
         <ng-template #paginatorright let-state>

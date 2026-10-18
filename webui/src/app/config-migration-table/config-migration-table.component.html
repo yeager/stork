@@ -2,7 +2,7 @@
 
 <div class="mb-2 flex gap-2 flex-wrap justify-content-end">
     <p-button
-        label="Clear Finished Migrations"
+        i18n-label label="Clear Finished Migrations"
         icon="pi pi-trash"
         severity="warn"
         (onClick)="clearFinishedMigrations()"
@@ -11,7 +11,7 @@
     ></p-button>
 
     <p-button
-        label="Refresh List"
+        i18n-label label="Refresh List"
         icon="pi pi-refresh"
         (onClick)="loadData(configMigrationTable.createLazyLoadMetadata())"
     ></p-button>
@@ -37,17 +37,17 @@
     <ng-template #header>
         <tr>
             <th>ID</th>
-            <th>Start Date</th>
-            <th>Status</th>
-            <th>Progress</th>
-            <th>Elapsed Time</th>
-            <th>Left Time</th>
-            <th>Actions</th>
+            <th i18n>Start Date</th>
+            <th i18n>Status</th>
+            <th i18n>Progress</th>
+            <th i18n>Elapsed Time</th>
+            <th i18n>Left Time</th>
+            <th i18n>Actions</th>
         </tr>
     </ng-template>
     <ng-template #emptymessage>
         <tr>
-            <td colspan="7" class="text-center">No migrations found.</td>
+            <td colspan="7" class="text-center" i18n>No migrations found.</td>
         </tr>
     </ng-template>
     <ng-template #body let-m>
@@ -59,21 +59,21 @@
             <td>
                 <div class="flex flex-wrap justify-center gap-2">
                     @if (m.endDate) {
-                        <p-tag severity="success" value="Completed"></p-tag>
+                        <p-tag severity="success" i18n-value value="Completed"></p-tag>
                     }
                     @if (m.generalError) {
                         <p-tag
                             severity="danger"
-                            value="Failed"
+                            i18n-value value="Failed"
                             [pTooltip]="m.generalError"
                             tooltipPosition="top"
                         ></p-tag>
                     }
                     @if (m.canceling) {
-                        <p-tag severity="warn" value="Canceling"></p-tag>
+                        <p-tag severity="warn" i18n-value value="Canceling"></p-tag>
                     }
                     @if (!m.endDate) {
-                        <p-tag severity="info" value="Running"></p-tag>
+                        <p-tag severity="info" i18n-value value="Running"></p-tag>
                     }
                     @if (m.errors?.total > 0) {
                         <p-tag
@@ -100,7 +100,7 @@
                     severity="danger"
                     size="small"
                     icon="pi pi-times"
-                    pTooltip="Cancel Migration"
+                    i18n-pTooltip pTooltip="Cancel Migration"
                     tooltipPosition="top"
                     (click)="cancel(m.id)"
                     appAccessEntity="migrations"

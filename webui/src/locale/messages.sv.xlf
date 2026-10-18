@@ -927,6 +927,104 @@
           <context context-type="linenumber">144</context>
         </context-group>
       <target state="translated">Det gick inte att uppdatera inställningarna för konfigurationskontrollerna</target></trans-unit>
+      <trans-unit id="5841407370625340639" datatype="html">
+        <source>Clear Finished Migrations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      <target state="translated">Rensa slutförda migreringar</target></trans-unit>
+      <trans-unit id="4008496035123032607" datatype="html">
+        <source>Refresh List</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      <target state="translated">Uppdatera listan</target></trans-unit>
+      <trans-unit id="3604386807230411192" datatype="html">
+        <source>Start Date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">40,43</context>
+        </context-group>
+      <target state="translated">Startdatum</target></trans-unit>
+      <trans-unit id="5611592591303869712" datatype="html">
+        <source>Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">41,43</context>
+        </context-group>
+      <target state="translated">Status</target></trans-unit>
+      <trans-unit id="3419681791450150574" datatype="html">
+        <source>Progress</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      <target state="translated">Förlopp</target></trans-unit>
+      <trans-unit id="7704516203792990151" datatype="html">
+        <source>Elapsed Time</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      <target state="translated">Förfluten tid</target></trans-unit>
+      <trans-unit id="9055433238106049197" datatype="html">
+        <source>Left Time</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">44,48</context>
+        </context-group>
+      <target state="translated">Återstående tid</target></trans-unit>
+      <trans-unit id="3193976279273491157" datatype="html">
+        <source>Actions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">45,49</context>
+        </context-group>
+      <target state="translated">Åtgärder</target></trans-unit>
+      <trans-unit id="2231397156790752861" datatype="html">
+        <source>No migrations found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">50,54</context>
+        </context-group>
+      <target state="translated">Inga migreringar hittades.</target></trans-unit>
+      <trans-unit id="1161299114153631702" datatype="html">
+        <source>Completed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+      <target state="translated">Slutförd</target></trans-unit>
+      <trans-unit id="7256395947475975935" datatype="html">
+        <source>Failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      <target state="translated">Misslyckades</target></trans-unit>
+      <trans-unit id="264561940427616221" datatype="html">
+        <source>Canceling</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">73,76</context>
+        </context-group>
+      <target state="translated">Avbryter</target></trans-unit>
+      <trans-unit id="2956098160626271284" datatype="html">
+        <source>Running</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">76,78</context>
+        </context-group>
+      <target state="translated">Körs</target></trans-unit>
+      <trans-unit id="794385823716967222" datatype="html">
+        <source>Cancel Migration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.html</context>
+          <context context-type="linenumber">103,105</context>
+        </context-group>
+      <target state="translated">Avbryt migrering</target></trans-unit>
       <trans-unit id="daemon.filter.label" datatype="html">
         <source>Daemon (type or pick)</source>
         <context-group purpose="location">
@@ -2064,6 +2162,41 @@
           <context context-type="linenumber">29,33</context>
         </context-group>
       <target state="translated">Tom identifierare</target></trans-unit>
+      <trans-unit id="1359092845802014498" datatype="html">
+        <source>Expand</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      <target state="translated">Fäll ut</target></trans-unit>
+      <trans-unit id="4929778113156900100" datatype="html">
+        <source>Collapse</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      <target state="translated">Fäll ihop</target></trans-unit>
+      <trans-unit id="1102717806459547726" datatype="html">
+        <source>Refresh</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      <target state="translated">Uppdatera</target></trans-unit>
+      <trans-unit id="3099741642167775297" datatype="html">
+        <source>Download</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.html</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+      <target state="translated">Hämta</target></trans-unit>
+      <trans-unit id="4122088870604278755" datatype="html">
+        <source>Fetching daemon configuration failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.html</context>
+          <context context-type="linenumber">53,56</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta demonens konfiguration</target></trans-unit>
       <trans-unit id="6568528235266559788" datatype="html">
         <source>Global DHCP Parameters</source>
         <context-group purpose="location">
@@ -3054,6 +3187,13 @@
           <context context-type="linenumber">52,53</context>
         </context-group>
       <target state="translated">Filter</target></trans-unit>
+      <trans-unit id="7944719254066921849" datatype="html">
+        <source>The file is empty or it does not exist.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/text-file-viewer/text-file-viewer.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      <target state="translated">Filen är tom eller finns inte.</target></trans-unit>
       <trans-unit id="user.form.create-title" datatype="html">
         <source>Creating new account</source>
         <context-group purpose="location">
@@ -3324,6 +3464,41 @@
           <context context-type="linenumber">179</context>
         </context-group>
       <target state="translated">Det gick inte att tolka en giltig semver från versionen <x id="PH" equiv-text="daemon.version" />!</target></trans-unit>
+      <trans-unit id="8650499415827640724" datatype="html">
+        <source>Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      <target state="translated">Typ</target></trans-unit>
+      <trans-unit id="2594120130663787606" datatype="html">
+        <source>Name or Data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      <target state="translated">Namn eller data</target></trans-unit>
+      <trans-unit id="4164881423932661178" datatype="html">
+        <source>Refresh from DNS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+      <target state="translated">Uppdatera från DNS</target></trans-unit>
+      <trans-unit id="8059200298454777183" datatype="html">
+        <source>Refresh the zone contents from the DNS server using zone transfer (AXFR). The received data will be cached in Stork.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">113,115</context>
+        </context-group>
+      <target state="translated">Hämta zoninnehållet igen från DNS med zonöverföring (AXFR). Mottagna data mellanlagras i Stork.</target></trans-unit>
+      <trans-unit id="1036767501330185481" datatype="html">
+        <source>No data received</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">143,146</context>
+        </context-group>
+      <target state="translated">Inga data togs emot</target></trans-unit>
     </body>
   </file>
 </xliff>
