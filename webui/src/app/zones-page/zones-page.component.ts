@@ -986,7 +986,7 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
     private _updateToolbarButtons(disableFetchZones: boolean) {
         const buttons: MenuItem[] = [
             {
-                label: 'Fetch Status',
+                label: $localize`:@@zones.fetch-status:Fetch Status`,
                 command: () => (this.fetchStatusVisible = true),
                 icon: 'pi pi-info-circle',
             },

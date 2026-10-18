@@ -66,10 +66,10 @@ export class KeaDaemonConfigurationPageComponent implements OnInit, OnDestroy {
      */
     ngOnInit(): void {
         this.breadcrumbs = [
-            { label: 'Services' },
-            { label: 'Daemons', routerLink: '/daemons/all' },
-            { label: 'Daemon' },
-            { label: 'Configuration' },
+            { label: $localize`:@@menu.services:Services` },
+            { label: $localize`:@@search.daemons:Daemons`, routerLink: '/daemons/all' },
+            { label: $localize`:@@daemon.tab.daemon:Daemon` },
+            { label: $localize`:@@menu.configuration:Configuration` },
         ]
 
         // Update Kea daemon configuration

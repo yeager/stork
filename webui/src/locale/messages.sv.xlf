@@ -165,6 +165,10 @@
           <context context-type="linenumber">207</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
           <context context-type="linenumber">119</context>
         </context-group>
@@ -246,6 +250,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/config-checker-preference-page/config-checker-preference-page.component.ts</context>
           <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
+          <context context-type="linenumber">72</context>
         </context-group>
       <target state="translated">Konfiguration</target></trans-unit>
       <trans-unit id="menu.users" datatype="html">
@@ -1270,6 +1278,10 @@
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">164,166</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
       <target state="translated">Demon</target></trans-unit>
       <trans-unit id="daemon.tab.on-machine" datatype="html">
         <source>on machine</source>
@@ -1905,6 +1917,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/global-search/global-search.component.html</context>
           <context context-type="linenumber">68,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       <target state="translated">Demoner</target></trans-unit>
       <trans-unit id="search.users" datatype="html">
@@ -5966,6 +5982,10 @@ med hur många som har konfigurerats.
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
           <context context-type="linenumber">740,742</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
+          <context context-type="linenumber">989</context>
         </context-group>
       <target state="translated">Hämtningsstatus</target></trans-unit>
       <trans-unit id="zones.zone-name" datatype="html">
