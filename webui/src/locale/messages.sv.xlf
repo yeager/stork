@@ -63,6 +63,36 @@
           <context context-type="linenumber">5,6</context>
         </context-group>
       <target state="translated">Tilldelningar</target></trans-unit>
+      <trans-unit id="subnet.dhcp-servers-and-tags" datatype="html">
+        <source>DHCP Servers and/or Server Tags</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      <target state="translated">DHCP-servrar och/eller servertaggar</target></trans-unit>
+      <trans-unit id="host.select-server" datatype="html">
+        <source>At least one server must be selected. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">75,79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">41,44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">26,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+      <target state="translated">Minst en server måste väljas. </target></trans-unit>
       <trans-unit id="pool.parameters" datatype="html">
         <source>Pool DHCP Parameters</source>
         <context-group purpose="location">
@@ -77,6 +107,21 @@
           <context context-type="linenumber">83,85</context>
         </context-group>
       <target state="translated">DHCP-alternativ för pool</target></trans-unit>
+      <trans-unit id="subnet.unlock-dhcp-options" datatype="html">
+        <source>Unlock setting DHCP options for individual servers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">281,283</context>
+        </context-group>
+      <target state="translated">Lås upp inställning av DHCP-alternativ för enskilda servrar.</target></trans-unit>
       <trans-unit id="menu.categories" datatype="html">
         <source>Categories</source>
         <context-group purpose="location">
@@ -2585,21 +2630,6 @@
           <context context-type="linenumber">20,23</context>
         </context-group>
       <target state="translated">DHCP-servrar</target></trans-unit>
-      <trans-unit id="host.select-server" datatype="html">
-        <source>At least one server must be selected. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
-          <context context-type="linenumber">41,44</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
-          <context context-type="linenumber">26,30</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
-          <context context-type="linenumber">56,58</context>
-        </context-group>
-      <target state="translated">Minst en server måste väljas. </target></trans-unit>
       <trans-unit id="host.subnet" datatype="html">
         <source>Subnet</source>
         <context-group purpose="location">
@@ -6211,17 +6241,6 @@
           <context context-type="linenumber">270,271</context>
         </context-group>
       <target state="translated">DHCP-parametrar</target></trans-unit>
-      <trans-unit id="subnet.unlock-dhcp-options" datatype="html">
-        <source>Unlock setting DHCP options for individual servers.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
-          <context context-type="linenumber">58,60</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
-          <context context-type="linenumber">281,283</context>
-        </context-group>
-      <target state="translated">Lås upp inställning av DHCP-alternativ för enskilda servrar.</target></trans-unit>
       <trans-unit id="shared-network.create-transaction-failed" datatype="html">
         <source>Cannot create new transaction</source>
         <context-group purpose="location">
@@ -6690,13 +6709,6 @@
           <context context-type="linenumber">149,151</context>
         </context-group>
       <target state="translated">Något annat</target></trans-unit>
-      <trans-unit id="subnet.dhcp-servers-and-tags" datatype="html">
-        <source>DHCP Servers and/or Server Tags</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
-          <context context-type="linenumber">22,24</context>
-        </context-group>
-      <target state="translated">DHCP-servrar och/eller servertaggar</target></trans-unit>
       <trans-unit id="subnet.server-selection-disabled" datatype="html">
         <source>Server selection is disabled</source>
         <context-group purpose="location">

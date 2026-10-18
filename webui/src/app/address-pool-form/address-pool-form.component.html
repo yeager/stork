@@ -42,7 +42,7 @@
                     (onChange)="onDaemonGroupsChange($event)"
                 >
                 </p-multiSelect>
-                <label [for]="uuids.selectedDaemonGroups">DHCP Servers and/or Server Tags</label>
+                <label [for]="uuids.selectedDaemonGroups" i18n="@@subnet.dhcp-servers-and-tags">DHCP Servers and/or Server Tags</label>
                 <span class="ml-2">
                     <app-help-tip subject="DHCP servers selection">
                         <p>
@@ -72,7 +72,7 @@
                 formGroup.get('selectedDaemonGroups').invalid &&
                 (formGroup.get('selectedDaemonGroups').dirty || formGroup.get('selectedDaemonGroups').touched)
             ) {
-                <small class="app-error block">At least one server must be selected. </small>
+                <small class="app-error block" i18n="@@host.select-server">At least one server must be selected. </small>
             }
         </div>
     </p-fieldset>
@@ -83,7 +83,7 @@
     <p-fieldset [formGroup]="formGroup.get('options')" i18n-legend="@@pool.options" legend="Pool DHCP Options" styleClass="mt-4">
         <div class="flex mt-2 pb-4">
             <p-checkbox formControlName="unlocked" [binary]="true"> </p-checkbox>
-            <div class="flex ml-2 font-semibold">Unlock setting DHCP options for individual servers.</div>
+            <div class="flex ml-2 font-semibold" i18n="@@subnet.unlock-dhcp-options">Unlock setting DHCP options for individual servers.</div>
         </div>
         @for (optionSet of formGroup.get('options.data')?.controls; track optionSet; let i = $index) {
             @if (i === 0 || formGroup.get('options.unlocked')?.value) {
