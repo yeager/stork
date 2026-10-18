@@ -1733,6 +1733,127 @@
           <context context-type="linenumber">278,279</context>
         </context-group>
       <target state="translated">DHCP-alternativ</target></trans-unit>
+      <trans-unit id="4343388126555133229" datatype="html">
+        <source>Leases</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      <target state="translated">Leaser</target></trans-unit>
+      <trans-unit id="7585826646011739428" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      <target state="translated">Redigera</target></trans-unit>
+      <trans-unit id="7022070615528435141" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">124,125</context>
+        </context-group>
+      <target state="translated">Ta bort</target></trans-unit>
+      <trans-unit id="9080081276999503751" datatype="html">
+        <source>DHCP Servers Using the Host</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+      <target state="translated">DHCP-servrar som använder värden</target></trans-unit>
+      <trans-unit id="6515363663658042894" datatype="html">
+        <source>DHCP Identifiers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">125,127</context>
+        </context-group>
+      <target state="translated">DHCP-identifierare</target></trans-unit>
+      <trans-unit id="8377009228784446479" datatype="html">
+        <source>No hostname configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">160,162</context>
+        </context-group>
+      <target state="translated">Inget värdnamn har konfigurerats.</target></trans-unit>
+      <trans-unit id="8784419364657978891" datatype="html">
+        <source>unused</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">230,232</context>
+        </context-group>
+      <target state="translated">oanvänd</target></trans-unit>
+      <trans-unit id="899418735586277427" datatype="html">
+        <source>No IP reservations configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">256,258</context>
+        </context-group>
+      <target state="translated">Inga IP-reservationer har konfigurerats.</target></trans-unit>
+      <trans-unit id="1483506754887508048" datatype="html">
+        <source>Next server</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">280,282</context>
+        </context-group>
+      <target state="translated">Nästa server</target></trans-unit>
+      <trans-unit id="3942851410569348323" datatype="html">
+        <source>Server hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">290,292</context>
+        </context-group>
+      <target state="translated">Servervärdnamn</target></trans-unit>
+      <trans-unit id="259867983394589445" datatype="html">
+        <source>Boot file name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">300,302</context>
+        </context-group>
+      <target state="translated">Startfilnamn</target></trans-unit>
+      <trans-unit id="7734408857389432053" datatype="html">
+        <source>conflict</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">384,386</context>
+        </context-group>
+      <target state="translated">konflikt</target></trans-unit>
+      <trans-unit id="5566836566840068408" datatype="html">
+        <source>The host is configured differently in the configuration file and host database.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">386,391</context>
+        </context-group>
+      <target state="translated">Värden är konfigurerad på olika sätt i konfigurationsfilen och värddatabasen.</target></trans-unit>
+      <trans-unit id="6133338617402043535" datatype="html">
+        <source>duplicate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">394,396</context>
+        </context-group>
+      <target state="translated">dubblett</target></trans-unit>
+      <trans-unit id="3003306260055932210" datatype="html">
+        <source>The host is duplicated in the configuration file and host database.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
+          <context context-type="linenumber">396,399</context>
+        </context-group>
+      <target state="translated">Värden förekommer flera gånger i konfigurationsfilen och värddatabasen.</target></trans-unit>
       <trans-unit id="hosts.machine-id" datatype="html">
         <source>Machine ID</source>
         <context-group purpose="location">
@@ -2429,28 +2550,6 @@
           <context context-type="linenumber">7,8</context>
         </context-group>
       <target state="translated">Delat nätverk <x id="INTERPOLATION" equiv-text="{{ sharedNetwork.name }}" /></target></trans-unit>
-      <trans-unit id="7585826646011739428" datatype="html">
-        <source>Edit</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
-          <context context-type="linenumber">59,60</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
-          <context context-type="linenumber">114,115</context>
-        </context-group>
-      <target state="translated">Redigera</target></trans-unit>
-      <trans-unit id="7022070615528435141" datatype="html">
-        <source>Delete</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
-          <context context-type="linenumber">69,70</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
-          <context context-type="linenumber">124,125</context>
-        </context-group>
-      <target state="translated">Ta bort</target></trans-unit>
       <trans-unit id="1380395161278047833" datatype="html">
         <source>DHCP Servers Using the Shared Network</source>
         <context-group purpose="location">
