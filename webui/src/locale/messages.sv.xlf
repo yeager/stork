@@ -1769,6 +1769,69 @@
           <context context-type="linenumber">60,62</context>
         </context-group>
       <target state="translated">DHCP-översikt</target></trans-unit>
+      <trans-unit id="dashboard.daemon-statistics-failed" datatype="html">
+        <source>Cannot get daemon statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">256</context>
+        </context-group>
+      <target state="translated">Kan inte hämta demonstatistik</target></trans-unit>
+      <trans-unit id="dashboard.daemon-statistics-failed-detail" datatype="html">
+        <source>Error getting daemon statistics: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">257</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av demonstatistik: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="dashboard.dhcp-overview-failed" datatype="html">
+        <source>Cannot get DHCP overview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">332</context>
+        </context-group>
+      <target state="translated">Kan inte hämta DHCP-översikten</target></trans-unit>
+      <trans-unit id="dashboard.dhcp-overview-failed-detail" datatype="html">
+        <source>Error getting DHCP overview: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">333</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av DHCP-översikten: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="dashboard.dns-overview-failed" datatype="html">
+        <source>Cannot get DNS overview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">367</context>
+        </context-group>
+      <target state="translated">Kan inte hämta DNS-översikten</target></trans-unit>
+      <trans-unit id="dashboard.dns-overview-failed-detail" datatype="html">
+        <source>Error getting DNS overview: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">368</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av DNS-översikten: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="dashboard.ha-not-configured" datatype="html">
+        <source>not configured</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">553</context>
+        </context-group>
+      <target state="translated">inte konfigurerad</target></trans-unit>
+      <trans-unit id="dashboard.ha-fetching" datatype="html">
+        <source>fetching...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">560</context>
+        </context-group>
+      <target state="translated">hämtar …</target></trans-unit>
+      <trans-unit id="dashboard.ha-never" datatype="html">
+        <source>never</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">585</context>
+        </context-group>
+      <target state="translated">aldrig</target></trans-unit>
       <trans-unit id="4258331699582199918" datatype="html">
         <source>delegated length</source>
         <context-group purpose="location">

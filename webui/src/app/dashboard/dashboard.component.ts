@@ -253,8 +253,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
                     let msg = getErrorMessage(err)
                     this.msgSrv.add({
                         severity: 'error',
-                        summary: 'Cannot get daemon statistics',
-                        detail: 'Error getting daemon statistics: ' + msg,
+                        summary: $localize`:@@dashboard.daemon-statistics-failed:Cannot get daemon statistics`,
+                        detail: $localize`:@@dashboard.daemon-statistics-failed-detail:Error getting daemon statistics: ${msg}:error message:`,
                         life: 10000,
                     })
                 }
@@ -329,8 +329,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot get DHCP overview',
-                    detail: 'Error getting DHCP overview: ' + msg,
+                    summary: $localize`:@@dashboard.dhcp-overview-failed:Cannot get DHCP overview`,
+                    detail: $localize`:@@dashboard.dhcp-overview-failed-detail:Error getting DHCP overview: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -364,8 +364,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot get DNS overview',
-                    detail: 'Error getting DNS overview: ' + msg,
+                    summary: $localize`:@@dashboard.dns-overview-failed:Cannot get DNS overview`,
+                    detail: $localize`:@@dashboard.dns-overview-failed-detail:Error getting DNS overview: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -550,14 +550,14 @@ export class DashboardComponent implements OnInit, OnDestroy {
      */
     showHAState(daemon: DhcpDaemon) {
         if (!daemon.haEnabled) {
-            return 'not configured'
+            return $localize`:@@dashboard.ha-not-configured:not configured`
         }
         const state = this.selectMostAlarmingHAState(daemon)
         if (!state) {
             return null
         }
         if (!state.haState || state.haState.length === 0) {
-            return 'fetching...'
+            return $localize`:@@dashboard.ha-fetching:fetching...`
         }
         return state.haState
     }
@@ -582,7 +582,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         }
         const localTime = datetimeToLocal(state.haFailureAt)
         if (!localTime) {
-            return 'never'
+            return $localize`:@@dashboard.ha-never:never`
         }
         return localTime
     }
