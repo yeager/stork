@@ -130,7 +130,7 @@ export class SharedNetworksTableComponent implements OnInit, OnDestroy {
     private _updateToolbarButtons() {
         const buttons: MenuItem[] = [
             {
-                label: 'New Shared Network',
+                label: $localize`:@@shared-networks.new:New Shared Network`,
                 icon: 'pi pi-plus',
                 routerLink: '/dhcp/shared-networks/new',
                 disabled: !this.canCreateNetwork(),
@@ -179,7 +179,7 @@ export class SharedNetworksTableComponent implements OnInit, OnDestroy {
             .catch((error) => {
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot load shared networks',
+                    summary: $localize`:@@shared-networks.load-failed:Cannot load shared networks`,
                     detail: getErrorMessage(error),
                 })
             })
@@ -363,7 +363,7 @@ export class SharedNetworksTableComponent implements OnInit, OnDestroy {
     onAutocompleteError(message: string) {
         this.messageService.add({
             severity: 'error',
-            summary: 'Cannot get daemons directory',
+            summary: $localize`:@@shared-networks.daemons-directory-failed:Cannot get daemons directory`,
             detail: message,
             life: 10000,
         })

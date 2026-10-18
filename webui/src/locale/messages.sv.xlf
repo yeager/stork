@@ -5548,7 +5548,11 @@
           <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
           <context context-type="linenumber">128,131</context>
         </context-group>
-      <target state="translated">Nytt delat nät</target></trans-unit>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      <target state="translated">Nytt delat nätverk</target></trans-unit>
       <trans-unit id="subnets.addresses" datatype="html">
         <source>Addresses</source>
         <context-group purpose="location">
@@ -5658,6 +5662,20 @@
           <context context-type="linenumber">253,256</context>
         </context-group>
       <target state="translated">Inga delade nät hittades.</target></trans-unit>
+      <trans-unit id="shared-networks.load-failed" datatype="html">
+        <source>Cannot load shared networks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      <target state="translated">Kan inte läsa in delade nätverk</target></trans-unit>
+      <trans-unit id="shared-networks.daemons-directory-failed" datatype="html">
+        <source>Cannot get daemons directory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.ts</context>
+          <context context-type="linenumber">366</context>
+        </context-group>
+      <target state="translated">Kan inte hämta demonförteckningen</target></trans-unit>
       <trans-unit id="2241001148712989212" datatype="html">
         <source>Parameter &amp; value</source>
         <context-group purpose="location">
