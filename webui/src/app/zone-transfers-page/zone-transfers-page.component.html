@@ -1,11 +1,11 @@
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
-        <p>This page displays a list of DNS zone transfers.</p>
-        <p>
+        <p i18n="@@zone-transfers.help-intro">This page displays a list of DNS zone transfers.</p>
+        <p i18n="@@zone-transfers.help-detection">
             Zone transfers are detected by Stork agents on the machines with running BIND 9 servers. The list presented
             below is by default sorted from the most recently started zone transfers.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-completed">
             Looking into the zone transfers can be useful for troubleshooting issues between the primary and secondary
             DNS servers. Specifically, it is interesting to look at the durations of the zone transfers, their
             transmission rates (in B/s), and the status. For example, the
@@ -15,28 +15,28 @@
             being overloaded. The duration of the <span class="font-bold">completed</span> zone transfer is extracted
             from the BIND 9 logs.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-up-to-date">
             The <span class="font-bold">up-to-date</span> status also indicates successful completion of the zone
             transfer. In this case, however, the secondary does not receive the zone contents from the primary but
             rather confirms that the zone copy it has is up to date. That's why it is common to see only one record as
             part of the zone transfer, which is the SOA record.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-started">
             The <span class="font-bold">started</span> status indicates that the zone transfer had not finished before
             the list of transfers was displayed. Click the <span class="font-bold">Refresh List</span> button to check
             whether the started transfers have already ended. The current duration of the started transfer is estimated
             by subtracting the <span class="font-bold">Started at</span> timestamp from the current time.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-message">
             The <span class="font-bold">message</span> status indicates that Stork did not find the log message in the
             BIND 9 logs marking successful completion of the zone transfer. It is possible that BIND 9 emitted some
             intermediate log messages during the transfer or the transfer was interrupted or failed.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-failed">
             Failed zone transfers are marked with the <span class="font-bold">failed</span> status. For those transfers,
             the captured BIND 9 logs clearly indicate that the zone transfer was neither successful nor up-to-date.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-servers">
             The <span class="font-bold">Primary</span> and <span class="font-bold">Secondary</span>
             columns include the machine names or IP addresses of the primary and secondary DNS servers participating in
             the zone transfers. The machine names appear in cases when the zone transfer occurred on the machine
@@ -46,23 +46,23 @@
             <span class="font-bold">Secondary</span> column will contain the machine name. The
             <span class="font-bold">Primary</span> column will contain an IP address.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-details">
             The table rows are expandable. Expand the row for the selected transfer to see the details such as
             timestamps, statistics, and the log messages (captured from BIND 9 instance) pertaining to this zone
             transfer.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-timestamps">
             The <span class="font-bold">Started at</span> and <span class="font-bold">Completed at</span> timestamps
             indicate when the transfer started and completed respectively. The
             <span class="font-bold">Created at</span> timestamp indicates when the transfer was first captured and
             recorded by Stork. It is often later than the <span class="font-bold">Started at</span> timestamp. It can be
             later than the <span class="font-bold">Completed at</span> timestamp.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-logs">
             The logs in the expanded row can be helpful to investigate why the zone transfer status is set to
             <span class="font-bold">message</span>. It may provide some error details.
         </p>
-        <p>
+        <p i18n="@@zone-transfers.help-local">
             Some zone transfers may be marked as <span class="font-bold">local</span>. These are the transfers where the
             primary and the secondary run on the same machine. Note that Stork initiates such transfers to fetch the
             zone contents from the DNS servers. In this case, Stork agent is a secondary and BIND 9 server is a primary.
