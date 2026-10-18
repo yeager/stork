@@ -1432,6 +1432,10 @@
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">170,171</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
       <target state="translated">Version</target></trans-unit>
       <trans-unit id="common.machine" datatype="html">
         <source>Machine</source>
@@ -2949,6 +2953,10 @@
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
           <context context-type="linenumber">336,337</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
       <target state="translated">Händelser</target></trans-unit>
       <trans-unit id="4661609117337319901" datatype="html">
         <source>This page displays the DHCP parameters and options configured at the global level.</source>
@@ -3756,6 +3764,48 @@
           <context context-type="linenumber">146</context>
         </context-group>
       <target state="translated">Det gick inte att uppdatera användarens lösenord</target></trans-unit>
+      <trans-unit id="pdns.overview" datatype="html">
+        <source>Overview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      <target state="translated">Översikt</target></trans-unit>
+      <trans-unit id="pdns.uptime" datatype="html">
+        <source>Uptime</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      <target state="translated">Drifttid</target></trans-unit>
+      <trans-unit id="pdns.config-url" datatype="html">
+        <source>Config URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      <target state="translated">Konfigurationens URL</target></trans-unit>
+      <trans-unit id="pdns.zones-url" datatype="html">
+        <source>Zones URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      <target state="translated">Zonernas URL</target></trans-unit>
+      <trans-unit id="pdns.autoprimaries-url" datatype="html">
+        <source>Autoprimaries URL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      <target state="translated">URL för automatiska primärer</target></trans-unit>
+      <trans-unit id="pdns.access-points" datatype="html">
+        <source>Access points</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      <target state="translated">Åtkomstpunkter</target></trans-unit>
       <trans-unit id="priority.registration" datatype="html">
         <source> Found <x id="INTERPOLATION" equiv-text="{{ formatNoun(registrationIssuesCount(), 'maskin', 'er') }}" /> requesting registration and awaiting approval. Visit the list of </source>
         <context-group purpose="location">
