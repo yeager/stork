@@ -6178,7 +6178,7 @@ med hur många som har konfigurerats.
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
           <context context-type="linenumber">615</context>
         </context-group>
-      <target state="translated">Continue</target></trans-unit>
+      <target state="translated">Fortsätt</target></trans-unit>
       <trans-unit id="zones.request-sent" datatype="html">
         <source>Request sent</source>
         <context-group purpose="location">
