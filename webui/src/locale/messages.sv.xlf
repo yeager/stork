@@ -3087,7 +3087,11 @@
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">296,298</context>
         </context-group>
-      <target state="translated">Migrera till databas</target></trans-unit>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.ts</context>
+          <context context-type="linenumber">440</context>
+        </context-group>
+      <target state="translated">Migrera till databasen</target></trans-unit>
       <trans-unit id="hosts.new-host" datatype="html">
         <source>New Host</source>
         <context-group purpose="location">
@@ -3189,6 +3193,41 @@
           <context context-type="linenumber">361,364</context>
         </context-group>
       <target state="translated">Rensa filtreringen och försök igen.</target></trans-unit>
+      <trans-unit id="hosts.list-failed" datatype="html">
+        <source>Cannot get host reservations list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      <target state="translated">Kan inte hämta listan med värdreservationer</target></trans-unit>
+      <trans-unit id="hosts.list-failed-detail" datatype="html">
+        <source>Error getting host reservations list: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av listan med värdreservationer: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="hosts.migration-failed" datatype="html">
+        <source>Cannot migrate host reservations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.ts</context>
+          <context context-type="linenumber">319</context>
+        </context-group>
+      <target state="translated">Kan inte migrera värdreservationer</target></trans-unit>
+      <trans-unit id="hosts.new" datatype="html">
+        <source>New Host</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.ts</context>
+          <context context-type="linenumber">446</context>
+        </context-group>
+      <target state="translated">Ny värd</target></trans-unit>
+      <trans-unit id="hosts.daemons-directory-failed" datatype="html">
+        <source>Cannot get daemons directory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.ts</context>
+          <context context-type="linenumber">462</context>
+        </context-group>
+      <target state="translated">Kan inte hämta demonförteckningen</target></trans-unit>
       <trans-unit id="value.invalid" datatype="html">
         <source>Invalid value</source>
         <context-group purpose="location">
@@ -5873,6 +5912,27 @@
           <context context-type="linenumber">358,360</context>
         </context-group>
       <target state="translated">Inga delnät hittades.</target></trans-unit>
+      <trans-unit id="subnets.new" datatype="html">
+        <source>New Subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      <target state="translated">Nytt subnät</target></trans-unit>
+      <trans-unit id="subnets.load-failed" datatype="html">
+        <source>Cannot load subnets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.ts</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      <target state="translated">Kan inte läsa in subnät</target></trans-unit>
+      <trans-unit id="subnets.daemons-directory-failed" datatype="html">
+        <source>Cannot get daemons directory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.ts</context>
+          <context context-type="linenumber">441</context>
+        </context-group>
+      <target state="translated">Kan inte hämta demonförteckningen</target></trans-unit>
       <trans-unit id="table.clear" datatype="html">
         <source>Clear</source>
         <context-group purpose="location">

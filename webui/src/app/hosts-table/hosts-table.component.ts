@@ -139,8 +139,8 @@ export class HostsTableComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot get host reservations list',
-                    detail: 'Error getting host reservations list: ' + msg,
+                    summary: $localize`:@@hosts.list-failed:Cannot get host reservations list`,
+                    detail: $localize`:@@hosts.list-failed-detail:Error getting host reservations list: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -316,7 +316,7 @@ export class HostsTableComponent implements OnInit, OnDestroy {
                         error: (error) => {
                             this.messageService.add({
                                 severity: 'error',
-                                summary: 'Cannot migrate host reservations',
+                                summary: $localize`:@@hosts.migration-failed:Cannot migrate host reservations`,
                                 detail: getErrorMessage(error),
                             })
                         },
@@ -437,13 +437,13 @@ export class HostsTableComponent implements OnInit, OnDestroy {
     private _updateToolbarButtons() {
         const buttons: MenuItem[] = [
             {
-                label: 'Migrate to Database',
+                label: $localize`:@@hosts.migrate-to-database:Migrate to Database`,
                 command: () => this.migrateToDatabaseAsk(),
                 icon: 'pi pi-database',
                 disabled: !this.canStartMigration(),
             },
             {
-                label: 'New Host',
+                label: $localize`:@@hosts.new:New Host`,
                 routerLink: '/dhcp/hosts/new',
                 icon: 'pi pi-plus',
                 disabled: !this.canCreateHosts(),
@@ -459,7 +459,7 @@ export class HostsTableComponent implements OnInit, OnDestroy {
     onAutocompleteError(message: string) {
         this.messageService.add({
             severity: 'error',
-            summary: 'Cannot get daemons directory',
+            summary: $localize`:@@hosts.daemons-directory-failed:Cannot get daemons directory`,
             detail: message,
             life: 10000,
         })

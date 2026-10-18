@@ -151,7 +151,7 @@ export class SubnetsTableComponent implements OnInit, OnDestroy {
     private _updateToolbarButtons() {
         const buttons: MenuItem[] = [
             {
-                label: 'New Subnet',
+                label: $localize`:@@subnets.new:New Subnet`,
                 icon: 'pi pi-plus',
                 routerLink: '/dhcp/subnets/new',
                 disabled: !this.canCreateSubnet(),
@@ -203,7 +203,7 @@ export class SubnetsTableComponent implements OnInit, OnDestroy {
             .catch((error) => {
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot load subnets',
+                    summary: $localize`:@@subnets.load-failed:Cannot load subnets`,
                     detail: getErrorMessage(error),
                 })
             })
@@ -438,7 +438,7 @@ export class SubnetsTableComponent implements OnInit, OnDestroy {
     onAutocompleteError(message: string) {
         this.messageService.add({
             severity: 'error',
-            summary: 'Cannot get daemons directory',
+            summary: $localize`:@@subnets.daemons-directory-failed:Cannot get daemons directory`,
             detail: message,
             life: 10000,
         })
