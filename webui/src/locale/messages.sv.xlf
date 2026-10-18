@@ -3992,6 +3992,55 @@
           <context context-type="linenumber">294</context>
         </context-group>
       <target state="translated">Hooksökvägen <x id="hook path" equiv-text="hookPath" /> kunde inte kopieras till urklipp.</target></trans-unit>
+      <trans-unit id="kea-global.update-success" datatype="html">
+        <source>Kea configuration successfully updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-form/kea-global-configuration-form.component.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      <target state="translated">Kea-konfigurationen har uppdaterats</target></trans-unit>
+      <trans-unit id="kea-global.update-failed" datatype="html">
+        <source>Cannot update configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-form/kea-global-configuration-form.component.ts</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera konfigurationen</target></trans-unit>
+      <trans-unit id="kea-global.update-failed-detail" datatype="html">
+        <source>Failed to update configuration: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-form/kea-global-configuration-form.component.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera konfigurationen: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="kea-global.delete-transaction-failed" datatype="html">
+        <source>Failed to delete configuration transaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-form/kea-global-configuration-form.component.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort konfigurationstransaktionen</target></trans-unit>
+      <trans-unit id="kea-global.delete-transaction-failed-detail" datatype="html">
+        <source>Failed to delete configuration transaction: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-form/kea-global-configuration-form.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort konfigurationstransaktionen: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="kea-global.transaction-create-failed" datatype="html">
+        <source>Cannot create new transaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-form/kea-global-configuration-form.component.ts</context>
+          <context context-type="linenumber">218</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa en ny transaktion</target></trans-unit>
+      <trans-unit id="kea-global.parameters-update-failed" datatype="html">
+        <source>Failed to update global Kea parameters: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-form/kea-global-configuration-form.component.ts</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera Keas globala parametrar: <x id="PH" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="4661609117337319901" datatype="html">
         <source>This page displays the DHCP parameters and options configured at the global level.</source>
         <context-group purpose="location">
@@ -4943,14 +4992,18 @@
           <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
           <context context-type="linenumber">437</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">704</context>
+        </context-group>
       <target state="translated">Auktorisering av maskin misslyckades</target></trans-unit>
-      <trans-unit id="machines.authorization-failed-detail" datatype="html">
+      <trans-unit id="machines.bulk-authorization-attempt-failed-detail" datatype="html">
         <source>Machine authorization attempt failed: <x id="error message" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
           <context context-type="linenumber">438</context>
         </context-group>
-      <target state="translated">Försöket att auktorisera maskinen misslyckades: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <target state="translated">Auktoriseringen av maskinen misslyckades: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="machines.delete-confirmation" datatype="html">
         <source>Are you sure you want to delete the machine with ID <x id="machine ID" equiv-text="machineId" />?</source>
         <context-group purpose="location">
@@ -5063,6 +5116,20 @@
           <context context-type="linenumber">648</context>
         </context-group>
       <target state="translated">Det gick inte att skapa en ny servertoken för att registrera maskiner: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.bulk-authorization-succeeded" datatype="html">
+        <source>Machine authorized</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">696</context>
+        </context-group>
+      <target state="translated">Maskinen har auktoriserats</target></trans-unit>
+      <trans-unit id="machines.authorization-attempt-failed-detail" datatype="html">
+        <source>Machine authorization attempt failed: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">705</context>
+        </context-group>
+      <target state="translated">Auktoriseringen av maskinen misslyckades: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="machines.not-found" datatype="html">
         <source>Machine not found</source>
         <context-group purpose="location">

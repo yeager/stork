@@ -435,7 +435,7 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 this.msgSrv.add({
                     severity: 'error',
                     summary: $localize`:@@machines.authorization-failed:Machine authorization failed`,
-                    detail: $localize`:@@machines.authorization-failed-detail:Machine authorization attempt failed: ${msg}:error message:`,
+                    detail: $localize`:@@machines.bulk-authorization-attempt-failed-detail:Machine authorization attempt failed: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -693,7 +693,7 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
             next: (m) => {
                 this.msgSrv.add({
                     severity: 'success',
-                    summary: 'Machine authorized',
+                    summary: $localize`:@@machines.bulk-authorization-succeeded:Machine authorized`,
                     detail: $localize`:@@machines.authorization-succeeded:Machine ${m.address}:machine address: authorization succeeded.`,
                 })
             },
@@ -701,8 +701,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Machine authorization failed',
-                    detail: 'Machine authorization attempt failed: ' + msg,
+                    summary: $localize`:@@machines.authorization-failed:Machine authorization failed`,
+                    detail: $localize`:@@machines.authorization-attempt-failed-detail:Machine authorization attempt failed: ${msg}:error message:`,
                     life: 10000,
                 })
                 this.machinesTable()?.setDataLoading(false)

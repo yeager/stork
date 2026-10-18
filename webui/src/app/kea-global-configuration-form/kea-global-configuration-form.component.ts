@@ -127,7 +127,7 @@ export class KeaGlobalConfigurationFormComponent implements OnInit {
             .then(() => {
                 this.messageService.add({
                     severity: 'success',
-                    summary: 'Kea configuration successfully updated',
+                    summary: $localize`:@@kea-global.update-success:Kea configuration successfully updated`,
                 })
                 this.formSubmit.emit()
             })
@@ -135,8 +135,8 @@ export class KeaGlobalConfigurationFormComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot update configuration',
-                    detail: 'Failed to update configuration: ' + msg,
+                    summary: $localize`:@@kea-global.update-failed:Cannot update configuration`,
+                    detail: $localize`:@@kea-global.update-failed-detail:Failed to update configuration: ${msg}`,
                     life: 10000,
                 })
             })
@@ -151,8 +151,8 @@ export class KeaGlobalConfigurationFormComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Failed to delete configuration transaction',
-                    detail: 'Failed to delete configuration transaction: ' + msg,
+                    summary: $localize`:@@kea-global.delete-transaction-failed:Failed to delete configuration transaction`,
+                    detail: $localize`:@@kea-global.delete-transaction-failed-detail:Failed to delete configuration transaction: ${msg}`,
                     life: 10000,
                 })
             })
@@ -215,8 +215,8 @@ export class KeaGlobalConfigurationFormComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot create new transaction',
-                    detail: `Failed to update global Kea parameters: ` + msg,
+                    summary: $localize`:@@kea-global.transaction-create-failed:Cannot create new transaction`,
+                    detail: $localize`:@@kea-global.parameters-update-failed:Failed to update global Kea parameters: ${msg}`,
                     life: 10000,
                 })
                 this.initError = msg
