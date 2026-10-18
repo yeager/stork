@@ -1,6 +1,6 @@
 @if (!form.initError) {
     <form [formGroup]="formGroup" class="host-form">
-        <p-fieldset legend="Form Settings">
+        <p-fieldset i18n-legend="@@host.form.settings" legend="Form Settings">
             <div class="flex flex-column">
                 <div class="flex align-items-center">
                     <p-toggleswitch
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </p-fieldset>
-        <p-fieldset legend="Assignments" styleClass="host-form-section">
+        <p-fieldset i18n-legend="@@pool.assignments" legend="Assignments" styleClass="host-form-section">
             <div>
                 <p-floatlabel>
                     <p-multiSelect
@@ -32,7 +32,7 @@
                         (onChange)="onDaemonsChange()"
                     >
                     </p-multiSelect>
-                    <label for="servers-select">DHCP Servers</label>
+                    <label for="servers-select" i18n="@@host.dhcp-servers">DHCP Servers</label>
                 </p-floatlabel>
                 @if (
                     formGroup.get('selectedDaemons').invalid &&
@@ -56,7 +56,7 @@
                             (onChange)="onSelectedSubnetChange()"
                         >
                         </p-select>
-                        <label for="subnets-dropdown">Subnet</label>
+                        <label for="subnets-dropdown" i18n="@@host.subnet">Subnet</label>
                     </p-floatlabel>
                     @if (
                         formGroup.controls['selectedSubnet'].invalid &&
@@ -70,7 +70,7 @@
             }
         </p-fieldset>
 
-        <p-fieldset legend="DHCP Identifier" styleClass="host-form-section">
+        <p-fieldset i18n-legend="@@host.identifier" legend="DHCP Identifier" styleClass="host-form-section">
             <div formGroupName="hostIdGroup" class="grid">
                 <div class="col-6 sm:col-3">
                     <p-select
@@ -137,11 +137,11 @@
             </div>
         </p-fieldset>
 
-        <p-fieldset legend="Host Reservations" styleClass="host-form-section">
+        <p-fieldset i18n-legend="@@host.reservations" legend="Host Reservations" styleClass="host-form-section">
             <div>
                 <p-floatlabel>
                     <input id="hostname-input" pInputText class="max-w-form" formControlName="hostname" />
-                    <label for="hostname-input">Hostname</label>
+                    <label for="hostname-input" i18n="@@machines.hostname">Hostname</label>
                 </p-floatlabel>
                 @if (
                     formGroup.get('hostname').invalid &&

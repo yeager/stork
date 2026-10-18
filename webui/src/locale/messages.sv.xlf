@@ -50,6 +50,10 @@
           <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
           <context context-type="linenumber">29,31</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">19,22</context>
+        </context-group>
       <target state="translated">Tilldelningar</target></trans-unit>
       <trans-unit id="pool.parameters" datatype="html">
         <source>Pool DHCP Parameters</source>
@@ -1187,6 +1191,52 @@
           <context context-type="linenumber">16,19</context>
         </context-group>
       <target state="translated">Värden anges i serverns värddatabas.</target></trans-unit>
+      <trans-unit id="host.form.settings" datatype="html">
+        <source>Form Settings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      <target state="translated">Formulärinställningar</target></trans-unit>
+      <trans-unit id="host.dhcp-servers" datatype="html">
+        <source>DHCP Servers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">35,38</context>
+        </context-group>
+      <target state="translated">DHCP-servrar</target></trans-unit>
+      <trans-unit id="host.subnet" datatype="html">
+        <source>Subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">59,62</context>
+        </context-group>
+      <target state="translated">Delnät</target></trans-unit>
+      <trans-unit id="host.identifier" datatype="html">
+        <source>DHCP Identifier</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+      <target state="translated">DHCP-identifierare</target></trans-unit>
+      <trans-unit id="host.reservations" datatype="html">
+        <source>Host Reservations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">140,143</context>
+        </context-group>
+      <target state="translated">Värdreservationer</target></trans-unit>
+      <trans-unit id="machines.hostname" datatype="html">
+        <source>Hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">144,147</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">156,158</context>
+        </context-group>
+      <target state="translated">Värdnamn</target></trans-unit>
       <trans-unit id="value.invalid" datatype="html">
         <source>Invalid value</source>
         <context-group purpose="location">
@@ -1329,13 +1379,6 @@
           <context context-type="linenumber">113,115</context>
         </context-group>
       <target state="translated">Auktorisera valda</target></trans-unit>
-      <trans-unit id="machines.hostname" datatype="html">
-        <source>Hostname</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
-          <context context-type="linenumber">156,158</context>
-        </context-group>
-      <target state="translated">Värdnamn</target></trans-unit>
       <trans-unit id="machines.daemons" datatype="html">
         <source>Daemons</source>
         <context-group purpose="location">
