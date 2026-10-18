@@ -1190,6 +1190,14 @@
           <context context-type="linenumber">323,325</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">229,231</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">237,239</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
           <context context-type="linenumber">124,126</context>
         </context-group>
@@ -1276,6 +1284,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">453,454</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">284,285</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
@@ -1713,6 +1725,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">59,62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">273,278</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
@@ -2286,6 +2302,14 @@
           <context context-type="linenumber">356,360</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">272,275</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
           <context context-type="linenumber">54,55</context>
         </context-group>
@@ -2318,6 +2342,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
           <context context-type="linenumber">56,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">158,161</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
@@ -2421,6 +2449,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">442,443</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">350,351</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
@@ -2883,6 +2915,202 @@
           <context context-type="linenumber">184,188</context>
         </context-group>
       <target state="translated">Sök efter leaser på Kea DHCP-servrar efter IP-adress, delegerat prefix, MAC-adress, klientidentifierare, DHCPv6 DUID eller värdnamn. Klicka på hjälpknappen bredvid sökformuläret för mer information.</target></trans-unit>
+      <trans-unit id="leases.filter-help-explicit" datatype="html">
+        <source> Leases in the table below can be filtered by an explicitly selected field using text input filters. The currently supported fields for explicit filtering are: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">25,29</context>
+        </context-group>
+      <target state="translated"> Leasar i tabellen nedan kan filtreras efter ett uttryckligen valt fält med textfilter. Följande fält stöds för närvarande: </target></trans-unit>
+      <trans-unit id="leases.filter-help-machine-id" datatype="html">
+        <source>Machine ID - the ID of the machine used by Stork.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      <target state="translated">Maskin-ID är ID:t för maskinen som används av Stork.</target></trans-unit>
+      <trans-unit id="leases.filter-help-daemon" datatype="html">
+        <source> Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's hostname, address, daemon ID, or daemon name. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">31,34</context>
+        </context-group>
+      <target state="translated"> Demon: välj en demon i listrutan eller skriv för att söka efter en demon utifrån maskinens värdnamn, adress, demon-ID eller demonnamn. </target></trans-unit>
+      <trans-unit id="leases.filter-help-subnet-id" datatype="html">
+        <source>Subnet ID - the subnet ID used by Stork.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      <target state="translated">Undernäts-ID är det undernäts-ID som används av Stork.</target></trans-unit>
+      <trans-unit id="leases.filter-help-kea-subnet-id" datatype="html">
+        <source>Kea Subnet ID - the subnet ID assigned to the subnet in the Kea configuration.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      <target state="translated">Kea-undernätets ID är det ID som tilldelas undernätet i Kea-konfigurationen.</target></trans-unit>
+      <trans-unit id="leases.filter-help-state" datatype="html">
+        <source> Lease State - The state of the lease, e.g. valid, declined, expired-reclaimed, released, or registered. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">37,41</context>
+        </context-group>
+      <target state="translated"> Leasestatus: leasens status, till exempel giltig, nekad, utgången och återtagen, frigjord eller registrerad. </target></trans-unit>
+      <trans-unit id="leases.filter-help-text" datatype="html">
+        <source> Leases can also be filtered by entering text in the search box; the table shows all leases matching the filter text. The currently supported fields for filtering are: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">42,46</context>
+        </context-group>
+      <target state="translated"> Leasar kan också filtreras genom att du skriver text i sökrutan. Tabellen visar alla leasar som matchar filtertexten. Följande fält kan för närvarande filtreras: </target></trans-unit>
+      <trans-unit id="leases.filter-help-hostname" datatype="html">
+        <source>Hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      <target state="translated">Värdnamn</target></trans-unit>
+      <trans-unit id="leases.filter-help-hw-address" datatype="html">
+        <source>Hardware Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      <target state="translated">Maskinvaruadress</target></trans-unit>
+      <trans-unit id="leases.filter-help-duid" datatype="html">
+        <source>DUID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      <target state="translated">DUID</target></trans-unit>
+      <trans-unit id="leases.filter-help-client-id" datatype="html">
+        <source>Client ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      <target state="translated">Klient-ID</target></trans-unit>
+      <trans-unit id="leases.filter-help-ip-address" datatype="html">
+        <source>IP Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">50,53</context>
+        </context-group>
+      <target state="translated">IP-adress</target></trans-unit>
+      <trans-unit id="leases.filter-help-identifier" datatype="html">
+        <source> Leases can be filtered by their identifier value, e.g. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />00:01:02:03:04:05<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />; a part of the identifier (e.g. the initial three bytes of a MAC address that denotes OUI, a unique identifier of the vendor, effectively showing all devices produced by the same vendor); or identifier type (e.g. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />hw-address<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> to show all leases issued to a MAC address). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">53,57</context>
+        </context-group>
+      <target state="translated"> Leasar kan filtreras efter identifierarens värde, till exempel <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />00:01:02:03:04:05<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> eller efter en del av identifieraren, till exempel de första tre byten i en MAC-adress som anger OUI, en unik identifierare för tillverkaren och därmed visar alla enheter från samma tillverkare, eller efter identifierartyp, till exempel <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />hw-address<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> för att visa alla leasar som har tilldelats en MAC-adress. </target></trans-unit>
+      <trans-unit id="leases.filter-help-ip-or-hostname" datatype="html">
+        <source> Leases can be also filtered by a full or partial IP address or hostname. For example, all leases in a 192.0.2.0/24 subnet can found by entering <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />192.0.2<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> as the filter text, and all leases to clients with names containing <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />www-primary<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> can be found by entering <x id="START_TAG_SAMP" ctype="x-samp" equiv-text="&lt;samp&gt;" />www-primary<x id="CLOSE_TAG_SAMP" ctype="x-samp" equiv-text="&lt;/samp&gt;" />. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">59,63</context>
+        </context-group>
+      <target state="translated"> Leasar kan också filtreras efter en hel eller delvis IP-adress eller ett värdnamn. Du kan till exempel hitta alla leasar i undernätet 192.0.2.0/24 genom att skriva <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />192.0.2<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> som filtertext. Du kan hitta alla leasar för klienter med namn som innehåller <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />www-primary<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> genom att skriva <x id="START_TAG_SAMP" ctype="x-samp" equiv-text="&lt;samp&gt;" />www-primary<x id="CLOSE_TAG_SAMP" ctype="x-samp" equiv-text="&lt;/samp&gt;" />. </target></trans-unit>
+      <trans-unit id="leases.filter-help-multiple" datatype="html">
+        <source> Leases can be filtered by multiple fields. Currently, all provided filtering conditions are joined using a logical AND. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">65,69</context>
+        </context-group>
+      <target state="translated"> Leasar kan filtreras med flera fält. För närvarande kombineras alla angivna filtervillkor med ett logiskt OCH. </target></trans-unit>
+      <trans-unit id="leases.machine" datatype="html">
+        <source>Machine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">84,86</context>
+        </context-group>
+      <target state="translated">Maskin</target></trans-unit>
+      <trans-unit id="leases.subnet-id" datatype="html">
+        <source>Subnet ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">132,135</context>
+        </context-group>
+      <target state="translated">Undernäts-ID</target></trans-unit>
+      <trans-unit id="leases.lease-state" datatype="html">
+        <source>Lease State</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">185,188</context>
+        </context-group>
+      <target state="translated">Leasestatus</target></trans-unit>
+      <trans-unit id="leases.search" datatype="html">
+        <source>Search IP, identifier, or hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">211,213</context>
+        </context-group>
+      <target state="translated">Sök IP-adress, identifierare eller värdnamn</target></trans-unit>
+      <trans-unit id="leases.ip-address" datatype="html">
+        <source>IP Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">252,254</context>
+        </context-group>
+      <target state="translated">IP-adress</target></trans-unit>
+      <trans-unit id="leases.prefix-length" datatype="html">
+        <source>Prefix Length</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">256,258</context>
+        </context-group>
+      <target state="translated">Prefixlängd</target></trans-unit>
+      <trans-unit id="leases.hw-address" datatype="html">
+        <source>HW Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">260,262</context>
+        </context-group>
+      <target state="translated">Maskinvaruadress</target></trans-unit>
+      <trans-unit id="leases.client-id" datatype="html">
+        <source>Client ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">264,266</context>
+        </context-group>
+      <target state="translated">Klient-ID</target></trans-unit>
+      <trans-unit id="leases.state" datatype="html">
+        <source>State</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">270,271</context>
+        </context-group>
+      <target state="translated">Status</target></trans-unit>
+      <trans-unit id="leases.none-found" datatype="html">
+        <source>No leases found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">279,281</context>
+        </context-group>
+      <target state="translated">Inga leasar hittades.</target></trans-unit>
+      <trans-unit id="leases.clear-filters" datatype="html">
+        <source>Clear filters and try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">281,284</context>
+        </context-group>
+      <target state="translated">Rensa filtren och försök igen.</target></trans-unit>
+      <trans-unit id="leases.hide-details" datatype="html">
+        <source>Hide Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">303,306</context>
+        </context-group>
+      <target state="translated">Dölj detaljer</target></trans-unit>
+      <trans-unit id="leases.show-details" datatype="html">
+        <source>Show Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.html</context>
+          <context context-type="linenumber">313,316</context>
+        </context-group>
+      <target state="translated">Visa detaljer</target></trans-unit>
       <trans-unit id="login.choose.method" datatype="html">
         <source>Choose a Method</source>
         <context-group purpose="location">

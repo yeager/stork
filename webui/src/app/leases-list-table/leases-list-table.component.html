@@ -21,47 +21,47 @@
     <ng-template #caption>
         <app-table-caption [tableElement]="leasesListTable" tableKey="leases-list-table" [wideHelpTip]="true">
             <ng-template #helptip>
-                <p>
+                <p i18n="@@leases.filter-help-explicit">
                     Leases in the table below can be filtered by an explicitly selected field using text input filters.
                     The currently supported fields for explicit filtering are:
                 </p>
                 <ul>
-                    <li>Machine ID - the ID of the machine used by Stork.</li>
-                    <li>
+                    <li i18n="@@leases.filter-help-machine-id">Machine ID - the ID of the machine used by Stork.</li>
+                    <li i18n="@@leases.filter-help-daemon">
                         Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's
                         hostname, address, daemon ID, or daemon name.
                     </li>
-                    <li>Subnet ID - the subnet ID used by Stork.</li>
-                    <li>Kea Subnet ID - the subnet ID assigned to the subnet in the Kea configuration.</li>
-                    <li>
+                    <li i18n="@@leases.filter-help-subnet-id">Subnet ID - the subnet ID used by Stork.</li>
+                    <li i18n="@@leases.filter-help-kea-subnet-id">Kea Subnet ID - the subnet ID assigned to the subnet in the Kea configuration.</li>
+                    <li i18n="@@leases.filter-help-state">
                         Lease State - The state of the lease, e.g. valid, declined, expired-reclaimed, released, or
                         registered.
                     </li>
                 </ul>
-                <p>
+                <p i18n="@@leases.filter-help-text">
                     Leases can also be filtered by entering text in the search box; the table shows all leases matching
                     the filter text. The currently supported fields for filtering are:
                 </p>
                 <ul>
-                    <li>Hostname</li>
-                    <li>Hardware Address</li>
-                    <li>DUID</li>
-                    <li>Client ID</li>
-                    <li>IP Address</li>
+                    <li i18n="@@leases.filter-help-hostname">Hostname</li>
+                    <li i18n="@@leases.filter-help-hw-address">Hardware Address</li>
+                    <li i18n="@@leases.filter-help-duid">DUID</li>
+                    <li i18n="@@leases.filter-help-client-id">Client ID</li>
+                    <li i18n="@@leases.filter-help-ip-address">IP Address</li>
                 </ul>
-                <p>
+                <p i18n="@@leases.filter-help-identifier">
                     Leases can be filtered by their identifier value, e.g. <b>00:01:02:03:04:05</b>; a part of the
                     identifier (e.g. the initial three bytes of a MAC address that denotes OUI, a unique identifier of
                     the vendor, effectively showing all devices produced by the same vendor); or identifier type (e.g.
                     <b>hw-address</b> to show all leases issued to a MAC address).
                 </p>
-                <p>
+                <p i18n="@@leases.filter-help-ip-or-hostname">
                     Leases can be also filtered by a full or partial IP address or hostname. For example, all leases in
                     a 192.0.2.0/24 subnet can found by entering
                     <b>192.0.2</b> as the filter text, and all leases to clients with names containing
                     <b>www-primary</b> can be found by entering <samp>www-primary</samp>.
                 </p>
-                <p>
+                <p i18n="@@leases.filter-help-multiple">
                     Leases can be filtered by multiple fields. Currently, all provided filtering conditions are joined
                     using a logical AND.
                 </p>
@@ -81,7 +81,7 @@
                                     styleClass="w-12rem"
                                     (onChange)="filterTable($event.value, filterMetadata)"
                                 ></p-select>
-                                <label for="machine-id">Machine</label>
+                                <label for="machine-id" i18n="@@leases.machine">Machine</label>
                             </p-floatlabel>
                             <p-button
                                 icon="pi pi-filter-slash"
@@ -102,6 +102,7 @@
                                 (daemonIDChange)="filterTable($event, filterMetadata)"
                                 [daemonNames]="['dhcp4', 'dhcp6']"
                                 label="Daemon"
+                                i18n-label="@@hosts.daemon"
                                 (errorOccurred)="onAutocompleteError($event)"
                             />
                             <p-button
@@ -128,7 +129,7 @@
                                     [ngModel]="value"
                                     class="max-w-8rem"
                                 ></p-inputNumber>
-                                <label for="subnet-id">Subnet ID</label>
+                                <label for="subnet-id" i18n="@@leases.subnet-id">Subnet ID</label>
                             </p-floatlabel>
                             <p-button
                                 icon="pi pi-filter-slash"
@@ -154,7 +155,7 @@
                                     [ngModel]="value"
                                     class="max-w-8rem"
                                 ></p-inputNumber>
-                                <label for="local-subnet-id">Kea Subnet ID</label>
+                                <label for="local-subnet-id" i18n="@@hosts.kea-subnet-id">Kea Subnet ID</label>
                             </p-floatlabel>
                             <p-button
                                 icon="pi pi-filter-slash"
@@ -181,7 +182,7 @@
                                     [ngModel]="value"
                                     class="w-10rem"
                                 ></p-select>
-                                <label for="state">Lease State</label>
+                                <label for="state" i18n="@@leases.lease-state">Lease State</label>
                             </p-floatlabel>
                             <p-button
                                 icon="pi pi-filter-slash"
@@ -208,6 +209,7 @@
                                     (input)="filterTable($event.target.value, filterMetadata)"
                                     [ngModel]="value"
                                     placeholder="Search IP, identifier, or hostname"
+                                    i18n-placeholder="@@leases.search"
                                 />
                             </p-iconfield>
                             <p-button
@@ -225,6 +227,7 @@
             <ng-template #buttons>
                 <p-button
                     label="Refresh List"
+                    i18n-label="@@daemons.refresh-list"
                     icon="pi pi-refresh"
                     (onClick)="loadData(leasesListTable.createLazyLoadMetadata())"
                 ></p-button>
@@ -232,6 +235,7 @@
             <ng-template #splitbutton>
                 <p-splitbutton
                     label="Refresh List"
+                    i18n-label="@@daemons.refresh-list"
                     icon="pi pi-refresh"
                     (onClick)="loadData(leasesListTable.createLazyLoadMetadata())"
                     [model]="toolbarButtons"
@@ -245,38 +249,39 @@
             <th style="width: 3rem"><!-- empty header column for row expand/collapse button --></th>
             <th style="width: 20%" [pSortableColumn]="LeaseListSortField.IpAddress">
                 <div class="flex gap-1 white-space-nowrap">
-                    IP Address<p-sortIcon [field]="LeaseListSortField.IpAddress" />
+                    <ng-container i18n="@@leases.ip-address">IP Address</ng-container><p-sortIcon [field]="LeaseListSortField.IpAddress" />
                 </div>
             </th>
             <th style="width: 8%" [pSortableColumn]="LeaseListSortField.PrefixLength">
-                <div class="flex gap-1">Prefix Length<p-sortIcon [field]="LeaseListSortField.PrefixLength" /></div>
+                <div class="flex gap-1"><ng-container i18n="@@leases.prefix-length">Prefix Length</ng-container><p-sortIcon [field]="LeaseListSortField.PrefixLength" /></div>
             </th>
             <th style="width: 14%" [pSortableColumn]="LeaseListSortField.HwAddress">
                 <div class="flex gap-1 white-space-nowrap">
-                    HW Address<p-sortIcon [field]="LeaseListSortField.HwAddress" />
+                    <ng-container i18n="@@leases.hw-address">HW Address</ng-container><p-sortIcon [field]="LeaseListSortField.HwAddress" />
                 </div>
             </th>
             <th style="width: 14%" [pSortableColumn]="LeaseListSortField.ClientId">
-                <div class="flex gap-1">Client ID<p-sortIcon [field]="LeaseListSortField.ClientId" /></div>
+                <div class="flex gap-1"><ng-container i18n="@@leases.client-id">Client ID</ng-container><p-sortIcon [field]="LeaseListSortField.ClientId" /></div>
             </th>
             <th style="width: 14%" [pSortableColumn]="LeaseListSortField.Duid">
                 <div class="flex gap-1 white-space-nowrap">DUID<p-sortIcon [field]="LeaseListSortField.Duid" /></div>
             </th>
             <th style="width: 10%" [pSortableColumn]="LeaseListSortField.State">
-                <div class="flex gap-1">State<p-sortIcon [field]="LeaseListSortField.State" /></div>
+                <div class="flex gap-1"><ng-container i18n="@@leases.state">State</ng-container><p-sortIcon [field]="LeaseListSortField.State" /></div>
             </th>
-            <th style="width: 8%">Daemon</th>
-            <th style="width: 12%">Subnet</th>
+            <th style="width: 8%" i18n="@@hosts.daemon">Daemon</th>
+            <th style="width: 12%" i18n="@@host.subnet">Subnet</th>
         </tr>
     </ng-template>
     <ng-template #emptymessage>
         <tr>
             <td colspan="9">
-                No leases found.
+                <ng-container i18n="@@leases.none-found">No leases found.</ng-container>
                 @if (tableHasFilter(leasesListTable)) {
-                    Clear filters and try again.
+                    <ng-container i18n="@@leases.clear-filters">Clear filters and try again.</ng-container>
                     <p-button
                         label="Clear"
+                        i18n-label="@@common.clear"
                         [outlined]="true"
                         icon="pi pi-filter-slash"
                         (click)="clearTableFiltering()"
@@ -296,6 +301,7 @@
                         rounded="true"
                         [pRowToggler]="l"
                         aria-label="Hide Details"
+                        i18n-aria-label="@@leases.hide-details"
                     />
                 } @else {
                     <p-button
@@ -305,6 +311,7 @@
                         rounded="true"
                         [pRowToggler]="l"
                         aria-label="Show Details"
+                        i18n-aria-label="@@leases.show-details"
                     />
                 }
             </td>
@@ -340,6 +347,6 @@
         </tr>
     </ng-template>
     <ng-template #paginatorright let-paginatorState>
-        Total: {{ paginatorState.totalRecords | pluralize: 'lease' }}
+        <ng-container i18n="@@hosts.total">Total:</ng-container> {{ paginatorState.totalRecords | pluralize: 'lease' }}
     </ng-template>
 </p-table>
