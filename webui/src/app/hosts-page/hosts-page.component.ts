@@ -49,7 +49,7 @@ export class HostsPageComponent {
      */
     hostsTable = viewChild<HostsTableComponent>('hostsTableComponent')
 
-    breadcrumbs = [{ label: $localize`:@@menu.dhcp:DHCP` }, { label: $localize`:@@menu.host-reservations:Host reservations` }]
+    breadcrumbs = [{ label: $localize`:@@menu.dhcp:DHCP` }, { label: $localize`:@@menu.host-reservations:Host Reservations` }]
 
     /**
      * Function used to asynchronously provide the host reservation based on given host ID.

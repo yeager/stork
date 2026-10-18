@@ -12,19 +12,19 @@ export function stateToString(state: number): string {
     switch (state) {
         // For compatibility with the previous implementation.
         case null:
-            return 'Valid'
+            return $localize`:@@lease-state.valid:Valid`
         case 0:
-            return 'Valid'
+            return $localize`:@@lease-state.valid:Valid`
         case 1:
-            return 'Declined'
+            return $localize`:@@lease-state.declined:Declined`
         case 2:
-            return 'Expired/Reclaimed'
+            return $localize`:@@lease-state.expired-reclaimed:Expired/Reclaimed`
         case 3:
-            return 'Released'
+            return $localize`:@@lease-state.released:Released`
         case 4:
-            return 'Registered'
+            return $localize`:@@lease-state.registered:Registered`
         default:
-            return '(invalid state)'
+            return $localize`:@@lease-state.invalid:(invalid state)`
     }
 }
 
@@ -40,9 +40,9 @@ export interface LeaseState {
  * List of all valid lease states.
  */
 export let leaseStates: LeaseState[] = [
-    { name: 'Valid', code: 0 },
-    { name: 'Declined', code: 1 },
-    { name: 'Expired-Reclaimed', code: 2 },
-    { name: 'Released', code: 3 },
-    { name: 'Registered', code: 4 },
+    { name: $localize`:@@lease-state.valid:Valid`, code: 0 },
+    { name: $localize`:@@lease-state.declined:Declined`, code: 1 },
+    { name: $localize`:@@lease-state.expired-reclaimed:Expired/Reclaimed`, code: 2 },
+    { name: $localize`:@@lease-state.released:Released`, code: 3 },
+    { name: $localize`:@@lease-state.registered:Registered`, code: 4 },
 ]
