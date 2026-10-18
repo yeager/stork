@@ -5382,6 +5382,13 @@
           <context context-type="linenumber">538,539</context>
         </context-group>
       <target state="translated">Loggmeddelande</target></trans-unit>
+      <trans-unit id="zone-viewer.cached-from" datatype="html">
+        <source>Cached from DNS server on</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      <target state="translated">Hämtad från DNS-servern den</target></trans-unit>
       <trans-unit id="zone-viewer.cached-contents" datatype="html">
         <source>Cached zone contents</source>
         <context-group purpose="location">

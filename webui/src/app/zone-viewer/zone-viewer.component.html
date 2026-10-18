@@ -12,7 +12,7 @@
 <div class="text-base flex flex-column">
     <div class="flex align-items-center justify-content-between">
         <div class="text-base text-gray-500">
-            Cached from DNS server on
+            <span i18n="@@zone-viewer.cached-from">Cached from DNS server on</span>
             <span class="font-bold text-normal mr-2">{{ zoneTransferAt | localtime | placeholder: 'never' }}</span>
             <app-help-tip subject="Cached zone contents" i18n-subject="@@zone-viewer.cached-contents">
                 <p i18n="@@zone-viewer.cached-contents-help">
