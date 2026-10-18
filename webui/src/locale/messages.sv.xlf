@@ -106,6 +106,10 @@
           <context context-type="linenumber">52</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
           <context context-type="linenumber">45</context>
         </context-group>
@@ -3977,6 +3981,55 @@
           <context context-type="linenumber">184,188</context>
         </context-group>
       <target state="translated">Sök efter leaser på Kea DHCP-servrar efter IP-adress, delegerat prefix, MAC-adress, klientidentifierare, DHCPv6 DUID eller värdnamn. Klicka på hjälpknappen bredvid sökformuläret för mer information.</target></trans-unit>
+      <trans-unit id="menu.lease-search" datatype="html">
+        <source>Lease Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      <target state="translated">Leasesökning</target></trans-unit>
+      <trans-unit id="lease-search.failed" datatype="html">
+        <source>Error searching leases</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.ts</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      <target state="translated">Fel vid sökning efter leaser</target></trans-unit>
+      <trans-unit id="lease-search.failed-detail" datatype="html">
+        <source>Error searching leases for <x id="search text" equiv-text="searchText" /> : <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.ts</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+      <target state="translated">Fel vid sökning efter leaser för <x id="search text" equiv-text="searchText" /> : <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="lease-search.ipv4-address" datatype="html">
+        <source>IPv4 address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.ts</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+      <target state="translated">IPv4-adress</target></trans-unit>
+      <trans-unit id="lease-search.ipv6-address" datatype="html">
+        <source>IPv6 address (IA_NA)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.ts</context>
+          <context context-type="linenumber">276</context>
+        </context-group>
+      <target state="translated">IPv6-adress (IA_NA)</target></trans-unit>
+      <trans-unit id="lease-search.ipv6-prefix" datatype="html">
+        <source>IPv6 prefix (IA_PD)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.ts</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+      <target state="translated">IPv6-prefix (IA_PD)</target></trans-unit>
+      <trans-unit id="common.unknown-title" datatype="html">
+        <source>Unknown</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.ts</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+      <target state="translated">Okänd</target></trans-unit>
       <trans-unit id="lease-state.valid" datatype="html">
         <source>Valid</source>
         <context-group purpose="location">

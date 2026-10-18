@@ -83,7 +83,10 @@ export class LeaseSearchPageComponent implements OnInit {
 
     public Status = LeasesSearchStatus
 
-    breadcrumbs = [{ label: 'DHCP' }, { label: 'Lease Search' }]
+    breadcrumbs = [
+        { label: $localize`:@@menu.dhcp:DHCP` },
+        { label: $localize`:@@menu.lease-search:Lease Search` },
+    ]
 
     /**
      * Leases search status indicator.
@@ -219,8 +222,8 @@ export class LeaseSearchPageComponent implements OnInit {
                     const msg = getErrorMessage(err)
                     this.msgService.add({
                         severity: 'error',
-                        summary: 'Error searching leases',
-                        detail: 'Error searching leases for ' + searchText + ' : ' + msg,
+                        summary: $localize`:@@lease-search.failed:Error searching leases`,
+                        detail: $localize`:@@lease-search.failed-detail:Error searching leases for ${searchText}:search text: : ${msg}:error message:`,
                         life: 10000,
                     })
 
@@ -266,17 +269,17 @@ export class LeaseSearchPageComponent implements OnInit {
      */
     leaseTypeAsText(leaseType) {
         if (!leaseType) {
-            return 'IPv4 address'
+            return $localize`:@@lease-search.ipv4-address:IPv4 address`
         }
         switch (leaseType) {
             case 'IA_NA':
-                return 'IPv6 address (IA_NA)'
+                return $localize`:@@lease-search.ipv6-address:IPv6 address (IA_NA)`
             case 'IA_PD':
-                return 'IPv6 prefix (IA_PD)'
+                return $localize`:@@lease-search.ipv6-prefix:IPv6 prefix (IA_PD)`
             default:
                 break
         }
-        return 'Unknown'
+        return $localize`:@@common.unknown-title:Unknown`
     }
 
     /**
