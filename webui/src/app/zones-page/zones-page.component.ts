@@ -340,8 +340,8 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                 if (this.fetchInProgress()) {
                     this.messageService.add({
                         severity: 'success',
-                        summary: 'Zones fetch complete',
-                        detail: 'Zones fetched successfully!',
+                        summary: $localize`:@@zones.fetch-complete:Zones fetch complete`,
+                        detail: $localize`:@@zones.fetch-complete-detail:Zones fetched successfully!`,
                         life: 5000,
                     })
                     this._resetZoneInventoryStateMap()
@@ -354,8 +354,8 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
             const msg = getErrorMessage(err)
             this.messageService.add({
                 severity: 'error',
-                summary: 'Error sending request',
-                detail: 'Sending GET /dns-management/zones-fetch request failed: ' + msg,
+                summary: $localize`:@@zones.error.send-request:Error sending request`,
+                detail: $localize`:@@zones.error.fetch-status:Sending GET /dns-management/zones-fetch request failed: ${msg}:error message:`,
                 life: 10000,
             })
             return of(EMPTY) // In case of any GET /dns-management/zones-fetch error, just display Error feedback in UI and complete this observable.
@@ -539,8 +539,8 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                         this.zonesFetchStatesTotal = 0
                         this.messageService.add({
                             severity: 'info',
-                            summary: 'Zones not fetched',
-                            detail: 'Zones fetch status not available because zones have not been fetched yet.',
+                            summary: $localize`:@@zones.not-fetched:Zones not fetched`,
+                            detail: $localize`:@@zones.not-fetched-detail:Zones fetch status not available because zones have not been fetched yet.`,
                             life: 5000,
                         })
                         break
@@ -568,8 +568,8 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                             this.fetchDaemonsCompletedCount = this.fetchTotalDaemonsCount
                             this.messageService.add({
                                 severity: 'success',
-                                summary: 'Zones fetch complete',
-                                detail: 'Zones fetched successfully!',
+                                summary: $localize`:@@zones.fetch-complete:Zones fetch complete`,
+                                detail: $localize`:@@zones.fetch-complete-detail:Zones fetched successfully!`,
                                 life: 5000,
                             })
                             this.onLazyLoadZones(this.zonesTable?.createLazyLoadMetadata())
@@ -580,9 +580,9 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                         this.fetchInProgress.set(false)
                         this.messageService.add({
                             severity: 'info',
-                            summary: 'Unexpected response',
+                            summary: $localize`:@@zones.unexpected-response:Unexpected response`,
                             detail:
-                                'Unexpected response while fetching zones - received HTTP status code ' + resp.status,
+                                $localize`:@@zones.unexpected-response-detail:Unexpected response while fetching zones: received HTTP status code ${resp.status}:status code:.`,
                             life: 5000,
                         })
                 }
@@ -591,8 +591,8 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Error sending request',
-                    detail: 'Fetching zones failed: ' + msg,
+                    summary: $localize`:@@zones.error.send-request:Error sending request`,
+                    detail: $localize`:@@zones.fetch-failed:Fetching zones failed: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -609,18 +609,11 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
             this._sendPutZonesFetch()
         } else {
             this.confirmationService.confirm({
-                message:
-                    'This operation instructs the Stork server to fetch the zones from all Stork agents' +
-                    ' and update them in the Stork database. Stork agents cache zones from their local DNS' +
-                    ' servers. By default, this operation will fetch the zones cached by the Stork agents.' +
-                    ' If cached zones are outdated after new zones were added to the DNS configurations,' +
-                    ' the user can select the checkbox below to force the agents to refresh the cached zones' +
-                    ' from the DNS servers. Fetching the zones may take up to several minutes, depending on the' +
-                    ' number of servers and zones. The zone list will be replaced with a new list.',
-                header: 'Confirm Fetching Zones!',
+                message: $localize`:@@zones.confirm-fetch-help:This operation instructs the Stork server to fetch the zones from all Stork agents and update them in the Stork database. Stork agents cache zones from their local DNS servers. By default, this operation will fetch the zones cached by the Stork agents. If cached zones are outdated after new zones were added to the DNS configurations, the user can select the checkbox below to force the agents to refresh the cached zones from the DNS servers. Fetching the zones may take up to several minutes, depending on the number of servers and zones. The zone list will be replaced with a new list.`,
+                header: $localize`:@@zones.confirm-fetch:Confirm Fetching Zones!`,
                 icon: 'pi pi-exclamation-triangle',
-                acceptLabel: 'Continue',
-                rejectLabel: 'Cancel',
+                acceptLabel: $localize`:@@common.continue:Continue`,
+                rejectLabel: $localize`:@@common.cancel:Cancel`,
                 rejectButtonProps: { icon: 'pi pi-times' },
                 acceptButtonProps: {
                     icon: 'pi pi-check',
@@ -672,8 +665,8 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                 this._storeZoneFetchSent(true)
                 this.messageService.add({
                     severity: 'success',
-                    summary: 'Request sent',
-                    detail: 'Fetching zones started successfully.',
+                    summary: $localize`:@@zones.request-sent:Request sent`,
+                    detail: $localize`:@@zones.request-sent-detail:Fetching zones started successfully.`,
                     life: 5000,
                 })
             })
@@ -681,8 +674,8 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Error sending request',
-                    detail: 'Failed to start fetching zones: ' + msg,
+                    summary: $localize`:@@zones.error.send-request:Error sending request`,
+                    detail: $localize`:@@zones.start-failed:Failed to start fetching zones: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -700,7 +693,7 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
      * @return error message
      */
     getStateErrorMessage(err: string) {
-        return `Error when communicating with a zone inventory on an agent: ${err}.`
+        return $localize`:@@zones.agent-communication-error:Error when communicating with a zone inventory on an agent: ${err}:error message:.`
     }
 
     /**
@@ -760,8 +753,8 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Error retrieving zones',
-                    detail: 'Retrieving zones information failed: ' + msg,
+                    summary: $localize`:@@zones.error.retrieve:Error retrieving zones`,
+                    detail: $localize`:@@zones.error.retrieve-detail:Retrieving zones information failed: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -998,7 +991,7 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
                 icon: 'pi pi-info-circle',
             },
             {
-                label: 'Fetch Zones',
+                label: $localize`:@@zones.fetch-zones:Fetch Zones`,
                 command: () => this.sendPutZonesFetch(),
                 icon: 'pi pi-download',
                 disabled: disableFetchZones,
@@ -1014,7 +1007,7 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
     onAutocompleteError(message: string) {
         this.messageService.add({
             severity: 'error',
-            summary: 'Cannot get daemons directory',
+            summary: $localize`:@@zones.error.daemon-directory:Cannot get daemons directory`,
             detail: message,
             life: 10000,
         })
