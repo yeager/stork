@@ -147,23 +147,23 @@
                                     <div class="col-12 sm:col-3 pb-0 font-medium">
                                         <div class="flex align-items-center gap-1">
                                             <span i18n>Server Tag</span>
-                                            <app-help-tip subject="server tag">
-                                                <p>
+                                            <app-help-tip subject="server tag" i18n-subject="@@kea.server-tag-help-subject">
+                                                <p i18n="@@kea.server-tag-help-intro">
                                                     The server tag is an arbitrary string assigned by the Kea
                                                     administrator. If it is unassigned or empty, the effective server
                                                     tag is <em>all</em>.
                                                 </p>
-                                                <p>
+                                                <p i18n="@@kea.server-tag-help-shared">
                                                     The same server tag can be assigned to one or multiple Kea servers.
                                                     Configuration elements associated with a shared server tag are
                                                     applied to all servers that use this tag.
                                                 </p>
-                                                <p>
+                                                <p i18n="@@kea.server-tag-help-all">
                                                     Configuration elements associated with the
                                                     <strong>all</strong> server tag apply to all servers, including
                                                     servers that also have an explicit server tag.
                                                 </p>
-                                                <p>
+                                                <p i18n="@@kea.server-tag-help-only-all">
                                                     If a server tag is <strong>all</strong>, only configuration elements
                                                     with the <strong>all</strong> server tag apply to that server.
                                                 </p>

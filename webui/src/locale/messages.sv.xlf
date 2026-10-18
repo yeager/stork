@@ -2967,6 +2967,41 @@
           <context context-type="linenumber">149,150</context>
         </context-group>
       <target state="translated">Servertagg</target></trans-unit>
+      <trans-unit id="kea.server-tag-help-subject" datatype="html">
+        <source>server tag</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">150,151</context>
+        </context-group>
+      <target state="translated">servertagg</target></trans-unit>
+      <trans-unit id="kea.server-tag-help-intro" datatype="html">
+        <source> The server tag is an arbitrary string assigned by the Kea administrator. If it is unassigned or empty, the effective server tag is <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />all<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" />. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">152,155</context>
+        </context-group>
+      <target state="translated"> En servertagg är en godtycklig sträng som Kea-administratören tilldelar. Om den saknas eller är tom används den faktiska servertaggen <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />all<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" />. </target></trans-unit>
+      <trans-unit id="kea.server-tag-help-shared" datatype="html">
+        <source> The same server tag can be assigned to one or multiple Kea servers. Configuration elements associated with a shared server tag are applied to all servers that use this tag. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">157,159</context>
+        </context-group>
+      <target state="translated"> Samma servertagg kan tilldelas en eller flera Kea-servrar. Konfigurationselement som är kopplade till en delad servertagg tillämpas på alla servrar som använder taggen. </target></trans-unit>
+      <trans-unit id="kea.server-tag-help-all" datatype="html">
+        <source> Configuration elements associated with the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />all<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> server tag apply to all servers, including servers that also have an explicit server tag. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">162,164</context>
+        </context-group>
+      <target state="translated"> Konfigurationselement som är kopplade till servertaggen <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />all<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> tillämpas på alla servrar, även de som också har en uttrycklig servertagg. </target></trans-unit>
+      <trans-unit id="kea.server-tag-help-only-all" datatype="html">
+        <source> If a server tag is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />all<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />, only configuration elements with the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />all<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> server tag apply to that server. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">167,169</context>
+        </context-group>
+      <target state="translated"> Om en servertagg är <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />all<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> tillämpas bara konfigurationselement med servertaggen <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />all<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> på den servern. </target></trans-unit>
       <trans-unit id="7751775482396341913" datatype="html">
         <source>Hooks</source>
         <context-group purpose="location">
