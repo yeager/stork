@@ -111,7 +111,7 @@ export class VersionStatusComponent implements OnInit, OnDestroy {
             case 'pdns':
                 return 'PowerDNS'
             case 'stork':
-                return 'Stork agent'
+                return $localize`:@@version-status.stork-agent:Stork agent`
             case 'kea':
                 return 'Kea'
             default:
