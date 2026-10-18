@@ -5,15 +5,15 @@
                 <div class="max-w-50rem">
                     <p-panel>
                         <ng-template #header>
-                            <span class="font-semibold text-3xl">Welcome to Stork!</span>
+                            <span class="font-semibold text-3xl" i18n="@@dashboard.welcome">Welcome to Stork!</span>
                         </ng-template>
 
-                        <p class="pb-3">
+                        <p class="pb-3" i18n="@@dashboard.welcome.description">
                             Stork is a monitoring solution for <em>ISC Kea DHCP</em> and <em>ISC BIND 9</em>. It also
                             integrates with the third-party <em>PowerDNS</em> server.
                         </p>
 
-                        <p class="pb-3">
+                        <p class="pb-3" i18n="@@dashboard.documentation.description">
                             The
                             <a target="_blank" routerLink="/assets/arm/index.html">
                                 Stork documentation
@@ -22,14 +22,14 @@
                             describes how to configure and use Stork.
                         </p>
 
-                        <p class="pb-3">
+                        <p class="pb-3" i18n="@@dashboard.no.machines.description">
                             Currently, no machines are specified for monitoring in Stork. To add a new machine, visit
                             the
                             <a routerLink="/machines/all" [queryParams]="{ authorized: 'false' }">Machines page</a>
                             (under the Services menu in the top bar).
                         </p>
 
-                        <p>
+                        <p i18n="@@dashboard.status.get.description">
                             Stork uses the "status-get" command to collect Kea status information. This command is only
                             available in Kea 1.6.3 and later, so Stork cannot fully interact with older Kea versions.
                         </p>
@@ -57,7 +57,7 @@
                         </ng-template>
                         <ng-template #header>
                             <div class="flex align-items-center">
-                                <span class="mr-4 text-3xl font-semibold">DHCP Dashboard</span>
+                                <span class="mr-4 text-3xl font-semibold" i18n="@@dashboard.dhcp">DHCP Dashboard</span>
                                 <p-button
                                     id="refresh-dhcp-button"
                                     icon="pi pi-refresh"
