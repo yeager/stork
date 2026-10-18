@@ -74,7 +74,7 @@
                 } @else if (isNeverFetchedDaemon) {
                     <p-message icon="pi pi-exclamation-triangle" severity="warn">
                         <div>
-                            <p>
+                            <p i18n="@@kea.never-monitored-help">
                                 This daemon is currently not monitored by Stork. The daemon has not been active since
                                 being added to the Stork server. This daemon appears in the list because its
                                 configuration was detected in the Kea Control Agent's configuration file.
@@ -111,6 +111,7 @@
                         severity="warn"
                         text="This daemon is currently not monitored by Stork.
                             The daemon was manually disabled."
+                        i18n-text="@@kea.manually-disabled"
                     >
                     </p-message>
                 }

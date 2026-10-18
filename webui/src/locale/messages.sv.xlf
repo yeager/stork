@@ -2882,39 +2882,55 @@
           <context context-type="linenumber">73,74</context>
         </context-group>
       <target state="translated">Det finns ett kommunikationsproblem med demonen.</target></trans-unit>
+      <trans-unit id="kea.never-monitored-help" datatype="html">
+        <source> This daemon is currently not monitored by Stork. The daemon has not been active since being added to the Stork server. This daemon appears in the list because its configuration was detected in the Kea Control Agent's configuration file. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">78,81</context>
+        </context-group>
+      <target state="translated"> Den här daemonen övervakas för närvarande inte av Stork. Den har inte varit aktiv sedan den lades till på Storkservern. Den visas i listan eftersom dess konfiguration upptäcktes i Kea Control Agents konfigurationsfil. </target></trans-unit>
+      <trans-unit id="kea.manually-disabled" datatype="html">
+        <source>This daemon is currently not monitored by Stork.
+                            The daemon was manually disabled.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">112,116</context>
+        </context-group>
+      <target state="translated">Den här daemonen övervakas för närvarande inte av Stork.
+                            Daemonen har inaktiverats manuellt.</target></trans-unit>
       <trans-unit id="2614607010577950577" datatype="html">
         <source>Overview</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">123,125</context>
+          <context context-type="linenumber">124,126</context>
         </context-group>
       <target state="translated">Översikt</target></trans-unit>
       <trans-unit id="6946886633934481528" datatype="html">
         <source>Daemon Information</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">126,128</context>
+          <context context-type="linenumber">127,129</context>
         </context-group>
       <target state="translated">Demoninformation</target></trans-unit>
       <trans-unit id="2724055831234181057" datatype="html">
         <source>Version</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">128,130</context>
+          <context context-type="linenumber">129,131</context>
         </context-group>
       <target state="translated">Version</target></trans-unit>
       <trans-unit id="4840578682258337662" datatype="html">
         <source>Version Ext</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">135,136</context>
+          <context context-type="linenumber">136,137</context>
         </context-group>
       <target state="translated">Utökad version</target></trans-unit>
       <trans-unit id="1929039531311944328" datatype="html">
         <source>Uptime</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">139,140</context>
+          <context context-type="linenumber">140,141</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
@@ -2925,119 +2941,119 @@
         <source>Last Reloaded At</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">141,143</context>
+          <context context-type="linenumber">142,144</context>
         </context-group>
       <target state="translated">Senast omladdad</target></trans-unit>
       <trans-unit id="4884593790934938824" datatype="html">
         <source>Server Tag</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">148,149</context>
+          <context context-type="linenumber">149,150</context>
         </context-group>
       <target state="translated">Servertagg</target></trans-unit>
       <trans-unit id="7751775482396341913" datatype="html">
         <source>Hooks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">181,182</context>
+          <context context-type="linenumber">182,183</context>
         </context-group>
       <target state="translated">Krokar</target></trans-unit>
       <trans-unit id="kea.copy-hook-path" datatype="html">
         <source>Click to copy the hook path to the clipboard</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">187,189</context>
+          <context context-type="linenumber">188,190</context>
         </context-group>
       <target state="translated">Klicka för att kopiera krokens sökväg till urklipp</target></trans-unit>
       <trans-unit id="kea.no-hooks" datatype="html">
         <source>No hooks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">210,213</context>
+          <context context-type="linenumber">211,214</context>
         </context-group>
       <target state="translated">Inga krokar</target></trans-unit>
       <trans-unit id="8051952797585480987" datatype="html">
         <source>Access points</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">213,214</context>
+          <context context-type="linenumber">214,215</context>
         </context-group>
       <target state="translated">Åtkomstpunkter</target></trans-unit>
       <trans-unit id="5738452796118734506" datatype="html">
         <source>Data Storage</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">224,226</context>
+          <context context-type="linenumber">225,227</context>
         </context-group>
       <target state="translated">Datalagring</target></trans-unit>
       <trans-unit id="4116911651502837995" datatype="html">
         <source>Files</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">229,230</context>
+          <context context-type="linenumber">230,231</context>
         </context-group>
       <target state="translated">Filer</target></trans-unit>
       <trans-unit id="8604782229319404201" datatype="html">
         <source>Database Backends</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">244,245</context>
+          <context context-type="linenumber">245,246</context>
         </context-group>
       <target state="translated">Databasbakändar</target></trans-unit>
       <trans-unit id="kea.with" datatype="html">
         <source>with:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">249,250</context>
+          <context context-type="linenumber">250,251</context>
         </context-group>
       <target state="translated">med:</target></trans-unit>
       <trans-unit id="kea.loggers" datatype="html">
         <source>Loggers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">268,270</context>
+          <context context-type="linenumber">269,271</context>
         </context-group>
       <target state="translated">Loggare</target></trans-unit>
       <trans-unit id="kea.logger" datatype="html">
         <source>Logger</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">272,273</context>
+          <context context-type="linenumber">273,274</context>
         </context-group>
       <target state="translated">Loggare</target></trans-unit>
       <trans-unit id="kea.severity" datatype="html">
         <source>Severity</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">273,274</context>
+          <context context-type="linenumber">274,275</context>
         </context-group>
       <target state="translated">Allvarlighetsgrad</target></trans-unit>
       <trans-unit id="kea.output-location" datatype="html">
         <source>Output Location</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">274,277</context>
+          <context context-type="linenumber">275,278</context>
         </context-group>
       <target state="translated">Utmatningsplats</target></trans-unit>
       <trans-unit id="kea.no-loggers" datatype="html">
         <source>No loggers found</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">297,300</context>
+          <context context-type="linenumber">298,301</context>
         </context-group>
       <target state="translated">Inga loggare hittades</target></trans-unit>
       <trans-unit id="kea.configuration-review-reports" datatype="html">
         <source>Configuration Review Reports</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">305,307</context>
+          <context context-type="linenumber">306,308</context>
         </context-group>
       <target state="translated">Rapporter från konfigurationsgranskningen</target></trans-unit>
       <trans-unit id="events.title" datatype="html">
         <source>Events</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">336,337</context>
+          <context context-type="linenumber">337,338</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pdns-daemon/pdns-daemon.component.html</context>
