@@ -18,7 +18,7 @@ interface CommunicationStatusNodeData {
     /**
      * BIND 9 communication channel name to which the tree node pertains.
      */
-    channelName?: 'Control' | 'Statistics'
+    channelName?: string
     /**
      * Indicates if a daemon is monitored.
      */
@@ -169,7 +169,10 @@ export class CommunicationStatusTreeComponent implements OnInit {
                 channelType === 'rndc' ? daemon.daemonCommErrors : daemon.statsCommErrors
             ),
             data: {
-                channelName: channelType === 'rndc' ? 'Control' : 'Statistics',
+                channelName:
+                    channelType === 'rndc'
+                        ? $localize`:@@communication.control-channel:Control`
+                        : $localize`:@@communication.statistics-channel:Statistics`,
                 attrs: daemon,
                 channelCommErrors: channelType === 'rndc' ? daemon.daemonCommErrors : daemon.statsCommErrors,
                 monitored: !!daemon.monitored,

@@ -684,14 +684,14 @@
           <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
           <context context-type="linenumber">4,7</context>
         </context-group>
-      <target state="translated">Stork-agent på</target></trans-unit>
+      <target state="translated">Stork agent på</target></trans-unit>
       <trans-unit id="communication.agent-tooltip" datatype="html">
         <source>The Stork server reports that there are communication issues with the Stork agent on this machine. It may be a failure of the Stork agent or the machine may be down. Other daemons on this machine may be operational, but communication with them may not be possible due to the issues with the Stork agent.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
           <context context-type="linenumber">15,20</context>
         </context-group>
-      <target state="translated">Stork-servern rapporterar kommunikationsproblem med Stork-agenten på den här maskinen. Det kan bero på ett fel i Stork-agenten eller på att maskinen är nere. Andra demoner på maskinen kan fungera, men det kan vara omöjligt att kommunicera med dem på grund av problemen med Stork-agenten.</target></trans-unit>
+      <target state="translated">Stork-servern rapporterar kommunikationsproblem med Stork agenten på den här maskinen. Det kan bero på ett fel i Stork agenten eller på att maskinen är nere. Andra demoner på maskinen kan fungera, men det kan vara omöjligt att kommunicera med dem på grund av problemen med Stork agenten.</target></trans-unit>
       <trans-unit id="communication.kea-daemon-on" datatype="html">
         <source>Kea daemon on</source>
         <context-group purpose="location">
@@ -705,7 +705,7 @@
           <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
           <context context-type="linenumber">33,37</context>
         </context-group>
-      <target state="translated">Det finns kommunikationsproblem med demonen. Stork-agenten kan svara men kan inte vidarebefordra kommandon till Kea-demonen.</target></trans-unit>
+      <target state="translated">Det finns kommunikationsproblem med demonen. Stork agenten kan svara men kan inte vidarebefordra kommandon till Kea-demonen.</target></trans-unit>
       <trans-unit id="communication.not-monitored" datatype="html">
         <source>This daemon is not monitored.</source>
         <context-group purpose="location">
@@ -749,6 +749,20 @@
           <context context-type="linenumber">85,89</context>
         </context-group>
       <target state="translated">Den namngivna demonen har två kommunikationskanaler för styrning och statistik. Om bara en av kanalerna inte fungerar är demonen fortfarande i drift. Om båda inte fungerar kan det tyda på att demonen är nere.</target></trans-unit>
+      <trans-unit id="communication.control-channel" datatype="html">
+        <source>Control</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.ts</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      <target state="translated">Styrning</target></trans-unit>
+      <trans-unit id="communication.statistics-channel" datatype="html">
+        <source>Statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.ts</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      <target state="translated">Statistik</target></trans-unit>
       <trans-unit id="checkers.page.intro" datatype="html">
         <source>This page displays the configurations of the review checkers.</source>
         <context-group purpose="location">
