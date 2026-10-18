@@ -43,6 +43,9 @@ export class DhcpClientClassSetFormComponent implements OnInit {
      */
     sortedClientClasses: SelectableClientClass[] = []
 
+    /** Localized placeholder used when the floating label is disabled. */
+    readonly clientClassPlaceholder = $localize`:@@client-classes.placeholder:Type or Pick From List`
+
     /**
      * A list of classes to be displayed as suggested options in OptimusUI AutoComplete input component.
      */
