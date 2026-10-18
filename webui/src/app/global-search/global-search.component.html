@@ -2,6 +2,7 @@
     type="text"
     pInputText
     placeholder="Search"
+    i18n-placeholder="@@search.placeholder"
     [(ngModel)]="searchText"
     (keyup)="searchRecords($event)"
     class="w-5rem sm:w-8rem xl:w-auto"
@@ -11,29 +12,29 @@
     <div class="flex align-items-center gap-2 flex-wrap">
         @if (searchResults.subnets.items.length > 0) {
             <div style="margin-right: 20px; min-width: 9em">
-                <h4>Subnets</h4>
+                <h4 i18n="@@search.subnets">Subnets</h4>
                 @for (sn of searchResults.subnets.items; track sn) {
                     <div>[{{ sn.id }}] {{ sn.subnet }}</div>
                 }
                 <div style="margin-top: 10px">
-                    <a routerLink="/dhcp/subnets" [queryParams]="{ text: searchText }">more</a>
+                    <a routerLink="/dhcp/subnets" [queryParams]="{ text: searchText }" i18n="@@search.more">more</a>
                 </div>
             </div>
         }
         @if (searchResults.sharedNetworks.items.length > 0) {
             <div style="margin-right: 20px; min-width: 9em">
-                <h4>Shared Networks</h4>
+                <h4 i18n="@@search.shared.networks">Shared Networks</h4>
                 @for (net of searchResults.sharedNetworks.items; track net) {
                     <div>[{{ net.id }}] {{ net.name }}</div>
                 }
                 <div style="margin-top: 10px">
-                    <a routerLink="/dhcp/shared-networks" [queryParams]="{ text: searchText }">more</a>
+                    <a routerLink="/dhcp/shared-networks" [queryParams]="{ text: searchText }" i18n="@@search.more">more</a>
                 </div>
             </div>
         }
         @if (searchResults.hosts.items.length > 0) {
             <div style="margin-right: 20px; min-width: 17em">
-                <h4>Hosts</h4>
+                <h4 i18n="@@search.hosts">Hosts</h4>
                 @for (h of searchResults.hosts.items; track h) {
                     <div>
                         [{{ h.id }}]
@@ -45,26 +46,26 @@
                     </div>
                 }
                 <div style="margin-top: 10px">
-                    <a routerLink="/dhcp/hosts" [queryParams]="{ text: searchText }">more</a>
+                    <a routerLink="/dhcp/hosts" [queryParams]="{ text: searchText }" i18n="@@search.more">more</a>
                 </div>
             </div>
         }
         @if (searchResults.machines.items.length > 0) {
             <div style="margin-right: 20px; min-width: 9em">
-                <h4>Machines</h4>
+                <h4 i18n="@@search.machines">Machines</h4>
                 @for (m of searchResults.machines.items; track m) {
                     <div>
                         <a routerLink="/machines/{{ m.id }}">[{{ m.id }}] {{ m.hostname || m.address }}</a>
                     </div>
                 }
                 <div style="margin-top: 10px">
-                    <a routerLink="/machines/all" [queryParams]="{ text: searchText }">more</a>
+                    <a routerLink="/machines/all" [queryParams]="{ text: searchText }" i18n="@@search.more">more</a>
                 </div>
             </div>
         }
         @if (searchResults.daemons.items.length > 0) {
             <div id="daemons-div" style="margin-right: 20px; min-width: 9em">
-                <h4>Daemons</h4>
+                <h4 i18n="@@search.daemons">Daemons</h4>
                 @for (d of searchResults.daemons.items; track d) {
                     <div>
                         <app-entity-link entity="daemon" [attrs]="d"></app-entity-link>
@@ -75,18 +76,18 @@
         }
         @if (searchResults.users.items.length > 0) {
             <div style="margin-right: 20px; min-width: 7em">
-                <h4>Users</h4>
+                <h4 i18n="@@search.users">Users</h4>
                 @for (u of searchResults.users.items; track u) {
                     <div>[{{ u.id }}] {{ u.email || u.login }}</div>
                 }
                 <div style="margin-top: 10px">
-                    <a routerLink="/users/" [queryParams]="{ text: searchText }">more</a>
+                    <a routerLink="/users/" [queryParams]="{ text: searchText }" i18n="@@search.more">more</a>
                 </div>
             </div>
         }
         @if (searchResults.groups.items.length > 0) {
             <div style="min-width: 9em">
-                <h4>Groups</h4>
+                <h4 i18n="@@search.groups">Groups</h4>
                 @for (g of searchResults.groups.items; track g) {
                     <div>[{{ g.id }}] {{ g.name }}</div>
                 }
@@ -95,7 +96,7 @@
         }
 
         @if (noResults()) {
-            <div style="margin-right: 20px; min-width: 9em">No results</div>
+            <div style="margin-right: 20px; min-width: 9em" i18n="@@search.no.results">No results</div>
         }
     </div>
 </p-popover>

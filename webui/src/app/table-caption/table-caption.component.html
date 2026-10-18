@@ -12,6 +12,7 @@
         </app-help-tip>
         <p-button
             label="Clear"
+            i18n-label="@@table.clear"
             [severity]="tableHasFilter(tableElement()) ? 'info' : 'secondary'"
             icon="pi pi-filter-slash"
             (click)="clearTableFiltering()"
@@ -32,19 +33,23 @@
                     <i
                         class="pi pi-filter text-primary"
                         pTooltip="Filters applied"
+                        i18n-pTooltip="@@table.filters.applied"
                         role="img"
                         aria-label="Filters applied"
+                        i18n-aria-label="@@table.filters.applied"
                     ></i>
                 } @else {
                     <i
                         class="pi pi-filter-slash text-color-secondary"
                         pTooltip="No filters applied"
+                        i18n-pTooltip="@@table.no.filters.applied"
                         role="img"
                         aria-label="No filters applied"
+                        i18n-aria-label="@@table.no.filters.applied"
                     ></i>
                 }
             }
-            <label for="filtersSwitch" class="font-medium">Filters</label>
+            <label for="filtersSwitch" class="font-medium" i18n="@@table.filters">Filters</label>
             <p-toggleswitch [(ngModel)]="filtersShown" inputId="filtersSwitch" />
         </div>
 
