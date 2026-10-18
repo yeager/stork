@@ -94,19 +94,19 @@ export class EventsPanelComponent implements OnInit, OnChanges, OnDestroy {
 
     levels = [
         {
-            label: 'All',
+            label: $localize`:@@events.all:All`,
             id: 'all-events',
             value: 0,
             icon: 'pi pi-info-circle',
         },
         {
-            label: 'Warnings',
+            label: $localize`:@@events.warnings:Warnings`,
             id: 'warning-events',
             value: 1,
             icon: 'pi pi-exclamation-triangle',
         },
         {
-            label: 'Errors',
+            label: $localize`:@@events.errors:Errors`,
             id: 'error-events',
             value: 2,
             icon: 'pi pi-exclamation-circle',

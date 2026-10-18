@@ -315,6 +315,27 @@
           <context context-type="linenumber">60,62</context>
         </context-group>
       <target state="translated">DHCP-översikt</target></trans-unit>
+      <trans-unit id="events.all" datatype="html">
+        <source>All</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      <target state="translated">Alla</target></trans-unit>
+      <trans-unit id="events.warnings" datatype="html">
+        <source>Warnings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      <target state="translated">Varningar</target></trans-unit>
+      <trans-unit id="events.errors" datatype="html">
+        <source>Errors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      <target state="translated">Fel</target></trans-unit>
       <trans-unit id="error.forbidden" datatype="html">
         <source>Forbidden</source>
         <context-group purpose="location">
