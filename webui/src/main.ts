@@ -6,7 +6,7 @@ import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@a
 import { AuthInterceptor } from './app/auth-interceptor'
 import { BASE_PATH, ApiModule } from './app/backend'
 import { getBaseApiPath } from './app/utils'
-import { ConfirmationService, MessageService } from '@openng/optimus-ui/api'
+import { ConfirmationService, MessageService, Translation } from '@openng/optimus-ui/api'
 import { provideOptimus } from '@openng/optimus-ui/config'
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser'
 import { provideAnimations } from '@angular/platform-browser/animations'
@@ -57,6 +57,59 @@ import { AppComponent } from './app/app.component'
 
 if (environment.production) {
     enableProdMode()
+}
+
+const swedishOptimusTranslation: Translation = {
+    startsWith: 'Börjar med',
+    contains: 'Innehåller',
+    notContains: 'Innehåller inte',
+    endsWith: 'Slutar med',
+    equals: 'Är lika med',
+    notEquals: 'Är inte lika med',
+    noFilter: 'Inget filter',
+    lt: 'Mindre än',
+    lte: 'Mindre än eller lika med',
+    gt: 'Större än',
+    gte: 'Större än eller lika med',
+    is: 'Är',
+    isNot: 'Är inte',
+    before: 'Före',
+    after: 'Efter',
+    dateIs: 'Datumet är',
+    dateIsNot: 'Datumet är inte',
+    dateBefore: 'Datum före',
+    dateAfter: 'Datum efter',
+    clear: 'Rensa',
+    apply: 'Tillämpa',
+    matchAll: 'Matcha alla',
+    matchAny: 'Matcha någon',
+    addRule: 'Lägg till regel',
+    removeRule: 'Ta bort regel',
+    accept: 'Ja',
+    reject: 'Nej',
+    choose: 'Välj',
+    upload: 'Ladda upp',
+    cancel: 'Avbryt',
+    completed: 'Slutförd',
+    pending: 'Väntande',
+    dayNames: ['söndag', 'måndag', 'tisdag', 'onsdag', 'torsdag', 'fredag', 'lördag'],
+    dayNamesShort: ['sön', 'mån', 'tis', 'ons', 'tors', 'fre', 'lör'],
+    dayNamesMin: ['S', 'M', 'T', 'O', 'T', 'F', 'L'],
+    monthNames: ['januari', 'februari', 'mars', 'april', 'maj', 'juni', 'juli', 'augusti', 'september', 'oktober', 'november', 'december'],
+    monthNamesShort: ['jan', 'feb', 'mar', 'apr', 'maj', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'],
+    dateFormat: 'yy-mm-dd',
+    firstDayOfWeek: 1,
+    today: 'I dag',
+    weekHeader: 'v.',
+    weak: 'Svagt',
+    medium: 'Medelstarkt',
+    strong: 'Starkt',
+    passwordPrompt: 'Ange ett lösenord',
+    emptyMessage: 'Inga resultat',
+    emptyFilterMessage: 'Inga resultat',
+    searchMessage: 'Sökresultat är tillgängliga',
+    selectionMessage: '{0} objekt har valts',
+    emptySelectionMessage: 'Inga valda objekt',
 }
 
 bootstrapApplication(AppComponent, {
@@ -123,6 +176,7 @@ bootstrapApplication(AppComponent, {
         MessageService,
         provideHttpClient(withInterceptorsFromDi()),
         provideOptimus({
+            translation: $localize.locale === 'sv' ? swedishOptimusTranslation : undefined,
             theme: {
                 preset: AuraBluePreset,
                 options: {
