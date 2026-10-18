@@ -5268,6 +5268,55 @@
           <context context-type="linenumber">248,250</context>
         </context-group>
       <target state="translated">Zoner</target></trans-unit>
+      <trans-unit id="zones.filter-help-intro" datatype="html">
+        <source> Zones in the table below can be filtered by explicitly selected fields using text, dropdown or multiselect input filters. The currently supported fields for explicit filtering are: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">280,283</context>
+        </context-group>
+      <target state="translated"> Zonerna i tabellen nedan kan filtreras efter uttryckligen valda fält med textfält, listrutor eller flervalsfilter. Följande fält stöds för uttrycklig filtrering: </target></trans-unit>
+      <trans-unit id="zones.filter-help-zone-type" datatype="html">
+        <source> Zone Type - multiple zone types can be specified. If unspecified, all zone types are returned. Next to this filter there is a toggle button that allows to quickly filter out builtin zones. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">285,288</context>
+        </context-group>
+      <target state="translated"> Zontyp: flera zontyper kan anges. Om inget anges returneras alla zontyper. Bredvid filtret finns en växlingsknapp för att snabbt filtrera bort inbyggda zoner. </target></trans-unit>
+      <trans-unit id="zones.filter-help-rpz" datatype="html">
+        <source> RPZ - a response policy zone is a special type of zone in BIND 9 that defines a set of rules that are applied to the response to a DNS query. Stork identifies these special zones and marks them with the RPZ tag on the zone list. The filter allows for selecting whether the response policy zones should be included along with other zones, should be excluded (only non-RPZ are listed), or only the RPZ should be listed (and regular zones excluded). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">290,294</context>
+        </context-group>
+      <target state="translated"> RPZ: en svarspolicyzon är en särskild zontyp i BIND 9 som definierar regler för svaret på en DNS-fråga. Stork identifierar dessa zoner och märker dem med RPZ i zonlistan. Filtret låter dig välja om svarspolicyzoner ska tas med tillsammans med andra zoner, uteslutas så att endast zoner utan RPZ visas eller om endast RPZ-zoner ska visas. </target></trans-unit>
+      <trans-unit id="zones.filter-help-daemon" datatype="html">
+        <source> Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's hostname, address, daemon ID, or daemon name. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">298,301</context>
+        </context-group>
+      <target state="translated"> Demon: välj en demon i listrutan eller skriv för att söka efter en demon utifrån maskinens värdnamn, adress, demon-ID eller demonnamn. </target></trans-unit>
+      <trans-unit id="zones.filter-help-serial" datatype="html">
+        <source>Serial - partial or exact zone serial.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">301,302</context>
+        </context-group>
+      <target state="translated">Serienummer: delvis eller exakt serienummer för zonen.</target></trans-unit>
+      <trans-unit id="zones.filter-help-zone-class" datatype="html">
+        <source>Zone Class - exact zone class.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">302,303</context>
+        </context-group>
+      <target state="translated">Zonklass: exakt zonklass.</target></trans-unit>
+      <trans-unit id="zones.filter-help-daemon-name" datatype="html">
+        <source>Daemon Name - name of the DNS Daemon.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">303,306</context>
+        </context-group>
+      <target state="translated">Demonnamn: namnet på DNS-demonen.</target></trans-unit>
       <trans-unit id="zones.toggle-builtin" datatype="html">
         <source>Toggle builtin zones</source>
         <context-group purpose="location">

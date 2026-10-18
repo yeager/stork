@@ -276,17 +276,17 @@ to the number of configured zones.
             <ng-template #caption>
                 <app-table-caption [tableElement]="zonesTable" [wideHelpTip]="true" tableKey="zones-table">
                     <ng-template #helptip>
-                        <p>
+                        <p i18n="@@zones.filter-help-intro">
                             Zones in the table below can be filtered by explicitly selected fields using text, dropdown
                             or multiselect input filters. The currently supported fields for explicit filtering are:
                         </p>
                         <ul>
-                            <li>
+                            <li i18n="@@zones.filter-help-zone-type">
                                 Zone Type - multiple zone types can be specified. If unspecified, all zone types are
                                 returned. Next to this filter there is a toggle button that allows to quickly filter out
                                 builtin zones.
                             </li>
-                            <li>
+                            <li i18n="@@zones.filter-help-rpz">
                                 RPZ - a response policy zone is a special type of zone in BIND 9 that defines a set of
                                 rules that are applied to the response to a DNS query. Stork identifies these special
                                 zones and marks them with the RPZ tag on the zone list. The filter allows for selecting
@@ -294,13 +294,13 @@ to the number of configured zones.
                                 excluded (only non-RPZ are listed), or only the RPZ should be listed (and regular zones
                                 excluded).
                             </li>
-                            <li>
+                            <li i18n="@@zones.filter-help-daemon">
                                 Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's
                                 hostname, address, daemon ID, or daemon name.
                             </li>
-                            <li>Serial - partial or exact zone serial.</li>
-                            <li>Zone Class - exact zone class.</li>
-                            <li>Daemon Name - name of the DNS Daemon.</li>
+                            <li i18n="@@zones.filter-help-serial">Serial - partial or exact zone serial.</li>
+                            <li i18n="@@zones.filter-help-zone-class">Zone Class - exact zone class.</li>
+                            <li i18n="@@zones.filter-help-daemon-name">Daemon Name - name of the DNS Daemon.</li>
                         </ul>
                         <p>
                             Zones can also be filtered by entering text in the search box; the table shows all zones
