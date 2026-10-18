@@ -12,6 +12,9 @@ import { LocaltimePipe } from '../pipes/localtime.pipe'
     styleUrl: './lease-detail-box.component.sass',
 })
 export class LeaseDetailBoxComponent {
+    readonly yes = $localize`:@@common.yes:yes`
+    readonly no = $localize`:@@common.no:no`
+
     /**
      * The lease for which to display details.
      */

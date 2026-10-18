@@ -1,11 +1,11 @@
 <div class="flex flex-wrap gap-3 flex-col md:flex-row max-w-screen">
     @if (lease().hwAddress || lease().clientId || lease().duid) {
         <div class="detailbox--size-medium">
-            <p-fieldset legend="Client" styleClass="max-width-100vw">
+            <p-fieldset legend="Client" i18n-legend="@@lease.client" styleClass="max-width-100vw">
                 <table>
                     @if (lease().hwAddress) {
                         <tr>
-                            <td style="width: 10rem">HW Address:</td>
+                            <td style="width: 10rem" i18n="@@lease.hw-address">HW Address:</td>
                             <td>
                                 <app-identifier
                                     [hexValue]="lease().hwAddress"
@@ -17,13 +17,13 @@
                     }
                     @if (lease().hwAddressSource) {
                         <tr>
-                            <td style="width: 10rem">HW Address Source:</td>
+                            <td style="width: 10rem" i18n="@@lease.hw-address-source">HW Address Source:</td>
                             <td>{{ lease().hwAddressSource }}</td>
                         </tr>
                     }
                     @if (lease().clientId) {
                         <tr>
-                            <td style="width: 10rem">Client Identifier:</td>
+                            <td style="width: 10rem" i18n="@@lease.client-identifier">Client Identifier:</td>
                             <td>
                                 <app-identifier
                                     [hexValue]="lease().clientId"
@@ -50,10 +50,10 @@
         </div>
     }
     <div class="detailbox--size-small">
-        <p-fieldset legend="Details" styleClass="max-width-100vw">
+            <p-fieldset legend="Details" i18n-legend="@@lease.details" styleClass="max-width-100vw">
             <table>
                 <tr>
-                    <td style="width: 10rem">Kea Subnet ID:</td>
+                    <td style="width: 10rem" i18n="@@hosts.kea-subnet-id">Kea Subnet ID:</td>
                     <td>
                         <i>{{ lease().localSubnetId }}</i>
                     </td>
@@ -68,7 +68,7 @@
                 }
                 @if (lease().hasOwnProperty('hwType')) {
                     <tr>
-                        <td style="width: 10rem">HW Type:</td>
+                        <td style="width: 10rem" i18n="@@lease.hw-type">HW Type:</td>
                         <td>
                             <i>{{ lease().hwType }}</i>
                         </td>
@@ -76,26 +76,26 @@
                 }
                 @if (lease().preferredLifetime) {
                     <tr>
-                        <td style="width: 10rem">Preferred Lifetime:</td>
+                        <td style="width: 10rem" i18n="@@lease.preferred-lifetime">Preferred Lifetime:</td>
                         <td>
-                            <i>{{ lease().preferredLifetime }} seconds</i>
+                            <i>{{ lease().preferredLifetime }} <ng-container i18n="@@lease.seconds">seconds</ng-container></i>
                         </td>
                     </tr>
                 }
                 <tr>
-                    <td style="width: 10rem">Valid Lifetime:</td>
+                    <td style="width: 10rem" i18n="@@lease.valid-lifetime">Valid Lifetime:</td>
                     <td>
-                        <i>{{ lease().validLifetime }} seconds</i>
+                        <i>{{ lease().validLifetime }} <ng-container i18n="@@lease.seconds">seconds</ng-container></i>
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 10rem">Allocated at:</td>
+                    <td style="width: 10rem" i18n="@@lease.allocated-at">Allocated at:</td>
                     <td>
                         <i>{{ lease().cltt | localtime }}</i>
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 10rem">Expires at:</td>
+                    <td style="width: 10rem" i18n="@@lease.expires-at">Expires at:</td>
                     <td>
                         <i>{{ lease().cltt + lease().validLifetime | localtime }}</i>
                     </td>
@@ -108,21 +108,21 @@
             <p-fieldset legend="DDNS" styleClass="max-width-100vw">
                 <table>
                     <tr>
-                        <td style="width: 10rem">Hostname:</td>
+                            <td style="width: 10rem" i18n="@@machines.hostname">Hostname:</td>
                         <td>
                             <i>{{ lease().hostname }}</i>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 10rem">Forward DDNS:</td>
+                            <td style="width: 10rem" i18n="@@lease.forward-ddns">Forward DDNS:</td>
                         <td>
-                            <i>{{ lease().fqdnFwd ? 'yes' : 'no' }}</i>
+                            <i>{{ lease().fqdnFwd ? yes : no }}</i>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 10rem">Reverse DDNS:</td>
+                            <td style="width: 10rem" i18n="@@lease.reverse-ddns">Reverse DDNS:</td>
                         <td>
-                            <i>{{ lease().fqdnRev ? 'yes' : 'no' }}</i>
+                            <i>{{ lease().fqdnRev ? yes : no }}</i>
                         </td>
                     </tr>
                 </table>
@@ -131,7 +131,7 @@
     }
     @if (lease().userContext) {
         <div class="detailbox--size-large">
-            <p-fieldset legend="User Context" styleClass="max-width-100vw">
+            <p-fieldset legend="User Context" i18n-legend="@@lease.user-context" styleClass="max-width-100vw">
                 <!-- JSON viewer -->
                 <app-json-tree-root [value]="lease().userContext"></app-json-tree-root>
             </p-fieldset>

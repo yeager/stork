@@ -1371,6 +1371,10 @@
           <context context-type="linenumber">351,353</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">111,114</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
           <context context-type="linenumber">156,158</context>
         </context-group>
@@ -1633,6 +1637,10 @@
           <context context-type="linenumber">198,201</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">56,59</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
           <context context-type="linenumber">87,90</context>
         </context-group>
@@ -1787,6 +1795,122 @@
           <context context-type="linenumber">29,33</context>
         </context-group>
       <target state="translated">Tom identifierare</target></trans-unit>
+      <trans-unit id="lease.client" datatype="html">
+        <source>Client</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      <target state="translated">Klient</target></trans-unit>
+      <trans-unit id="lease.hw-address" datatype="html">
+        <source>HW Address:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      <target state="translated">Maskinvaruadress:</target></trans-unit>
+      <trans-unit id="lease.hw-address-source" datatype="html">
+        <source>HW Address Source:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      <target state="translated">Källa för maskinvaruadress:</target></trans-unit>
+      <trans-unit id="lease.client-identifier" datatype="html">
+        <source>Client Identifier:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">26,29</context>
+        </context-group>
+      <target state="translated">Klientidentifierare:</target></trans-unit>
+      <trans-unit id="lease.details" datatype="html">
+        <source>Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      <target state="translated">Detaljer</target></trans-unit>
+      <trans-unit id="lease.hw-type" datatype="html">
+        <source>HW Type:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">71,73</context>
+        </context-group>
+      <target state="translated">Maskinvarutyp:</target></trans-unit>
+      <trans-unit id="lease.preferred-lifetime" datatype="html">
+        <source>Preferred Lifetime:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">79,81</context>
+        </context-group>
+      <target state="translated">Föredragen giltighetstid:</target></trans-unit>
+      <trans-unit id="lease.seconds" datatype="html">
+        <source>seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">81,84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">88,91</context>
+        </context-group>
+      <target state="translated">sekunder</target></trans-unit>
+      <trans-unit id="lease.valid-lifetime" datatype="html">
+        <source>Valid Lifetime:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">86,88</context>
+        </context-group>
+      <target state="translated">Giltighetstid:</target></trans-unit>
+      <trans-unit id="lease.allocated-at" datatype="html">
+        <source>Allocated at:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">92,95</context>
+        </context-group>
+      <target state="translated">Tilldelad:</target></trans-unit>
+      <trans-unit id="lease.expires-at" datatype="html">
+        <source>Expires at:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">98,100</context>
+        </context-group>
+      <target state="translated">Upphör:</target></trans-unit>
+      <trans-unit id="lease.forward-ddns" datatype="html">
+        <source>Forward DDNS:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">117,119</context>
+        </context-group>
+      <target state="translated">Vidarebefordrad DDNS:</target></trans-unit>
+      <trans-unit id="lease.reverse-ddns" datatype="html">
+        <source>Reverse DDNS:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">123,125</context>
+        </context-group>
+      <target state="translated">Omvänd DDNS:</target></trans-unit>
+      <trans-unit id="lease.user-context" datatype="html">
+        <source>User Context</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.html</context>
+          <context context-type="linenumber">134,135</context>
+        </context-group>
+      <target state="translated">Användarkontext</target></trans-unit>
+      <trans-unit id="common.yes" datatype="html">
+        <source>yes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      <target state="translated">ja</target></trans-unit>
+      <trans-unit id="common.no" datatype="html">
+        <source>no</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-detail-box/lease-detail-box.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      <target state="translated">nej</target></trans-unit>
       <trans-unit id="login.choose.method" datatype="html">
         <source>Choose a Method</source>
         <context-group purpose="location">
