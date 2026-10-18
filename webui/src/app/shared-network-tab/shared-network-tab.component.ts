@@ -148,13 +148,13 @@ export class SharedNetworkTabComponent implements OnInit {
     confirmDeleteSharedNetwork(id: string) {
         this.confirmService.confirm({
             key: id,
-            message: 'Are you sure that you want to permanently delete this shared network and its subnets?',
-            header: 'Delete Shared Network',
+            message: $localize`:@@shared-network.delete-confirmation:Are you sure that you want to permanently delete this shared network and its subnets?`,
+            header: $localize`:@@shared-network.delete-title:Delete Shared Network`,
             icon: 'pi pi-exclamation-triangle',
-            rejectButtonProps: { text: true, icon: 'pi pi-times', label: 'Cancel' },
+            rejectButtonProps: { text: true, icon: 'pi pi-times', label: $localize`:@@common.cancel:Cancel` },
             acceptButtonProps: {
                 icon: 'pi pi-check',
-                label: 'Delete',
+                label: $localize`:@@common.delete:Delete`,
             },
             accept: () => {
                 this.deleteSharedNetwork()
@@ -184,8 +184,8 @@ export class SharedNetworkTabComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.msgService.add({
                     severity: 'error',
-                    summary: 'Cannot delete the shared network',
-                    detail: `Failed to delete the shared network ${this.sharedNetwork.name} : ${msg}`,
+                    summary: $localize`:@@shared-network.delete-failed:Cannot delete the shared network`,
+                    detail: $localize`:@@shared-network.delete-failed-detail:Failed to delete the shared network ${this.sharedNetwork.name}:shared network: : ${msg}:error message:`,
                     life: 10000,
                 })
             })

@@ -943,6 +943,10 @@
           <context context-type="linenumber">94,95</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">317,318</context>
         </context-group>
@@ -1487,6 +1491,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
           <context context-type="linenumber">634</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.ts</context>
+          <context context-type="linenumber">157</context>
         </context-group>
       <target state="translated">Ta bort</target></trans-unit>
       <trans-unit id="daemon.delete.confirm" datatype="html">
@@ -5623,6 +5631,34 @@
           <context context-type="linenumber">252,262</context>
         </context-group>
       <target state="translated">DHCP-alternativ /  <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualDhcpOptions()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                             entity=&quot;daemon&quot;                                             [showEntityName]=&quot;false&quot;                                             [attrs]=&quot;localSharedNetwork&quot;                                         &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> Alla servrar <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
+      <trans-unit id="shared-network.delete-confirmation" datatype="html">
+        <source>Are you sure that you want to permanently delete this shared network and its subnets?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      <target state="translated">Vill du permanent ta bort det här delade nätverket och dess subnät?</target></trans-unit>
+      <trans-unit id="shared-network.delete-title" datatype="html">
+        <source>Delete Shared Network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      <target state="translated">Ta bort delat nätverk</target></trans-unit>
+      <trans-unit id="shared-network.delete-failed" datatype="html">
+        <source>Cannot delete the shared network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      <target state="translated">Kan inte ta bort det delade nätverket</target></trans-unit>
+      <trans-unit id="shared-network.delete-failed-detail" datatype="html">
+        <source>Failed to delete the shared network <x id="shared network" equiv-text="this.sharedNetwork.name" /> : <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort det delade nätverket <x id="shared network" equiv-text="this.sharedNetwork.name" /> : <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="menu.shared-networks" datatype="html">
         <source>Shared Networks</source>
         <context-group purpose="location">
