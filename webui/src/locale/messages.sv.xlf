@@ -6524,6 +6524,64 @@
           <context context-type="linenumber">441</context>
         </context-group>
       <target state="translated">Kan inte hämta demonförteckningen</target></trans-unit>
+      <trans-unit id="tab-view.invalid-url-parameter" datatype="html">
+        <source>Wrong URL parameter value</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">904</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">926</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">941</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">960</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">972</context>
+        </context-group>
+      <target state="translated">Ogiltigt värde för URL-parametern</target></trans-unit>
+      <trans-unit id="tab-view.parameter-not-supported" datatype="html">
+        <source>URL parameter <x id="PH" equiv-text="paramKey" /> not supported!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">905</context>
+        </context-group>
+      <target state="translated">URL-parametern <x id="PH" equiv-text="paramKey" /> stöds inte!</target></trans-unit>
+      <trans-unit id="tab-view.parameter-numeric" datatype="html">
+        <source>URL parameter <x id="PH" equiv-text="paramKey" /> requires numeric value!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">927</context>
+        </context-group>
+      <target state="translated">URL-parametern <x id="PH" equiv-text="paramKey" /> kräver ett numeriskt värde!</target></trans-unit>
+      <trans-unit id="tab-view.parameter-boolean" datatype="html">
+        <source>URL parameter <x id="PH" equiv-text="paramKey" /> requires either true or false value!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">942</context>
+        </context-group>
+      <target state="translated">URL-parametern <x id="PH" equiv-text="paramKey" /> kräver värdet true eller false!</target></trans-unit>
+      <trans-unit id="tab-view.parameter-enum" datatype="html">
+        <source>URL parameter <x id="PH" equiv-text="paramKey" /> requires one of the values: <x id="PH_1" equiv-text="this.tableQueryParamFilters()[paramKey].enumValues.join(', ')" />!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">961</context>
+        </context-group>
+      <target state="translated">URL-parametern <x id="PH" equiv-text="paramKey" /> kräver något av följande värden: <x id="PH_1" equiv-text="this.tableQueryParamFilters()[paramKey].enumValues.join(', ')" />!</target></trans-unit>
+      <trans-unit id="tab-view.parameter-type-not-supported" datatype="html">
+        <source>URL parameter <x id="PH" equiv-text="paramKey" /> of type <x id="PH_1" equiv-text="this.tableQueryParamFilters()[paramKey].type" /> not supported!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab-view/tab-view.component.ts</context>
+          <context context-type="linenumber">973</context>
+        </context-group>
+      <target state="translated">URL-parametern <x id="PH" equiv-text="paramKey" /> av typen <x id="PH_1" equiv-text="this.tableQueryParamFilters()[paramKey].type" /> stöds inte!</target></trans-unit>
       <trans-unit id="table.clear" datatype="html">
         <source>Clear</source>
         <context-group purpose="location">

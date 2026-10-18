@@ -901,8 +901,8 @@ export class TabViewComponent<TEntity, TForm extends FormState> implements OnIni
             if (!(paramKey in this.tableQueryParamFilters())) {
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Wrong URL parameter value',
-                    detail: `URL parameter ${paramKey} not supported!`,
+                    summary: $localize`:@@tab-view.invalid-url-parameter:Wrong URL parameter value`,
+                    detail: $localize`:@@tab-view.parameter-not-supported:URL parameter ${paramKey} not supported!`,
                     life: 10000,
                 })
                 continue
@@ -923,8 +923,8 @@ export class TabViewComponent<TEntity, TForm extends FormState> implements OnIni
                         if (Number.isNaN(numV)) {
                             this.messageService.add({
                                 severity: 'error',
-                                summary: 'Wrong URL parameter value',
-                                detail: `URL parameter ${paramKey} requires numeric value!`,
+                                summary: $localize`:@@tab-view.invalid-url-parameter:Wrong URL parameter value`,
+                                detail: $localize`:@@tab-view.parameter-numeric:URL parameter ${paramKey} requires numeric value!`,
                                 life: 10000,
                             })
                             break
@@ -938,8 +938,8 @@ export class TabViewComponent<TEntity, TForm extends FormState> implements OnIni
                         if (booleanV === null) {
                             this.messageService.add({
                                 severity: 'error',
-                                summary: 'Wrong URL parameter value',
-                                detail: `URL parameter ${paramKey} requires either true or false value!`,
+                                summary: $localize`:@@tab-view.invalid-url-parameter:Wrong URL parameter value`,
+                                detail: $localize`:@@tab-view.parameter-boolean:URL parameter ${paramKey} requires either true or false value!`,
                                 life: 10000,
                             })
                             break
@@ -957,8 +957,8 @@ export class TabViewComponent<TEntity, TForm extends FormState> implements OnIni
 
                         this.messageService.add({
                             severity: 'error',
-                            summary: 'Wrong URL parameter value',
-                            detail: `URL parameter ${paramKey} requires one of the values: ${this.tableQueryParamFilters()[paramKey].enumValues.join(', ')}!`,
+                            summary: $localize`:@@tab-view.invalid-url-parameter:Wrong URL parameter value`,
+                            detail: $localize`:@@tab-view.parameter-enum:URL parameter ${paramKey} requires one of the values: ${this.tableQueryParamFilters()[paramKey].enumValues.join(', ')}!`,
                             life: 10000,
                         })
                         break
@@ -969,8 +969,8 @@ export class TabViewComponent<TEntity, TForm extends FormState> implements OnIni
                     default:
                         this.messageService.add({
                             severity: 'error',
-                            summary: 'Wrong URL parameter value',
-                            detail: `URL parameter ${paramKey} of type ${this.tableQueryParamFilters()[paramKey].type} not supported!`,
+                            summary: $localize`:@@tab-view.invalid-url-parameter:Wrong URL parameter value`,
+                            detail: $localize`:@@tab-view.parameter-type-not-supported:URL parameter ${paramKey} of type ${this.tableQueryParamFilters()[paramKey].type} not supported!`,
                             life: 10000,
                         })
                         break
