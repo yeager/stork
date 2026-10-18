@@ -1444,6 +1444,48 @@
           <context context-type="linenumber">98</context>
         </context-group>
       <target state="translated">Fel vid hämtning av listan med konfigurationsmigreringar: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="config-review.refresh-failed" datatype="html">
+        <source>Unable to refresh config review reports</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-review-panel/config-review-panel.component.ts</context>
+          <context context-type="linenumber">259</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera granskningsrapporterna för konfigurationen</target></trans-unit>
+      <trans-unit id="config-review.in-progress" datatype="html">
+        <source>Config review is in progress for this daemon. Try refreshing the reports later.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-review-panel/config-review-panel.component.ts</context>
+          <context context-type="linenumber">261</context>
+        </context-group>
+      <target state="translated">Konfigurationsgranskningen pågår för den här demonen. Försök uppdatera rapporterna senare.</target></trans-unit>
+      <trans-unit id="config-review.get-failed" datatype="html">
+        <source>Error getting review reports</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-review-panel/config-review-panel.component.ts</context>
+          <context context-type="linenumber">311</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta granskningsrapporterna</target></trans-unit>
+      <trans-unit id="config-review.get-failed-detail" datatype="html">
+        <source>Error getting review reports: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-review-panel/config-review-panel.component.ts</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta granskningsrapporterna: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="config-review.run-failed" datatype="html">
+        <source>Error running new review</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-review-panel/config-review-panel.component.ts</context>
+          <context context-type="linenumber">351</context>
+        </context-group>
+      <target state="translated">Det gick inte att starta en ny granskning</target></trans-unit>
+      <trans-unit id="config-review.run-failed-detail" datatype="html">
+        <source>Error running new review: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-review-panel/config-review-panel.component.ts</context>
+          <context context-type="linenumber">352</context>
+        </context-group>
+      <target state="translated">Det gick inte att starta en ny granskning: <x id="PH" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="daemon.filter.label" datatype="html">
         <source>Daemon (type or pick)</source>
         <context-group purpose="location">
@@ -2160,6 +2202,97 @@
           <context context-type="linenumber">109</context>
         </context-group>
       <target state="translated">Fel</target></trans-unit>
+      <trans-unit id="events.unknown-user" datatype="html">
+        <source>unknown</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+      <target state="translated">okänd</target></trans-unit>
+      <trans-unit id="events.users-load-failed" datatype="html">
+        <source>Loading user accounts failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      <target state="translated">Det gick inte att läsa in användarkontona</target></trans-unit>
+      <trans-unit id="events.users-load-failed-detail" datatype="html">
+        <source>Loading user accounts from the database failed: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      <target state="translated">Det gick inte att läsa in användarkontona från databasen: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="events.machines-get-failed" datatype="html">
+        <source>Cannot get machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">256</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskinerna</target></trans-unit>
+      <trans-unit id="events.machines-get-failed-detail" datatype="html">
+        <source>Failed to get machines: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">257</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskinerna: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="events.get-failed" datatype="html">
+        <source>Cannot get events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta händelserna</target></trans-unit>
+      <trans-unit id="events.get-failed-detail" datatype="html">
+        <source>Error getting events: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta händelserna: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="events.clear-confirm-header" datatype="html">
+        <source>Are you sure you want to clear all of the notifications?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">385</context>
+        </context-group>
+      <target state="translated">Vill du verkligen rensa alla aviseringar?</target></trans-unit>
+      <trans-unit id="events.clear-confirm-message" datatype="html">
+        <source>Every notification on every page will be permanently deleted.&lt;br/&gt;This action cannot be undone.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+      <target state="translated">Alla aviseringar på alla sidor tas bort permanent.&lt;br/&gt;Åtgärden går inte att ångra.</target></trans-unit>
+      <trans-unit id="events.clear" datatype="html">
+        <source>Clear</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">387</context>
+        </context-group>
+      <target state="translated">Rensa</target></trans-unit>
+      <trans-unit id="events.cancel" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">388</context>
+        </context-group>
+      <target state="translated">Avbryt</target></trans-unit>
+      <trans-unit id="events.clear-failed" datatype="html">
+        <source>Cannot clear events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">402</context>
+        </context-group>
+      <target state="translated">Det gick inte att rensa händelserna</target></trans-unit>
+      <trans-unit id="events.clear-failed-detail" datatype="html">
+        <source>Error clearing events: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.ts</context>
+          <context context-type="linenumber">403</context>
+        </context-group>
+      <target state="translated">Det gick inte att rensa händelserna: <x id="PH" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="error.forbidden" datatype="html">
         <source>Forbidden</source>
         <context-group purpose="location">

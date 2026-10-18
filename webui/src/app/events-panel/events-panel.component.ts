@@ -214,7 +214,7 @@ export class EventsPanelComponent implements OnInit, OnChanges, OnDestroy {
                     this.users = (data.items ?? []).map((u: User) => {
                         const user: LabeledUser = {
                             ...u,
-                            label: `${u.login || u.email || 'unknown'} (${getAuthenticationMethodLabel(u.authenticationMethodId)})`,
+                            label: `${u.login || u.email || $localize`:@@events.unknown-user:unknown`} (${getAuthenticationMethodLabel(u.authenticationMethodId)})`,
                         }
                         return user
                     })
@@ -231,8 +231,8 @@ export class EventsPanelComponent implements OnInit, OnChanges, OnDestroy {
                     const msg = getErrorMessage(err)
                     this.msgSrv.add({
                         severity: 'error',
-                        summary: 'Loading user accounts failed',
-                        detail: 'Loading user accounts from the database failed: ' + msg,
+                        summary: $localize`:@@events.users-load-failed:Loading user accounts failed`,
+                        detail: $localize`:@@events.users-load-failed-detail:Loading user accounts from the database failed: ${msg}`,
                         life: 10000,
                     })
                 })
@@ -253,8 +253,8 @@ export class EventsPanelComponent implements OnInit, OnChanges, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot get machines',
-                    detail: 'Failed to get machines: ' + msg,
+                    summary: $localize`:@@events.machines-get-failed:Cannot get machines`,
+                    detail: $localize`:@@events.machines-get-failed-detail:Failed to get machines: ${msg}`,
                     life: 10000,
                 })
             })
@@ -311,8 +311,8 @@ export class EventsPanelComponent implements OnInit, OnChanges, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot get events',
-                    detail: 'Error getting events: ' + msg,
+                    summary: $localize`:@@events.get-failed:Cannot get events`,
+                    detail: $localize`:@@events.get-failed-detail:Error getting events: ${msg}`,
                     life: 10000,
                 })
             })
@@ -382,10 +382,10 @@ export class EventsPanelComponent implements OnInit, OnChanges, OnDestroy {
     /** Callback called on clicking the Clear button. */
     onClear() {
         this.confirmationService.confirm({
-            header: 'Are you sure you want to clear all of the notifications?',
-            message: 'Every notification on every page will be permanently deleted.<br/>This action cannot be undone.',
-            acceptLabel: 'Clear',
-            rejectLabel: 'Cancel',
+            header: $localize`:@@events.clear-confirm-header:Are you sure you want to clear all of the notifications?`,
+            message: $localize`:@@events.clear-confirm-message:Every notification on every page will be permanently deleted.<br/>This action cannot be undone.`,
+            acceptLabel: $localize`:@@events.clear:Clear`,
+            rejectLabel: $localize`:@@events.cancel:Cancel`,
             defaultFocus: 'none',
             rejectButtonProps: { text: true, icon: 'pi pi-times' },
             accept: () => {
@@ -399,8 +399,8 @@ export class EventsPanelComponent implements OnInit, OnChanges, OnDestroy {
                         const msg = getErrorMessage(err)
                         this.msgSrv.add({
                             severity: 'error',
-                            summary: 'Cannot clear events',
-                            detail: 'Error clearing events: ' + msg,
+                            summary: $localize`:@@events.clear-failed:Cannot clear events`,
+                            detail: $localize`:@@events.clear-failed-detail:Error clearing events: ${msg}`,
                             life: 10000,
                         })
                     })

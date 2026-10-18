@@ -256,10 +256,9 @@ export class ConfigReviewPanelComponent implements OnInit {
 
                                     this.msgService.add({
                                         severity: 'warn',
-                                        summary: 'Unable to refresh config review reports',
+                                        summary: $localize`:@@config-review.refresh-failed:Unable to refresh config review reports`,
                                         detail:
-                                            'Config review is in progress for this daemon. Try refreshing ' +
-                                            'the reports later.',
+                                            $localize`:@@config-review.in-progress:Config review is in progress for this daemon. Try refreshing the reports later.`,
                                         life: 10000,
                                     })
                                 } else if (useDelay) {
@@ -309,8 +308,8 @@ export class ConfigReviewPanelComponent implements OnInit {
                 let msg = getErrorMessage(err)
                 this.msgService.add({
                     severity: 'error',
-                    summary: 'Error getting review reports',
-                    detail: 'Error getting review reports: ' + msg,
+                    summary: $localize`:@@config-review.get-failed:Error getting review reports`,
+                    detail: $localize`:@@config-review.get-failed-detail:Error getting review reports: ${msg}`,
                     life: 10000,
                 })
                 this._resetDefaults()
@@ -349,8 +348,8 @@ export class ConfigReviewPanelComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.msgService.add({
                     severity: 'error',
-                    summary: 'Error running new review',
-                    detail: 'Error running new review: ' + msg,
+                    summary: $localize`:@@config-review.run-failed:Error running new review`,
+                    detail: $localize`:@@config-review.run-failed-detail:Error running new review: ${msg}`,
                     life: 10000,
                 })
                 this.busy = false
