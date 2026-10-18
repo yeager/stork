@@ -88,6 +88,7 @@
     routePath="/dns/zone-transfers/"
     firstTabRouteEnd=""
     firstTabTitle="Zone Transfers"
+    i18n-firstTabTitle="@@zone-transfers.title"
     [tableQueryParamFilters]="supportedQueryParamFilters"
     [entitiesTable]="zoneTransfersTable"
 >
@@ -188,7 +189,7 @@
                                             styleClass="w-12rem"
                                             (onChange)="filterZoneTransfersTable($event.value, filterConstraint)"
                                         />
-                                        <label for="zone-transfer-status">Status</label>
+                                        <label for="zone-transfer-status" i18n="@@common.status">Status</label>
                                     </p-floatlabel>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -219,7 +220,7 @@
                                             id="zone-serial"
                                             class="w-8rem"
                                         />
-                                        <label for="zone-serial">Serial</label>
+                                        <label for="zone-serial" i18n="@@zone-transfers.serial">Serial</label>
                                     </p-floatlabel>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -252,7 +253,7 @@
                                             styleClass="w-12rem"
                                             (onChange)="filterZoneTransfersTable($event.value, filterConstraint)"
                                         />
-                                        <label for="zone-transfer-primary">Primary</label>
+                                        <label for="zone-transfer-primary" i18n="@@zone-transfers.primary">Primary</label>
                                     </p-floatlabel>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -285,7 +286,7 @@
                                             styleClass="w-12rem"
                                             (onChange)="filterZoneTransfersTable($event.value, filterConstraint)"
                                         />
-                                        <label for="zone-transfer-secondary">Secondary</label>
+                                        <label for="zone-transfer-secondary" i18n="@@zone-transfers.secondary">Secondary</label>
                                     </p-floatlabel>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -313,6 +314,7 @@
                                             (input)="filterZoneTransfersTable($event.target.value, filterConstraint)"
                                             [ngModel]="value"
                                             placeholder="Search"
+                                            i18n-placeholder="@@common.search"
                                             class="max-w-13rem sm:w-18rem sm:max-w-18rem"
                                         />
                                     </p-iconfield>
@@ -345,7 +347,7 @@
                                                 filterZoneTransfersTable($event.checked || null, filterConstraint)
                                             "
                                         />
-                                        <label for="include-local">Include local transfers</label>
+                                        <label for="include-local" i18n="@@zone-transfers.include-local">Include local transfers</label>
                                     </div>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -364,6 +366,7 @@
                     <ng-template #buttons>
                         <p-button
                             label="Refresh List"
+                            i18n-label="@@daemons.refresh-list"
                             icon="pi pi-refresh"
                             (onClick)="onLazyLoadZoneTransfers(zoneTransfersTable.createLazyLoadMetadata())"
                             id="refresh-zones-data"
@@ -377,29 +380,29 @@
                     <th class="w-3rem sm:w-5rem"></th>
                     <th [pSortableColumn]="ZoneTransferSortField.StartedAt">
                         <div class="flex gap-1 white-space-nowrap">
-                            Started At<p-sortIcon [field]="ZoneTransferSortField.StartedAt" />
+                            <ng-container i18n="@@zone-transfers.started-at">Started At</ng-container><p-sortIcon [field]="ZoneTransferSortField.StartedAt" />
                         </div>
                     </th>
-                    <th>Zone</th>
-                    <th>View</th>
-                    <th>Serial</th>
+                    <th i18n="@@zone-transfers.zone">Zone</th>
+                    <th i18n="@@zone-transfers.view">View</th>
+                    <th i18n="@@zone-transfers.serial">Serial</th>
                     <th [pSortableColumn]="ZoneTransferSortField.Duration">
                         <div class="flex gap-1 white-space-nowrap">
-                            Duration<p-sortIcon [field]="ZoneTransferSortField.Duration" />
+                            <ng-container i18n="@@zone-transfers.duration">Duration</ng-container><p-sortIcon [field]="ZoneTransferSortField.Duration" />
                         </div>
                     </th>
                     <th [pSortableColumn]="ZoneTransferSortField.BytesPerSecond">
                         <div class="flex gap-1 white-space-nowrap">
-                            Rate<p-sortIcon [field]="ZoneTransferSortField.BytesPerSecond" />
+                            <ng-container i18n="@@zone-transfers.rate">Rate</ng-container><p-sortIcon [field]="ZoneTransferSortField.BytesPerSecond" />
                         </div>
                     </th>
                     <th [pSortableColumn]="ZoneTransferSortField.Status">
                         <div class="flex gap-1 white-space-nowrap">
-                            Status<p-sortIcon [field]="ZoneTransferSortField.Status" />
+                            <ng-container i18n="@@common.status">Status</ng-container><p-sortIcon [field]="ZoneTransferSortField.Status" />
                         </div>
                     </th>
-                    <th>Primary</th>
-                    <th>Secondary</th>
+                    <th i18n="@@zone-transfers.primary">Primary</th>
+                    <th i18n="@@zone-transfers.secondary">Secondary</th>
                 </tr>
             </ng-template>
             <ng-template #body let-zoneTransfer let-expanded="expanded">
@@ -450,6 +453,7 @@
                         @if (zoneTransfer.serverMachineAddress) {
                             <app-entity-link
                                 pTooltip="Primary Address: {{ zoneTransfer.server ?? '(unknown)' }}"
+                                i18n-pTooltip="@@zone-transfers.primary-address"
                                 [showEntityName]="false"
                                 entity="machine"
                                 [attrs]="{
@@ -465,6 +469,7 @@
                         @if (zoneTransfer.clientMachineAddress) {
                             <app-entity-link
                                 pTooltip="Secondary Address: {{ zoneTransfer.client ?? '(unknown)' }}"
+                                i18n-pTooltip="@@zone-transfers.secondary-address"
                                 [showEntityName]="false"
                                 entity="machine"
                                 [attrs]="{
@@ -476,7 +481,7 @@
                             <div class="flex flex-wrap justify-center align-items-center gap-2">
                                 <div>{{ zoneTransfer.client }}</div>
                                 @if (zoneTransfer.local) {
-                                    <p-tag value="local" severity="success" />
+                                    <p-tag value="local" i18n-value="@@zone-transfers.local" severity="success" />
                                 }
                             </div>
                         }
@@ -490,19 +495,19 @@
                             class="flex flex-column md:flex-row align-items-start md:align-items-stretch md:w-full gap-2"
                         >
                             <div class="flex-initial w-auto md:w-3">
-                                <p-fieldset legend="Transfer Details">
+                                <p-fieldset legend="Transfer Details" i18n-legend="@@zone-transfers.details">
                                     <table>
                                         <tr>
-                                            <td class="pr-3">Created at:</td>
+                                            <td class="pr-3" i18n="@@zone-transfers.created-at">Created at:</td>
                                             <td class="monospace">{{ zoneTransfer.createdAt | localtime: true }}</td>
                                         </tr>
                                         <tr>
-                                            <td class="pr-3">Started at:</td>
+                                            <td class="pr-3" i18n="@@zone-transfers.started-at-lowercase">Started at:</td>
                                             <td class="monospace">{{ zoneTransfer.startedAt | localtime: true }}</td>
                                         </tr>
                                         @if (zoneTransfer.completedAt) {
                                             <tr>
-                                                <td class="pr-3">Completed at:</td>
+                                                <td class="pr-3" i18n="@@zone-transfers.completed-at">Completed at:</td>
                                                 <td class="monospace">
                                                     {{ zoneTransfer.completedAt | localtime: true }}
                                                 </td>
@@ -512,25 +517,25 @@
                                 </p-fieldset>
                             </div>
                             <div class="flex-initial w-auto md:w-3">
-                                <p-fieldset legend="Statistics">
+                                <p-fieldset legend="Statistics" i18n-legend="@@zone-transfers.statistics">
                                     <table>
                                         <tr>
-                                            <td class="pr-3">Messages received:</td>
+                                            <td class="pr-3" i18n="@@zone-transfers.messages-received">Messages received:</td>
                                             <td class="monospace">{{ zoneTransfer.messagesCount ?? 0 }}</td>
                                         </tr>
                                         <tr>
-                                            <td class="pr-3">Records received:</td>
+                                            <td class="pr-3" i18n="@@zone-transfers.records-received">Records received:</td>
                                             <td class="monospace">{{ zoneTransfer.recordsCount ?? 0 }}</td>
                                         </tr>
                                         <tr>
-                                            <td class="pr-3">Bytes received:</td>
+                                            <td class="pr-3" i18n="@@zone-transfers.bytes-received">Bytes received:</td>
                                             <td class="monospace">{{ zoneTransfer.bytesCount ?? 0 }}</td>
                                         </tr>
                                     </table>
                                 </p-fieldset>
                             </div>
                             <div class="flex-initial w-auto md:flex-1">
-                                <p-fieldset legend="Log message">
+                                <p-fieldset legend="Log message" i18n-legend="@@zone-transfers.log-message">
                                     <div class="monospace">
                                         {{ zoneTransfer.message | placeholder: 'N/A' }}
                                     </div>
