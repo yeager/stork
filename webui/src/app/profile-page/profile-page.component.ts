@@ -22,7 +22,7 @@ export class ProfilePageComponent implements OnInit, OnDestroy {
     private auth = inject(AuthService)
     private serverData = inject(ServerDataService)
 
-    breadcrumbs = [{ label: 'User Profile' }]
+    breadcrumbs = [{ label: $localize`:@@profile.user:User Profile` }]
 
     currentUser: User = null
     private groups: any[]

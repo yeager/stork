@@ -396,6 +396,52 @@
           <context context-type="linenumber">10,12</context>
         </context-group>
       <target state="translated"> Sidan som du försökte öppna finns inte. Kontrollera att webbadressen är korrekt. </target></trans-unit>
+      <trans-unit id="profile.user" datatype="html">
+        <source>User Profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile-page/profile-page.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      <target state="translated">Användarprofil</target></trans-unit>
+      <trans-unit id="password.change" datatype="html">
+        <source>Password Change</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      <target state="translated">Ändra lösenord</target></trans-unit>
+      <trans-unit id="password.not.updated" datatype="html">
+        <source>Password not updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      <target state="translated">Lösenordet uppdaterades inte</target></trans-unit>
+      <trans-unit id="password.not.updated.detail" datatype="html">
+        <source>New password must be different from current password.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      <target state="translated">Det nya lösenordet måste skilja sig från det nuvarande lösenordet.</target></trans-unit>
+      <trans-unit id="password.updated" datatype="html">
+        <source>User password updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      <target state="translated">Användarens lösenord har uppdaterats</target></trans-unit>
+      <trans-unit id="password.update.failed" datatype="html">
+        <source>Failed to update user password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera användarens lösenord</target></trans-unit>
     </body>
   </file>
 </xliff>

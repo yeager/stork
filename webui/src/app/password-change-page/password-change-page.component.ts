@@ -50,7 +50,10 @@ export class PasswordChangePageComponent implements OnInit {
     private route = inject(ActivatedRoute)
     private router = inject(Router)
 
-    breadcrumbs = [{ label: 'User Profile' }, { label: 'Password Change' }]
+    breadcrumbs = [
+        { label: $localize`:@@profile.user:User Profile` },
+        { label: $localize`:@@password.change:Password Change` },
+    ]
 
     passwordChangeForm: UntypedFormGroup
 
@@ -113,8 +116,8 @@ export class PasswordChangePageComponent implements OnInit {
         if (passwords.oldpassword === passwords.newpassword) {
             this.msgSrv.add({
                 severity: 'warn',
-                summary: 'Password not updated',
-                detail: 'New password must be different from current password.',
+                summary: $localize`:@@password.not.updated:Password not updated`,
+                detail: $localize`:@@password.not.updated.detail:New password must be different from current password.`,
             })
             return
         }
@@ -124,7 +127,7 @@ export class PasswordChangePageComponent implements OnInit {
             (/* data */) => {
                 this.msgSrv.add({
                     severity: 'success',
-                    summary: 'User password updated',
+                    summary: $localize`:@@password.updated:User password updated`,
                 })
 
                 // Reset the change password flag.
@@ -140,7 +143,7 @@ export class PasswordChangePageComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Failed to update user password',
+                    summary: $localize`:@@password.update.failed:Failed to update user password`,
                     detail: msg,
                     life: 10000,
                 })
