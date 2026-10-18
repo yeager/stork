@@ -8,12 +8,12 @@
         <!-- We use explicit spaces to allow copy-and-paste of the delegated
     prefix in a human-friendly form. -->
         <span>&nbsp;</span>
-        <abbr class="label" title="delegated length">del.:</abbr>
+        <abbr class="label" i18n-title title="delegated length">del.:</abbr>
         <span>&nbsp;</span>
         <span>{{ pool.delegatedLength }}</span>
         @if (!!this.pool.excludedPrefix) {
             <span>&nbsp;</span>
-            <abbr class="label" title="excluded prefix">ex.:</abbr>
+            <abbr class="label" i18n-title title="excluded prefix">ex.:</abbr>
             <span>&nbsp;</span>
             <abbr [title]="pool.excludedPrefix">{{ shortExcludedPrefix }}</abbr>
         }

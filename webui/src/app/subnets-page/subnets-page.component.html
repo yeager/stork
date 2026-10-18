@@ -1,6 +1,6 @@
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
-        <p>This page displays a list of the subnets defined in the Kea instance.</p>
+        <p i18n>This page displays a list of the subnets defined in the Kea instance.</p>
         <p>
             Stork retrieves subnet information using the
             <a href="https://kea.readthedocs.io/en/latest/api.html#config-get">config-get</a>
@@ -26,8 +26,8 @@
         text: { type: 'string', matchMode: 'contains' },
     }"
     [entitiesTable]="table()?.table"
-    entityTypeName="Subnet"
-    firstTabTitle="Subnets"
+    i18n-entityTypeName entityTypeName="Subnet"
+    i18n-firstTabTitle firstTabTitle="Subnets"
     [forceAsyncEntityFetch]="true"
 >
     <ng-template #firstTab>

@@ -1299,6 +1299,20 @@
           <context context-type="linenumber">60,62</context>
         </context-group>
       <target state="translated">DHCP-översikt</target></trans-unit>
+      <trans-unit id="4258331699582199918" datatype="html">
+        <source>delegated length</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/delegated-prefix-bar/delegated-prefix-bar.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      <target state="translated">delegerad längd</target></trans-unit>
+      <trans-unit id="771608502864079731" datatype="html">
+        <source>excluded prefix</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/delegated-prefix-bar/delegated-prefix-bar.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      <target state="translated">undantaget prefix</target></trans-unit>
       <trans-unit id="4778666050009085578" datatype="html">
         <source>No client classes configured.</source>
         <context-group purpose="location">
@@ -1341,6 +1355,20 @@
           <context context-type="linenumber">77,81</context>
         </context-group>
       <target state="translated">tomt underalternativ</target></trans-unit>
+      <trans-unit id="549356895816973464" datatype="html">
+        <source> This page displays a list of the most recent events performed by Stork. There are three event urgency levels: info, warning, and error. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-page/events-page.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      <target state="translated"> Den här sidan visar en lista över de senaste händelserna som Stork har utfört. Det finns tre prioritetsnivåer för händelser: information, varning och fel. </target></trans-unit>
+      <trans-unit id="2065326460945554968" datatype="html">
+        <source>Each event in the list includes links to more information about the affected daemon or machine.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-page/events-page.component.html</context>
+          <context context-type="linenumber">7,12</context>
+        </context-group>
+      <target state="translated">Varje händelse i listan innehåller länkar till mer information om den berörda demonen eller maskinen.</target></trans-unit>
       <trans-unit id="events.all" datatype="html">
         <source>All</source>
         <context-group purpose="location">
@@ -2197,6 +2225,20 @@
           <context context-type="linenumber">53,56</context>
         </context-group>
       <target state="translated">Det gick inte att hämta demonens konfiguration</target></trans-unit>
+      <trans-unit id="4661609117337319901" datatype="html">
+        <source>This page displays the DHCP parameters and options configured at the global level.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-page/kea-global-configuration-page.component.html</context>
+          <context context-type="linenumber">3,7</context>
+        </context-group>
+      <target state="translated">Den här sidan visar DHCP-parametrarna och alternativen som är konfigurerade på global nivå.</target></trans-unit>
+      <trans-unit id="2476720291978934849" datatype="html">
+        <source>Back to <x id="INTERPOLATION" equiv-text="{{ daemonLabel ?? 'Daemon' }}" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-page/kea-global-configuration-page.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      <target state="translated">Tillbaka till <x id="INTERPOLATION" equiv-text="{{ daemonLabel ?? 'Daemon' }}" /></target></trans-unit>
       <trans-unit id="6568528235266559788" datatype="html">
         <source>Global DHCP Parameters</source>
         <context-group purpose="location">
@@ -2714,6 +2756,10 @@
           <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
           <context context-type="linenumber">91,93</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.html</context>
+          <context context-type="linenumber">31,34</context>
+        </context-group>
       <target state="translated">Delnät</target></trans-unit>
       <trans-unit id="7413509252210192965" datatype="html">
         <source>No subnets configured.</source>
@@ -3123,6 +3169,20 @@
           <context context-type="linenumber">221,223</context>
         </context-group>
       <target state="translated">Ingen användarkontext har konfigurerats.</target></trans-unit>
+      <trans-unit id="5036123578043078461" datatype="html">
+        <source>This page displays a list of the subnets defined in the Kea instance.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      <target state="translated">Den här sidan visar en lista över delnäten som har definierats i Kea-instansen.</target></trans-unit>
+      <trans-unit id="9134994559985199457" datatype="html">
+        <source>Subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      <target state="translated">Delnät</target></trans-unit>
       <trans-unit id="subnets.new-subnet" datatype="html">
         <source>New Subnet</source>
         <context-group purpose="location">
