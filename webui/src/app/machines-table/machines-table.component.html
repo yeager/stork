@@ -10,6 +10,7 @@
     [totalRecords]="totalRecords"
     [rowsPerPageOptions]="[10, 30, 100]"
     [showCurrentPageReport]="true"
+    i18n-currentPageReportTemplate="@@table.page-report"
     currentPageReportTemplate="{currentPage} of {totalPages} pages"
     [stripedRows]="true"
     [(selection)]="selectedMachines"
@@ -58,6 +59,7 @@
                     <ng-template pTemplate="filter" let-value let-filterConstraint="filterConstraint">
                         <div class="flex align-items-center">
                             <app-tri-state-checkbox
+                                i18n-label="@@machines.authorized"
                                 label="Authorized"
                                 inputID="authorized-filter"
                                 [value]="value"
@@ -87,6 +89,7 @@
                                     type="text"
                                     (input)="filterTable($event.target.value, filterConstraint)"
                                     [ngModel]="value"
+                                    i18n-placeholder="@@machines.search"
                                     placeholder="Search machines"
                                 />
                             </p-iconfield>
@@ -106,6 +109,7 @@
                 @if (unauthorizedMachinesDisplayed()) {
                     <p-button
                         [disabled]="selectedMachines().length === 0"
+                        i18n-label="@@machines.authorize-selected"
                         label="Authorize selected"
                         icon="pi pi-lock"
                         (onClick)="onAuthorizeSelectedMachinesClicked(selectedMachines())"
@@ -116,6 +120,7 @@
                     ></p-button>
                 }
                 <p-button
+                    i18n-label="@@daemons.refresh-list"
                     label="Refresh List"
                     icon="pi pi-refresh"
                     (onClick)="loadData(table.createLazyLoadMetadata())"
@@ -123,6 +128,7 @@
             </ng-template>
             <ng-template #splitbutton>
                 <p-splitbutton
+                    i18n-label="@@daemons.refresh-list"
                     label="Refresh List"
                     icon="pi pi-refresh"
                     (onClick)="loadData(table.createLazyLoadMetadata())"
@@ -147,7 +153,7 @@
                     <div class="flex gap-1">Hostname <p-sortIcon [field]="MachineSortField.Hostname" /></div>
                 </th>
             } @else {
-                <th class="w-8rem">Hostname</th>
+                <th class="w-8rem" i18n="@@machines.hostname">Hostname</th>
             }
             <th class="w-10rem" [pSortableColumn]="MachineSortField.Address">
                 <div class="flex gap-1 align-items-center">
@@ -178,8 +184,8 @@
                         Agent Version <p-sortIcon [field]="MachineSortField.AgentVersion" />
                     </div>
                 </th>
-                <th class="w-7rem">Daemons</th>
-                <th class="w-4rem">Versions</th>
+                <th class="w-7rem" i18n="@@machines.daemons">Daemons</th>
+                <th class="w-4rem" i18n="@@machines.versions">Versions</th>
                 <th class="w-4rem" [pSortableColumn]="MachineSortField.Cpus">
                     <div class="flex gap-1">CPUs <p-sortIcon [field]="MachineSortField.Cpus" /></div>
                 </th>
@@ -210,7 +216,7 @@
                         Memory Usage [%] <p-sortIcon [field]="MachineSortField.UsedMemory" />
                     </div>
                 </th>
-                <th class="hiding-column w-6rem">Uptime</th>
+                <th class="hiding-column w-6rem" i18n="@@machines.uptime">Uptime</th>
                 <th class="hiding-column w-6rem" [pSortableColumn]="MachineSortField.LastVisitedAt">
                     <div class="flex gap-1 white-space-nowrap align-items-center">
                         Last Refreshed <p-sortIcon [field]="MachineSortField.LastVisitedAt" />
@@ -222,9 +228,9 @@
                         >
                     </div>
                 </th>
-                <th class="w-13rem">Error</th>
+                <th class="w-13rem" i18n="@@common.error">Error</th>
             }
-            <th class="w-4rem">Action</th>
+            <th class="w-4rem" i18n="@@common.action">Action</th>
         </tr>
     </ng-template>
     <ng-template #body let-m>

@@ -774,6 +774,10 @@
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">37,40</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">14,17</context>
+        </context-group>
       <target state="translated">{currentPage} av {totalPages} sidor</target></trans-unit>
       <trans-unit id="daemons.filter.help" datatype="html">
         <source> Daemons in the table below can be filtered by entering text in the search box; the table shows all daemons matching the filter text. The currently supported fields for filtering are: </source>
@@ -845,6 +849,14 @@
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">151,153</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">124,126</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">132,134</context>
+        </context-group>
       <target state="translated">Uppdatera lista</target></trans-unit>
       <trans-unit id="common.version" datatype="html">
         <source>Version</source>
@@ -872,6 +884,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">181,184</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">233,238</context>
         </context-group>
       <target state="translated">Åtgärd</target></trans-unit>
       <trans-unit id="daemons.total" datatype="html">
@@ -1220,6 +1236,10 @@
           <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
           <context context-type="linenumber">185</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">63,65</context>
+        </context-group>
       <target state="translated">Auktoriserade</target></trans-unit>
       <trans-unit id="machines.unauthorized" datatype="html">
         <source>Unauthorized</source>
@@ -1228,6 +1248,55 @@
           <context context-type="linenumber">189</context>
         </context-group>
       <target state="translated">Inte auktoriserade</target></trans-unit>
+      <trans-unit id="machines.search" datatype="html">
+        <source>Search machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">93,96</context>
+        </context-group>
+      <target state="translated">Sök efter maskiner</target></trans-unit>
+      <trans-unit id="machines.authorize-selected" datatype="html">
+        <source>Authorize selected</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">113,115</context>
+        </context-group>
+      <target state="translated">Auktorisera valda</target></trans-unit>
+      <trans-unit id="machines.hostname" datatype="html">
+        <source>Hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">156,158</context>
+        </context-group>
+      <target state="translated">Värdnamn</target></trans-unit>
+      <trans-unit id="machines.daemons" datatype="html">
+        <source>Daemons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">187,189</context>
+        </context-group>
+      <target state="translated">Demoner</target></trans-unit>
+      <trans-unit id="machines.versions" datatype="html">
+        <source>Versions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">188,190</context>
+        </context-group>
+      <target state="translated">Versioner</target></trans-unit>
+      <trans-unit id="machines.uptime" datatype="html">
+        <source>Uptime</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">219,220</context>
+        </context-group>
+      <target state="translated">Drifttid</target></trans-unit>
+      <trans-unit id="common.error" datatype="html">
+        <source>Error</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">231,234</context>
+        </context-group>
+      <target state="translated">Fel</target></trans-unit>
       <trans-unit id="error.page.not.found" datatype="html">
         <source>Page Not Found</source>
         <context-group purpose="location">
