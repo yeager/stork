@@ -294,8 +294,8 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot create new transaction',
-                    detail: `Failed to create transaction for subnet creation: ` + msg,
+                    summary: $localize`:@@subnet.create-transaction-failed:Cannot create new transaction`,
+                    detail: $localize`:@@subnet.create-transaction-detail:Failed to create transaction for subnet creation: ${msg}:error message:`,
                     life: 10000,
                 })
                 this.state.loaded = true
@@ -319,8 +319,8 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot create new transaction',
-                    detail: `Failed to create transaction to update subnet ${this.subnetId}: ` + msg,
+                    summary: $localize`:@@subnet.create-transaction-failed:Cannot create new transaction`,
+                    detail: $localize`:@@subnet.update-transaction-detail:Failed to create transaction to update subnet ${this.subnetId}:subnet ID:: ${msg}:error message:`,
                     life: 10000,
                 })
                 this.state.loaded = true
@@ -516,8 +516,10 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
             pools.removeAt(index)
             this.messageService.add({
                 severity: 'info',
-                summary: specified ? `Pool ${poolHeader} deleted from the form` : `Pool deleted from the form`,
-                detail: 'You can restore the original pools using the Revert Changes button below.',
+                summary: specified
+                    ? $localize`:@@subnet.pool-deleted:Pool ${poolHeader}:pool: deleted from the form`
+                    : $localize`:@@subnet.pool-deleted-unspecified:Pool deleted from the form`,
+                detail: $localize`:@@subnet.restore-pools:You can restore the original pools using the Revert Changes button below.`,
                 life: 10000,
             })
         }
@@ -552,8 +554,10 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
             pools.removeAt(index)
             this.messageService.add({
                 severity: 'info',
-                summary: specified ? `Pool ${poolHeader} deleted from the form` : `Pool deleted from the form`,
-                detail: 'You can restore the original pools using the Revert Changes button below.',
+                summary: specified
+                    ? $localize`:@@subnet.pool-deleted:Pool ${poolHeader}:pool: deleted from the form`
+                    : $localize`:@@subnet.pool-deleted-unspecified:Pool deleted from the form`,
+                detail: $localize`:@@subnet.restore-pools:You can restore the original pools using the Revert Changes button below.`,
                 life: 10000,
             })
         }
@@ -609,8 +613,8 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
         } catch (err) {
             this.messageService.add({
                 severity: 'error',
-                summary: 'Cannot commit the subnet',
-                detail: 'Failed to process the subnet form: ' + err,
+                summary: $localize`:@@subnet.commit-failed:Cannot commit the subnet`,
+                detail: $localize`:@@subnet.form-failed:Failed to process the subnet form: ${err}:error message:`,
                 life: 10000,
             })
             return
@@ -626,7 +630,7 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
                 .then(() => {
                     this.messageService.add({
                         severity: 'success',
-                        summary: 'Subnet successfully updated',
+                        summary: $localize`:@@subnet.updated:Subnet successfully updated`,
                     })
                     // Notify the parent component about successful submission.
                     this.formSubmit.emit(this.state)
@@ -638,8 +642,8 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
                     }
                     this.messageService.add({
                         severity: 'error',
-                        summary: 'Cannot commit subnet updates',
-                        detail: 'Failed to update the subnet: ' + msg,
+                        summary: $localize`:@@subnet.update-commit-failed:Cannot commit subnet updates`,
+                        detail: $localize`:@@subnet.update-failed:Failed to update the subnet: ${msg}:error message:`,
                         life: 10000,
                     })
                 })
@@ -652,7 +656,7 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
             .then((data) => {
                 this.messageService.add({
                     severity: 'success',
-                    summary: 'Subnet successfully created',
+                    summary: $localize`:@@subnet.created:Subnet successfully created`,
                 })
                 // Notify the parent component about successful submission.
                 this.state.subnetId = data.subnetId
@@ -662,8 +666,8 @@ export class SubnetFormComponent implements OnInit, OnDestroy {
                 let msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot commit subnet',
-                    detail: 'Failed to create the subnet: ' + msg,
+                    summary: $localize`:@@subnet.create-commit-failed:Cannot commit subnet`,
+                    detail: $localize`:@@subnet.create-failed:Failed to create the subnet: ${msg}:error message:`,
                     life: 10000,
                 })
             })

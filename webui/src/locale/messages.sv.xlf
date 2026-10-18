@@ -5821,6 +5821,120 @@
           <context context-type="linenumber">324,325</context>
         </context-group>
       <target state="translated">Fortsätt</target></trans-unit>
+      <trans-unit id="subnet.create-transaction-failed" datatype="html">
+        <source>Cannot create new transaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">297</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      <target state="translated">Kan inte skapa en ny transaktion</target></trans-unit>
+      <trans-unit id="subnet.create-transaction-detail" datatype="html">
+        <source>Failed to create transaction for subnet creation: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">298</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa en transaktion för att skapa subnätet: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="subnet.update-transaction-detail" datatype="html">
+        <source>Failed to create transaction to update subnet <x id="subnet ID" equiv-text="this.subnetId" />: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">323</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa en transaktion för att uppdatera subnätet <x id="subnet ID" equiv-text="this.subnetId" />: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="subnet.pool-deleted" datatype="html">
+        <source>Pool <x id="pool" equiv-text="poolHeader" /> deleted from the form</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">520</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">558</context>
+        </context-group>
+      <target state="translated">Poolen <x id="pool" equiv-text="poolHeader" /> har tagits bort från formuläret</target></trans-unit>
+      <trans-unit id="subnet.pool-deleted-unspecified" datatype="html">
+        <source>Pool deleted from the form</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">521</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">559</context>
+        </context-group>
+      <target state="translated">Poolen har tagits bort från formuläret</target></trans-unit>
+      <trans-unit id="subnet.restore-pools" datatype="html">
+        <source>You can restore the original pools using the Revert Changes button below.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">522</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">560</context>
+        </context-group>
+      <target state="translated">Du kan återställa de ursprungliga poolerna med knappen Återställ ändringar nedan.</target></trans-unit>
+      <trans-unit id="subnet.commit-failed" datatype="html">
+        <source>Cannot commit the subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">616</context>
+        </context-group>
+      <target state="translated">Kan inte verkställa subnätet</target></trans-unit>
+      <trans-unit id="subnet.form-failed" datatype="html">
+        <source>Failed to process the subnet form: <x id="error message" equiv-text="err" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">617</context>
+        </context-group>
+      <target state="translated">Det gick inte att behandla formuläret för subnätet: <x id="error message" equiv-text="err" /></target></trans-unit>
+      <trans-unit id="subnet.updated" datatype="html">
+        <source>Subnet successfully updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">633</context>
+        </context-group>
+      <target state="translated">Subnätet har uppdaterats</target></trans-unit>
+      <trans-unit id="subnet.update-commit-failed" datatype="html">
+        <source>Cannot commit subnet updates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">645</context>
+        </context-group>
+      <target state="translated">Kan inte verkställa uppdateringar av subnätet</target></trans-unit>
+      <trans-unit id="subnet.update-failed" datatype="html">
+        <source>Failed to update the subnet: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">646</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera subnätet: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="subnet.created" datatype="html">
+        <source>Subnet successfully created</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">659</context>
+        </context-group>
+      <target state="translated">Subnätet har skapats</target></trans-unit>
+      <trans-unit id="subnet.create-commit-failed" datatype="html">
+        <source>Cannot commit subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">669</context>
+        </context-group>
+      <target state="translated">Kan inte verkställa subnätet</target></trans-unit>
+      <trans-unit id="subnet.create-failed" datatype="html">
+        <source>Failed to create the subnet: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.ts</context>
+          <context context-type="linenumber">670</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa subnätet: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="5997715932509676553" datatype="html">
         <source>DHCP Servers Using the Subnet</source>
         <context-group purpose="location">
