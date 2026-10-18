@@ -560,6 +560,10 @@
           <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
           <context context-type="linenumber">128,129</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">249,250</context>
+        </context-group>
       <target state="translated">Avbryt</target></trans-unit>
       <trans-unit id="checkers.globally" datatype="html">
         <source>globally</source>
@@ -1481,6 +1485,90 @@
           <context context-type="linenumber">52,53</context>
         </context-group>
       <target state="translated">Filter</target></trans-unit>
+      <trans-unit id="user.form.create-title" datatype="html">
+        <source>Creating new account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      <target state="translated">Skapa nytt konto</target></trans-unit>
+      <trans-unit id="user.form.edit-title" datatype="html">
+        <source>Editing an account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      <target state="translated">Redigera konto</target></trans-unit>
+      <trans-unit id="user.form.account-title" datatype="html">
+        <source>User account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">46,49</context>
+        </context-group>
+      <target state="translated">Användarkonto</target></trans-unit>
+      <trans-unit id="user.login" datatype="html">
+        <source>Login*:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      <target state="translated">Inloggning*:</target></trans-unit>
+      <trans-unit id="user.email" datatype="html">
+        <source>Email:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">76,78</context>
+        </context-group>
+      <target state="translated">E-post:</target></trans-unit>
+      <trans-unit id="user.first-name" datatype="html">
+        <source>First name*:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+      <target state="translated">Förnamn*:</target></trans-unit>
+      <trans-unit id="user.last-name" datatype="html">
+        <source>Last name*:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">121,123</context>
+        </context-group>
+      <target state="translated">Efternamn*:</target></trans-unit>
+      <trans-unit id="user.group" datatype="html">
+        <source>Group*:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">149,151</context>
+        </context-group>
+      <target state="translated">Grupp*:</target></trans-unit>
+      <trans-unit id="user.password" datatype="html">
+        <source>Password*:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">178,180</context>
+        </context-group>
+      <target state="translated">Lösenord*:</target></trans-unit>
+      <trans-unit id="user.repeat-password" datatype="html">
+        <source>Repeat password*:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">197,200</context>
+        </context-group>
+      <target state="translated">Upprepa lösenord*:</target></trans-unit>
+      <trans-unit id="user.force-password-change" datatype="html">
+        <source>Force password change:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">220,223</context>
+        </context-group>
+      <target state="translated">Tvinga lösenordsbyte:</target></trans-unit>
+      <trans-unit id="common.save" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">238,240</context>
+        </context-group>
+      <target state="translated">Spara</target></trans-unit>
       <trans-unit id="version.more-info" datatype="html">
         <source>More Version Info</source>
         <context-group purpose="location">

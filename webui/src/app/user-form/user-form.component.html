@@ -1,7 +1,7 @@
 <div class="grid">
     <div class="col-12 lg:col-4">
         @if (tabType === TabType.New) {
-            <p-panel header="Creating new account">
+            <p-panel i18n-header="@@user.form.create-title" header="Creating new account">
                 <p>
                     To create a new user account, please specify the user's login, first name, and last name. An email
                     address is optional but strongly recommended. If an email is provided, the user can sign in either
@@ -21,7 +21,7 @@
                 </p>
             </p-panel>
         } @else if (tabType === TabType.Edit) {
-            <p-panel header="Editing an account">
+            <p-panel i18n-header="@@user.form.edit-title" header="Editing an account">
                 <p>
                     Use this form to modify user account information, add a missing email address, or change the group
                     that the user is associated with.
@@ -43,10 +43,10 @@
     </div>
     <div class="col-12 lg:col-8">
         <form [formGroup]="formGroup">
-            <p-panel header="User account">
+            <p-panel i18n-header="@@user.form.account-title" header="User account">
                 @if (isInternalUser()) {
                     <div class="field grid">
-                        <label for="userLogin" class="col-12 sm:col-3">Login*:</label>
+                        <label for="userLogin" class="col-12 sm:col-3" i18n="@@user.login">Login*:</label>
                         <div class="col-12 sm:col-9">
                             <input
                                 pInputText
@@ -73,7 +73,7 @@
                         }
                     </div>
                     <div class="field grid">
-                        <label for="userEmail" class="col-12 sm:col-3">Email:</label>
+                        <label for="userEmail" class="col-12 sm:col-3" i18n="@@user.email">Email:</label>
                         <div class="col-12 sm:col-9">
                             <input
                                 pInputText
@@ -91,7 +91,7 @@
                         }
                     </div>
                     <div class="field grid">
-                        <label for="userFirst" class="col-12 sm:col-3">First name*:</label>
+                        <label for="userFirst" class="col-12 sm:col-3" i18n="@@user.first-name">First name*:</label>
                         <div class="col-12 sm:col-9">
                             <input
                                 pInputText
@@ -118,7 +118,7 @@
                         }
                     </div>
                     <div class="field grid">
-                        <label for="userLast" class="col-12 sm:col-3">Last name*:</label>
+                        <label for="userLast" class="col-12 sm:col-3" i18n="@@user.last-name">Last name*:</label>
                         <div class="col-12 sm:col-9">
                             <input
                                 pInputText
@@ -146,7 +146,7 @@
                     </div>
                 }
                 <div class="field grid">
-                    <label for="userGroup" class="col-12 sm:col-3">Group*:</label>
+                    <label for="userGroup" class="col-12 sm:col-3" i18n="@@user.group">Group*:</label>
                     <div class="col-12 sm:col-9">
                         <p-select
                             [options]="userGroups()"
@@ -175,7 +175,7 @@
                 </div>
                 @if (isInternalUser()) {
                     <div class="field grid">
-                        <label for="userPassword" class="col-12 sm:col-3">Password*:</label>
+                        <label for="userPassword" class="col-12 sm:col-3" i18n="@@user.password">Password*:</label>
                         <div class="col-12 sm:col-9">
                             <p-password
                                 formControlName="userPassword"
@@ -193,7 +193,9 @@
                         }
                     </div>
                     <div class="field grid">
-                        <label for="userPassword2" class="col-12 sm:col-3">Repeat password*:</label>
+                        <label for="userPassword2" class="col-12 sm:col-3" i18n="@@user.repeat-password"
+                            >Repeat password*:</label
+                        >
                         <div class="col-12 sm:col-9">
                             <p-password
                                 [feedback]="false"
@@ -214,7 +216,9 @@
                         }
                     </div>
                     <div class="field grid">
-                        <label for="changePassword" class="col-12 sm:col-3">Force password change:</label>
+                        <label for="changePassword" class="col-12 sm:col-3" i18n="@@user.force-password-change"
+                            >Force password change:</label
+                        >
                         <div class="col-12 sm:col-9">
                             <p-checkbox formControlName="changePassword" [binary]="true"></p-checkbox>
                         </div>
@@ -229,6 +233,7 @@
                     <p-button
                         [disabled]="formGroup.invalid || user()?.externallyManagedGroups"
                         icon="pi pi-pencil"
+                        i18n-label="@@common.save"
                         label="Save"
                         severity="success"
                         id="save-button"
@@ -239,6 +244,7 @@
                     <p-button
                         class="ml-2"
                         icon="pi pi-times"
+                        i18n-label="@@common.cancel"
                         label="Cancel"
                         severity="secondary"
                         id="cancel-button"
