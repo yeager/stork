@@ -4086,7 +4086,7 @@
           <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
           <context context-type="linenumber">252,262</context>
         </context-group>
-      <target state="translated">DHCP-alternativ /  Alla servrar <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualDhcpOptions()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                             entity=&quot;daemon&quot;                                             [showEntityName]=&quot;false&quot;                                             [attrs]=&quot;localSharedNetwork&quot;                                         &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
+      <target state="translated">DHCP-alternativ /   Alla servrar </target></trans-unit>
       <trans-unit id="shared-networks.filter-help-intro" datatype="html">
         <source> The table below can be filtered by entering text in the search box; the table shows all shared networks matching the filter text. The only field currently supported for such filtering is: </source>
         <context-group purpose="location">
@@ -4453,14 +4453,14 @@
           <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
           <context context-type="linenumber">160,170</context>
         </context-group>
-      <target state="translated">Pooler /  Alla servrar <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualPools()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                         entity=&quot;daemon&quot;                                         [showEntityName]=&quot;false&quot;                                         [attrs]=&quot;localSubnet&quot;                                     &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
+      <target state="translated">Pooler /   Alla servrar </target></trans-unit>
       <trans-unit id="3642400664092909738" datatype="html">
         <source>User Context /  <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualUserContext()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                         entity=&quot;daemon&quot;                                         [showEntityName]=&quot;false&quot;                                         [attrs]=&quot;localSubnet&quot;                                     &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
           <context context-type="linenumber">208,218</context>
         </context-group>
-      <target state="translated">Användarkontext /  Alla servrar <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualUserContext()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                         entity=&quot;daemon&quot;                                         [showEntityName]=&quot;false&quot;                                         [attrs]=&quot;localSubnet&quot;                                     &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
+      <target state="translated">Användarkontext /   Alla servrar </target></trans-unit>
       <trans-unit id="8484038936178880663" datatype="html">
         <source>No user context configured.</source>
         <context-group purpose="location">
