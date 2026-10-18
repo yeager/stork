@@ -399,8 +399,8 @@ export class HostTabComponent {
                 const msg = getErrorMessage(err)
                 this.msgService.add({
                     severity: 'error',
-                    summary: 'Error searching leases for the host',
-                    detail: 'Error searching by host ID ' + hostId + ': ' + msg,
+                    summary: $localize`:@@host.leases-search-failed:Error searching leases for the host`,
+                    detail: $localize`:@@host.leases-search-failed-detail:Error searching by host ID ${hostId}:host ID:: ${msg}:error message:`,
                     life: 10000,
                 })
             }
@@ -480,17 +480,17 @@ export class HostTabComponent {
     getLeaseUsageText(usage) {
         switch (usage) {
             case this.Usage.Used:
-                return 'in use'
+                return $localize`:@@host.lease-used:in use`
             case this.Usage.Declined:
-                return 'declined'
+                return $localize`:@@host.lease-declined:declined`
             case this.Usage.Expired:
-                return 'expired'
+                return $localize`:@@host.lease-expired:expired`
             case this.Usage.Conflicted:
-                return 'in conflict'
+                return $localize`:@@host.lease-conflicted:in conflict`
             default:
                 break
         }
-        return 'unused'
+        return $localize`:@@host.lease-unused:unused`
     }
 
     /**
@@ -626,12 +626,12 @@ export class HostTabComponent {
         this.confirmService.confirm({
             key: id,
             message: 'Are you sure that you want to permanently delete this host reservation?',
-            header: 'Delete Host',
+            header: $localize`:@@host.delete-title:Delete Host`,
             icon: 'pi pi-exclamation-triangle',
-            rejectButtonProps: { text: true, icon: 'pi pi-times', label: 'Cancel' },
+            rejectButtonProps: { text: true, icon: 'pi pi-times', label: $localize`:@@common.cancel:Cancel` },
             acceptButtonProps: {
                 icon: 'pi pi-check',
-                label: 'Delete',
+                label: $localize`:@@common.delete:Delete`,
             },
             accept: () => {
                 this.deleteHost()
@@ -654,7 +654,7 @@ export class HostTabComponent {
                 this.hostDeleted = false
                 this.msgService.add({
                     severity: 'success',
-                    summary: 'Host reservation successfully deleted',
+                    summary: $localize`:@@host.deleted:Host reservation successfully deleted`,
                 })
                 // Notify the parent that the host was deleted and the tab can be closed.
                 this.hostDelete.emit(this.host)
@@ -666,8 +666,8 @@ export class HostTabComponent {
                 const msg = getErrorMessage(err)
                 this.msgService.add({
                     severity: 'error',
-                    summary: 'Cannot delete the host',
-                    detail: 'Failed to delete the host: ' + msg,
+                    summary: $localize`:@@host.delete-failed:Cannot delete the host`,
+                    detail: $localize`:@@host.delete-failed-detail:Failed to delete the host: ${msg}:error message:`,
                     life: 10000,
                 })
             })

@@ -931,6 +931,10 @@
           <context context-type="linenumber">408,409</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">631</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
           <context context-type="linenumber">94,95</context>
         </context-group>
@@ -1475,6 +1479,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
           <context context-type="linenumber">427</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">634</context>
         </context-group>
       <target state="translated">Ta bort</target></trans-unit>
       <trans-unit id="daemon.delete.confirm" datatype="html">
@@ -2821,6 +2829,83 @@
           <context context-type="linenumber">396,399</context>
         </context-group>
       <target state="translated">Värden förekommer flera gånger i konfigurationsfilen och värddatabasen.</target></trans-unit>
+      <trans-unit id="host.leases-search-failed" datatype="html">
+        <source>Error searching leases for the host</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">402</context>
+        </context-group>
+      <target state="translated">Fel vid sökning efter leaser för värden</target></trans-unit>
+      <trans-unit id="host.leases-search-failed-detail" datatype="html">
+        <source>Error searching by host ID <x id="host ID" equiv-text="hostId" />: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">403</context>
+        </context-group>
+      <target state="translated">Fel vid sökning med värd-ID <x id="host ID" equiv-text="hostId" />: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="host.lease-used" datatype="html">
+        <source>in use</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">483</context>
+        </context-group>
+      <target state="translated">används</target></trans-unit>
+      <trans-unit id="host.lease-declined" datatype="html">
+        <source>declined</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">485</context>
+        </context-group>
+      <target state="translated">nekad</target></trans-unit>
+      <trans-unit id="host.lease-expired" datatype="html">
+        <source>expired</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">487</context>
+        </context-group>
+      <target state="translated">utgången</target></trans-unit>
+      <trans-unit id="host.lease-conflicted" datatype="html">
+        <source>in conflict</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">489</context>
+        </context-group>
+      <target state="translated">i konflikt</target></trans-unit>
+      <trans-unit id="host.lease-unused" datatype="html">
+        <source>unused</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">493</context>
+        </context-group>
+      <target state="translated">oanvänd</target></trans-unit>
+      <trans-unit id="host.delete-title" datatype="html">
+        <source>Delete Host</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">629</context>
+        </context-group>
+      <target state="translated">Ta bort värd</target></trans-unit>
+      <trans-unit id="host.deleted" datatype="html">
+        <source>Host reservation successfully deleted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">657</context>
+        </context-group>
+      <target state="translated">Värdreservationen har tagits bort</target></trans-unit>
+      <trans-unit id="host.delete-failed" datatype="html">
+        <source>Cannot delete the host</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">669</context>
+        </context-group>
+      <target state="translated">Kan inte ta bort värden</target></trans-unit>
+      <trans-unit id="host.delete-failed-detail" datatype="html">
+        <source>Failed to delete the host: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">670</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort värden: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="menu.host-reservations" datatype="html">
         <source>Host Reservations</source>
         <context-group purpose="location">
