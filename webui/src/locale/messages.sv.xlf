@@ -1747,6 +1747,10 @@
           <context context-type="linenumber">41,42</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-view/kea-global-configuration-view.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
           <context context-type="linenumber">59,60</context>
         </context-group>
@@ -2060,6 +2064,20 @@
           <context context-type="linenumber">29,33</context>
         </context-group>
       <target state="translated">Tom identifierare</target></trans-unit>
+      <trans-unit id="6568528235266559788" datatype="html">
+        <source>Global DHCP Parameters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-view/kea-global-configuration-view.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      <target state="translated">Globala DHCP-parametrar</target></trans-unit>
+      <trans-unit id="6488439690275196948" datatype="html">
+        <source>Global DHCP Options</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-view/kea-global-configuration-view.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      <target state="translated">Globala DHCP-alternativ</target></trans-unit>
       <trans-unit id="lease.client" datatype="html">
         <source>Client</source>
         <context-group purpose="location">
@@ -2756,6 +2774,77 @@
           <context context-type="linenumber">253,256</context>
         </context-group>
       <target state="translated">Inga delade nät hittades.</target></trans-unit>
+      <trans-unit id="2241001148712989212" datatype="html">
+        <source>Parameter &amp; value</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      <target state="translated">Parameter och värde</target></trans-unit>
+      <trans-unit id="4545041448523656285" datatype="html">
+        <source>Unlock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+      <target state="translated">Lås upp</target></trans-unit>
+      <trans-unit id="1183601349925746054" datatype="html">
+        <source>Parameter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      <target state="translated">Parameter</target></trans-unit>
+      <trans-unit id="6555318547274416232" datatype="html">
+        <source>Value</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      <target state="translated">Värde</target></trans-unit>
+      <trans-unit id="9129342694323883910" datatype="html">
+        <source>Kea <x id="INTERPOLATION" equiv-text="{{ controls.data.versionLowerBound }}" /> and later only </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      <target state="translated">Endast Kea <x id="INTERPOLATION" equiv-text="{{ controls.data.versionLowerBound }}" /> </target></trans-unit>
+      <trans-unit id="3489892827885706213" datatype="html">
+        <source>Kea earlier than <x id="INTERPOLATION" equiv-text="{{ controls.data.versionUpperBound }}" /> only </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      <target state="translated">Endast Kea tidigare än <x id="INTERPOLATION" equiv-text="{{ controls.data.versionUpperBound }}" /> </target></trans-unit>
+      <trans-unit id="4183183873507004412" datatype="html">
+        <source>(not specified)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">83,85</context>
+        </context-group>
+      <target state="translated">(inte angivet)</target></trans-unit>
+      <trans-unit id="6185035155992471587" datatype="html">
+        <source>Something else</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">149,151</context>
+        </context-group>
+      <target state="translated">Något annat</target></trans-unit>
+      <trans-unit id="8700121026680200191" datatype="html">
+        <source>Clear</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      <target state="translated">Rensa</target></trans-unit>
       <trans-unit id="subnet.dhcp-servers-and-tags" datatype="html">
         <source>DHCP Servers and/or Server Tags</source>
         <context-group purpose="location">

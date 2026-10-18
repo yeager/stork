@@ -1,14 +1,14 @@
 @if (parameterNames.length > 0) {
     <div class="flex flex-column gap-4">
         <div class="shared-parameter-wrapper font-semibold mt-3 flex gap-4 pb-4">
-            <div class="md:hidden flex-auto">Parameter &amp; value</div>
+            <div class="md:hidden flex-auto" i18n>Parameter &amp; value</div>
             @if (servers?.length > 1) {
-                <div class="md:hidden flex-none">Unlock</div>
+                <div class="md:hidden flex-none" i18n>Unlock</div>
             }
-            <div class="hidden md:block w-20-perc">Parameter</div>
-            <div class="hidden md:block flex-auto">Value</div>
+            <div class="hidden md:block w-20-perc" i18n>Parameter</div>
+            <div class="hidden md:block flex-auto" i18n>Value</div>
             @if (servers?.length > 1) {
-                <div class="hidden md:block flex-none">Unlock</div>
+                <div class="hidden md:block flex-none" i18n>Unlock</div>
             }
         </div>
         @for (parameterName of parameterNames; track parameterName) {
@@ -35,12 +35,12 @@
                         {{ uncamelCase(parameterName) }}
                         @if (controls.data.versionLowerBound) {
                             <small class="app-error block mt-2 pr-4 md:pr-6 text-left"
-                                >Kea {{ controls.data.versionLowerBound }} and later only
+                                 i18n>Kea {{ controls.data.versionLowerBound }} and later only
                             </small>
                         }
                         @if (controls.data.versionUpperBound) {
                             <small class="app-error block mt-2 pr-4 md:pr-6 text-left"
-                                >Kea earlier than {{ controls.data.versionUpperBound }} only
+                                 i18n>Kea earlier than {{ controls.data.versionUpperBound }} only
                             </small>
                         }
                     </div>
@@ -80,7 +80,7 @@
                                                             [showClear]="true"
                                                             [formControlName]="index"
                                                             class="max-w-form"
-                                                            placeholder="(not specified)"
+                                                            i18n-placeholder placeholder="(not specified)"
                                                         >
                                                         </p-multiSelect>
                                                     } @else {
@@ -146,13 +146,13 @@
                                                 </app-dhcp-client-class-set-form>
                                             }
                                             @default {
-                                                Something else
+                                                <ng-container i18n>Something else</ng-container>
                                             }
                                         }
                                     </div>
                                     <p-button
                                         [disabled]="control.value === (controls.data?.clearValue ?? null)"
-                                        label="Clear"
+                                        i18n-label label="Clear"
                                         class="hidden md:inline-flex flex-none ml-2"
                                         [text]="true"
                                         size="small"
@@ -163,7 +163,7 @@
                                         [text]="true"
                                         icon="pi pi-times"
                                         [disabled]="control.value === (controls.data?.clearValue ?? null)"
-                                        title="Clear"
+                                        i18n-title title="Clear"
                                         (click)="control.setValue(controls.data?.clearValue ?? null)"
                                         styleClass="md:hidden ml-2"
                                         size="small"
