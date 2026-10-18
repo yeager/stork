@@ -213,6 +213,15 @@ export interface MappedHostBeginData {
     ],
 })
 export class HostFormComponent implements OnInit, OnDestroy {
+    readonly messages = {
+        validHex: $localize`:@@host.valid-hex:Please specify valid hexadecimal digits (e.g., ab:09:ef:01).`,
+        identifierRequired: $localize`:@@host.identifier-required:DHCP identifier is required.`,
+        validIPv4: $localize`:@@host.valid-ipv4:Please specify a valid IPv4 address.`,
+        bootFields: $localize`:@@host.boot-fields:Boot Fields`,
+        clientClasses: $localize`:@@host.client-classes:Client Classes`,
+        dhcpOptions: $localize`:@@host.dhcp-options:DHCP Options`,
+    }
+
     /**
      * Private form builder instance.
      * @private

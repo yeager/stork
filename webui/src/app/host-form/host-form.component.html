@@ -8,11 +8,11 @@
                         formControlName="splitFormMode"
                         (onChange)="onSplitModeChange()"
                     ></p-toggleswitch>
-                    <div class="flex ml-2">Configure individual server values.</div>
+                    <div class="flex ml-2" i18n="@@host.configure-individual-values">Configure individual server values.</div>
                 </div>
                 <div class="flex align-items-center mt-2">
                     <p-toggleswitch ngDefaultControl formControlName="globalReservation"></p-toggleswitch>
-                    <div class="flex ml-2">Global reservation.</div>
+                    <div class="flex ml-2" i18n="@@host.global-reservation">Global reservation.</div>
                 </div>
             </div>
         </p-fieldset>
@@ -38,7 +38,7 @@
                     formGroup.get('selectedDaemons').invalid &&
                     (formGroup.get('selectedDaemons').dirty || formGroup.get('selectedDaemons').touched)
                 ) {
-                    <small class="app-error block">At least one server must be selected. </small>
+                    <small class="app-error block" i18n="@@host.select-server">At least one server must be selected. </small>
                 }
             </div>
             @if (!formGroup.get('globalReservation').value) {
@@ -62,7 +62,7 @@
                         formGroup.controls['selectedSubnet'].invalid &&
                         (formGroup.controls['selectedSubnet'].dirty || formGroup.controls['selectedSubnet'].touched)
                     ) {
-                        <small class="app-error block"
+                        <small class="app-error block" i18n="@@host.select-subnet"
                             >A subnet must be selected if the reservation is not global.
                         </small>
                     }
@@ -92,6 +92,7 @@
                             formControlName="idInputHex"
                             class="max-w-form"
                             placeholder="e.g. 01:02:03:04:05:06"
+                            i18n-placeholder="@@host.identifier-hex-example"
                         />
                         @if (
                             formGroup.get('hostIdGroup.idInputHex').invalid &&
@@ -101,10 +102,10 @@
                             <small class="app-error block"
                                 >{{
                                     formGroup.get('hostIdGroup.idInputHex').hasError('pattern')
-                                        ? 'Please specify valid hexadecimal digits (e.g., ab:09:ef:01).'
+                                        ? messages.validHex
                                         : formGroup.get('hostIdGroup.idInputHex').hasError('maxlength')
                                           ? formGroup.get('hostIdGroup.idInputHex').errors['maxlength']
-                                          : 'DHCP identifier is required.'
+                                          : messages.identifierRequired
                                 }}
                             </small>
                         }
@@ -116,6 +117,7 @@
                             formControlName="idInputText"
                             class="max-w-form"
                             placeholder="text identifier format"
+                            i18n-placeholder="@@host.identifier-text-format"
                         />
                         @if (
                             formGroup.get('hostIdGroup.idInputText').invalid &&
@@ -128,7 +130,7 @@
                                         ? 'The identifier length exceeds the maximum value of ' +
                                           formGroup.get('hostIdGroup.idInputText').errors['maxlength'].requiredLength +
                                           '.'
-                                        : 'DHCP identifier is required.'
+                                        : messages.identifierRequired
                                 }}
                             </small>
                         }
@@ -148,7 +150,7 @@
                     (formGroup.get('hostname').dirty || formGroup.get('hostname').touched)
                 ) {
                     <small class="app-error block"
-                        >Please specify a valid hostname (e.g. alice-laptop or bob.example.org.).
+                        i18n="@@host.valid-hostname">Please specify a valid hostname (e.g. alice-laptop or bob.example.org.).
                     </small>
                 }
             </div>
@@ -176,7 +178,7 @@
                                                 {{
                                                     ipGroup.get('inputIPv4').hasError('ip-subnet-range')
                                                         ? ipGroup.get('inputIPv4').errors['ip-subnet-range']
-                                                        : 'Please specify a valid IPv4 address.'
+                                                        : messages.validIPv4
                                                 }}
                                             </small>
                                         }
@@ -199,7 +201,7 @@
                                                 @if (ipGroup.get('inputNA').hasError('ip-subnet-range')) {
                                                     {{ ipGroup.get('inputNA').errors['ip-subnet-range'] }}
                                                 } @else {
-                                                    Please specify a valid IPv6 address.
+                                                    <ng-container i18n="@@host.valid-ipv6">Please specify a valid IPv6 address.</ng-container>
                                                 }
                                             </small>
                                         }
@@ -213,6 +215,7 @@
                                             formControlName="inputPD"
                                             class="max-w-form"
                                             placeholder="e.g. 3000:1::"
+                                            i18n-placeholder="@@host.prefix-example"
                                         />
                                     </div>
                                     <div class="col-4 sm:col-2">
@@ -228,7 +231,7 @@
                                             ipGroup.get('inputPD').invalid &&
                                             (ipGroup.get('inputPD').dirty || ipGroup.get('inputPD').touched)
                                         ) {
-                                            <small class="app-error block">Please specify a valid IPv6 prefix. </small>
+                                            <small class="app-error block" i18n="@@host.valid-ipv6-prefix">Please specify a valid IPv6 prefix. </small>
                                         }
                                     </div>
                                     <ng-container *ngTemplateOutlet="ipDeleteButton"></ng-container>
@@ -257,6 +260,7 @@
                         [rounded]="true"
                         [text]="true"
                         label="Add IP Reservation"
+                        i18n-label="@@host.add-ip-reservation"
                         (click)="addIPInput()"
                     ></p-button>
                 }
@@ -286,7 +290,7 @@
                                 <ng-container
                                     *ngTemplateOutlet="
                                         splittableFieldsetHeaderTemplate;
-                                        context: { configuredName: 'Boot Fields', index: i }
+                                    context: { configuredName: messages.bootFields, index: i }
                                     "
                                 ></ng-container>
                             </ng-template>
@@ -298,14 +302,14 @@
                                         class="max-w-form"
                                         formControlName="nextServer"
                                     />
-                                    <label for="next-server-input-{{ i }}">Next Server</label>
+                                    <label for="next-server-input-{{ i }}" i18n="@@host.next-server">Next Server</label>
                                 </p-floatlabel>
                                 @if (
                                     getBootFieldsGroup(i).get('nextServer').invalid &&
                                     (getBootFieldsGroup(i).get('nextServer').dirty ||
                                         getBootFieldsGroup(i).get('nextServer').touched)
                                 ) {
-                                    <small class="app-error block">Please specify a valid IPv4 address. </small>
+                                    <small class="app-error block" i18n="@@host.valid-ipv4">Please specify a valid IPv4 address. </small>
                                 }
                             </div>
                             <div>
@@ -316,14 +320,14 @@
                                         class="max-w-form"
                                         formControlName="serverHostname"
                                     />
-                                    <label for="server-hostname-input-{{ i }}">Server Hostname</label>
+                                    <label for="server-hostname-input-{{ i }}" i18n="@@host.server-hostname">Server Hostname</label>
                                 </p-floatlabel>
                                 @if (
                                     getBootFieldsGroup(i).get('serverHostname').invalid &&
                                     (getBootFieldsGroup(i).get('serverHostname').dirty ||
                                         getBootFieldsGroup(i).get('serverHostname').touched)
                                 ) {
-                                    <small class="app-error block"
+                                    <small class="app-error block" i18n="@@host.valid-hostname"
                                         >Please specify a valid hostname (e.g. alice-laptop or bob.example.org.).
                                     </small>
                                 }
@@ -336,7 +340,7 @@
                                         class="max-w-form"
                                         formControlName="bootFileName"
                                     />
-                                    <label for="boot-file-name-input-{{ i }}">Boot File Name</label>
+                                    <label for="boot-file-name-input-{{ i }}" i18n="@@host.boot-file-name">Boot File Name</label>
                                 </p-floatlabel>
                             </div>
                         </p-fieldset>
@@ -352,7 +356,7 @@
                         <ng-container
                             *ngTemplateOutlet="
                                 splittableFieldsetHeaderTemplate;
-                                context: { configuredName: 'Client Classes', index: i }
+                                context: { configuredName: messages.clientClasses, index: i }
                             "
                         ></ng-container>
                     </ng-template>
@@ -374,7 +378,7 @@
                             <ng-container
                                 *ngTemplateOutlet="
                                     splittableFieldsetHeaderTemplate;
-                                    context: { configuredName: 'DHCP Options', index: i }
+                                context: { configuredName: messages.dhcpOptions, index: i }
                                 "
                             ></ng-container>
                         </ng-template>
@@ -396,14 +400,15 @@
                 <p-button
                     icon="pi pi-replay"
                     label="Revert Changes"
+                    i18n-label="@@common.revert-changes"
                     severity="secondary"
                     (onClick)="onRevert()"
                 ></p-button>
             }
-            <p-button label="Cancel" severity="secondary" (onClick)="onCancel()"></p-button>
-            <p-button label="Submit" [disabled]="formGroup.invalid" (onClick)="onSubmit()"></p-button>
-            <app-help-tip subject="Host Reservation Submission">
-                <p>
+            <p-button label="Cancel" i18n-label="@@common.cancel" severity="secondary" (onClick)="onCancel()"></p-button>
+            <p-button label="Submit" i18n-label="@@common.submit" [disabled]="formGroup.invalid" (onClick)="onSubmit()"></p-button>
+            <app-help-tip subject="Host Reservation Submission" i18n-subject="@@host.submission-help">
+                <p i18n="@@host.submission-help-text">
                     The submitted host reservation is created in Kea but may not appear in Stork immediately. Refresh
                     the list of host reservations to see the new reservation.
                 </p>
@@ -411,11 +416,11 @@
         </div>
     </form>
 } @else {
-    <p-fieldset legend="Errors" styleClass="mt-4">
+    <p-fieldset legend="Errors" i18n-legend="@@common.errors" styleClass="mt-4">
         <div class="max-w-40rem">
             <p-message severity="error">
                 <div class="flex flex-column">
-                    <div class="flex align-items-center m-4">
+                    <div class="flex align-items-center m-4" i18n="@@host.init-error">
                         In order to apply configuration changes, the server should begin a transaction between the user
                         and the server. The server should also return the current data required, in the form where the
                         host information is specified. Unfortunately, starting the new transaction failed with the
@@ -424,12 +429,12 @@
                     <div class="flex align-items-center m-4 font-italic">
                         {{ form.initError }}
                     </div>
-                    <div class="flex align-items-center m-4">Retrying can help in some cases.</div>
+                    <div class="flex align-items-center m-4" i18n="@@common.retrying-can-help">Retrying can help in some cases.</div>
                 </div>
             </p-message>
             <div class="mt-3">
-                <p-button label="Retry" (onClick)="onRetry()" class="mr-2"></p-button>
-                <p-button label="Back" (onClick)="onCancel()" />
+                <p-button label="Retry" i18n-label="@@common.retry" (onClick)="onRetry()" class="mr-2"></p-button>
+                <p-button label="Back" i18n-label="@@common.back" (onClick)="onCancel()" />
             </div>
         </div>
     </p-fieldset>
