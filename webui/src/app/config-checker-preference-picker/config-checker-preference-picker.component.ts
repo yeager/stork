@@ -185,73 +185,35 @@ export class ConfigCheckerPreferencePickerComponent {
     getCheckerDescription(checkerName: string): string {
         switch (checkerName) {
             case 'lease_cmds_presence':
-                return 'This checker verifies whether the lease_cmds hook library is loaded.'
+                return $localize`:@@checkers.description.lease-cmds:This checker verifies whether the lease_cmds hook library is loaded.`
             case 'host_cmds_presence':
-                return (
-                    'This checker verifies whether the host_cmds hook library is ' +
-                    'loaded when host backend is in use.'
-                )
+                return $localize`:@@checkers.description.host-cmds:This checker verifies whether the host_cmds hook library is loaded when host backend is in use.`
             case 'dispensable_shared_network':
-                return (
-                    'This checker verifies whether a shared network can be removed ' +
-                    'because it is empty or contains only one subnet.'
-                )
+                return $localize`:@@checkers.description.dispensable-network:This checker verifies whether a shared network can be removed because it is empty or contains only one subnet.`
             case 'dispensable_subnet':
-                return (
-                    'This checker verifies whether a subnet can be removed because ' +
-                    'it includes no pools and no reservations. The check is ' +
-                    'skipped when the host_cmds hook library is loaded because ' +
-                    'host reservations may be present in the database.'
-                )
+                return $localize`:@@checkers.description.dispensable-subnet:This checker verifies whether a subnet can be removed because it includes no pools and no reservations. The check is skipped when the host_cmds hook library is loaded because host reservations may be present in the database.`
             case 'out_of_pool_reservation':
-                return (
-                    'This checker suggests the use of out-of-pool host ' +
-                    'reservation mode when there are subnets with all host ' +
-                    'reservations outside of the dynamic pools.'
-                )
+                return $localize`:@@checkers.description.out-of-pool:This checker suggests the use of out-of-pool host reservation mode when there are subnets with all host reservations outside of the dynamic pools.`
             case 'overlapping_subnet':
-                return 'This checker verifies that subnet prefixes do not overlap.'
+                return $localize`:@@checkers.description.overlapping-subnet:This checker verifies that subnet prefixes do not overlap.`
             case 'canonical_prefix':
-                return 'This checker verifies that subnet prefixes are in the canonical form.'
+                return $localize`:@@checkers.description.canonical-prefix:This checker verifies that subnet prefixes are in the canonical form.`
             case 'ha_mt_presence':
-                return (
-                    'This checker verifies whether the High-Availability hook is ' +
-                    'running in multi-threading mode when Kea is running in ' +
-                    'this mode.'
-                )
+                return $localize`:@@checkers.description.ha-mt:This checker verifies whether the High-Availability hook is running in multi-threading mode when Kea is running in this mode.`
             case 'ha_dedicated_ports':
-                return (
-                    'This checker verifies that the multi-threading mode of ' +
-                    'High Availability is enabled together with the ' +
-                    'dedicated HTTP listeners, and that the peers communicate ' +
-                    'via the HTTP ports exposed by the dedicated listeners ' +
-                    'rather than via the Kea Control Agent.'
-                )
+                return $localize`:@@checkers.description.ha-ports:This checker verifies that the multi-threading mode of High Availability is enabled together with the dedicated HTTP listeners, and that the peers communicate via the HTTP ports exposed by the dedicated listeners rather than via the Kea Control Agent.`
             case 'address_pools_exhausted_by_reservations':
-                return 'This checker verifies that all available addresses in IP pools are not reserved for hosts.'
+                return $localize`:@@checkers.description.address-pools:This checker verifies that all available addresses in IP pools are not reserved for hosts.`
             case 'pd_pools_exhausted_by_reservations':
-                return 'This checker verifies that all available delegated prefixes in PD pools are not reserved for hosts.'
+                return $localize`:@@checkers.description.pd-pools:This checker verifies that all available delegated prefixes in PD pools are not reserved for hosts.`
             case 'subnet_cmds_and_cb_mutual_exclusion':
-                return (
-                    'This checker detects whether the subnet commands hook is ' +
-                    'simultaneously used with a configuration backend' +
-                    'database; if so, it suggests replacing subnet commands with the ' +
-                    'configuration backend command hook.'
-                )
+                return $localize`:@@checkers.description.subnet-cmds:This checker detects whether the subnet commands hook is simultaneously used with a configuration backenddatabase; if so, it suggests replacing subnet commands with the configuration backend command hook.`
             case 'agent_credentials_over_https':
-                return (
-                    'This checker verifies whether the Stork agent is communicating ' +
-                    'with the Kea Control Agent using TLS when ' +
-                    'HTTP authentication credentials (i.e., Basic Auth) are configured.'
-                )
+                return $localize`:@@checkers.description.agent-tls:This checker verifies whether the Stork agent is communicating with the Kea Control Agent using TLS when HTTP authentication credentials (i.e., Basic Auth) are configured.`
             case 'ca_control_sockets':
-                return 'This checker verifies that the Kea Control Agent configuration includes the control sockets.'
+                return $localize`:@@checkers.description.ca-control-sockets:This checker verifies that the Kea Control Agent configuration includes the control sockets.`
             case 'statistics_unavailable_due_to_number_overflow':
-                return (
-                    'This checker verifies whether statistics gathering is ' +
-                    'unavailable or inaccurate due to a number overflow in ' +
-                    'the statistics returned by the Kea DHCP daemon.'
-                )
+                return $localize`:@@checkers.description.statistics-overflow:This checker verifies whether statistics gathering is unavailable or inaccurate due to a number overflow in the statistics returned by the Kea DHCP daemon.`
             default:
                 return ''
         }
@@ -265,6 +227,28 @@ export class ConfigCheckerPreferencePickerComponent {
      */
     getActualState(checker: ConfigChecker): ConfigChecker.StateEnum {
         return this.changes[checker.name] ?? checker.state
+    }
+
+    /**
+     * Returns the localized display label for a checker state.
+     * @param state Checker state
+     * @returns Localized checker state label
+     */
+    getStateLabel(state: ConfigChecker.StateEnum): string {
+        return state === ConfigChecker.StateEnum.Enabled
+            ? $localize`:@@checkers.state.enabled:enabled`
+            : $localize`:@@checkers.state.disabled:disabled`
+    }
+
+    /**
+     * Returns the localized display label for a checker's global state.
+     * @param checker Configuration checker
+     * @returns Localized global checker state label
+     */
+    getGlobalStateLabel(checker: ConfigChecker): string {
+        return this.getStateLabel(
+            checker.globallyEnabled ? ConfigChecker.StateEnum.Enabled : ConfigChecker.StateEnum.Disabled
+        )
     }
 
     /**

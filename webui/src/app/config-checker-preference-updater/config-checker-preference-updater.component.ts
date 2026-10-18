@@ -87,7 +87,7 @@ export class ConfigCheckerPreferenceUpdaterComponent implements OnInit, OnDestro
                     catchError((err) => {
                         this.messageService.add({
                             severity: 'error',
-                            summary: 'Cannot get configuration checkers',
+                            summary: $localize`:@@checkers.error.get:Cannot get configuration checkers`,
                             detail: getErrorMessage(err),
                         })
                         return of([])
@@ -133,15 +133,15 @@ export class ConfigCheckerPreferenceUpdaterComponent implements OnInit, OnDestro
                 this.checkers = data.items
                 this.messageService.add({
                     severity: 'success',
-                    summary: 'Configuration checker preferences updated',
-                    detail: 'Updating succeeded',
+                    summary: $localize`:@@checkers.updated:Configuration checker preferences updated`,
+                    detail: $localize`:@@common.update-succeeded:Updating succeeded`,
                 })
             })
             .catch((err) => {
                 // Restore the checkers
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot update configuration checker preferences',
+                    summary: $localize`:@@checkers.error.update:Cannot update configuration checker preferences`,
                     detail: getErrorMessage(err),
                 })
             })

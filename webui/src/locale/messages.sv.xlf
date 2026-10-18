@@ -160,6 +160,10 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">274</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-page/config-checker-preference-page.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
       <target state="translated">Konfiguration</target></trans-unit>
       <trans-unit id="menu.users" datatype="html">
         <source>Users</source>
@@ -173,6 +177,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">285</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-page/config-checker-preference-page.component.ts</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       <target state="translated">Granskningskontroller</target></trans-unit>
       <trans-unit id="menu.settings" datatype="html">
@@ -281,6 +289,318 @@
           <context context-type="linenumber">241</context>
         </context-group>
       <target state="translated">Det gick inte att logga ut användaren: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="checkers.page.intro" datatype="html">
+        <source>This page displays the configurations of the review checkers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-page/config-checker-preference-page.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      <target state="translated">Den här sidan visar konfigurationerna för granskningskontrollerna.</target></trans-unit>
+      <trans-unit id="checkers.page.description" datatype="html">
+        <source> Stork can detect and report potential issues with the monitored servers' configurations. Dedicated "checkers" validate particular aspects of each configuration file, and generate reports with detailed descriptions and suggestions to eliminate the most typical errors and misconfigurations. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-page/config-checker-preference-page.component.html</context>
+          <context context-type="linenumber">5,10</context>
+        </context-group>
+      <target state="translated"> Stork kan upptäcka och rapportera möjliga problem i de övervakade servrarnas konfigurationer. Särskilda kontroller validerar olika delar av varje konfigurationsfil och skapar rapporter med detaljerade beskrivningar och förslag som undanröjer de vanligaste felen och felkonfigurationerna. </target></trans-unit>
+      <trans-unit id="checkers.page.disable-help" datatype="html">
+        <source> If any configuration reports are not relevant in your deployment, they can be disabled globally or for selected daemons. Any disabled checkers are not run, which improves both the clarity of the reports list and Stork's performance. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-page/config-checker-preference-page.component.html</context>
+          <context context-type="linenumber">10,15</context>
+        </context-group>
+      <target state="translated"> Om konfigurationsrapporter inte är relevanta i din installation kan de inaktiveras globalt eller för utvalda demoner. Inaktiverade kontroller körs inte, vilket både gör rapportlistan tydligare och förbättrar Storks prestanda. </target></trans-unit>
+      <trans-unit id="checkers.page.usage-help" datatype="html">
+        <source> Use the list on this page to disable or enable the checkers globally (i.e. for all daemons). To override this choice for individual daemons, choose the desired Daemon Name in the Services Status section of the DHCP dashboard, and then click the <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />Checkers<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" /> button in the Configuration Review Reports section at the bottom of the page. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-page/config-checker-preference-page.component.html</context>
+          <context context-type="linenumber">15,20</context>
+        </context-group>
+      <target state="translated"> Använd listan på den här sidan för att inaktivera eller aktivera kontrollerna globalt, alltså för alla demoner. Om du vill åsidosätta detta val för en enskild demon väljer du önskat demonnamn i avsnittet Tjänstestatus på DHCP-instrumentpanelen och klickar sedan på knappen <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;" />Kontroller<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;" /> i avsnittet Konfigurationsgranskningsrapporter längst ned på sidan. </target></trans-unit>
+      <trans-unit id="checkers.list" datatype="html">
+        <source>Checkers list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      <target state="translated">Kontrollista</target></trans-unit>
+      <trans-unit id="checkers.list.help" datatype="html">
+        <source> The table lists the available review checkers. Each of them is responsible for analyzing the daemon configuration to detect a particular issue. The table contains the checker states </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">13,16</context>
+        </context-group>
+      <target state="translated"> Tabellen visar de tillgängliga granskningskontrollerna. Varje kontroll analyserar demonkonfigurationen för att upptäcka ett visst problem. Tabellen innehåller kontrollernas status </target></trans-unit>
+      <trans-unit id="checkers.list.help.minimal" datatype="html">
+        <source> and names.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      <target state="translated"> och namn.</target></trans-unit>
+      <trans-unit id="checkers.list.help.full" datatype="html">
+        <source>, names, descriptions, selectors, and triggers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">19,23</context>
+        </context-group>
+      <target state="translated">, namn, beskrivningar, urval och utlösare.</target></trans-unit>
+      <trans-unit id="checkers.state.help" datatype="html">
+        <source> The state indicates whether the checker is enabled or disabled. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      <target state="translated"> Statusen visar om kontrollen är aktiverad eller inaktiverad. </target></trans-unit>
+      <trans-unit id="checkers.state.help.inherit" datatype="html">
+        <source> The state may also be inherited from the global settings. In this case, the actual state is presented in brackets. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">28,31</context>
+        </context-group>
+      <target state="translated"> Statusen kan också ärvas från de globala inställningarna. I så fall visas den faktiska statusen inom parentes. </target></trans-unit>
+      <trans-unit id="checkers.state.help.submit" datatype="html">
+        <source> The state changes must be confirmed by clicking the Submit button. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">33,36</context>
+        </context-group>
+      <target state="translated"> Statusändringarna måste bekräftas genom att du klickar på knappen Skicka. </target></trans-unit>
+      <trans-unit id="checkers.selectors.help" datatype="html">
+        <source> The selectors define the daemon groups where the specific configuration checker runs. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
+      <target state="translated"> Urvalen anger vilka demongrupper som den aktuella konfigurationskontrollen körs för. </target></trans-unit>
+      <trans-unit id="checkers.triggers.help" datatype="html">
+        <source> The triggers designate the condition that fires the checker (e.g. when a configuration or host reservation change has been detected, manually, etc.). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">41,45</context>
+        </context-group>
+      <target state="translated"> Utlösarna anger vilket villkor som startar kontrollen, till exempel en ändrad konfiguration eller värdreservation eller en manuell körning. </target></trans-unit>
+      <trans-unit id="checkers.state" datatype="html">
+        <source>State</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+      <target state="translated">Status</target></trans-unit>
+      <trans-unit id="checkers.name" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      <target state="translated">Namn</target></trans-unit>
+      <trans-unit id="checkers.description" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      <target state="translated">Beskrivning</target></trans-unit>
+      <trans-unit id="checkers.selectors" datatype="html">
+        <source>Selectors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      <target state="translated">Urval</target></trans-unit>
+      <trans-unit id="checkers.triggers" datatype="html">
+        <source>Triggers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">54,59</context>
+        </context-group>
+      <target state="translated">Utlösare</target></trans-unit>
+      <trans-unit id="checkers.none-enabled" datatype="html">
+        <source>There are no checkers enabled.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">101,105</context>
+        </context-group>
+      <target state="translated">Inga kontroller är aktiverade.</target></trans-unit>
+      <trans-unit id="common.submit" datatype="html">
+        <source>Submit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">109,111</context>
+        </context-group>
+      <target state="translated">Skicka</target></trans-unit>
+      <trans-unit id="common.reset" datatype="html">
+        <source>Reset</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">117,119</context>
+        </context-group>
+      <target state="translated">Återställ</target></trans-unit>
+      <trans-unit id="common.cancel" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">128,129</context>
+        </context-group>
+      <target state="translated">Avbryt</target></trans-unit>
+      <trans-unit id="checkers.globally" datatype="html">
+        <source>globally</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.html</context>
+          <context context-type="linenumber">161,163</context>
+        </context-group>
+      <target state="translated">globalt</target></trans-unit>
+      <trans-unit id="checkers.description.lease-cmds" datatype="html">
+        <source>This checker verifies whether the lease_cmds hook library is loaded.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att hook-biblioteket lease_cmds är inläst.</target></trans-unit>
+      <trans-unit id="checkers.description.host-cmds" datatype="html">
+        <source>This checker verifies whether the host_cmds hook library is loaded when host backend is in use.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att hook-biblioteket host_cmds är inläst när värdbakänden används.</target></trans-unit>
+      <trans-unit id="checkers.description.dispensable-network" datatype="html">
+        <source>This checker verifies whether a shared network can be removed because it is empty or contains only one subnet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar om ett delat nätverk kan tas bort eftersom det är tomt eller bara innehåller ett delnät.</target></trans-unit>
+      <trans-unit id="checkers.description.dispensable-subnet" datatype="html">
+        <source>This checker verifies whether a subnet can be removed because it includes no pools and no reservations. The check is skipped when the host_cmds hook library is loaded because host reservations may be present in the database.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar om ett delnät kan tas bort eftersom det saknar pooler och reservationer. Kontrollen hoppas över när hook-biblioteket host_cmds är inläst eftersom värdreservationer kan finnas i databasen.</target></trans-unit>
+      <trans-unit id="checkers.description.out-of-pool" datatype="html">
+        <source>This checker suggests the use of out-of-pool host reservation mode when there are subnets with all host reservations outside of the dynamic pools.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      <target state="translated">Den här kontrollen föreslår läget för värdreservationer utanför poolen när ett delnät har alla värdreservationer utanför de dynamiska poolerna.</target></trans-unit>
+      <trans-unit id="checkers.description.overlapping-subnet" datatype="html">
+        <source>This checker verifies that subnet prefixes do not overlap.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att delnätsprefix inte överlappar.</target></trans-unit>
+      <trans-unit id="checkers.description.canonical-prefix" datatype="html">
+        <source>This checker verifies that subnet prefixes are in the canonical form.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att delnätsprefix har kanonisk form.</target></trans-unit>
+      <trans-unit id="checkers.description.ha-mt" datatype="html">
+        <source>This checker verifies whether the High-Availability hook is running in multi-threading mode when Kea is running in this mode.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att High Availability-hooken körs i flertrådigt läge när Kea körs i detta läge.</target></trans-unit>
+      <trans-unit id="checkers.description.ha-ports" datatype="html">
+        <source>This checker verifies that the multi-threading mode of High Availability is enabled together with the dedicated HTTP listeners, and that the peers communicate via the HTTP ports exposed by the dedicated listeners rather than via the Kea Control Agent.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att High Availabilitys flertrådiga läge är aktiverat tillsammans med de dedikerade HTTP-lyssnarna och att noderna kommunicerar via HTTP-portarna som de dedikerade lyssnarna exponerar, i stället för via Kea Control Agent.</target></trans-unit>
+      <trans-unit id="checkers.description.address-pools" datatype="html">
+        <source>This checker verifies that all available addresses in IP pools are not reserved for hosts.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att inte alla tillgängliga adresser i IP-pooler är reserverade för värdar.</target></trans-unit>
+      <trans-unit id="checkers.description.pd-pools" datatype="html">
+        <source>This checker verifies that all available delegated prefixes in PD pools are not reserved for hosts.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att inte alla tillgängliga delegerade prefix i PD-pooler är reserverade för värdar.</target></trans-unit>
+      <trans-unit id="checkers.description.subnet-cmds" datatype="html">
+        <source>This checker detects whether the subnet commands hook is simultaneously used with a configuration backenddatabase; if so, it suggests replacing subnet commands with the configuration backend command hook.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+      <target state="translated">Den här kontrollen upptäcker om hooken för delnätskommandon används samtidigt med en konfigurationsbakändsdatabas. I så fall föreslår den att delnätskommandon ersätts med hooken för konfigurationsbakändskommandon.</target></trans-unit>
+      <trans-unit id="checkers.description.agent-tls" datatype="html">
+        <source>This checker verifies whether the Stork agent is communicating with the Kea Control Agent using TLS when HTTP authentication credentials (i.e., Basic Auth) are configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">212</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att Stork-agenten kommunicerar med Kea Control Agent via TLS när HTTP-autentiseringsuppgifter, alltså grundläggande autentisering, är konfigurerade.</target></trans-unit>
+      <trans-unit id="checkers.description.ca-control-sockets" datatype="html">
+        <source>This checker verifies that the Kea Control Agent configuration includes the control sockets.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar att Kea Control Agents konfiguration innehåller styruttag.</target></trans-unit>
+      <trans-unit id="checkers.description.statistics-overflow" datatype="html">
+        <source>This checker verifies whether statistics gathering is unavailable or inaccurate due to a number overflow in the statistics returned by the Kea DHCP daemon.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      <target state="translated">Den här kontrollen verifierar om statistikinsamlingen är otillgänglig eller felaktig på grund av ett talöverflöde i statistiken som Kea DHCP-demonen returnerar.</target></trans-unit>
+      <trans-unit id="checkers.state.enabled" datatype="html">
+        <source>enabled</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      <target state="translated">aktiverad</target></trans-unit>
+      <trans-unit id="checkers.state.disabled" datatype="html">
+        <source>disabled</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      <target state="translated">inaktiverad</target></trans-unit>
+      <trans-unit id="checkers.error.get" datatype="html">
+        <source>Cannot get configuration checkers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-updater/config-checker-preference-updater.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta konfigurationskontrollerna</target></trans-unit>
+      <trans-unit id="checkers.updated" datatype="html">
+        <source>Configuration checker preferences updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-updater/config-checker-preference-updater.component.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      <target state="translated">Inställningarna för konfigurationskontrollerna har uppdaterats</target></trans-unit>
+      <trans-unit id="common.update-succeeded" datatype="html">
+        <source>Updating succeeded</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-updater/config-checker-preference-updater.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      <target state="translated">Uppdateringen lyckades</target></trans-unit>
+      <trans-unit id="checkers.error.update" datatype="html">
+        <source>Cannot update configuration checker preferences</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-checker-preference-updater/config-checker-preference-updater.component.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera inställningarna för konfigurationskontrollerna</target></trans-unit>
       <trans-unit id="dashboard.welcome" datatype="html">
         <source>Welcome to Stork!</source>
         <context-group purpose="location">

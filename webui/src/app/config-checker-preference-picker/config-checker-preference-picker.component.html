@@ -6,30 +6,38 @@
 >
     <ng-template #caption>
         <div class="p-d-flex p-mt-1 p-ai-center">
-            Checkers list
-            <app-help-tip subject="Checkers list">
+            <ng-container i18n="@@checkers.list">Checkers list</ng-container>
+            <app-help-tip i18n-subject="@@checkers.list" subject="Checkers list">
                 <p>
-                    The table lists the available review checkers. Each of them is responsible for analyzing the daemon
-                    configuration to detect a particular issue. The table contains the checker states
+                    <ng-container i18n="@@checkers.list.help">
+                        The table lists the available review checkers. Each of them is responsible for analyzing the
+                        daemon configuration to detect a particular issue. The table contains the checker states
+                    </ng-container>
                     @if (minimal) {
-                        <span> and names.</span>
+                        <span i18n="@@checkers.list.help.minimal"> and names.</span>
                     } @else {
-                        <span>, names, descriptions, selectors, and triggers.</span>
+                        <span i18n="@@checkers.list.help.full">, names, descriptions, selectors, and triggers.</span>
                     }
                 </p>
                 <p>
-                    The state indicates whether the checker is enabled or disabled.
+                    <ng-container i18n="@@checkers.state.help">
+                        The state indicates whether the checker is enabled or disabled.
+                    </ng-container>
                     @if (allowInheritState) {
-                        <span>
+                        <span i18n="@@checkers.state.help.inherit">
                             The state may also be inherited from the global settings. In this case, the actual state is
                             presented in brackets.
                         </span>
                     }
-                    The state changes must be confirmed by clicking the Submit button.
+                    <ng-container i18n="@@checkers.state.help.submit">
+                        The state changes must be confirmed by clicking the Submit button.
+                    </ng-container>
                 </p>
                 @if (!minimal) {
-                    <p>The selectors define the daemon groups where the specific configuration checker runs.</p>
-                    <p>
+                    <p i18n="@@checkers.selectors.help">
+                        The selectors define the daemon groups where the specific configuration checker runs.
+                    </p>
+                    <p i18n="@@checkers.triggers.help">
                         The triggers designate the condition that fires the checker (e.g. when a configuration or host
                         reservation change has been detected, manually, etc.).
                     </p>
@@ -39,11 +47,11 @@
     </ng-template>
     <ng-template #header>
         <tr>
-            <th>State</th>
-            <th>Name</th>
-            <th class="picker__description-column">Description</th>
-            <th class="picker__selector-column">Selectors</th>
-            <th class="picker__trigger-column">Triggers</th>
+            <th i18n="@@checkers.state">State</th>
+            <th i18n="@@checkers.name">Name</th>
+            <th class="picker__description-column" i18n="@@checkers.description">Description</th>
+            <th class="picker__selector-column" i18n="@@checkers.selectors">Selectors</th>
+            <th class="picker__trigger-column" i18n="@@checkers.triggers">Triggers</th>
         </tr>
     </ng-template>
     <ng-template #body let-checker>
@@ -90,12 +98,13 @@
     </ng-template>
     <ng-template #emptymessage>
         <tr class="picker__empty">
-            <td colspan="100%">There are no checkers enabled.</td>
+            <td colspan="100%" i18n="@@checkers.none-enabled">There are no checkers enabled.</td>
         </tr>
     </ng-template>
     <ng-template #summary>
         <div class="picker__buttons">
             <p-button
+                i18n-label="@@common.submit"
                 label="Submit"
                 [disabled]="!hasChanges"
                 (click)="onSubmit()"
@@ -103,6 +112,7 @@
                 appAccessType="update"
             ></p-button>
             <p-button
+                i18n-label="@@common.reset"
                 label="Reset"
                 [disabled]="!hasChanges"
                 severity="secondary"
@@ -111,7 +121,13 @@
                 appAccessType="update"
             ></p-button>
             @if (minimal) {
-                <p-button severity="secondary" label="Cancel" class="ml-auto" (onClick)="pickerCancelled.emit()" />
+                <p-button
+                    severity="secondary"
+                    i18n-label="@@common.cancel"
+                    label="Cancel"
+                    class="ml-auto"
+                    (onClick)="pickerCancelled.emit()"
+                />
             }
         </div>
     </ng-template>
@@ -134,16 +150,17 @@
                 <span>
                     @if (state === 'enabled' || state === 'disabled') {
                         <p-tag
-                            [value]="state"
+                            [value]="getStateLabel(state)"
                             [severity]="state === 'enabled' ? 'success' : state === 'disabled' ? 'danger' : 'warn'"
                             styleClass="capitalize-first"
                         />
                     }
                 </span>
             } @else {
-                <span class="picker__state-inherit-status">
-                    globally {{ checker.globallyEnabled ? 'enabled' : 'disabled' }}
-                </span>
+                <span class="picker__state-inherit-status"
+                    ><ng-container i18n="@@checkers.globally">globally</ng-container>
+                    {{ getGlobalStateLabel(checker) }}</span
+                >
             }
         </label>
     </div>

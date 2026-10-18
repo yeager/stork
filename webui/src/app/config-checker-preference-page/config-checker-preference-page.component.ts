@@ -13,7 +13,10 @@ import { ConfigCheckerPreferenceUpdaterComponent } from '../config-checker-prefe
     imports: [BreadcrumbsComponent, ConfigCheckerPreferenceUpdaterComponent],
 })
 export class ConfigCheckerPreferencePageComponent {
-    breadcrumbs = [{ label: 'Configuration' }, { label: 'Review Checkers' }]
+    breadcrumbs = [
+        { label: $localize`:@@menu.configuration:Configuration` },
+        { label: $localize`:@@menu.review.checkers:Review Checkers` },
+    ]
 
     constructor() {}
 }
