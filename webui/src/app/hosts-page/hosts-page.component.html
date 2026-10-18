@@ -1,6 +1,6 @@
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
-        <p>
+        <p i18n="@@hosts.help-intro">
             This page displays a list of host reservations in the network. Kea can store host reservations in either a
             configuration file or a database. Reservations are retrieved at regular intervals, which can be configured
             in the Settings panel under the Configuration menu in the top bar. Kea must have the
@@ -9,15 +9,15 @@
             >
             loaded to retrieve host reservations stored in a database (MySQL or PostgreSQL).
         </p>
-        <p>Kea supports the following host reservation identifier types:</p>
+        <p i18n="@@hosts.help-identifiers">Kea supports the following host reservation identifier types:</p>
         <ul>
-            <li><b>hw-address</b> - MAC address,</li>
-            <li><b>client-id</b> - usable in IPv4 only,</li>
-            <li><b>duid</b> - typically used in IPv6, although also usable in IPv4 if clients support it,</li>
-            <li><b>flex-id</b>, and</li>
-            <li><b>circuit-id</b>.</li>
+            <li i18n="@@hosts.help-hw-address"><b>hw-address</b> - MAC address,</li>
+            <li i18n="@@hosts.help-client-id"><b>client-id</b> - usable in IPv4 only,</li>
+            <li i18n="@@hosts.help-duid"><b>duid</b> - typically used in IPv6, although also usable in IPv4 if clients support it,</li>
+            <li i18n="@@hosts.help-flex-id"><b>flex-id</b>, and</li>
+            <li i18n="@@hosts.help-circuit-id"><b>circuit-id</b>.</li>
         </ul>
-        <p>
+        <p i18n="@@hosts.help-migration">
             The hosts can be migrated to the host database using the <b>Migrate to Database</b> button. Stork will
             migrate all hosts selected by the current filter (including those on other pages, if there are more hosts
             than fit on a single page). Those that can't be migrated (e.g. because they're already in a database or are

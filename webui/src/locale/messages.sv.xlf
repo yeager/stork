@@ -3171,6 +3171,62 @@
           <context context-type="linenumber">670</context>
         </context-group>
       <target state="translated">Det gick inte att ta bort värden: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="hosts.help-intro" datatype="html">
+        <source> This page displays a list of host reservations in the network. Kea can store host reservations in either a configuration file or a database. Reservations are retrieved at regular intervals, which can be configured in the Settings panel under the Configuration menu in the top bar. Kea must have the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://kea.readthedocs.io/en/latest/arm/hooks.html#host-cmds-host-commands&quot;                 &gt;" />host_cmds hook library<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a             &gt;" /> loaded to retrieve host reservations stored in a database (MySQL or PostgreSQL). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.html</context>
+          <context context-type="linenumber">4,11</context>
+        </context-group>
+      <target state="translated"> På sidan visas en lista över värdreserveringar i nätverket. Kea kan lagra värdreserveringar i antingen en konfigurationsfil eller databas. Reserveringar hämtas regelbundet. Intervallet kan ställas in i panelen Inställningar, under menyn Konfiguration i överkanten. Kea måste ha <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://kea.readthedocs.io/en/latest/arm/hooks.html#host-cmds-host-commands&quot;                 &gt;" />hook-biblioteket host_cmds<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a             &gt;" /> inläst för att kunna hämta värdreserveringar som lagras i en databas (MySQL eller PostgreSQL). </target></trans-unit>
+      <trans-unit id="hosts.help-identifiers" datatype="html">
+        <source>Kea supports the following host reservation identifier types:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      <target state="translated">Kea stöder följande identifierartyper för värdreserveringar:</target></trans-unit>
+      <trans-unit id="hosts.help-hw-address" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />hw-address<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> - MAC address,</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />hw-address<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />: MAC-adress,</target></trans-unit>
+      <trans-unit id="hosts.help-client-id" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />client-id<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> - usable in IPv4 only,</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />client-id<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />: kan endast användas med IPv4,</target></trans-unit>
+      <trans-unit id="hosts.help-duid" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />duid<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> - typically used in IPv6, although also usable in IPv4 if clients support it,</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />duid<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />: används vanligtvis med IPv6 men kan även användas med IPv4 om klienterna har stöd för det,</target></trans-unit>
+      <trans-unit id="hosts.help-flex-id" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />flex-id<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />, and</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />flex-id<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />, samt</target></trans-unit>
+      <trans-unit id="hosts.help-circuit-id" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />circuit-id<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />circuit-id<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />.</target></trans-unit>
+      <trans-unit id="hosts.help-migration" datatype="html">
+        <source> The hosts can be migrated to the host database using the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />Migrate to Database<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> button. Stork will migrate all hosts selected by the current filter (including those on other pages, if there are more hosts than fit on a single page). Those that can't be migrated (e.g. because they're already in a database or are in conflicted state) will be skipped. After the migration, hosts will be deleted from your configuration file and will be kept in the database only. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.html</context>
+          <context context-type="linenumber">21,25</context>
+        </context-group>
+      <target state="translated"> Värdarna kan migreras till värddatabasen med knappen <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />Migrera till databasen<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />. Stork migrerar alla värdar som har valts av det aktuella filtret, även värdar på andra sidor om fler värdar finns än vad som ryms på en sida. De värdar som inte kan migreras, exempelvis eftersom de redan finns i en databas eller har en konflikt, hoppas över. Efter migreringen tas värdarna bort från konfigurationsfilen och behålls bara i databasen. </target></trans-unit>
       <trans-unit id="menu.host-reservations" datatype="html">
         <source>Host Reservations</source>
         <context-group purpose="location">
