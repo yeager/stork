@@ -469,6 +469,41 @@
           <context context-type="linenumber">46</context>
         </context-group>
       <target state="translated">Hjälp om <x id="subject" equiv-text="this.subject" /></target></trans-unit>
+      <trans-unit id="hosts.datasource.config" datatype="html">
+        <source>This host is specified in the server's configuration file.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-data-source-label/host-data-source-label.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      <target state="translated">Värden anges i serverns konfigurationsfil.</target></trans-unit>
+      <trans-unit id="hosts.datasource.database" datatype="html">
+        <source>This host is specified in the server's host database.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-data-source-label/host-data-source-label.component.html</context>
+          <context context-type="linenumber">16,19</context>
+        </context-group>
+      <target state="translated">Värden anges i serverns värddatabas.</target></trans-unit>
+      <trans-unit id="value.invalid" datatype="html">
+        <source>Invalid value</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/human-count/human-count.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      <target state="translated">Ogiltigt värde</target></trans-unit>
+      <trans-unit id="value.none" datatype="html">
+        <source>No value</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/human-count/human-count.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      <target state="translated">Inget värde</target></trans-unit>
+      <trans-unit id="identifier.empty" datatype="html">
+        <source>Empty identifier</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/identifier/identifier.component.html</context>
+          <context context-type="linenumber">29,33</context>
+        </context-group>
+      <target state="translated">Tom identifierare</target></trans-unit>
       <trans-unit id="login.choose.method" datatype="html">
         <source>Choose a Method</source>
         <context-group purpose="location">

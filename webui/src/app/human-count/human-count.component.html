@@ -2,8 +2,8 @@
     <span pTooltip="{{ value | localNumber }}">{{ value | humanCount }}</span>
 }
 @if (hasInvalidValue) {
-    <span pTooltip="Invalid value">{{ value }}</span>
+    <span pTooltip="Invalid value" i18n-pTooltip="@@value.invalid">{{ value }}</span>
 }
 @if (!hasValue) {
-    <span pTooltip="No value">-</span>
+    <span pTooltip="No value" i18n-pTooltip="@@value.none">-</span>
 }
