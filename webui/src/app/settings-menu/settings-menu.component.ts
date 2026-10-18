@@ -26,10 +26,10 @@ export class SettingsMenuComponent implements OnInit {
     ngOnInit() {
         this.items = [
             {
-                label: 'User Profile',
+                label: $localize`:@@profile.user:User Profile`,
                 items: [
                     {
-                        label: 'Settings',
+                        label: $localize`:@@profile.settings:Settings`,
                         id: 'user-settings',
                         icon: 'pi pi-user',
                         routerLink: '/profile/settings',
@@ -44,7 +44,7 @@ export class SettingsMenuComponent implements OnInit {
             // TODO: This button should always be available but the external
             // users should be redirected to the external change password endpoint.
             this.items[0].items.push({
-                label: 'Change password',
+                label: $localize`:@@password.change.menu:Change password`,
                 id: 'change-password',
                 icon: 'pi pi-lock',
                 routerLink: '/profile/password',
