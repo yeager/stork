@@ -5337,6 +5337,84 @@
           <context context-type="linenumber">10,16</context>
         </context-group>
       <target state="translated">Måste innehålla minst 12 tecken.</target></trans-unit>
+      <trans-unit id="password-change.dialog-title" datatype="html">
+        <source>Change password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">32,36</context>
+        </context-group>
+      <target state="translated">Ändra lösenord</target></trans-unit>
+      <trans-unit id="password-change.external-user" datatype="html">
+        <source>You have authenticated via an external authentication service. You cannot change the password; you should use a password-change form provided by your authentication service.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">48,52</context>
+        </context-group>
+      <target state="translated">Du har autentiserats via en extern autentiseringstjänst. Du kan inte ändra lösenordet här. Använd i stället formuläret för lösenordsbyte från din autentiseringstjänst.</target></trans-unit>
+      <trans-unit id="password-change.must-change" datatype="html">
+        <source>You must change your password. Please enter your current password and create a new one to continue.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">54,60</context>
+        </context-group>
+      <target state="translated">Du måste ändra lösenordet. Ange det nuvarande lösenordet och skapa ett nytt för att fortsätta.</target></trans-unit>
+      <trans-unit id="password-change.panel-title" datatype="html">
+        <source>New password setting</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">61,64</context>
+        </context-group>
+      <target state="translated">Nytt lösenord</target></trans-unit>
+      <trans-unit id="password-change.current-password" datatype="html">
+        <source>Current password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">64,67</context>
+        </context-group>
+      <target state="translated">Nuvarande lösenord</target></trans-unit>
+      <trans-unit id="password-change.current-password-title" datatype="html">
+        <source>Current password.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">70,74</context>
+        </context-group>
+      <target state="translated">Nuvarande lösenord.</target></trans-unit>
+      <trans-unit id="password-change.new-password" datatype="html">
+        <source>New password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">80,83</context>
+        </context-group>
+      <target state="translated">Nytt lösenord</target></trans-unit>
+      <trans-unit id="password-change.password-title" datatype="html">
+        <source>Must contain an uppercase and lowercase letter, a digit, and special, or whitespace characters, and must be at least 12 characters long.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">86,90</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">101,104</context>
+        </context-group>
+      <target state="translated">Måste innehålla en versal och en gemen, en siffra samt specialtecken eller blanksteg och innehålla minst 12 tecken.</target></trans-unit>
+      <trans-unit id="password-change.confirm-password" datatype="html">
+        <source>Confirm password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">96,99</context>
+        </context-group>
+      <target state="translated">Bekräfta lösenord</target></trans-unit>
+      <trans-unit id="common.save" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
+          <context context-type="linenumber">238,240</context>
+        </context-group>
+      <target state="translated">Spara</target></trans-unit>
       <trans-unit id="profile.user" datatype="html">
         <source>User Profile</source>
         <context-group purpose="location">
@@ -7211,13 +7289,6 @@
           <context context-type="linenumber">220,223</context>
         </context-group>
       <target state="translated">Tvinga lösenordsbyte:</target></trans-unit>
-      <trans-unit id="common.save" datatype="html">
-        <source>Save</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
-          <context context-type="linenumber">238,240</context>
-        </context-group>
-      <target state="translated">Spara</target></trans-unit>
       <trans-unit id="users.select-group" datatype="html">
         <source>Select Group</source>
         <context-group purpose="location">
