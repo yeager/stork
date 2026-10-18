@@ -304,8 +304,8 @@
                 <div id="config-review-reports-div" class="mt-4" [ngClass]="{ disabled: !daemon().active }">
                     <h3 class="underlined">
                         <ng-container i18n="@@kea.configuration-review-reports">Configuration Review Reports</ng-container>
-                        <app-help-tip subject="daemon configuration review section">
-                            <p>
+                        <app-help-tip subject="daemon configuration review section" i18n-subject="@@kea.config-review-help-subject">
+                            <p i18n="@@kea.config-review-help-intro">
                                 The Stork server reviews the monitored servers' configurations, flags potential
                                 configuration issues, and suggests changes to these configurations to improve Stork's
                                 monitoring capabilities. The review is performed using different checkers built into the
@@ -313,11 +313,11 @@
                                 the configuration. Each checker has a unique name, which is shown in the blue badge
                                 before the text of each issue in the list below.
                             </p>
-                            <p>
+                            <p i18n="@@kea.config-review-help-disable">
                                 Each checker can be disabled if its review report is not desired in a particular
                                 deployment.
                             </p>
-                            <p>
+                            <p i18n="@@kea.config-review-help-visible">
                                 By default, only reports that discover an issue are visible. Use the toggle button to
                                 display reports from all executed checkers for a given daemon.
                             </p>

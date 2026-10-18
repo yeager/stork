@@ -3046,9 +3046,37 @@
         <source>Configuration Review Reports</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
-          <context context-type="linenumber">306,308</context>
+          <context context-type="linenumber">306,307</context>
         </context-group>
       <target state="translated">Rapporter från konfigurationsgranskningen</target></trans-unit>
+      <trans-unit id="kea.config-review-help-subject" datatype="html">
+        <source>daemon configuration review section</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">307,308</context>
+        </context-group>
+      <target state="translated">avsnittet för daemonens konfigurationsgranskning</target></trans-unit>
+      <trans-unit id="kea.config-review-help-intro" datatype="html">
+        <source> The Stork server reviews the monitored servers' configurations, flags potential configuration issues, and suggests changes to these configurations to improve Stork's monitoring capabilities. The review is performed using different checkers built into the Stork server. Each checker is responsible for examining a different part or aspect of the configuration. Each checker has a unique name, which is shown in the blue badge before the text of each issue in the list below. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">309,313</context>
+        </context-group>
+      <target state="translated"> Storkservern granskar konfigurationen på övervakade servrar, markerar möjliga konfigurationsproblem och föreslår ändringar som kan förbättra Storks övervakningsfunktioner. Granskningen utförs av olika kontroller som är inbyggda i Storkservern. Varje kontroll ansvarar för att granska en viss del eller aspekt av konfigurationen. Varje kontroll har ett unikt namn som visas i den blå etiketten före texten för varje problem i listan nedan. </target></trans-unit>
+      <trans-unit id="kea.config-review-help-disable" datatype="html">
+        <source> Each checker can be disabled if its review report is not desired in a particular deployment. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">317,320</context>
+        </context-group>
+      <target state="translated"> Varje kontroll kan inaktiveras om dess granskningsrapport inte behövs i en viss installation. </target></trans-unit>
+      <trans-unit id="kea.config-review-help-visible" datatype="html">
+        <source> By default, only reports that discover an issue are visible. Use the toggle button to display reports from all executed checkers for a given daemon. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">321,324</context>
+        </context-group>
+      <target state="translated"> Som standard visas bara rapporter som har hittat ett problem. Använd växlingsknappen för att visa rapporter från alla kontroller som har körts för en viss daemon. </target></trans-unit>
       <trans-unit id="events.title" datatype="html">
         <source>Events</source>
         <context-group purpose="location">
