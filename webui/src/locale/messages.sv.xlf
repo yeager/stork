@@ -5382,6 +5382,27 @@
           <context context-type="linenumber">538,539</context>
         </context-group>
       <target state="translated">Loggmeddelande</target></trans-unit>
+      <trans-unit id="zone-viewer.cached-contents" datatype="html">
+        <source>Cached zone contents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      <target state="translated">Cachat zoninnehåll</target></trans-unit>
+      <trans-unit id="zone-viewer.cached-contents-help" datatype="html">
+        <source> The zone contents presented here were fetched from the DNS server using zone transfer (AXFR), and are cached in Stork. The timestamp indicates when the zone transfer was last performed. If you need up-to-date zone information you can update the cached data using the 'Refresh from DNS' button. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">19,23</context>
+        </context-group>
+      <target state="translated"> Zoninnehållet som visas här har hämtats från DNS-servern med zonöverföring, AXFR, och lagras i Storks cache. Tidsstämpeln anger när zonöverföringen senast utfördes. Om du behöver aktuell zoninformation kan du uppdatera cachelagrad data med knappen Uppdatera från DNS. </target></trans-unit>
+      <trans-unit id="zone-viewer.filter-help" datatype="html">
+        <source> Resource records in the table below can be filtered by explicitly selected RR types and/or using a text matching the RR names or data. Searching by text is case insensitive. If RR type and text filter are used together, they are combined using the logical AND operator. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">49,53</context>
+        </context-group>
+      <target state="translated"> Resursposterna i tabellen nedan kan filtreras med valda typer av RR och eller text som matchar RR-namn eller data. Textsökningen skiljer inte mellan stora och små bokstäver. Om både RR-typ och textfilter används kombineras de med den logiska operatorn OCH. </target></trans-unit>
       <trans-unit id="2594120130663787606" datatype="html">
         <source>Name or Data</source>
         <context-group purpose="location">
