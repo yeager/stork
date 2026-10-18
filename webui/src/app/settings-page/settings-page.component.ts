@@ -103,34 +103,34 @@ export class SettingsPageComponent implements OnInit {
      */
     intervalSettings: SettingsItem[] = [
         {
-            title: 'State Puller Interval',
+            title: $localize`:@@settings.state-puller-interval:State puller interval`,
             formControlName: 'statePullerInterval',
-            help: 'This puller refreshes the state of the daemons running on the monitored machines.',
+            help: $localize`:@@settings.state-puller-interval-help:This puller refreshes the state of the daemons running on the monitored machines.`,
         },
         {
-            title: 'BIND 9 Statistics Puller Interval',
+            title: $localize`:@@settings.bind9-stats-puller-interval:BIND 9 statistics puller interval`,
             formControlName: 'bind9StatsPullerInterval',
-            help: 'This puller refreshes statistics from the BIND 9 servers.',
+            help: $localize`:@@settings.bind9-stats-puller-interval-help:This puller refreshes statistics from the BIND 9 servers.`,
         },
         {
-            title: 'Kea Hosts Puller Interval',
+            title: $localize`:@@settings.kea-hosts-puller-interval:Kea hosts puller interval`,
             formControlName: 'keaHostsPullerInterval',
-            help: 'This puller fetches the host reservations from the Kea servers.',
+            help: $localize`:@@settings.kea-hosts-puller-interval-help:This puller fetches the host reservations from the Kea servers.`,
         },
         {
-            title: 'Kea Statistics Puller Interval',
+            title: $localize`:@@settings.kea-statistics-puller-interval:Kea statistics puller interval`,
             formControlName: 'keaStatsPullerInterval',
-            help: 'This puller refreshes statistics from the Kea servers',
+            help: $localize`:@@settings.kea-statistics-puller-interval-help:This puller refreshes statistics from the Kea servers.`,
         },
         {
-            title: 'Kea Status Puller Interval',
+            title: $localize`:@@settings.kea-status-puller-interval:Kea status puller interval`,
             formControlName: 'keaStatusPullerInterval',
-            help: 'This puller fetches the high-availability status from the Kea servers.',
+            help: $localize`:@@settings.kea-status-puller-interval-help:This puller fetches the high availability status from the Kea servers.`,
         },
         {
-            title: 'Kea Leases Puller Interval',
+            title: $localize`:@@settings.kea-leases-puller-interval:Kea leases puller interval`,
             formControlName: 'keaLeasesPullerInterval',
-            help: 'This puller fetches leases from Kea servers.',
+            help: $localize`:@@settings.kea-leases-puller-interval-help:This puller fetches leases from Kea servers.`,
         },
     ]
 
@@ -141,9 +141,9 @@ export class SettingsPageComponent implements OnInit {
      */
     grafanaUrlSettings: SettingsItem[] = [
         {
-            title: 'URL to Grafana',
+            title: $localize`:@@settings.grafana-url:URL to Grafana`,
             formControlName: 'grafanaUrl',
-            help: 'Specifies a Grafana instance URL. It is optional.',
+            help: $localize`:@@settings.grafana-url-help:Specifies a Grafana instance URL. It is optional.`,
         },
     ]
 
@@ -154,14 +154,14 @@ export class SettingsPageComponent implements OnInit {
      */
     grafanaTextSettings: SettingsItem[] = [
         {
-            title: 'ID of the DHCPv4 Dashboard in Grafana',
+            title: $localize`:@@settings.grafana-dhcp4-dashboard-id:ID of the DHCPv4 dashboard in Grafana`,
             formControlName: 'grafanaDhcp4DashboardId',
-            help: 'This ID must match the dashboard UID in the Grafana configuration. This value is used to construct the URL to the DHCPv4 dashboard.',
+            help: $localize`:@@settings.grafana-dhcp4-dashboard-id-help:This ID must match the dashboard UID in the Grafana configuration. This value is used to construct the URL to the DHCPv4 dashboard.`,
         },
         {
-            title: 'ID of the DHCPv6 Dashboard in Grafana',
+            title: $localize`:@@settings.grafana-dhcp6-dashboard-id:ID of the DHCPv6 dashboard in Grafana`,
             formControlName: 'grafanaDhcp6DashboardId',
-            help: 'This ID must match the dashboard UID in the Grafana configuration. This value is used to construct the URL to the DHCPv6 dashboard.',
+            help: $localize`:@@settings.grafana-dhcp6-dashboard-id-help:This ID must match the dashboard UID in the Grafana configuration. This value is used to construct the URL to the DHCPv6 dashboard.`,
         },
     ]
 

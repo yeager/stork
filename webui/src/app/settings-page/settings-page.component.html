@@ -3,21 +3,21 @@
         <div class="flex align-items-top">
             <div class="pi pi-info-circle p-message-icon"></div>
             <div class="ml-2">
-                To add or remove machines, go to the
-                <a routerLink="/machines/all" [queryParams]="{ authorized: 'true' }">Machines page</a>.
+                <ng-container i18n="@@settings.manage-machines">To add or remove machines, go to the
+                <a routerLink="/machines/all" [queryParams]="{ authorized: 'true' }">Machines page</a>.</ng-container>
             </div>
         </div>
         <p-divider></p-divider>
         <div class="flex align-items-top mt-2">
             <div class="pi pi-info-circle p-message-icon"></div>
             <div class="ml-2" id="intervals-config-msg">
-                <p class="mt-0">
+                <p class="mt-0" i18n="@@settings.intervals-help-intro">
                     Using the settings in the Intervals section, you can configure the intervals at which the Stork
                     server fetches various types of information from the monitored machines and daemons. Each configured
                     value designates the time period between the completion of the previous attempt to fetch certain
                     information from the machines, and the beginning of the next attempt.
                 </p>
-                <p class="mb-0">
+                <p class="mb-0" i18n="@@settings.intervals-help-example">
                     For example, if the Kea Hosts Puller Interval is set to 10 seconds and it takes five seconds to pull
                     the hosts information, the time period between the start of two consecutive attempts to pull the
                     hosts information will be 15 seconds. The pull time varies between deployments and depends on the
@@ -41,13 +41,14 @@
                             inputId="machine-registration-checkbox"
                         />
                         <label class="ml-2" for="machine-registration-checkbox" i18n>Enable machine registration</label>
-                        <app-help-tip subject="Enable Machine Registration">
+                        <app-help-tip subject="Enable machine registration" i18n-subject="@@settings.machine-registration-help-subject">
+                            <span i18n="@@settings.machine-registration-help">
                             New machines begin registration in the Stork server using a dedicated REST API endpoint, and
                             the same endpoint is used for re-registering already-connected machines when they are
                             restarted. Since new machines are not registered often, it is practical to disable this
                             option to prevent malicious registration attempts of fake machines; an administrator can
                             re-enable it at any time when new registrations are expected. Disabling this option does not
-                            affect the ability to re-register existing machines.
+                            affect the ability to re-register existing machines.</span>
                         </app-help-tip>
                     </div>
                 </p-fieldset>
@@ -61,20 +62,21 @@
                         <label class="ml-2" for="online-versions-checkbox"
                              i18n>Enable online checking for software updates</label
                         >
-                        <app-help-tip subject="Online Software Update Checking Setting">
+                        <app-help-tip subject="Online software update checking" i18n-subject="@@settings.online-updates-help-subject">
+                            <span i18n="@@settings.online-updates-help">
                             Stork can automatically check for software updates available for Kea, BIND 9, and Stork
                             itself. To do that, the Stork server downloads a
                             <a href="https://www.isc.org/versions.json" target="_blank">JSON file</a> with the latest
                             software-release metadata. This feature can be disabled using this setting. When disabled,
                             all feedback displayed regarding software versions detected by Stork is generated based on
-                            offline built-in information stored as a JSON file.
+                            offline built-in information stored as a JSON file.</span>
                         </app-help-tip>
                     </div>
                 </p-fieldset>
                 <p-fieldset i18n-legend legend="Intervals">
                     @for (setting of intervalSettings; track setting) {
                         <div class="my-3 flex flex-column">
-                            <label [for]="setting.formControlName"> {{ setting.title }} (in seconds): </label>
+                            <label [for]="setting.formControlName" i18n="@@settings.interval-seconds"> {{ setting.title }} (in seconds): </label>
                             <div class="flex align-items-center">
                                 <p-inputNumber
                                     [inputId]="setting.formControlName"
@@ -105,12 +107,13 @@
                         <label class="ml-2" for="enable-zone-transfer-pruning-checkbox"
                              i18n>Enable zone transfer pruning</label
                         >
-                        <app-help-tip subject="Enable Zone Transfer Pruning">
+                        <app-help-tip subject="Enable zone transfer pruning" i18n-subject="@@settings.zone-transfer-pruning-help-subject">
+                            <span i18n="@@settings.zone-transfer-pruning-help">
                             Zone transfers are collected by the Stork server and stored in the database. Deployments
                             with a large number of zone transfers may observe significant database growth. This setting
                             enables systematic removal of the old zone transfers to maintain their history within a
                             reasonable limit and prevent unbounded growth. Use the "Zone Transfers Maximum Age" setting
-                            to specify the maximum age of the zone transfers to keep in the Stork database.
+                            to specify the maximum age of the zone transfers to keep in the Stork database.</span>
                         </app-help-tip>
                     </div>
 
@@ -127,15 +130,16 @@
                                 formControlName="zoneTransferPruningMaxAge"
                                 class="max-w-form"
                             ></p-inputNumber
-                            ><app-help-tip subject="Zone Transfers Maximum Age">
+                            ><app-help-tip subject="Zone transfers maximum age" i18n-subject="@@settings.zone-transfer-max-age-help-subject">
+                                <span i18n="@@settings.zone-transfer-max-age-help">
                                 This value specifies the maximum age of a recorded zone transfer after which it is
                                 pruned from the database. For example, the default value of 604800 will result in
                                 holding the captured zone transfers for 7 days. The minimum value is 60 seconds because
-                                the interval at which old zone transfers are pruned is also 60 seconds.
+                                the interval at which old zone transfers are pruned is also 60 seconds.</span>
                             </app-help-tip>
                         </div>
                         @if (hasError('zoneTransferPruningMaxAge', 'required')) {
-                            <div class="app-error">It is required.</div>
+                            <div class="app-error" i18n>It is required.</div>
                         }
                         @if (hasError('zoneTransferPruningMaxAge', 'min')) {
                             <div class="app-error" i18n>It must be greater than or equal to 60 seconds.</div>
