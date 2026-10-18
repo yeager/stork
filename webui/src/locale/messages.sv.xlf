@@ -4649,7 +4649,11 @@
           <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
           <context context-type="linenumber">113,115</context>
         </context-group>
-      <target state="translated">Auktorisera valda</target></trans-unit>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.ts</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+      <target state="translated">Godkänn markerade</target></trans-unit>
       <trans-unit id="machines.daemons" datatype="html">
         <source>Daemons</source>
         <context-group purpose="location">
@@ -4671,6 +4675,34 @@
           <context context-type="linenumber">219,220</context>
         </context-group>
       <target state="translated">Drifttid</target></trans-unit>
+      <trans-unit id="machines.list-failed" datatype="html">
+        <source>Cannot get machine list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.ts</context>
+          <context context-type="linenumber">294</context>
+        </context-group>
+      <target state="translated">Kan inte hämta maskinlistan</target></trans-unit>
+      <trans-unit id="machines.list-failed-detail" datatype="html">
+        <source>Error getting machine list: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av maskinlistan: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.unauthorized-count-failed" datatype="html">
+        <source>Cannot get unauthorized machines count</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.ts</context>
+          <context context-type="linenumber">327</context>
+        </context-group>
+      <target state="translated">Kan inte hämta antalet icke auktoriserade maskiner</target></trans-unit>
+      <trans-unit id="machines.unauthorized-count-failed-detail" datatype="html">
+        <source>Error getting unauthorized machines count: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.ts</context>
+          <context context-type="linenumber">328</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av antalet icke auktoriserade maskiner: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="error.page.not.found" datatype="html">
         <source>Page Not Found</source>
         <context-group purpose="location">

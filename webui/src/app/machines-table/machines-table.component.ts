@@ -197,7 +197,7 @@ export class MachinesTableComponent implements OnInit, OnDestroy {
     private _updateToolbarButtons() {
         const buttons: MenuItem[] = [
             {
-                label: 'Authorize selected',
+                label: $localize`:@@machines.authorize-selected:Authorize selected`,
                 icon: 'pi pi-lock',
                 command: () => this.onAuthorizeSelectedMachinesClicked(this.selectedMachines()),
                 disabled:
@@ -291,8 +291,8 @@ export class MachinesTableComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot get machine list',
-                    detail: 'Error getting machine list: ' + msg,
+                    summary: $localize`:@@machines.list-failed:Cannot get machine list`,
+                    detail: $localize`:@@machines.list-failed-detail:Error getting machine list: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -324,8 +324,8 @@ export class MachinesTableComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot get Unauthorized Machines count',
-                    detail: 'Error getting Unauthorized Machines count: ' + msg,
+                    summary: $localize`:@@machines.unauthorized-count-failed:Cannot get unauthorized machines count`,
+                    detail: $localize`:@@machines.unauthorized-count-failed-detail:Error getting unauthorized machines count: ${msg}:error message:`,
                     life: 10000,
                 })
             })
