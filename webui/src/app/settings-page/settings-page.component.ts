@@ -92,7 +92,7 @@ export class SettingsPageComponent implements OnInit {
     /**
      * A path specified in the breadcrumbs.
      */
-    breadcrumbs = [{ label: 'Configuration' }, { label: 'Settings' }]
+    breadcrumbs = [{ label: $localize`:@@menu.configuration:Configuration` }, { label: $localize`:@@menu.settings:Settings` }]
 
     /**
      * A list of interval settings to specify in the form.
@@ -214,8 +214,8 @@ export class SettingsPageComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot get settings',
-                    detail: 'Error getting settings: ' + msg,
+                    summary: $localize`:@@settings.fetch-failed:Cannot get settings`,
+                    detail: $localize`:@@settings.fetch-failed-detail:Error getting settings: ${msg}:error message:`,
                     life: 10000,
                 })
             },
@@ -252,16 +252,16 @@ export class SettingsPageComponent implements OnInit {
             next: (/* data */) => {
                 this.msgSrv.add({
                     severity: 'success',
-                    summary: 'Settings updated',
-                    detail: 'Updating settings succeeded.',
+                    summary: $localize`:@@settings.updated:Settings updated`,
+                    detail: $localize`:@@settings.update-succeeded:Updating settings succeeded.`,
                 })
             },
             error: (err) => {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot save settings',
-                    detail: 'Error saving settings: ' + msg,
+                    summary: $localize`:@@settings.save-failed:Cannot save settings`,
+                    detail: $localize`:@@settings.save-failed-detail:Error saving settings: ${msg}:error message:`,
                     life: 10000,
                 })
             },
