@@ -1,7 +1,7 @@
 <p-confirmDialog styleClass="w-10 xl:w-4"></p-confirmDialog>
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
-        <p>This page displays a list of daemons.</p>
+        <p i18n="@@daemons.page.help">This page displays a list of daemons.</p>
     </div>
 </app-breadcrumbs>
 
@@ -33,6 +33,7 @@
             [totalRecords]="totalDaemons"
             [rowsPerPageOptions]="[10, 30, 100]"
             [showCurrentPageReport]="true"
+            i18n-currentPageReportTemplate="@@table.page-report"
             currentPageReportTemplate="{currentPage} of {totalPages} pages"
             [lazyLoadOnInit]="false"
             [stripedRows]="true"
@@ -43,18 +44,18 @@
             <ng-template #caption>
                 <app-table-caption [tableElement]="table" tableKey="daemons-table">
                     <ng-template #helptip>
-                        <p>
+                        <p i18n="@@daemons.filter.help">
                             Daemons in the table below can be filtered by entering text in the search box; the table
                             shows all daemons matching the filter text. The currently supported fields for filtering
                             are:
                         </p>
                         <ul>
-                            <li>Daemon Name</li>
-                            <li>Daemon Version</li>
-                            <li>Machine Address</li>
-                            <li>Machine Hostname</li>
+                            <li i18n="@@daemons.daemon-name">Daemon Name</li>
+                            <li i18n="@@daemons.daemon-version">Daemon Version</li>
+                            <li i18n="@@daemons.machine-address">Machine Address</li>
+                            <li i18n="@@daemons.machine-hostname">Machine Hostname</li>
                         </ul>
-                        <p>
+                        <p i18n="@@daemons.filter.name-help">
                             Daemons can also be filtered by an explicitly selected Daemon Name, using the multiselect
                             filter.
                         </p>
@@ -80,7 +81,7 @@
                                             class="w-10rem"
                                         >
                                         </p-multiSelect>
-                                        <label for="daemons-input">Daemon Name</label>
+                                        <label for="daemons-input" i18n="@@daemons.daemon-name">Daemon Name</label>
                                     </p-floatlabel>
                                     <p-button
                                         icon="pi pi-filter-slash"
@@ -106,6 +107,7 @@
                                             type="text"
                                             (input)="filterTable($event.target.value, filterConstraint)"
                                             [ngModel]="value"
+                                            i18n-placeholder="@@daemons.search"
                                             placeholder="Search daemons"
                                         />
                                     </p-iconfield>
@@ -124,6 +126,7 @@
                     <ng-template #buttons>
                         <p-button
                             id="sync-kea-configs-button"
+                            i18n-label="@@daemons.resync"
                             label="Resynchronize Kea Configs"
                             icon="pi pi-file-import"
                             class="flex-none"
@@ -135,6 +138,7 @@
                         ></p-button>
                         <p-button
                             id="daemons-refresh-button"
+                            i18n-label="@@daemons.refresh-list"
                             label="Refresh List"
                             icon="pi pi-refresh"
                             (click)="refreshDaemonsList()"
@@ -143,6 +147,7 @@
                     </ng-template>
                     <ng-template #splitbutton>
                         <p-splitbutton
+                            i18n-label="@@daemons.refresh-list"
                             label="Refresh List"
                             icon="pi pi-refresh"
                             (onClick)="refreshDaemonsList()"
@@ -155,16 +160,25 @@
             <ng-template #header>
                 <tr>
                     <th style="width: 14em" [pSortableColumn]="DaemonSortField.Name">
-                        <div class="flex gap-1">Daemon<p-sortIcon [field]="DaemonSortField.Name" /></div>
+                        <div class="flex gap-1">
+                            <ng-container i18n="@@daemon.tab.daemon">Daemon</ng-container
+                            ><p-sortIcon [field]="DaemonSortField.Name" />
+                        </div>
                     </th>
                     <th [pSortableColumn]="DaemonSortField.Version">
-                        <div class="flex gap-1">Version<p-sortIcon [field]="DaemonSortField.Version" /></div>
+                        <div class="flex gap-1">
+                            <ng-container i18n="@@common.version">Version</ng-container
+                            ><p-sortIcon [field]="DaemonSortField.Version" />
+                        </div>
                     </th>
-                    <th>Status</th>
+                    <th i18n="@@common.status">Status</th>
                     <th [pSortableColumn]="DaemonSortField.MachineHostname">
-                        <div class="flex gap-1">Machine<p-sortIcon [field]="DaemonSortField.MachineHostname" /></div>
+                        <div class="flex gap-1">
+                            <ng-container i18n="@@common.machine">Machine</ng-container
+                            ><p-sortIcon [field]="DaemonSortField.MachineHostname" />
+                        </div>
                     </th>
-                    <th style="width: 4rem">Action</th>
+                    <th style="width: 4rem" i18n="@@common.action">Action</th>
                 </tr>
             </ng-template>
             <ng-template #body let-d>
@@ -193,17 +207,20 @@
                 </tr>
             </ng-template>
             <ng-template #paginatorright let-state>
-                Total: {{ state.totalRecords > 0 ? state.totalRecords : '0' }}
-                {{ state.totalRecords === 1 ? 'daemon' : 'daemons' }}
+                <ng-container i18n="@@daemons.total"
+                    >Total: {{ state.totalRecords > 0 ? state.totalRecords : '0' }}</ng-container
+                >
+                {{ state.totalRecords === 1 ? 'demon' : 'demoner' }}
             </ng-template>
             <ng-template #emptymessage>
                 <tr>
                     <td colspan="6">
-                        No daemons were found.
+                        <ng-container i18n="@@daemons.none">No daemons were found.</ng-container>
                         @if (tableHasFilter(table)) {
                             <span>
-                                Clear filtering and try again.
+                                <ng-container i18n="@@daemons.clear-help">Clear filtering and try again.</ng-container>
                                 <p-button
+                                    i18n-label="@@common.clear"
                                     label="Clear"
                                     [outlined]="true"
                                     icon="pi pi-filter-slash"
