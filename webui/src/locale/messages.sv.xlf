@@ -55,6 +55,10 @@
           <context context-type="linenumber">19,22</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
@@ -622,6 +626,10 @@
           <context context-type="linenumber">409</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">319</context>
         </context-group>
@@ -642,6 +650,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">408,409</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">94,95</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
@@ -1238,12 +1250,20 @@
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">35,38</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">20,23</context>
+        </context-group>
       <target state="translated">DHCP-servrar</target></trans-unit>
       <trans-unit id="host.select-server" datatype="html">
         <source>At least one server must be selected. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">41,44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">26,30</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
@@ -1389,6 +1409,10 @@
           <context context-type="linenumber">402,404</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">88,90</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">311,313</context>
         </context-group>
@@ -1414,6 +1438,10 @@
           <context context-type="linenumber">419,421</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">334,336</context>
         </context-group>
@@ -1432,6 +1460,10 @@
           <context context-type="linenumber">432,436</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">114,118</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">346,350</context>
         </context-group>
@@ -1443,6 +1475,10 @@
           <context context-type="linenumber">436,437</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">118,119</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">350,351</context>
         </context-group>
@@ -1452,6 +1488,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">437,439</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">119,121</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
@@ -1491,6 +1531,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
           <context context-type="linenumber">222</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">55,56</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
@@ -1815,6 +1859,60 @@
           <context context-type="linenumber">47</context>
         </context-group>
       <target state="translated">Byt lösenord</target></trans-unit>
+      <trans-unit id="subnet.shared-network" datatype="html">
+        <source>Shared Network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">112,116</context>
+        </context-group>
+      <target state="translated">Delat nät</target></trans-unit>
+      <trans-unit id="common.name" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">33,36</context>
+        </context-group>
+      <target state="translated">Namn</target></trans-unit>
+      <trans-unit id="shared-network.name-exists" datatype="html">
+        <source>A shared network with this name already exists. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+      <target state="translated">Det finns redan ett delat nät med det här namnet. </target></trans-unit>
+      <trans-unit id="shared-network.name-required" datatype="html">
+        <source>A shared network name is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">43,47</context>
+        </context-group>
+      <target state="translated">Ett namn på det delade nätet krävs.</target></trans-unit>
+      <trans-unit id="subnet.dhcp-parameters" datatype="html">
+        <source>DHCP Parameters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">270,271</context>
+        </context-group>
+      <target state="translated">DHCP-parametrar</target></trans-unit>
+      <trans-unit id="subnet.unlock-dhcp-options" datatype="html">
+        <source>Unlock setting DHCP options for individual servers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">281,283</context>
+        </context-group>
+      <target state="translated">Lås upp inställning av DHCP-alternativ för enskilda servrar.</target></trans-unit>
       <trans-unit id="subnet.dhcp-servers-and-tags" datatype="html">
         <source>DHCP Servers and/or Server Tags</source>
         <context-group purpose="location">
@@ -1850,13 +1948,6 @@
           <context context-type="linenumber">101,103</context>
         </context-group>
       <target state="translated">Inga delade nät hittades</target></trans-unit>
-      <trans-unit id="subnet.shared-network" datatype="html">
-        <source>Shared Network</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
-          <context context-type="linenumber">112,116</context>
-        </context-group>
-      <target state="translated">Delat nät</target></trans-unit>
       <trans-unit id="subnet.names" datatype="html">
         <source>Subnet names</source>
         <context-group purpose="location">
@@ -1914,20 +2005,6 @@
           <context context-type="linenumber">212,213</context>
         </context-group>
       <target state="translated">Pooler för prefixdelegering</target></trans-unit>
-      <trans-unit id="subnet.dhcp-parameters" datatype="html">
-        <source>DHCP Parameters</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
-          <context context-type="linenumber">270,271</context>
-        </context-group>
-      <target state="translated">DHCP-parametrar</target></trans-unit>
-      <trans-unit id="subnet.unlock-dhcp-options" datatype="html">
-        <source>Unlock setting DHCP options for individual servers.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
-          <context context-type="linenumber">281,283</context>
-        </context-group>
-      <target state="translated">Lås upp inställning av DHCP-alternativ för enskilda servrar.</target></trans-unit>
       <trans-unit id="common.proceed" datatype="html">
         <source>Proceed</source>
         <context-group purpose="location">

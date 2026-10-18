@@ -1,7 +1,7 @@
 @if (!state.initError) {
     @if (state.loaded) {
         <ng-container [formGroup]="state.group">
-            <p-fieldset legend="Assignments" styleClass="mt-4">
+            <p-fieldset legend="Assignments" i18n-legend="@@pool.assignments" styleClass="mt-4">
                 <div class="mt-4" [formGroup]="state.group">
                     <p-floatlabel class="block mb-2">
                         <p-multiSelect
@@ -17,34 +17,34 @@
                             (onChange)="onDaemonsChange($event)"
                         >
                         </p-multiSelect>
-                        <label for="servers-select">DHCP Servers</label>
+                        <label for="servers-select" i18n="@@host.dhcp-servers">DHCP Servers</label>
                     </p-floatlabel>
                     @if (
                         state.group.get('selectedDaemons').invalid &&
                         (state.group.get('selectedDaemons').dirty || state.group.get('selectedDaemons').touched)
                     ) {
-                        <small class="app-error block">At least one server must be selected. </small>
+                        <small class="app-error block" i18n="@@host.select-server">At least one server must be selected. </small>
                     }
                 </div>
             </p-fieldset>
-            <p-fieldset legend="Shared Network" styleClass="mt-4">
+            <p-fieldset legend="Shared Network" i18n-legend="@@subnet.shared-network" styleClass="mt-4">
                 <p-floatlabel class="block mt-4 mb-2">
                     <input id="name" pInputText formControlName="name" class="max-w-form" />
-                    <label for="name">Name</label>
+                    <label for="name" i18n="@@common.name">Name</label>
                 </p-floatlabel>
                 @if (
                     state.group.get('name').invalid &&
                     (state.group.get('name').dirty || state.group.get('name').touched)
                 ) {
                     @if (state.group.get('name').hasError('valueInList')) {
-                        <small class="app-error block">A shared network with this name already exists. </small>
+                        <small class="app-error block" i18n="@@shared-network.name-exists">A shared network with this name already exists. </small>
                     }
                     @if (!state.group.get('name').hasError('valueInList')) {
-                        <small class="app-error block">A shared network name is required.</small>
+                        <small class="app-error block" i18n="@@shared-network.name-required">A shared network name is required.</small>
                     }
                 }
             </p-fieldset>
-            <p-fieldset legend="DHCP Parameters" styleClass="mt-4">
+            <p-fieldset legend="DHCP Parameters" i18n-legend="@@subnet.dhcp-parameters" styleClass="mt-4">
                 <app-shared-parameters-form
                     [clientClasses]="state.clientClasses"
                     [servers]="state.servers"
@@ -52,10 +52,10 @@
                 >
                 </app-shared-parameters-form>
             </p-fieldset>
-            <p-fieldset [formGroup]="state.group.get('options')" legend="DHCP Options" styleClass="mt-4">
+            <p-fieldset [formGroup]="state.group.get('options')" legend="DHCP Options" i18n-legend="@@host.dhcp-options" styleClass="mt-4">
                 <div class="flex mt-2 pb-4">
                     <p-checkbox formControlName="unlocked" [binary]="true"> </p-checkbox>
-                    <div class="flex ml-2 font-semibold">Unlock setting DHCP options for individual servers.</div>
+                    <div class="flex ml-2 font-semibold" i18n="@@subnet.unlock-dhcp-options">Unlock setting DHCP options for individual servers.</div>
                 </div>
                 @for (optionSet of state.group.get('options.data')?.controls; track optionSet; let i = $index) {
                     @if (i === 0 || state.group.get('options.unlocked')?.value) {
@@ -86,19 +86,20 @@
                     <p-button
                         icon="pi pi-replay"
                         label="Revert Changes"
+                        i18n-label="@@common.revert-changes"
                         severity="secondary"
                         (onClick)="onRevert()"
                     ></p-button>
                 }
-                <p-button label="Cancel" severity="secondary" (onClick)="onCancel()"></p-button>
-                <p-button label="Submit" [disabled]="state.group?.invalid" (onClick)="onSubmit()"></p-button>
+                <p-button label="Cancel" i18n-label="@@common.cancel" severity="secondary" (onClick)="onCancel()"></p-button>
+                <p-button label="Submit" i18n-label="@@common.submit" [disabled]="state.group?.invalid" (onClick)="onSubmit()"></p-button>
             </div>
         </ng-container>
     } @else {
         <p-progressSpinner></p-progressSpinner>
     }
 } @else {
-    <p-fieldset legend="Errors" styleClass="mt-4">
+    <p-fieldset legend="Errors" i18n-legend="@@common.errors" styleClass="mt-4">
         <p-message severity="error">
             <div class="flex flex-column">
                 <div class="flex align-items-center m-4">
@@ -110,12 +111,12 @@
                 <div class="flex align-items-center m-4 font-italic">
                     {{ state.initError }}
                 </div>
-                <div class="flex align-items-center m-4">Retrying can help in some cases.</div>
+                <div class="flex align-items-center m-4" i18n="@@common.retrying-can-help">Retrying can help in some cases.</div>
             </div>
         </p-message>
         <div class="mt-3">
-            <p-button label="Retry" (onClick)="onRetry()" class="mr-2"></p-button>
-            <p-button label="Back" (onClick)="onCancel()" />
+            <p-button label="Retry" i18n-label="@@common.retry" (onClick)="onRetry()" class="mr-2"></p-button>
+            <p-button label="Back" i18n-label="@@common.back" (onClick)="onCancel()" />
         </div>
     </p-fieldset>
 }
