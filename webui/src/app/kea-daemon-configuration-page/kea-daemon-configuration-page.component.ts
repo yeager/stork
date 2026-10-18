@@ -80,7 +80,7 @@ export class KeaDaemonConfigurationPageComponent implements OnInit, OnDestroy {
                     if (res instanceof HttpErrorResponse) {
                         this.msgService.add({
                             severity: 'error',
-                            summary: 'Fetching daemon configuration failed',
+                            summary: $localize`:@@kea.config-fetch-failed:Fetching daemon configuration failed`,
                             detail: res.error?.message ?? res.message,
                             life: 10000,
                         })

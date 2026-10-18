@@ -1,6 +1,6 @@
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
-        <p>This page displays a raw configuration for the Kea daemon.</p>
+        <p i18n="@@kea.raw-config-help">This page displays a raw configuration for the Kea daemon.</p>
     </div>
 </app-breadcrumbs>
 
@@ -50,6 +50,6 @@
     @if (!failedFetch) {
         <app-json-tree-root [value]="configuration" [autoExpand]="autoExpand"></app-json-tree-root>
     } @else {
-        <p-message severity="warn" i18n-text text="Fetching daemon configuration failed"></p-message>
+        <p-message severity="warn" i18n-text="@@kea.config-fetch-failed" text="Fetching daemon configuration failed"></p-message>
     }
 </p-panel>
