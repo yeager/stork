@@ -5288,6 +5288,55 @@
           <context context-type="linenumber">10,12</context>
         </context-group>
       <target state="translated"> Sidan som du försökte öppna finns inte. Kontrollera att webbadressen är korrekt. </target></trans-unit>
+      <trans-unit id="password-change.help" datatype="html">
+        <source>This page allows a user's password to be changed.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      <target state="translated">På sidan kan en användares lösenord ändras.</target></trans-unit>
+      <trans-unit id="password-change.requirements" datatype="html">
+        <source>Enter the current password and then create a new one. The new password requirements are:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      <target state="translated">Ange det nuvarande lösenordet och skapa sedan ett nytt. Det nya lösenordet måste uppfylla följande krav:</target></trans-unit>
+      <trans-unit id="password-change.uppercase" datatype="html">
+        <source>Must contain an uppercase letter.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      <target state="translated">Måste innehålla en versal.</target></trans-unit>
+      <trans-unit id="password-change.lowercase" datatype="html">
+        <source>Must contain a lowercase letter.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      <target state="translated">Måste innehålla en gemen.</target></trans-unit>
+      <trans-unit id="password-change.digit" datatype="html">
+        <source>Must contain a digit.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      <target state="translated">Måste innehålla en siffra.</target></trans-unit>
+      <trans-unit id="password-change.special" datatype="html">
+        <source>Must contain a special or whitespace character.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      <target state="translated">Måste innehålla ett specialtecken eller blanksteg.</target></trans-unit>
+      <trans-unit id="password-change.length" datatype="html">
+        <source>Must be at least 12 characters long.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/password-change-page/password-change-page.component.html</context>
+          <context context-type="linenumber">10,16</context>
+        </context-group>
+      <target state="translated">Måste innehålla minst 12 tecken.</target></trans-unit>
       <trans-unit id="profile.user" datatype="html">
         <source>User Profile</source>
         <context-group purpose="location">
@@ -6091,6 +6140,13 @@
           <context context-type="linenumber">188</context>
         </context-group>
       <target state="translated">Det gick inte att ta bort det delade nätverket <x id="shared network" equiv-text="this.sharedNetwork.name" /> : <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="shared-networks.help" datatype="html">
+        <source>This page displays a list of the shared networks defined in the Kea instance.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.html</context>
+          <context context-type="linenumber">3,9</context>
+        </context-group>
+      <target state="translated">På sidan visas en lista över de delade nätverk som har definierats i Kea-instansen.</target></trans-unit>
       <trans-unit id="menu.shared-networks" datatype="html">
         <source>Shared Networks</source>
         <context-group purpose="location">
