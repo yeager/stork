@@ -324,8 +324,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot get settings',
-                    detail: 'Failed to get settings: ' + msg,
+                    summary: $localize`:@@machines.settings-fetch-failed:Cannot get settings`,
+                    detail: $localize`:@@machines.settings-fetch-failed-detail:Failed to get settings: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -368,17 +368,15 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 if (m.error) {
                     this.msgSrv.add({
                         severity: 'error',
-                        summary: 'Error getting machine state from Stork agent',
-                        detail:
-                            'The machine state was retrieved from the Stork server, but the server had problems communicating with the Stork agent on the machine: ' +
-                            m.error,
+                        summary: $localize`:@@machines.agent-state-fetch-failed:Error getting machine state from Stork agent`,
+                        detail: $localize`:@@machines.agent-state-fetch-failed-detail:The machine state was retrieved from the Stork server, but the server had problems communicating with the Stork agent on the machine: ${m.error}:error message:`,
                         life: 10000,
                     })
                 } else {
                     this.msgSrv.add({
                         severity: 'success',
-                        summary: 'Machine refreshed',
-                        detail: 'Refreshing succeeded.',
+                        summary: $localize`:@@machines.refreshed:Machine refreshed`,
+                        detail: $localize`:@@machines.refresh-succeeded:Refreshing succeeded.`,
                     })
                 }
 
@@ -388,8 +386,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Error getting machine state from Stork server',
-                    detail: 'Error getting state of machine: ' + msg,
+                    summary: $localize`:@@machines.server-state-fetch-failed:Error getting machine state from Stork server`,
+                    detail: $localize`:@@machines.server-state-fetch-failed-detail:Error getting state of machine: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -423,8 +421,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
             .then((m) => {
                 this.msgSrv.add({
                     severity: 'success',
-                    summary: `Machine authorized`,
-                    detail: `Machine ${m.address} authorization succeeded.`,
+                    summary: $localize`:@@machines.authorized-success:Machine authorized`,
+                    detail: $localize`:@@machines.authorization-succeeded:Machine ${m.address}:machine address: authorization succeeded.`,
                 })
                 this.machinesTable()?.loadData(this.machinesTable()?.machinesTable?.createLazyLoadMetadata())
                 // Force menu adjustments to take into account that there
@@ -436,8 +434,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: `Machine authorization failed`,
-                    detail: `Machine authorization attempt failed: ${msg}`,
+                    summary: $localize`:@@machines.authorization-failed:Machine authorization failed`,
+                    detail: $localize`:@@machines.authorization-failed-detail:Machine authorization attempt failed: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -510,8 +508,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
      */
     deleteMachine(machineId: number) {
         this.confirmationService.confirm({
-            message: `Are you sure you want to delete the machine with ID ${machineId}?`,
-            header: 'Confirm',
+            message: $localize`:@@machines.delete-confirmation:Are you sure you want to delete the machine with ID ${machineId}:machine ID:?`,
+            header: $localize`:@@common.confirm:Confirm`,
             icon: 'pi pi-exclamation-triangle',
             rejectButtonProps: { icon: 'pi pi-times' },
             acceptButtonProps: {
@@ -529,16 +527,16 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
 
                         this.msgSrv.add({
                             severity: 'success',
-                            summary: 'Machine deleted',
-                            detail: 'Deletion succeeded.',
+                            summary: $localize`:@@machines.deleted:Machine deleted`,
+                            detail: $localize`:@@machines.delete-succeeded:Deletion succeeded.`,
                         })
                     })
                     .catch((err) => {
                         const msg = getErrorMessage(err)
                         this.msgSrv.add({
                             severity: 'error',
-                            summary: 'Deleting machine failed',
-                            detail: 'Error deleting machine: ' + msg,
+                            summary: $localize`:@@machines.delete-failed:Deleting machine failed`,
+                            detail: $localize`:@@machines.delete-failed-detail:Error deleting machine: ${msg}:error message:`,
                             life: 10000,
                         })
                     })
@@ -576,8 +574,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
             this.changeMachineAddressDialogVisible = false
             this.msgSrv.add({
                 severity: 'success',
-                summary: 'Machine address does not require updating',
-                detail: 'Machine address was not changed.',
+                summary: $localize`:@@machines.address-no-update:Machine address does not require updating`,
+                detail: $localize`:@@machines.address-unchanged:Machine address was not changed.`,
             })
             return
         }
@@ -591,8 +589,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 this.changeMachineAddressDialogVisible = false
                 this.msgSrv.add({
                     severity: 'success',
-                    summary: 'Machine address updated',
-                    detail: 'Machine address update succeeded.',
+                    summary: $localize`:@@machines.address-updated:Machine address updated`,
+                    detail: $localize`:@@machines.address-update-succeeded:Machine address update succeeded.`,
                 })
                 machine = m
 
@@ -606,8 +604,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Machine address update failed',
-                    detail: 'Error updating machine address: ' + msg,
+                    summary: $localize`:@@machines.address-update-failed:Machine address update failed`,
+                    detail: $localize`:@@machines.address-update-failed-detail:Error updating machine address: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -627,8 +625,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot get server token',
-                    detail: 'Error getting server token to register machines: ' + msg,
+                    summary: $localize`:@@machines.server-token-fetch-failed:Cannot get server token`,
+                    detail: $localize`:@@machines.server-token-fetch-failed-detail:Error getting server token to register machines: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -646,8 +644,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Cannot regenerate server token',
-                    detail: 'Error regenerating server token to register machines: ' + msg,
+                    summary: $localize`:@@machines.server-token-regenerate-failed:Cannot regenerate server token`,
+                    detail: $localize`:@@machines.server-token-regenerate-failed-detail:Error regenerating server token to register machines: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -696,7 +694,7 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
                 this.msgSrv.add({
                     severity: 'success',
                     summary: 'Machine authorized',
-                    detail: `Machine ${m.address} authorization succeeded.`,
+                    detail: $localize`:@@machines.authorization-succeeded:Machine ${m.address}:machine address: authorization succeeded.`,
                 })
             },
             error: (err) => {
@@ -744,8 +742,8 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
     private showFeedbackForNullMachine() {
         this.msgSrv.add({
             severity: 'error',
-            summary: 'Machine not found',
-            detail: 'Machine was not found',
+            summary: $localize`:@@machines.not-found:Machine not found`,
+            detail: $localize`:@@machines.not-found-detail:Machine was not found`,
             life: 10000,
         })
     }

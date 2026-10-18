@@ -4002,6 +4002,220 @@
           <context context-type="linenumber">189</context>
         </context-group>
       <target state="translated">Inte auktoriserade</target></trans-unit>
+      <trans-unit id="machines.settings-fetch-failed" datatype="html">
+        <source>Cannot get settings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">327</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta inställningarna</target></trans-unit>
+      <trans-unit id="machines.settings-fetch-failed-detail" datatype="html">
+        <source>Failed to get settings: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">328</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta inställningarna: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.agent-state-fetch-failed" datatype="html">
+        <source>Error getting machine state from Stork agent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">371</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskinstatus från Stork-agenten</target></trans-unit>
+      <trans-unit id="machines.agent-state-fetch-failed-detail" datatype="html">
+        <source>The machine state was retrieved from the Stork server, but the server had problems communicating with the Stork agent on the machine: <x id="error message" equiv-text="m.error" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+      <target state="translated">Maskinstatus hämtades från Stork-servern, men servern hade problem att kommunicera med Stork-agenten på maskinen: <x id="error message" equiv-text="m.error" /></target></trans-unit>
+      <trans-unit id="machines.refreshed" datatype="html">
+        <source>Machine refreshed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">378</context>
+        </context-group>
+      <target state="translated">Maskinen har uppdaterats</target></trans-unit>
+      <trans-unit id="machines.refresh-succeeded" datatype="html">
+        <source>Refreshing succeeded.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">379</context>
+        </context-group>
+      <target state="translated">Uppdateringen lyckades.</target></trans-unit>
+      <trans-unit id="machines.server-state-fetch-failed" datatype="html">
+        <source>Error getting machine state from Stork server</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">389</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskinstatus från Stork-servern</target></trans-unit>
+      <trans-unit id="machines.server-state-fetch-failed-detail" datatype="html">
+        <source>Error getting state of machine: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">390</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskinens status: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.authorized-success" datatype="html">
+        <source>Machine authorized</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">424</context>
+        </context-group>
+      <target state="translated">Maskinen har auktoriserats</target></trans-unit>
+      <trans-unit id="machines.authorization-succeeded" datatype="html">
+        <source>Machine <x id="machine address" equiv-text="m.address" /> authorization succeeded.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">425</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">697</context>
+        </context-group>
+      <target state="translated">Auktoriseringen av maskinen <x id="machine address" equiv-text="m.address" /> lyckades.</target></trans-unit>
+      <trans-unit id="machines.authorization-failed" datatype="html">
+        <source>Machine authorization failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">437</context>
+        </context-group>
+      <target state="translated">Auktorisering av maskin misslyckades</target></trans-unit>
+      <trans-unit id="machines.authorization-failed-detail" datatype="html">
+        <source>Machine authorization attempt failed: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      <target state="translated">Försöket att auktorisera maskinen misslyckades: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.delete-confirmation" datatype="html">
+        <source>Are you sure you want to delete the machine with ID <x id="machine ID" equiv-text="machineId" />?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">511</context>
+        </context-group>
+      <target state="translated">Vill du ta bort maskinen med ID <x id="machine ID" equiv-text="machineId" />?</target></trans-unit>
+      <trans-unit id="common.confirm" datatype="html">
+        <source>Confirm</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">512</context>
+        </context-group>
+      <target state="translated">Confirm</target></trans-unit>
+      <trans-unit id="machines.deleted" datatype="html">
+        <source>Machine deleted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">530</context>
+        </context-group>
+      <target state="translated">Maskinen har tagits bort</target></trans-unit>
+      <trans-unit id="machines.delete-succeeded" datatype="html">
+        <source>Deletion succeeded.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">531</context>
+        </context-group>
+      <target state="translated">Borttagningen lyckades.</target></trans-unit>
+      <trans-unit id="machines.delete-failed" datatype="html">
+        <source>Deleting machine failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">538</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort maskinen</target></trans-unit>
+      <trans-unit id="machines.delete-failed-detail" datatype="html">
+        <source>Error deleting machine: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort maskinen: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.address-no-update" datatype="html">
+        <source>Machine address does not require updating</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">577</context>
+        </context-group>
+      <target state="translated">Maskinens adress behöver inte uppdateras</target></trans-unit>
+      <trans-unit id="machines.address-unchanged" datatype="html">
+        <source>Machine address was not changed.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">578</context>
+        </context-group>
+      <target state="translated">Maskinens adress ändrades inte.</target></trans-unit>
+      <trans-unit id="machines.address-updated" datatype="html">
+        <source>Machine address updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">592</context>
+        </context-group>
+      <target state="translated">Maskinens adress har uppdaterats</target></trans-unit>
+      <trans-unit id="machines.address-update-succeeded" datatype="html">
+        <source>Machine address update succeeded.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">593</context>
+        </context-group>
+      <target state="translated">Uppdateringen av maskinens adress lyckades.</target></trans-unit>
+      <trans-unit id="machines.address-update-failed" datatype="html">
+        <source>Machine address update failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">607</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera maskinens adress</target></trans-unit>
+      <trans-unit id="machines.address-update-failed-detail" datatype="html">
+        <source>Error updating machine address: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">608</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera maskinens adress: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.server-token-fetch-failed" datatype="html">
+        <source>Cannot get server token</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta servertoken</target></trans-unit>
+      <trans-unit id="machines.server-token-fetch-failed-detail" datatype="html">
+        <source>Error getting server token to register machines: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">629</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta servertoken för att registrera maskiner: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.server-token-regenerate-failed" datatype="html">
+        <source>Cannot regenerate server token</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">647</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa en ny servertoken</target></trans-unit>
+      <trans-unit id="machines.server-token-regenerate-failed-detail" datatype="html">
+        <source>Error regenerating server token to register machines: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">648</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa en ny servertoken för att registrera maskiner: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="machines.not-found" datatype="html">
+        <source>Machine not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">745</context>
+        </context-group>
+      <target state="translated">Maskinen hittades inte</target></trans-unit>
+      <trans-unit id="machines.not-found-detail" datatype="html">
+        <source>Machine was not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">746</context>
+        </context-group>
+      <target state="translated">Maskinen hittades inte</target></trans-unit>
       <trans-unit id="machines.search" datatype="html">
         <source>Search machines</source>
         <context-group purpose="location">
