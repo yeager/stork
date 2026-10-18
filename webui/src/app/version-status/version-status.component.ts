@@ -165,8 +165,8 @@ export class VersionStatusComponent implements OnInit, OnDestroy {
                             const msg = getErrorMessage(err)
                             this.messageService.add({
                                 severity: 'error',
-                                summary: 'Error fetching software version data',
-                                detail: 'Error when fetching software version data: ' + msg,
+                                summary: $localize`:@@version.error.fetch:Error fetching software version data`,
+                                detail: $localize`:@@version.error.fetch-detail:Error when fetching software version data: ${msg}`,
                                 life: 10000,
                             })
                         },
@@ -175,8 +175,8 @@ export class VersionStatusComponent implements OnInit, OnDestroy {
         } else {
             this.messageService.add({
                 severity: 'error',
-                summary: 'Error parsing software version',
-                detail: `Couldn't parse valid semver from given ${daemon.version} version!`,
+                summary: $localize`:@@version.error.parse:Error parsing software version`,
+                detail: $localize`:@@version.error.parse-detail:Couldn't parse valid semver from given ${daemon.version} version!`,
                 life: 10000,
             })
         }

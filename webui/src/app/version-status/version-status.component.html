@@ -9,7 +9,7 @@
                 }
             </span>
             @if (iscApp()) {
-                <a routerLink="/versions" aria-label="More Version Info">
+                <a routerLink="/versions" i18n-aria-label="@@version.more-info" aria-label="More Version Info">
                     <i class="pi font-semibold" [class]="iconClasses" [pTooltip]="feedbackMessages.join(' ')"></i>
                 </a>
             }

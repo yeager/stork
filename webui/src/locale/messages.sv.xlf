@@ -1481,6 +1481,41 @@
           <context context-type="linenumber">52,53</context>
         </context-group>
       <target state="translated">Filter</target></trans-unit>
+      <trans-unit id="version.more-info" datatype="html">
+        <source>More Version Info</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-status/version-status.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      <target state="translated">Mer versionsinformation</target></trans-unit>
+      <trans-unit id="version.error.fetch" datatype="html">
+        <source>Error fetching software version data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-status/version-status.component.ts</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      <target state="translated">Fel när programvaruversionen hämtades</target></trans-unit>
+      <trans-unit id="version.error.fetch-detail" datatype="html">
+        <source>Error when fetching software version data: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-status/version-status.component.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      <target state="translated">Fel när programvaruversionen hämtades: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="version.error.parse" datatype="html">
+        <source>Error parsing software version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-status/version-status.component.ts</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      <target state="translated">Fel vid tolkning av programvaruversionen</target></trans-unit>
+      <trans-unit id="version.error.parse-detail" datatype="html">
+        <source>Couldn't parse valid semver from given <x id="PH" equiv-text="daemon.version" /> version!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-status/version-status.component.ts</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      <target state="translated">Det gick inte att tolka en giltig semver från versionen <x id="PH" equiv-text="daemon.version" />!</target></trans-unit>
     </body>
   </file>
 </xliff>
