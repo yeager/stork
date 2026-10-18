@@ -263,8 +263,8 @@ export class SubnetTabComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.msgService.add({
                     severity: 'error',
-                    summary: 'Cannot delete the subnet',
-                    detail: `Failed to delete the subnet ${this.subnet.subnet} : ${msg}`,
+                    summary: $localize`:@@subnet.delete-failed:Cannot delete the subnet`,
+                    detail: $localize`:@@subnet.delete-failed-detail:Failed to delete the subnet ${this.subnet.subnet}:subnet: : ${msg}:error message:`,
                     life: 10000,
                 })
             })
