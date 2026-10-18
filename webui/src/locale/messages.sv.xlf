@@ -953,6 +953,14 @@
           <context context-type="linenumber">151,153</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">315,317</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">323,325</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
           <context context-type="linenumber">124,126</context>
         </context-group>
@@ -1019,6 +1027,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">225,226</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">453,454</context>
         </context-group>
       <target state="translated">Rensa</target></trans-unit>
       <trans-unit id="dashboard.welcome" datatype="html">
@@ -1327,6 +1339,10 @@
           <context context-type="linenumber">146,149</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">351,353</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
           <context context-type="linenumber">156,158</context>
         </context-group>
@@ -1541,6 +1557,143 @@
           <context context-type="linenumber">278,279</context>
         </context-group>
       <target state="translated">DHCP-alternativ</target></trans-unit>
+      <trans-unit id="hosts.machine-id" datatype="html">
+        <source>Machine ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">124,127</context>
+        </context-group>
+      <target state="translated">Maskin-ID</target></trans-unit>
+      <trans-unit id="hosts.daemon" datatype="html">
+        <source>Daemon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">356,360</context>
+        </context-group>
+      <target state="translated">Demon</target></trans-unit>
+      <trans-unit id="hosts.subnet-id" datatype="html">
+        <source>Subnet ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">172,175</context>
+        </context-group>
+      <target state="translated">Delnäts-ID</target></trans-unit>
+      <trans-unit id="hosts.kea-subnet-id" datatype="html">
+        <source>Kea Subnet ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">198,201</context>
+        </context-group>
+      <target state="translated">Kea-delnäts-ID</target></trans-unit>
+      <trans-unit id="hosts.global" datatype="html">
+        <source>Global</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">222,223</context>
+        </context-group>
+      <target state="translated">Global</target></trans-unit>
+      <trans-unit id="hosts.conflict" datatype="html">
+        <source>Conflict</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">248,250</context>
+        </context-group>
+      <target state="translated">Konflikt</target></trans-unit>
+      <trans-unit id="hosts.search-ip-or-identifier" datatype="html">
+        <source>Search IP or identifier</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">278,280</context>
+        </context-group>
+      <target state="translated">Sök IP-adress eller identifierare</target></trans-unit>
+      <trans-unit id="hosts.migrate-to-database" datatype="html">
+        <source>Migrate to Database</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">296,298</context>
+        </context-group>
+      <target state="translated">Migrera till databas</target></trans-unit>
+      <trans-unit id="hosts.new-host" datatype="html">
+        <source>New Host</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">306,309</context>
+        </context-group>
+      <target state="translated">Ny värd</target></trans-unit>
+      <trans-unit id="hosts.dhcp-identifiers" datatype="html">
+        <source>DHCP Identifiers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">337,339</context>
+        </context-group>
+      <target state="translated">DHCP-identifierare</target></trans-unit>
+      <trans-unit id="hosts.ip-addresses" datatype="html">
+        <source>IP Addresses</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">342,343</context>
+        </context-group>
+      <target state="translated">IP-adresser</target></trans-unit>
+      <trans-unit id="hosts.ipv6-prefixes" datatype="html">
+        <source>IPv6 Prefixes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">347,348</context>
+        </context-group>
+      <target state="translated">IPv6-prefix</target></trans-unit>
+      <trans-unit id="hosts.global-subnet" datatype="html">
+        <source>Global/Subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">354,356</context>
+        </context-group>
+      <target state="translated">Globalt/delnät</target></trans-unit>
+      <trans-unit id="hosts.global-lowercase" datatype="html">
+        <source>global</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">403,406</context>
+        </context-group>
+      <target state="translated">global</target></trans-unit>
+      <trans-unit id="hosts.conflict-tooltip" datatype="html">
+        <source>The host's configurations are different in the configuration file and the host database.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">423,425</context>
+        </context-group>
+      <target state="translated">Värdens konfigurationer skiljer sig åt i konfigurationsfilen och värddatabasen.</target></trans-unit>
+      <trans-unit id="hosts.duplicate-tooltip" datatype="html">
+        <source>The host is duplicated in the configuration file and host database.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">432,434</context>
+        </context-group>
+      <target state="translated">Värden är dubblerad i konfigurationsfilen och värddatabasen.</target></trans-unit>
+      <trans-unit id="hosts.total" datatype="html">
+        <source>Total:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">442,443</context>
+        </context-group>
+      <target state="translated">Totalt:</target></trans-unit>
+      <trans-unit id="hosts.none-found" datatype="html">
+        <source>No hosts found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">447,449</context>
+        </context-group>
+      <target state="translated">Inga värdar hittades.</target></trans-unit>
+      <trans-unit id="hosts.clear-filtering" datatype="html">
+        <source>Clear filtering and try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">450,453</context>
+        </context-group>
+      <target state="translated">Rensa filtreringen och försök igen.</target></trans-unit>
       <trans-unit id="value.invalid" datatype="html">
         <source>Invalid value</source>
         <context-group purpose="location">

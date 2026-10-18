@@ -121,7 +121,7 @@
                                     [ngModel]="value"
                                     class="max-w-8rem"
                                 ></p-inputNumber>
-                                <label for="machine-id">Machine ID</label>
+                                <label for="machine-id" i18n="@@hosts.machine-id">Machine ID</label>
                             </p-floatlabel>
                             <p-button
                                 icon="pi pi-filter-slash"
@@ -142,6 +142,7 @@
                                 (daemonIDChange)="filterTable($event, filterMetadata)"
                                 [daemonNames]="['dhcp4', 'dhcp6']"
                                 label="Daemon"
+                                i18n-label="@@hosts.daemon"
                                 (errorOccurred)="onAutocompleteError($event)"
                             />
                             <p-button
@@ -168,7 +169,7 @@
                                     [ngModel]="value"
                                     class="max-w-8rem"
                                 ></p-inputNumber>
-                                <label for="subnet-id">Subnet ID</label>
+                                <label for="subnet-id" i18n="@@hosts.subnet-id">Subnet ID</label>
                             </p-floatlabel>
                             <p-button
                                 icon="pi pi-filter-slash"
@@ -194,7 +195,7 @@
                                     [ngModel]="value"
                                     class="max-w-8rem"
                                 ></p-inputNumber>
-                                <label for="kea-subnet-id">Kea Subnet ID</label>
+                                <label for="kea-subnet-id" i18n="@@hosts.kea-subnet-id">Kea Subnet ID</label>
                             </p-floatlabel>
                             <p-button
                                 icon="pi pi-filter-slash"
@@ -218,6 +219,7 @@
                         <div class="flex align-items-center">
                             <app-tri-state-checkbox
                                 label="Global"
+                                i18n-label="@@hosts.global"
                                 inputID="conflict-filter"
                                 [value]="value"
                                 (valueChange)="filterTable($event, filterMetadata, false)"
@@ -244,6 +246,7 @@
                         <div class="flex align-items-center">
                             <app-tri-state-checkbox
                                 label="Conflict"
+                                i18n-label="@@hosts.conflict"
                                 inputID="conflict-filter"
                                 [value]="value"
                                 (valueChange)="filterTable($event, filterMetadata, false)"
@@ -273,6 +276,7 @@
                                     (input)="filterTable($event.target.value, filterMetadata)"
                                     [ngModel]="value"
                                     placeholder="Search IP or identifier"
+                                    i18n-placeholder="@@hosts.search-ip-or-identifier"
                                 />
                             </p-iconfield>
                             <p-button
@@ -290,6 +294,7 @@
             <ng-template #buttons>
                 <p-button
                     label="Migrate to Database"
+                    i18n-label="@@hosts.migrate-to-database"
                     icon="pi pi-database"
                     [disabled]="!totalRecords || isFilteredByConflict() || !canStartMigration()"
                     (onClick)="migrateToDatabaseAsk()"
@@ -299,6 +304,7 @@
                 ></p-button>
                 <p-button
                     label="New Host"
+                    i18n-label="@@hosts.new-host"
                     icon="pi pi-plus"
                     routerLink="/dhcp/hosts/new"
                     appAccessEntity="host-reservation"
@@ -307,6 +313,7 @@
                 ></p-button>
                 <p-button
                     label="Refresh List"
+                    i18n-label="@@daemons.refresh-list"
                     icon="pi pi-refresh"
                     (onClick)="loadData(hostsTable.createLazyLoadMetadata())"
                 ></p-button>
@@ -314,6 +321,7 @@
             <ng-template #splitbutton>
                 <p-splitbutton
                     label="Refresh List"
+                    i18n-label="@@daemons.refresh-list"
                     icon="pi pi-refresh"
                     (onClick)="loadData(hostsTable.createLazyLoadMetadata())"
                     [model]="toolbarButtons"
@@ -326,26 +334,26 @@
         <tr>
             <th style="width: 28%" [pSortableColumn]="HostSortField.Identifier">
                 <div class="flex gap-1 white-space-nowrap">
-                    DHCP Identifiers<p-sortIcon [field]="HostSortField.Identifier" />
+                    <ng-container i18n="@@hosts.dhcp-identifiers">DHCP Identifiers</ng-container><p-sortIcon [field]="HostSortField.Identifier" />
                 </div>
             </th>
             <th style="width: 18%" [pSortableColumn]="HostSortField.ReservationAddress">
                 <div class="flex gap-1 white-space-nowrap">
-                    IP Addresses<p-sortIcon [field]="HostSortField.ReservationAddress" />
+                    <ng-container i18n="@@hosts.ip-addresses">IP Addresses</ng-container><p-sortIcon [field]="HostSortField.ReservationAddress" />
                 </div>
             </th>
             <th style="width: 14%" [pSortableColumn]="HostSortField.ReservationIpv6Prefix">
                 <div class="flex gap-1 white-space-nowrap">
-                    IPv6 Prefixes<p-sortIcon [field]="HostSortField.ReservationIpv6Prefix" />
+                    <ng-container i18n="@@hosts.ipv6-prefixes">IPv6 Prefixes</ng-container><p-sortIcon [field]="HostSortField.ReservationIpv6Prefix" />
                 </div>
             </th>
             <th style="width: 14%" [pSortableColumn]="HostSortField.Hostname">
-                <div class="flex gap-1">Hostname<p-sortIcon [field]="HostSortField.Hostname" /></div>
+                <div class="flex gap-1"><ng-container i18n="@@machines.hostname">Hostname</ng-container><p-sortIcon [field]="HostSortField.Hostname" /></div>
             </th>
             <th style="width: 12%" [pSortableColumn]="HostSortField.Subnet">
-                <div class="flex gap-1">Global/Subnet<p-sortIcon [field]="HostSortField.Subnet" /></div>
+                <div class="flex gap-1"><ng-container i18n="@@hosts.global-subnet">Global/Subnet</ng-container><p-sortIcon [field]="HostSortField.Subnet" /></div>
             </th>
-            <th style="width: 14%">Daemon</th>
+            <th style="width: 14%" i18n="@@hosts.daemon">Daemon</th>
         </tr>
     </ng-template>
     <ng-template #body let-h>
@@ -392,7 +400,7 @@
                     ></app-entity-link>
                 </td>
             } @else {
-                <td>global</td>
+                <td i18n="@@hosts.global-lowercase">global</td>
             }
             <td>
                 @for (lhs of localHostsGroupedByDaemon[h.id]; track lhs) {
@@ -413,6 +421,7 @@
                                 value="conflict"
                                 severity="danger"
                                 pTooltip="The host's configurations are different in the configuration file and the host database."
+                                i18n-pTooltip="@@hosts.conflict-tooltip"
                             ></p-tag>
                         } @else if (getLocalHostsState(lhs) === 'duplicate') {
                             <!-- Duplicate label -->
@@ -421,6 +430,7 @@
                                 value="duplicate"
                                 severity="warn"
                                 pTooltip="The host is duplicated in the configuration file and host database."
+                                i18n-pTooltip="@@hosts.duplicate-tooltip"
                             ></p-tag>
                         }
                     </div>
@@ -429,17 +439,18 @@
         </tr>
     </ng-template>
     <ng-template #paginatorright let-paginatorState>
-        Total: {{ paginatorState.totalRecords | pluralize: 'host' }}
+        <ng-container i18n="@@hosts.total">Total:</ng-container> {{ paginatorState.totalRecords | pluralize: 'host' }}
     </ng-template>
     <ng-template #emptymessage>
         <tr>
             <td colspan="6">
-                No hosts found.
+                <ng-container i18n="@@hosts.none-found">No hosts found.</ng-container>
                 @if (tableHasFilter(hostsTable)) {
                     <span>
-                        Clear filtering and try again.
+                        <ng-container i18n="@@hosts.clear-filtering">Clear filtering and try again.</ng-container>
                         <p-button
                             label="Clear"
+                            i18n-label="@@common.clear"
                             [outlined]="true"
                             icon="pi pi-filter-slash"
                             (click)="clearTableFiltering()"
