@@ -54,6 +54,10 @@
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">19,22</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
       <target state="translated">Tilldelningar</target></trans-unit>
       <trans-unit id="pool.parameters" datatype="html">
         <source>Pool DHCP Parameters</source>
@@ -617,6 +621,10 @@
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">409</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">319</context>
+        </context-group>
       <target state="translated">Skicka</target></trans-unit>
       <trans-unit id="common.reset" datatype="html">
         <source>Reset</source>
@@ -634,6 +642,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">408,409</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">317,318</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/user-form/user-form.component.html</context>
@@ -1233,12 +1245,24 @@
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">41,44</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
       <target state="translated">Minst en server måste väljas. </target></trans-unit>
       <trans-unit id="host.subnet" datatype="html">
         <source>Subnet</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">59,62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">78,81</context>
         </context-group>
       <target state="translated">Delnät</target></trans-unit>
       <trans-unit id="host.select-subnet" datatype="html">
@@ -1364,6 +1388,10 @@
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">402,404</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">311,313</context>
+        </context-group>
       <target state="translated">Återställ ändringar</target></trans-unit>
       <trans-unit id="host.submission-help" datatype="html">
         <source>Host Reservation Submission</source>
@@ -1385,6 +1413,10 @@
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">419,421</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">334,336</context>
+        </context-group>
       <target state="translated">Fel</target></trans-unit>
       <trans-unit id="host.init-error" datatype="html">
         <source> In order to apply configuration changes, the server should begin a transaction between the user and the server. The server should also return the current data required, in the form where the host information is specified. Unfortunately, starting the new transaction failed with the following error: </source>
@@ -1399,6 +1431,10 @@
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">432,436</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">346,350</context>
+        </context-group>
       <target state="translated">Det kan hjälpa att försöka igen i vissa fall.</target></trans-unit>
       <trans-unit id="common.retry" datatype="html">
         <source>Retry</source>
@@ -1406,12 +1442,20 @@
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">436,437</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">350,351</context>
+        </context-group>
       <target state="translated">Försök igen</target></trans-unit>
       <trans-unit id="common.back" datatype="html">
         <source>Back</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
           <context context-type="linenumber">437,439</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">351,353</context>
         </context-group>
       <target state="translated">Tillbaka</target></trans-unit>
       <trans-unit id="host.valid-hex" datatype="html">
@@ -1447,6 +1491,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
           <context context-type="linenumber">222</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">278,279</context>
         </context-group>
       <target state="translated">DHCP-alternativ</target></trans-unit>
       <trans-unit id="value.invalid" datatype="html">
@@ -1767,6 +1815,126 @@
           <context context-type="linenumber">47</context>
         </context-group>
       <target state="translated">Byt lösenord</target></trans-unit>
+      <trans-unit id="subnet.dhcp-servers-and-tags" datatype="html">
+        <source>DHCP Servers and/or Server Tags</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      <target state="translated">DHCP-servrar och/eller servertaggar</target></trans-unit>
+      <trans-unit id="subnet.server-selection-disabled" datatype="html">
+        <source>Server selection is disabled</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">60,62</context>
+        </context-group>
+      <target state="translated">Servervalet är inaktiverat</target></trans-unit>
+      <trans-unit id="subnet.prefix-exists" datatype="html">
+        <source>A subnet with this prefix already exists. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">85,87</context>
+        </context-group>
+      <target state="translated">Det finns redan ett delnät med det här prefixet. </target></trans-unit>
+      <trans-unit id="subnet.valid-prefix-required" datatype="html">
+        <source>A valid subnet prefix is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">94,98</context>
+        </context-group>
+      <target state="translated">Ett giltigt delnätsprefix krävs.</target></trans-unit>
+      <trans-unit id="subnet.no-shared-networks" datatype="html">
+        <source>No shared networks found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">101,103</context>
+        </context-group>
+      <target state="translated">Inga delade nät hittades</target></trans-unit>
+      <trans-unit id="subnet.shared-network" datatype="html">
+        <source>Shared Network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">112,116</context>
+        </context-group>
+      <target state="translated">Delat nät</target></trans-unit>
+      <trans-unit id="subnet.names" datatype="html">
+        <source>Subnet names</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+      <target state="translated">Delnätsnamn</target></trans-unit>
+      <trans-unit id="subnet.unlock-names" datatype="html">
+        <source>Unlock setting subnet names for individual servers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">120,123</context>
+        </context-group>
+      <target state="translated">Lås upp inställning av delnätsnamn för enskilda servrar.</target></trans-unit>
+      <trans-unit id="subnet.name" datatype="html">
+        <source>Subnet name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">148,150</context>
+        </context-group>
+      <target state="translated">Delnätsnamn</target></trans-unit>
+      <trans-unit id="subnet.pools" datatype="html">
+        <source>Pools</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">154,155</context>
+        </context-group>
+      <target state="translated">Pooler</target></trans-unit>
+      <trans-unit id="subnet.delete-pool" datatype="html">
+        <source>Delete Pool</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">187,189</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">245,247</context>
+        </context-group>
+      <target state="translated">Ta bort pool</target></trans-unit>
+      <trans-unit id="subnet.add-pool" datatype="html">
+        <source>Add Pool</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">203,205</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">261,263</context>
+        </context-group>
+      <target state="translated">Lägg till pool</target></trans-unit>
+      <trans-unit id="subnet.prefix-delegation-pools" datatype="html">
+        <source>Prefix Delegation Pools</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">212,213</context>
+        </context-group>
+      <target state="translated">Pooler för prefixdelegering</target></trans-unit>
+      <trans-unit id="subnet.dhcp-parameters" datatype="html">
+        <source>DHCP Parameters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">270,271</context>
+        </context-group>
+      <target state="translated">DHCP-parametrar</target></trans-unit>
+      <trans-unit id="subnet.unlock-dhcp-options" datatype="html">
+        <source>Unlock setting DHCP options for individual servers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">281,283</context>
+        </context-group>
+      <target state="translated">Lås upp inställning av DHCP-alternativ för enskilda servrar.</target></trans-unit>
+      <trans-unit id="common.proceed" datatype="html">
+        <source>Proceed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">324,325</context>
+        </context-group>
+      <target state="translated">Fortsätt</target></trans-unit>
       <trans-unit id="table.clear" datatype="html">
         <source>Clear</source>
         <context-group purpose="location">

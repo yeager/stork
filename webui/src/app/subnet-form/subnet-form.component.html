@@ -2,7 +2,7 @@
     @if (state.loaded) {
         <ng-container [formGroup]="state.group">
             @if (!state.wizard) {
-                <p-fieldset legend="Assignments" styleClass="mt-4">
+                <p-fieldset legend="Assignments" i18n-legend="@@pool.assignments" styleClass="mt-4">
                     <div class="mt-4" [formGroup]="state.group">
                         <p-floatlabel class="block mb-2">
                             <p-multiSelect
@@ -19,7 +19,7 @@
                                 (onChange)="onDaemonGroupsChange($event)"
                             >
                             </p-multiSelect>
-                            <label for="servers-select">DHCP Servers and/or Server Tags</label>
+                            <label for="servers-select" i18n="@@subnet.dhcp-servers-and-tags">DHCP Servers and/or Server Tags</label>
                             <span class="ml-2">
                                 <app-help-tip subject="DHCP servers selection">
                                     <p>
@@ -53,11 +53,11 @@
                             (state.group.get('selectedDaemonGroups').dirty ||
                                 state.group.get('selectedDaemonGroups').touched)
                         ) {
-                            <small class="app-error block">At least one server must be selected.</small>
+                            <small class="app-error block" i18n="@@host.select-server">At least one server must be selected.</small>
                         }
                         @if (state.group.get('selectedDaemonGroups')?.disabled) {
                             <div class="flex align-items-center">
-                                <div>Server selection is disabled</div>
+                                <div i18n="@@subnet.server-selection-disabled">Server selection is disabled</div>
                                 <div class="ml-2">
                                     <app-help-tip subject="disabled servers selection">
                                         When a subnet belongs to a shared network, it is not allowed to change the
@@ -72,17 +72,17 @@
                     </div>
                 </p-fieldset>
             }
-            <p-fieldset legend="Subnet" styleClass="mt-4">
+            <p-fieldset legend="Subnet" i18n-legend="@@host.subnet" styleClass="mt-4">
                 <p-floatlabel class="block mt-4 mb-2">
                     <input id="subnet" pInputText formControlName="subnet" class="max-w-form" />
-                    <label for="subnet">Subnet</label>
+                    <label for="subnet" i18n="@@host.subnet">Subnet</label>
                 </p-floatlabel>
                 @if (
                     state.group.get('subnet').invalid &&
                     (state.group.get('subnet').dirty || state.group.get('subnet').touched)
                 ) {
                     @if (state.group.get('subnet').hasError('prefixInList')) {
-                        <small class="app-error block">A subnet with this prefix already exists. </small>
+                        <small class="app-error block" i18n="@@subnet.prefix-exists">A subnet with this prefix already exists. </small>
                     }
                     @if (state.group.get('subnet').hasError('ipPrefix')) {
                         <small class="app-error block">{{ state.group.get('subnet').errors.ipPrefix }}</small>
@@ -91,7 +91,7 @@
                         !state.group.get('subnet').hasError('prefixInList') &&
                         !state.group.get('subnet').hasError('ipPrefix')
                     ) {
-                        <small class="app-error block">A valid subnet prefix is required.</small>
+                        <small class="app-error block" i18n="@@subnet.valid-prefix-required">A valid subnet prefix is required.</small>
                     }
                 }
                 @if (!state.wizard) {
@@ -99,6 +99,7 @@
                         <p-select
                             inputId="shared-networks-select"
                             emptyMessage="No shared networks found"
+                            i18n-emptyMessage="@@subnet.no-shared-networks"
                             formControlName="sharedNetwork"
                             optionLabel="name"
                             optionValue="id"
@@ -108,15 +109,15 @@
                             (onChange)="onSharedNetworkChange($event)"
                         >
                         </p-select>
-                        <label for="shared-network-select">Shared Network</label>
+                        <label for="shared-network-select" i18n="@@subnet.shared-network">Shared Network</label>
                     </p-floatlabel>
                 }
             </p-fieldset>
             @if (!state.wizard) {
-                <p-fieldset [formGroup]="state.group.get('userContexts')" legend="Subnet names" styleClass="mt-4">
+                <p-fieldset [formGroup]="state.group.get('userContexts')" legend="Subnet names" i18n-legend="@@subnet.names" styleClass="mt-4">
                     <div class="flex mt-2 pb-4">
                         <p-checkbox formControlName="unlocked" [binary]="true"> </p-checkbox>
-                        <div class="flex ml-2 font-semibold">Unlock setting subnet names for individual servers.</div>
+                        <div class="flex ml-2 font-semibold" i18n="@@subnet.unlock-names">Unlock setting subnet names for individual servers.</div>
                     </div>
                     @for (
                         userContext of state.group.get('userContexts.names')?.controls;
@@ -144,13 +145,13 @@
                                         formControlName="{{ i }}"
                                         class="max-w-form"
                                     />
-                                    <label for="subnet-name-{{ i }}">Subnet name</label>
+                                    <label for="subnet-name-{{ i }}" i18n="@@subnet.name">Subnet name</label>
                                 </p-floatlabel>
                             </div>
                         }
                     }
                 </p-fieldset>
-                <p-fieldset legend="Pools" styleClass="mt-4">
+                <p-fieldset legend="Pools" i18n-legend="@@subnet.pools" styleClass="mt-4">
                     <p-accordion [value]="0">
                         @for (pool of state.group.get('pools')?.controls; track pool; let i = $index) {
                             <p-accordion-panel [value]="i">
@@ -184,6 +185,7 @@
                                                 severity="danger"
                                                 icon="pi pi-times"
                                                 label="Delete Pool"
+                                                i18n-label="@@subnet.delete-pool"
                                                 (click)="onAddressPoolDelete(i)"
                                             ></p-button>
                                         </div>
@@ -199,6 +201,7 @@
                                 size="small"
                                 icon="fa-solid fa-plus"
                                 label="Add Pool"
+                                i18n-label="@@subnet.add-pool"
                                 severity="info"
                                 (click)="onAddressPoolAdd()"
                             ></p-button>
@@ -206,7 +209,7 @@
                     </div>
                 </p-fieldset>
                 @if (subnet.includes(':')) {
-                    <p-fieldset legend="Prefix Delegation Pools" styleClass="mt-4">
+                    <p-fieldset legend="Prefix Delegation Pools" i18n-legend="@@subnet.prefix-delegation-pools" styleClass="mt-4">
                         <p-accordion [value]="0">
                             @for (pool of state.group.get('prefixPools')?.controls; track pool; let i = $index) {
                                 <p-accordion-panel [value]="i">
@@ -240,6 +243,7 @@
                                                     severity="danger"
                                                     icon="pi pi-times"
                                                     label="Delete Pool"
+                                                    i18n-label="@@subnet.delete-pool"
                                                     (click)="onPrefixPoolDelete(i)"
                                                 ></p-button>
                                             </div>
@@ -255,6 +259,7 @@
                                     size="small"
                                     icon="fa-solid fa-plus"
                                     label="Add Pool"
+                                    i18n-label="@@subnet.add-pool"
                                     severity="info"
                                     (click)="onPrefixPoolAdd()"
                                 ></p-button>
@@ -262,7 +267,7 @@
                         </div>
                     </p-fieldset>
                 }
-                <p-fieldset legend="DHCP Parameters" styleClass="mt-4">
+                <p-fieldset legend="DHCP Parameters" i18n-legend="@@subnet.dhcp-parameters" styleClass="mt-4">
                     <app-shared-parameters-form
                         [clientClasses]="state.clientClasses"
                         [servers]="state.servers"
@@ -270,10 +275,10 @@
                     >
                     </app-shared-parameters-form>
                 </p-fieldset>
-                <p-fieldset [formGroup]="state.group.get('options')" legend="DHCP Options" styleClass="mt-4">
+                <p-fieldset [formGroup]="state.group.get('options')" legend="DHCP Options" i18n-legend="@@host.dhcp-options" styleClass="mt-4">
                     <div class="flex mt-2 pb-4">
                         <p-checkbox formControlName="unlocked" [binary]="true"> </p-checkbox>
-                        <div class="flex ml-2 font-semibold">Unlock setting DHCP options for individual servers.</div>
+                        <div class="flex ml-2 font-semibold" i18n="@@subnet.unlock-dhcp-options">Unlock setting DHCP options for individual servers.</div>
                     </div>
                     @for (optionSet of state.group.get('options.data')?.controls; track optionSet; let i = $index) {
                         @if (i === 0 || state.group.get('options.unlocked')?.value) {
@@ -304,17 +309,19 @@
                     <p-button
                         icon="pi pi-replay"
                         label="Revert Changes"
+                        i18n-label="@@common.revert-changes"
                         severity="secondary"
                         (onClick)="onRevert()"
                     ></p-button>
                 }
-                <p-button label="Cancel" severity="secondary" (onClick)="onCancel()"></p-button>
+                <p-button label="Cancel" i18n-label="@@common.cancel" severity="secondary" (onClick)="onCancel()"></p-button>
                 @if (!state.wizard) {
-                    <p-button label="Submit" [disabled]="state.group?.invalid" (onClick)="onSubmit()"></p-button>
+                    <p-button label="Submit" i18n-label="@@common.submit" [disabled]="state.group?.invalid" (onClick)="onSubmit()"></p-button>
                 } @else {
                     <p-button
                         [disabled]="state.group?.get('subnet').invalid"
                         label="Proceed"
+                        i18n-label="@@common.proceed"
                         (onClick)="onSubnetProceed()"
                     ></p-button>
                 }
@@ -324,7 +331,7 @@
         <p-progressSpinner></p-progressSpinner>
     }
 } @else {
-    <p-fieldset legend="Errors" styleClass="mt-4">
+    <p-fieldset legend="Errors" i18n-legend="@@common.errors" styleClass="mt-4">
         <p-message severity="error">
             <div class="flex flex-column">
                 <div class="flex align-items-center m-4">
@@ -336,12 +343,12 @@
                 <div class="flex align-items-center m-4 font-italic">
                     {{ state.initError }}
                 </div>
-                <div class="flex align-items-center m-4">Retrying can help in some cases.</div>
+                <div class="flex align-items-center m-4" i18n="@@common.retrying-can-help">Retrying can help in some cases.</div>
             </div>
         </p-message>
         <div class="mt-3">
-            <p-button label="Retry" (onClick)="onRetry()" class="mr-2"></p-button>
-            <p-button label="Back" (onClick)="onCancel()" />
+            <p-button label="Retry" i18n-label="@@common.retry" (onClick)="onRetry()" class="mr-2"></p-button>
+            <p-button label="Back" i18n-label="@@common.back" (onClick)="onCancel()" />
         </div>
     </p-fieldset>
 }
