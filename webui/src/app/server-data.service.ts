@@ -93,7 +93,7 @@ export class ServerDataService {
      */
     public getGroupNamesAsString(groupIDs: number[], groupItems: Group[]): string {
         if (!groupIDs?.length || !groupItems?.length) {
-            return 'unknown'
+            return $localize`:@@common.unknown:unknown`
         }
 
         const groupNames: string[] = []
@@ -107,7 +107,7 @@ export class ServerDataService {
             return groupNames.join(', ')
         }
 
-        return 'unknown'
+        return $localize`:@@common.unknown:unknown`
     }
 
     /**

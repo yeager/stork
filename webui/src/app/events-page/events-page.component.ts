@@ -20,7 +20,7 @@ export class EventsPageComponent implements OnInit {
     machineId: number = null
     daemonName: Daemon.NameEnum = null
     userId: number = null
-    breadcrumbs = [{ label: 'Monitoring' }, { label: 'Events' }]
+    breadcrumbs = [{ label: $localize`:@@menu.monitoring:Monitoring` }, { label: $localize`:@@menu.events:Events` }]
 
     ngOnInit(): void {
         const machineId = this.route.snapshot.queryParams.machineId

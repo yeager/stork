@@ -41,7 +41,10 @@ export class SharedNetworksPageComponent {
      */
     private dhcpApi = inject(DHCPService)
 
-    breadcrumbs = [{ label: 'DHCP' }, { label: 'Shared Networks' }]
+    breadcrumbs = [
+        { label: $localize`:@@menu.dhcp:DHCP` },
+        { label: $localize`:@@menu.shared-networks:Shared Networks` },
+    ]
 
     /**
      * Table with shared networks component.
@@ -89,8 +92,8 @@ export class SharedNetworksPageComponent {
             let msg = getErrorMessage(err)
             this.messageService.add({
                 severity: 'error',
-                summary: 'Failed to delete configuration transaction',
-                detail: 'Failed to delete configuration transaction: ' + msg,
+                summary: $localize`:@@shared-networks.delete-transaction-failed:Failed to delete configuration transaction`,
+                detail: $localize`:@@shared-networks.delete-transaction-failed-detail:Failed to delete configuration transaction: ${msg}:error message:`,
                 life: 10000,
             })
         })
@@ -105,8 +108,8 @@ export class SharedNetworksPageComponent {
             let msg = getErrorMessage(err)
             this.messageService.add({
                 severity: 'error',
-                summary: 'Failed to delete configuration transaction',
-                detail: 'Failed to delete configuration transaction: ' + msg,
+                summary: $localize`:@@shared-networks.delete-transaction-failed:Failed to delete configuration transaction`,
+                detail: $localize`:@@shared-networks.delete-transaction-failed-detail:Failed to delete configuration transaction: ${msg}:error message:`,
                 life: 10000,
             })
         })

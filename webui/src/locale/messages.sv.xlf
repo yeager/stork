@@ -228,6 +228,10 @@
           <context context-type="linenumber">44</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-page/events-page.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
           <context context-type="linenumber">85</context>
         </context-group>
@@ -237,6 +241,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">254</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-page/events-page.component.ts</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       <target state="translated">Händelser</target></trans-unit>
       <trans-unit id="menu.communication" datatype="html">
@@ -1050,6 +1058,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
           <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
+          <context context-type="linenumber">45</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
@@ -4617,6 +4629,17 @@
           <context context-type="linenumber">213</context>
         </context-group>
       <target state="translated">Oregistrerade maskiner</target></trans-unit>
+      <trans-unit id="common.unknown" datatype="html">
+        <source>unknown</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/server-data.service.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/server-data.service.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      <target state="translated">okänd</target></trans-unit>
       <trans-unit id="profile.settings" datatype="html">
         <source>Settings</source>
         <context-group purpose="location">
@@ -5145,6 +5168,35 @@
           <context context-type="linenumber">252,262</context>
         </context-group>
       <target state="translated">DHCP-alternativ /  <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualDhcpOptions()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                             entity=&quot;daemon&quot;                                             [showEntityName]=&quot;false&quot;                                             [attrs]=&quot;localSharedNetwork&quot;                                         &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> Alla servrar <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
+      <trans-unit id="menu.shared-networks" datatype="html">
+        <source>Shared Networks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      <target state="translated">Delade nätverk</target></trans-unit>
+      <trans-unit id="shared-networks.delete-transaction-failed" datatype="html">
+        <source>Failed to delete configuration transaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort konfigurationstransaktionen</target></trans-unit>
+      <trans-unit id="shared-networks.delete-transaction-failed-detail" datatype="html">
+        <source>Failed to delete configuration transaction: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort konfigurationstransaktionen: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="shared-networks.filter-help-intro" datatype="html">
         <source> The table below can be filtered by entering text in the search box; the table shows all shared networks matching the filter text. The only field currently supported for such filtering is: </source>
         <context-group purpose="location">
