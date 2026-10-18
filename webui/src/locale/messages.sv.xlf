@@ -1130,7 +1130,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">495,497</context>
+          <context context-type="linenumber">497,499</context>
         </context-group>
       <target state="translated">Demonnamn</target></trans-unit>
       <trans-unit id="daemons.daemon-version" datatype="html">
@@ -1231,15 +1231,15 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">131,134</context>
+          <context context-type="linenumber">133,136</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">559,561</context>
+          <context context-type="linenumber">561,563</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">568,570</context>
+          <context context-type="linenumber">570,572</context>
         </context-group>
       <target state="translated">Uppdatera lista</target></trans-unit>
       <trans-unit id="common.version" datatype="html">
@@ -1265,7 +1265,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">179,181</context>
+          <context context-type="linenumber">181,183</context>
         </context-group>
       <target state="translated">Status</target></trans-unit>
       <trans-unit id="common.machine" datatype="html">
@@ -2359,11 +2359,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">151,153</context>
+          <context context-type="linenumber">153,155</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">401,402</context>
+          <context context-type="linenumber">403,404</context>
         </context-group>
       <target state="translated">Demon</target></trans-unit>
       <trans-unit id="hosts.subnet-id" datatype="html">
@@ -2504,7 +2504,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">689,690</context>
+          <context context-type="linenumber">691,692</context>
         </context-group>
       <target state="translated">Totalt:</target></trans-unit>
       <trans-unit id="hosts.none-found" datatype="html">
@@ -3543,7 +3543,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">180,183</context>
+          <context context-type="linenumber">182,185</context>
         </context-group>
       <target state="translated">Fel</target></trans-unit>
       <trans-unit id="error.page.not.found" datatype="html">
@@ -3841,7 +3841,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">706,708</context>
+          <context context-type="linenumber">708,710</context>
         </context-group>
       <target state="translated">Namn</target></trans-unit>
       <trans-unit id="shared-network.name-exists" datatype="html">
@@ -5022,11 +5022,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">433,435</context>
+          <context context-type="linenumber">435,437</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">587,589</context>
+          <context context-type="linenumber">589,591</context>
         </context-group>
       <target state="translated">Serienummer</target></trans-unit>
       <trans-unit id="zone-transfers.primary" datatype="html">
@@ -5212,215 +5212,244 @@
           <context context-type="linenumber">143,146</context>
         </context-group>
       <target state="translated">Inga data togs emot</target></trans-unit>
+      <trans-unit id="zones.page-help" datatype="html">
+        <source>This page displays a list of DNS zones.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">3,7</context>
+        </context-group>
+      <target state="translated">Den här sidan visar en lista över DNS-zoner.</target></trans-unit>
+      <trans-unit id="common.progress" datatype="html">
+        <source>Progress</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      <target state="translated">Progress</target></trans-unit>
+      <trans-unit id="zones.fetch-zones" datatype="html">
+        <source>Fetch Zones</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">57,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">551,553</context>
+        </context-group>
+      <target state="translated">Hämta zoner</target></trans-unit>
+      <trans-unit id="zones.serial-mismatch" datatype="html">
+        <source>Serial numbers mismatch across servers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">106,110</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">120,122</context>
+        </context-group>
+      <target state="translated">Serienumren skiljer sig mellan servrarna.</target></trans-unit>
       <trans-unit id="zones.fetch-status-dialog" datatype="html">
         <source>Zones Fetch Status</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">128</context>
+          <context context-type="linenumber">130</context>
         </context-group>
       <target state="translated">Zonernas hämtningsstatus</target></trans-unit>
       <trans-unit id="zones.zone-configs-count" datatype="html">
         <source>Zone Configs Count</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">159,162</context>
+          <context context-type="linenumber">161,164</context>
         </context-group>
       <target state="translated">Antal zonkonfigurationer</target></trans-unit>
       <trans-unit id="zones.distinct-zones" datatype="html">
         <source>Distinct Zones</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">167,170</context>
+          <context context-type="linenumber">169,172</context>
         </context-group>
       <target state="translated">Unika zoner</target></trans-unit>
       <trans-unit id="zones.builtin-zones" datatype="html">
         <source>Builtin Zones</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">177,180</context>
+          <context context-type="linenumber">179,182</context>
         </context-group>
       <target state="translated">Inbyggda zoner</target></trans-unit>
       <trans-unit id="zones.created-at" datatype="html">
         <source>Created At</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">181,185</context>
+          <context context-type="linenumber">183,187</context>
         </context-group>
       <target state="translated">Skapad</target></trans-unit>
       <trans-unit id="zones.confirm-continue" datatype="html">
         <source>Are you sure you want to continue?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">227,230</context>
+          <context context-type="linenumber">229,232</context>
         </context-group>
       <target state="translated">Vill du verkligen fortsätta?</target></trans-unit>
       <trans-unit id="zones.refresh-cached" datatype="html">
         <source>Refresh cached zones from DNS servers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">236,241</context>
+          <context context-type="linenumber">238,243</context>
         </context-group>
       <target state="translated">Uppdatera cachade zoner från DNS-servrar</target></trans-unit>
       <trans-unit id="zones.title" datatype="html">
         <source>Zones</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">248,250</context>
+          <context context-type="linenumber">250,252</context>
         </context-group>
       <target state="translated">Zoner</target></trans-unit>
       <trans-unit id="zones.filter-help-intro" datatype="html">
         <source> Zones in the table below can be filtered by explicitly selected fields using text, dropdown or multiselect input filters. The currently supported fields for explicit filtering are: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">280,283</context>
+          <context context-type="linenumber">282,285</context>
         </context-group>
       <target state="translated"> Zonerna i tabellen nedan kan filtreras efter uttryckligen valda fält med textfält, listrutor eller flervalsfilter. Följande fält stöds för uttrycklig filtrering: </target></trans-unit>
       <trans-unit id="zones.filter-help-zone-type" datatype="html">
         <source> Zone Type - multiple zone types can be specified. If unspecified, all zone types are returned. Next to this filter there is a toggle button that allows to quickly filter out builtin zones. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">285,288</context>
+          <context context-type="linenumber">287,290</context>
         </context-group>
       <target state="translated"> Zontyp: flera zontyper kan anges. Om inget anges returneras alla zontyper. Bredvid filtret finns en växlingsknapp för att snabbt filtrera bort inbyggda zoner. </target></trans-unit>
       <trans-unit id="zones.filter-help-rpz" datatype="html">
         <source> RPZ - a response policy zone is a special type of zone in BIND 9 that defines a set of rules that are applied to the response to a DNS query. Stork identifies these special zones and marks them with the RPZ tag on the zone list. The filter allows for selecting whether the response policy zones should be included along with other zones, should be excluded (only non-RPZ are listed), or only the RPZ should be listed (and regular zones excluded). </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">290,294</context>
+          <context context-type="linenumber">292,296</context>
         </context-group>
       <target state="translated"> RPZ: en svarspolicyzon är en särskild zontyp i BIND 9 som definierar regler för svaret på en DNS-fråga. Stork identifierar dessa zoner och märker dem med RPZ i zonlistan. Filtret låter dig välja om svarspolicyzoner ska tas med tillsammans med andra zoner, uteslutas så att endast zoner utan RPZ visas eller om endast RPZ-zoner ska visas. </target></trans-unit>
       <trans-unit id="zones.filter-help-daemon" datatype="html">
         <source> Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's hostname, address, daemon ID, or daemon name. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">298,301</context>
+          <context context-type="linenumber">300,303</context>
         </context-group>
       <target state="translated"> Demon: välj en demon i listrutan eller skriv för att söka efter en demon utifrån maskinens värdnamn, adress, demon-ID eller demonnamn. </target></trans-unit>
       <trans-unit id="zones.filter-help-serial" datatype="html">
         <source>Serial - partial or exact zone serial.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">301,302</context>
+          <context context-type="linenumber">303,304</context>
         </context-group>
       <target state="translated">Serienummer: delvis eller exakt serienummer för zonen.</target></trans-unit>
       <trans-unit id="zones.filter-help-zone-class" datatype="html">
         <source>Zone Class - exact zone class.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">302,303</context>
+          <context context-type="linenumber">304,305</context>
         </context-group>
       <target state="translated">Zonklass: exakt zonklass.</target></trans-unit>
       <trans-unit id="zones.filter-help-daemon-name" datatype="html">
         <source>Daemon Name - name of the DNS Daemon.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">303,306</context>
+          <context context-type="linenumber">305,308</context>
         </context-group>
       <target state="translated">Demonnamn: namnet på DNS-demonen.</target></trans-unit>
       <trans-unit id="zones.toggle-builtin" datatype="html">
         <source>Toggle builtin zones</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">327,329</context>
+          <context context-type="linenumber">329,331</context>
         </context-group>
       <target state="translated">Växla visning av inbyggda zoner</target></trans-unit>
       <trans-unit id="zones.zone-type" datatype="html">
         <source>Zone Type</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">347,349</context>
+          <context context-type="linenumber">349,351</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">591,593</context>
+          <context context-type="linenumber">593,595</context>
         </context-group>
       <target state="translated">Zontyp</target></trans-unit>
       <trans-unit id="zones.zone-class" datatype="html">
         <source>Zone Class</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">463,465</context>
+          <context context-type="linenumber">465,467</context>
         </context-group>
       <target state="translated">Zonklass</target></trans-unit>
       <trans-unit id="zones.search" datatype="html">
         <source>Zone name or view</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">522,524</context>
+          <context context-type="linenumber">524,526</context>
         </context-group>
       <target state="translated">Zonnamn eller vy</target></trans-unit>
       <trans-unit id="zones.fetch-status" datatype="html">
         <source>Fetch Status</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">542,544</context>
+          <context context-type="linenumber">544,546</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">735,737</context>
+          <context context-type="linenumber">737,739</context>
         </context-group>
       <target state="translated">Hämtningsstatus</target></trans-unit>
-      <trans-unit id="zones.fetch-zones" datatype="html">
-        <source>Fetch Zones</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">549,551</context>
-        </context-group>
-      <target state="translated">Hämta zoner</target></trans-unit>
       <trans-unit id="zones.zone-name" datatype="html">
         <source>Zone Name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">583,585</context>
+          <context context-type="linenumber">585,587</context>
         </context-group>
       <target state="translated">Zonnamn</target></trans-unit>
       <trans-unit id="zones.associated-views" datatype="html">
         <source>Number of Associated DNS Views</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">594,597</context>
+          <context context-type="linenumber">596,599</context>
         </context-group>
       <target state="translated">Antal kopplade DNS-vyer</target></trans-unit>
       <trans-unit id="zones.no-associated-views" datatype="html">
         <source>There are no DNS views associated with this zone.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">665,667</context>
+          <context context-type="linenumber">667,669</context>
         </context-group>
       <target state="translated">Det finns inga DNS-vyer kopplade till zonen.</target></trans-unit>
       <trans-unit id="zones.dns-zone" datatype="html">
         <source>DNS Zone</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">698,699</context>
+          <context context-type="linenumber">700,701</context>
         </context-group>
       <target state="translated">DNS-zon</target></trans-unit>
       <trans-unit id="zones.zone-data" datatype="html">
         <source>Zone Data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">702,704</context>
+          <context context-type="linenumber">704,706</context>
         </context-group>
       <target state="translated">Zondata</target></trans-unit>
       <trans-unit id="zones.internal-id" datatype="html">
         <source>Stork Internal Zone ID</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">710,712</context>
+          <context context-type="linenumber">712,714</context>
         </context-group>
       <target state="translated">Storks interna zon-ID</target></trans-unit>
       <trans-unit id="zones.associated-dns-views" datatype="html">
         <source>DNS Views Associated with the Zone</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">718,720</context>
+          <context context-type="linenumber">720,722</context>
         </context-group>
       <target state="translated">DNS-vyer kopplade till zonen</target></trans-unit>
       <trans-unit id="zones.show-zone" datatype="html">
         <source>Show Zone</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">736,739</context>
+          <context context-type="linenumber">738,741</context>
         </context-group>
       <target state="translated">Visa zon</target></trans-unit>
     </body>

@@ -1,6 +1,6 @@
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
-        <p>This page displays a list of DNS zones.</p>
+        <p i18n="@@zones.page-help">This page displays a list of DNS zones.</p>
     </div>
 </app-breadcrumbs>
 
@@ -19,7 +19,7 @@
                         ' DNS daemons.'
                     "
                 ></p-message>
-                <h4>Progress</h4>
+                <h4 i18n="@@common.progress">Progress</h4>
                 <p-progressBar
                     [value]="(fetchDaemonsCompletedCount / fetchTotalDaemonsCount) * 100"
                     styleClass="max-w-30rem"
@@ -55,6 +55,7 @@
                     <p-button
                         styleClass="mx-0 md:mx-8"
                         label="Fetch Zones"
+                        i18n-label="@@zones.fetch-zones"
                         icon="pi pi-download"
                         (onClick)="sendPutZonesFetch(true)"
                         [disabled]="fetchInProgress() || putZonesFetchLocked()"
@@ -102,7 +103,7 @@
     <td [class.app-error]="serialInfo.hasMismatch">
         {{ localZone.serial }}
         @if (serialInfo.hasMismatch) {
-            <i class="pi pi-exclamation-triangle ml-2" pTooltip="Serial numbers mismatch across servers"></i>
+            <i class="pi pi-exclamation-triangle ml-2" pTooltip="Serial numbers mismatch across servers" i18n-pTooltip="@@zones.serial-mismatch"></i>
         }
     </td>
     <td>
@@ -117,6 +118,7 @@
             severity="danger"
             [value]="zoneSerialInfo.serial"
             pTooltip="Serial numbers mismatch across servers"
+            i18n-pTooltip="@@zones.serial-mismatch"
             styleClass="text-base serial-mismatch font-normal"
             icon="pi pi-exclamation-triangle"
         />
