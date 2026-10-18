@@ -5470,6 +5470,55 @@
           <context context-type="linenumber">143,146</context>
         </context-group>
       <target state="translated">Inga data togs emot</target></trans-unit>
+      <trans-unit id="zone-viewer.column-name" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      <target state="translated">Namn</target></trans-unit>
+      <trans-unit id="zone-viewer.column-ttl" datatype="html">
+        <source>TTL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      <target state="translated">TTL</target></trans-unit>
+      <trans-unit id="zone-viewer.column-class" datatype="html">
+        <source>Class</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      <target state="translated">Klass</target></trans-unit>
+      <trans-unit id="zone-viewer.column-type" datatype="html">
+        <source>Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      <target state="translated">Typ</target></trans-unit>
+      <trans-unit id="zone-viewer.column-data" datatype="html">
+        <source>Data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      <target state="translated">Data</target></trans-unit>
+      <trans-unit id="zone-viewer.error.refresh" datatype="html">
+        <source>Error refreshing zone contents from DNS server</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.ts</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+      <target state="translated">Fel när zoninnehållet uppdaterades från DNS-servern</target></trans-unit>
+      <trans-unit id="zone-viewer.error.get" datatype="html">
+        <source>Error getting zone contents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.ts</context>
+          <context context-type="linenumber">231</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta zoninnehållet</target></trans-unit>
       <trans-unit id="zones.page-help" datatype="html">
         <source>This page displays a list of DNS zones.</source>
         <context-group purpose="location">

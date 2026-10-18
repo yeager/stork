@@ -111,11 +111,11 @@ export class ZoneViewerComponent implements OnInit {
      * Holds the names of the columns to display in the table.
      */
     cols: Column[] = [
-        { name: 'name', label: 'Name' },
-        { name: 'ttl', label: 'TTL' },
-        { name: 'rrClass', label: 'Class' },
-        { name: 'rrType', label: 'Type' },
-        { name: 'data', label: 'Data' },
+        { name: 'name', label: $localize`:@@zone-viewer.column-name:Name` },
+        { name: 'ttl', label: $localize`:@@zone-viewer.column-ttl:TTL` },
+        { name: 'rrClass', label: $localize`:@@zone-viewer.column-class:Class` },
+        { name: 'rrType', label: $localize`:@@zone-viewer.column-type:Type` },
+        { name: 'data', label: $localize`:@@zone-viewer.column-data:Data` },
     ]
 
     /**
@@ -226,7 +226,9 @@ export class ZoneViewerComponent implements OnInit {
                 const errorMsg = getErrorMessage(error)
                 this._messageService.add({
                     severity: 'error',
-                    summary: refresh ? 'Error refreshing zone contents from DNS server' : 'Error getting zone contents',
+                    summary: refresh
+                        ? $localize`:@@zone-viewer.error.refresh:Error refreshing zone contents from DNS server`
+                        : $localize`:@@zone-viewer.error.get:Error getting zone contents`,
                     detail: errorMsg,
                     life: 10000,
                 })
