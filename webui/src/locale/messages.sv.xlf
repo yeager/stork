@@ -571,7 +571,7 @@
           <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
           <context context-type="linenumber">189</context>
         </context-group>
-      <target state="translated">Ej auktoriserade</target></trans-unit>
+      <target state="translated">Inte auktoriserade</target></trans-unit>
       <trans-unit id="error.page.not.found" datatype="html">
         <source>Page Not Found</source>
         <context-group purpose="location">
