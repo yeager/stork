@@ -1,14 +1,14 @@
 <div [formGroup]="formGroup">
-    <p-fieldset legend="Address Range" styleClass="mt-4">
+    <p-fieldset i18n-legend="@@pool.address-range" legend="Address Range" styleClass="mt-4">
         <div class="flex mt-4 mb-2 align-items-center flex-wrap gap-2 row-gap-5" formGroupName="range">
             <p-floatlabel class="flex-auto">
                 <input [id]="uuids.poolStart" pInputText formControlName="start" class="max-w-form" />
-                <label [for]="uuids.poolStart">First Address</label>
+                <label [for]="uuids.poolStart" i18n="@@pool.first-address">First Address</label>
             </p-floatlabel>
             <div>:</div>
             <p-floatlabel class="flex-auto">
                 <input [id]="uuids.poolEnd" pInputText formControlName="end" class="max-w-form" />
-                <label [for]="uuids.poolEnd">Last Address</label>
+                <label [for]="uuids.poolEnd" i18n="@@pool.last-address">Last Address</label>
             </p-floatlabel>
         </div>
         @for (control of ['start', 'end']; track control) {
@@ -26,7 +26,7 @@
             }
         }
     </p-fieldset>
-    <p-fieldset legend="Assignments" styleClass="mt-4">
+    <p-fieldset i18n-legend="@@pool.assignments" legend="Assignments" styleClass="mt-4">
         <div class="mt-4">
             <p-floatlabel class="block mt-4 mb-2">
                 <p-multiSelect
@@ -76,11 +76,11 @@
             }
         </div>
     </p-fieldset>
-    <p-fieldset legend="Pool DHCP Parameters" styleClass="mt-4">
+    <p-fieldset i18n-legend="@@pool.parameters" legend="Pool DHCP Parameters" styleClass="mt-4">
         <app-shared-parameters-form [servers]="daemonGroupLabels" [formGroup]="formGroup.get('parameters')">
         </app-shared-parameters-form>
     </p-fieldset>
-    <p-fieldset [formGroup]="formGroup.get('options')" legend="Pool DHCP Options" styleClass="mt-4">
+    <p-fieldset [formGroup]="formGroup.get('options')" i18n-legend="@@pool.options" legend="Pool DHCP Options" styleClass="mt-4">
         <div class="flex mt-2 pb-4">
             <p-checkbox formControlName="unlocked" [binary]="true"> </p-checkbox>
             <div class="flex ml-2 font-semibold">Unlock setting DHCP options for individual servers.</div>

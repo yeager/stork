@@ -2,6 +2,48 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="pool.address-range" datatype="html">
+        <source>Address Range</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      <target state="translated">Adressintervall</target></trans-unit>
+      <trans-unit id="pool.first-address" datatype="html">
+        <source>First Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      <target state="translated">Första adressen</target></trans-unit>
+      <trans-unit id="pool.last-address" datatype="html">
+        <source>Last Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+      <target state="translated">Sista adressen</target></trans-unit>
+      <trans-unit id="pool.assignments" datatype="html">
+        <source>Assignments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      <target state="translated">Tilldelningar</target></trans-unit>
+      <trans-unit id="pool.parameters" datatype="html">
+        <source>Pool DHCP Parameters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+      <target state="translated">DHCP-parametrar för pool</target></trans-unit>
+      <trans-unit id="pool.options" datatype="html">
+        <source>Pool DHCP Options</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/address-pool-form/address-pool-form.component.html</context>
+          <context context-type="linenumber">83,85</context>
+        </context-group>
+      <target state="translated">DHCP-alternativ för pool</target></trans-unit>
       <trans-unit id="menu.categories" datatype="html">
         <source>Categories</source>
         <context-group purpose="location">
