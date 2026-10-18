@@ -952,6 +952,20 @@
           <context context-type="linenumber">144</context>
         </context-group>
       <target state="translated">Det gick inte att uppdatera inställningarna för konfigurationskontrollerna</target></trans-unit>
+      <trans-unit id="config-migrations.page-list-help" datatype="html">
+        <source> This page displays a list of config migrations. The migration moves the entities from the Kea JSON configuration to the Kea database. The migration is a one-time but time-consuming operation. On this page, you can monitor the progress of the migration. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-page/config-migration-page.component.html</context>
+          <context context-type="linenumber">5,10</context>
+        </context-group>
+      <target state="translated"> Den här sidan visar en lista med konfigurationsmigreringar. En migrering flyttar entiteter från Keas JSON-konfiguration till Kea-databasen. Migreringen utförs en gång men kan ta tid. Här kan du följa migreringens förlopp. </target></trans-unit>
+      <trans-unit id="config-migrations.page-detail-help" datatype="html">
+        <source> This page displays the details of the specific migration. You can monitor the progress of the migration and cancel it if necessary. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-page/config-migration-page.component.html</context>
+          <context context-type="linenumber">11,19</context>
+        </context-group>
+      <target state="translated"> Den här sidan visar information om den valda migreringen. Du kan följa migreringens förlopp och avbryta den vid behov. </target></trans-unit>
       <trans-unit id="5841407370625340639" datatype="html">
         <source>Clear Finished Migrations</source>
         <context-group purpose="location">

@@ -1,13 +1,13 @@
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
         @if (activeTabMigrationID() === 0) {
-            <p>
+            <p i18n="@@config-migrations.page-list-help">
                 This page displays a list of config migrations. The migration moves the entities from the Kea JSON
                 configuration to the Kea database. The migration is a one-time but time-consuming operation. On this
                 page, you can monitor the progress of the migration.
             </p>
         } @else {
-            <p>
+            <p i18n="@@config-migrations.page-detail-help">
                 This page displays the details of the specific migration. You can monitor the progress of the migration
                 and cancel it if necessary.
             </p>
