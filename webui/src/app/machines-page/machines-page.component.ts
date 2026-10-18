@@ -115,7 +115,10 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
     /**
      * View breadcrumbs menu items.
      */
-    breadcrumbs = [{ label: 'Services' }, { label: 'Machines' }]
+    breadcrumbs = [
+        { label: $localize`:@@menu.services:Services` },
+        { label: $localize`:@@menu.machines:Machines` },
+    ]
 
     /**
      * Machine popup menu items.
@@ -127,16 +130,16 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
      */
     machineMenuItemsAuthorized: MenuItem[] = [
         {
-            label: 'Refresh machine state information',
+            label: $localize`:@@machines.refresh.state:Refresh machine state information`,
             id: 'refresh-single-machine',
             icon: 'pi pi-refresh',
-            title: 'Refresh machine state information',
+            title: $localize`:@@machines.refresh.state:Refresh machine state information`,
         },
         {
-            label: 'Dump troubleshooting data',
+            label: $localize`:@@machines.dump.troubleshooting:Dump troubleshooting data`,
             id: 'dump-single-machine',
             icon: 'pi pi-download',
-            title: 'Download data archive for troubleshooting purposes',
+            title: $localize`:@@machines.dump.troubleshooting.title:Download data archive for troubleshooting purposes`,
         },
         /* Temporarily disable unauthorization until we find an
            actual use case for it. Also, if we allow unauthorization
@@ -149,10 +152,10 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
             icon: 'pi pi-minus-circle',
         }, */
         {
-            label: 'Remove',
+            label: $localize`:@@action.remove:Remove`,
             id: 'remove-single-machine',
             icon: 'pi pi-times',
-            title: 'Remove machine from Stork server',
+            title: $localize`:@@machines.remove.title:Remove machine from Stork server`,
         },
     ]
 
@@ -161,16 +164,16 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
      */
     machineMenuItemsUnauthorized: MenuItem[] = [
         {
-            label: 'Authorize',
+            label: $localize`:@@action.authorize:Authorize`,
             id: 'authorize-single-machine',
             icon: 'pi pi-check',
-            title: 'Authorize machine',
+            title: $localize`:@@machines.authorize.title:Authorize machine`,
         },
         {
-            label: 'Remove',
+            label: $localize`:@@action.remove:Remove`,
             id: 'remove-single-machine',
             icon: 'pi pi-times',
-            title: 'Remove machine from Stork server',
+            title: $localize`:@@machines.remove.title:Remove machine from Stork server`,
         },
     ]
 
@@ -179,11 +182,11 @@ export class MachinesPageComponent implements OnInit, OnDestroy {
      */
     selectButtonOptions = [
         {
-            label: 'Authorized',
+            label: $localize`:@@machines.authorized:Authorized`,
             value: true,
         },
         {
-            label: 'Unauthorized',
+            label: $localize`:@@machines.unauthorized:Unauthorized`,
             value: false,
             hasBadge: true,
         },

@@ -89,6 +89,10 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">207</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
       <target state="translated">Tjänster</target></trans-unit>
       <trans-unit id="menu.all.daemons" datatype="html">
         <source>All Daemons</source>
@@ -116,6 +120,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">234</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">120</context>
         </context-group>
       <target state="translated">Maskiner</target></trans-unit>
       <trans-unit id="menu.monitoring" datatype="html">
@@ -489,6 +497,81 @@
           <context context-type="linenumber">147</context>
         </context-group>
       <target state="translated">Användaren saknar behörighet</target></trans-unit>
+      <trans-unit id="machines.refresh.state" datatype="html">
+        <source>Refresh machine state information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      <target state="translated">Uppdatera maskinens status</target></trans-unit>
+      <trans-unit id="machines.dump.troubleshooting" datatype="html">
+        <source>Dump troubleshooting data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      <target state="translated">Hämta felsökningsdata</target></trans-unit>
+      <trans-unit id="machines.dump.troubleshooting.title" datatype="html">
+        <source>Download data archive for troubleshooting purposes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      <target state="translated">Hämta dataarkiv för felsökning</target></trans-unit>
+      <trans-unit id="action.remove" datatype="html">
+        <source>Remove</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      <target state="translated">Ta bort</target></trans-unit>
+      <trans-unit id="machines.remove.title" datatype="html">
+        <source>Remove machine from Stork server</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      <target state="translated">Ta bort maskinen från Stork-servern</target></trans-unit>
+      <trans-unit id="action.authorize" datatype="html">
+        <source>Authorize</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      <target state="translated">Auktorisera</target></trans-unit>
+      <trans-unit id="machines.authorize.title" datatype="html">
+        <source>Authorize machine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      <target state="translated">Auktorisera maskinen</target></trans-unit>
+      <trans-unit id="machines.authorized" datatype="html">
+        <source>Authorized</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+      <target state="translated">Auktoriserade</target></trans-unit>
+      <trans-unit id="machines.unauthorized" datatype="html">
+        <source>Unauthorized</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      <target state="translated">Ej auktoriserade</target></trans-unit>
       <trans-unit id="error.page.not.found" datatype="html">
         <source>Page Not Found</source>
         <context-group purpose="location">
