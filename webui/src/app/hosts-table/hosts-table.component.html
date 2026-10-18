@@ -2,8 +2,8 @@
     <p-confirmDialog key="migrationToDatabaseDialog">
         <ng-template #message>
             <div class="block ml-3 max-w-40rem message">
-                <p>Are you sure you want to migrate host reservations to the database?</p>
-                <p>
+                <p i18n="@@hosts.migrate-confirmation">Are you sure you want to migrate host reservations to the database?</p>
+                <p i18n="@@hosts.migrate-explanation">
                     You are about to migrate host reservations defined in a configuration file to a database ("host
                     backend"). After the migration, hosts will be deleted from your configuration file and will be kept
                     in the database only. All the hosts selected by the current filter (including those on other pages,
@@ -11,7 +11,7 @@
                     (e.g. because they're already in a database or are in a conflicted state) will be skipped. The
                     migration is not instantaneous and will take some time.
                 </p>
-                <p>
+                <p i18n="@@hosts.migrate-filter-summary">
                     The number of hosts to be migrated is <strong>{{ totalRecords }}</strong
                     >. They are selected by the following filter:
                 </p>
@@ -24,12 +24,12 @@
                     }
                 </div>
 
-                <p>
+                <p i18n="@@hosts.migrate-lock-warning">
                     This operation will lock the related daemons for modifications. During the migration, the Stork
                     server will not synchronize the Kea data (i.e., the Kea configuration, subnets, shared networks,
                     host reservations).
                 </p>
-                <p>The migration can be canceled at any time.</p>
+                <p i18n="@@hosts.migrate-cancel">The migration can be canceled at any time.</p>
             </div>
         </ng-template>
     </p-confirmDialog>
@@ -56,53 +56,53 @@
     <ng-template #caption>
         <app-table-caption [tableElement]="hostsTable" tableKey="hosts-table" [wideHelpTip]="true">
             <ng-template #helptip>
-                <p>
+                <p i18n="@@hosts.filter-help-intro">
                     Hosts in the table below can be filtered by entering text in the search box; the table shows all
                     hosts matching the filter text. The currently supported fields for filtering are:
                 </p>
                 <ul>
-                    <li>Identifier</li>
-                    <li>Identifier Type</li>
-                    <li>Address</li>
-                    <li>Hostname</li>
+                    <li i18n="@@hosts.filter-help-identifier">Identifier</li>
+                    <li i18n="@@hosts.filter-help-identifier-type">Identifier Type</li>
+                    <li i18n="@@hosts.filter-help-address">Address</li>
+                    <li i18n="@@hosts.filter-help-hostname">Hostname</li>
                 </ul>
-                <p>
+                <p i18n="@@hosts.filter-help-identifier-details">
                     Hosts can be filtered by their identifier value, e.g. <b>00:01:02:03:04:05</b>; a part of the
                     identifier (e.g. the initial three bytes of a MAC address that denotes OUI, a unique identifier of
                     the vendor, effectively showing all devices produced by the same vendor); or identifier type (e.g.
                     <b>hw-address</b> to show all reservations made by a MAC address).
                 </p>
-                <p>
+                <p i18n="@@hosts.filter-help-ip-details">
                     Hosts can be also filtered by a full or partial IP address. For example, all reservations in a
                     192.0.2.0/24 subnet can be found by entering
                     <b>192.0.2</b> as the filter text.
                 </p>
-                <p>
+                <p i18n="@@hosts.filter-help-global">
                     The <b>Global</b> checkbox allows users to see global hosts (i.e. the hosts valid for all subnets),
                     hosts associated with specific subnets, or all hosts. When the box is clicked once, the results show
                     all DHCP identifiers set at the global level; when clicked a second time, it excludes the global
                     hosts and shows only hosts that are associated with defined subnets.
                 </p>
-                <p>
+                <p i18n="@@hosts.filter-help-conflict">
                     Hosts with inconsistent DHCP configurations can be filtered using the
                     <b>Conflict</b> checkbox. When the box is clicked once, the filter returns all hosts whose
                     configurations contain conflicts between the configuration file and host database. When clicked a
                     second time, the results exclude any hosts with configuration conflicts.
                 </p>
-                <p>
+                <p i18n="@@hosts.filter-help-explicit">
                     In addition, hosts can be filtered by an explicitly selected field using text input filters. The
                     currently supported fields for explicit filtering are:
                 </p>
                 <ul>
-                    <li>Machine ID - the ID of the machine used by Stork.</li>
-                    <li>
+                    <li i18n="@@hosts.filter-help-machine-id">Machine ID - the ID of the machine used by Stork.</li>
+                    <li i18n="@@hosts.filter-help-daemon">
                         Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's
                         hostname, address, daemon ID, or daemon name.
                     </li>
-                    <li>Subnet ID - the subnet ID used by Stork.</li>
-                    <li>Kea Subnet ID - the subnet ID assigned to the subnet in the Kea configuration.</li>
+                    <li i18n="@@hosts.filter-help-subnet-id">Subnet ID - the subnet ID used by Stork.</li>
+                    <li i18n="@@hosts.filter-help-kea-subnet-id">Kea Subnet ID - the subnet ID assigned to the subnet in the Kea configuration.</li>
                 </ul>
-                <p>
+                <p i18n="@@hosts.filter-help-multiple">
                     Hosts can be filtered by multiple fields. Currently, all provided filtering conditions are joined
                     using a logical AND.
                 </p>

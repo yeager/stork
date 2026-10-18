@@ -2128,6 +2128,146 @@
           <context context-type="linenumber">396,399</context>
         </context-group>
       <target state="translated">Värden förekommer flera gånger i konfigurationsfilen och värddatabasen.</target></trans-unit>
+      <trans-unit id="hosts.migrate-confirmation" datatype="html">
+        <source>Are you sure you want to migrate host reservations to the database?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      <target state="translated">Vill du verkligen migrera värdreservationerna till databasen?</target></trans-unit>
+      <trans-unit id="hosts.migrate-explanation" datatype="html">
+        <source> You are about to migrate host reservations defined in a configuration file to a database ("host backend"). After the migration, hosts will be deleted from your configuration file and will be kept in the database only. All the hosts selected by the current filter (including those on other pages, if there are more hosts than fit on a single page) will be considered. Those that can't be migrated (e.g. because they're already in a database or are in a conflicted state) will be skipped. The migration is not instantaneous and will take some time. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">7,12</context>
+        </context-group>
+      <target state="translated"> Du är på väg att migrera värdreservationer som har angetts i en konfigurationsfil till en databas (värddatabasen). Efter migreringen tas värdarna bort från konfigurationsfilen och finns bara kvar i databasen. Alla värdar som väljs av det aktuella filtret räknas med, även värdar på andra sidor om fler värdar finns än vad som ryms på en sida. Värdar som inte kan migreras, till exempel eftersom de redan finns i en databas eller har en konflikt, hoppas över. Migreringen sker inte omedelbart och kan ta en stund. </target></trans-unit>
+      <trans-unit id="hosts.migrate-filter-summary" datatype="html">
+        <source> The number of hosts to be migrated is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="{{ totalRecords }}" /><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong                     &gt;" />. They are selected by the following filter: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      <target state="translated"> Antalet värdreservationer som ska migreras är <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="{{ totalRecords }}" /><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong                     &gt;" />. De väljs med följande filter: </target></trans-unit>
+      <trans-unit id="hosts.migrate-lock-warning" datatype="html">
+        <source> This operation will lock the related daemons for modifications. During the migration, the Stork server will not synchronize the Kea data (i.e., the Kea configuration, subnets, shared networks, host reservations). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">28,32</context>
+        </context-group>
+      <target state="translated"> Åtgärden låser berörda demoner för ändringar. Under migreringen synkroniserar Stork-servern inte Kea-data, det vill säga Kea-konfiguration, undernät, delade nätverk och värdreservationer. </target></trans-unit>
+      <trans-unit id="hosts.migrate-cancel" datatype="html">
+        <source>The migration can be canceled at any time.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">32,38</context>
+        </context-group>
+      <target state="translated">Migreringen kan avbrytas när som helst.</target></trans-unit>
+      <trans-unit id="hosts.filter-help-intro" datatype="html">
+        <source> Hosts in the table below can be filtered by entering text in the search box; the table shows all hosts matching the filter text. The currently supported fields for filtering are: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">60,64</context>
+        </context-group>
+      <target state="translated"> Värdarna i tabellen nedan kan filtreras genom att du skriver text i sökrutan. Tabellen visar alla värdar som matchar filtertexten. Följande fält kan för närvarande filtreras: </target></trans-unit>
+      <trans-unit id="hosts.filter-help-identifier" datatype="html">
+        <source>Identifier</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">64,66</context>
+        </context-group>
+      <target state="translated">Identifierare</target></trans-unit>
+      <trans-unit id="hosts.filter-help-identifier-type" datatype="html">
+        <source>Identifier Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+      <target state="translated">Typ av identifierare</target></trans-unit>
+      <trans-unit id="hosts.filter-help-address" datatype="html">
+        <source>Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      <target state="translated">Adress</target></trans-unit>
+      <trans-unit id="hosts.filter-help-hostname" datatype="html">
+        <source>Hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">67,70</context>
+        </context-group>
+      <target state="translated">Värdnamn</target></trans-unit>
+      <trans-unit id="hosts.filter-help-identifier-details" datatype="html">
+        <source> Hosts can be filtered by their identifier value, e.g. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />00:01:02:03:04:05<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />; a part of the identifier (e.g. the initial three bytes of a MAC address that denotes OUI, a unique identifier of the vendor, effectively showing all devices produced by the same vendor); or identifier type (e.g. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />hw-address<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> to show all reservations made by a MAC address). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">70,74</context>
+        </context-group>
+      <target state="translated"> Värdar kan filtreras efter identifierarens värde, till exempel <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />00:01:02:03:04:05<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> eller efter en del av identifieraren, till exempel de första tre byten i en MAC-adress som anger OUI, en unik identifierare för tillverkaren och därmed visar alla enheter från samma tillverkare, eller efter identifierartyp, till exempel <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />hw-address<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> för att visa alla reservationer som har gjorts med en MAC-adress. </target></trans-unit>
+      <trans-unit id="hosts.filter-help-ip-details" datatype="html">
+        <source> Hosts can be also filtered by a full or partial IP address. For example, all reservations in a 192.0.2.0/24 subnet can be found by entering <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />192.0.2<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> as the filter text. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">76,79</context>
+        </context-group>
+      <target state="translated"> Värdar kan också filtreras efter en hel eller delvis IP-adress. Du kan till exempel hitta alla reservationer i undernätet 192.0.2.0/24 genom att skriva <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />192.0.2<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> som filtertext. </target></trans-unit>
+      <trans-unit id="hosts.filter-help-global" datatype="html">
+        <source> The <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />Global<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> checkbox allows users to see global hosts (i.e. the hosts valid for all subnets), hosts associated with specific subnets, or all hosts. When the box is clicked once, the results show all DHCP identifiers set at the global level; when clicked a second time, it excludes the global hosts and shows only hosts that are associated with defined subnets. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">81,84</context>
+        </context-group>
+      <target state="translated"> Kryssrutan <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />Global<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> låter användaren visa globala värdar, det vill säga värdar som gäller för alla undernät, värdar som är kopplade till vissa undernät eller alla värdar. Vid första klicket visar resultatet alla DHCP-identifierare på global nivå. Vid andra klicket utesluts de globala värdarna så att endast värdar som är kopplade till definierade undernät visas. </target></trans-unit>
+      <trans-unit id="hosts.filter-help-conflict" datatype="html">
+        <source> Hosts with inconsistent DHCP configurations can be filtered using the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />Conflict<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> checkbox. When the box is clicked once, the filter returns all hosts whose configurations contain conflicts between the configuration file and host database. When clicked a second time, the results exclude any hosts with configuration conflicts. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">87,90</context>
+        </context-group>
+      <target state="translated"> Värdar med inkonsekventa DHCP-konfigurationer kan filtreras med kryssrutan <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />Konflikt<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />. Vid första klicket returnerar filtret alla värdar vars konfigurationer har konflikter mellan konfigurationsfilen och värddatabasen. Vid andra klicket utesluter resultatet värdar med konfigurationskonflikter. </target></trans-unit>
+      <trans-unit id="hosts.filter-help-explicit" datatype="html">
+        <source> In addition, hosts can be filtered by an explicitly selected field using text input filters. The currently supported fields for explicit filtering are: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">93,97</context>
+        </context-group>
+      <target state="translated"> Värdar kan dessutom filtreras efter ett uttryckligen valt fält med textfilter. Följande fält stöds för närvarande: </target></trans-unit>
+      <trans-unit id="hosts.filter-help-machine-id" datatype="html">
+        <source>Machine ID - the ID of the machine used by Stork.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+      <target state="translated">Maskin-ID är ID:t för maskinen som används av Stork.</target></trans-unit>
+      <trans-unit id="hosts.filter-help-daemon" datatype="html">
+        <source> Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's hostname, address, daemon ID, or daemon name. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">99,102</context>
+        </context-group>
+      <target state="translated"> Demon: välj en demon i listrutan eller skriv för att söka efter en demon utifrån maskinens värdnamn, adress, demon-ID eller demonnamn. </target></trans-unit>
+      <trans-unit id="hosts.filter-help-subnet-id" datatype="html">
+        <source>Subnet ID - the subnet ID used by Stork.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+      <target state="translated">Undernäts-ID är det undernäts-ID som används av Stork.</target></trans-unit>
+      <trans-unit id="hosts.filter-help-kea-subnet-id" datatype="html">
+        <source>Kea Subnet ID - the subnet ID assigned to the subnet in the Kea configuration.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">103,106</context>
+        </context-group>
+      <target state="translated">Kea-undernätets ID är det ID som tilldelas undernätet i Kea-konfigurationen.</target></trans-unit>
+      <trans-unit id="hosts.filter-help-multiple" datatype="html">
+        <source> Hosts can be filtered by multiple fields. Currently, all provided filtering conditions are joined using a logical AND. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
+          <context context-type="linenumber">106,110</context>
+        </context-group>
+      <target state="translated"> Värdar kan filtreras med flera fält. För närvarande kombineras alla angivna filtervillkor med ett logiskt OCH. </target></trans-unit>
       <trans-unit id="hosts.machine-id" datatype="html">
         <source>Machine ID</source>
         <context-group purpose="location">
