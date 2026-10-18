@@ -33,8 +33,8 @@
         text: { type: 'string', matchMode: 'contains' },
     }"
     [entitiesTable]="leasesListTable()?.table"
-    entityTypeName="Lease"
-    firstTabTitle="Leases"
+    i18n-entityTypeName entityTypeName="Lease"
+    i18n-firstTabTitle firstTabTitle="Leases"
 >
     <ng-template #firstTab>
         <app-leases-list-table #leasesListTableComponent></app-leases-list-table>

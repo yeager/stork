@@ -14,7 +14,7 @@
 </app-breadcrumbs>
 
 <div class="flex flex-wrap gap-2 align-items-center">
-    <span class="hidden sm:inline-block">Search leases:</span>
+    <span class="hidden sm:inline-block" i18n>Search leases:</span>
     <div class="flex flex-wrap gap-2">
         <p-iconfield iconPosition="left">
             <p-inputicon>
@@ -26,8 +26,8 @@
                 [(ngModel)]="searchText"
                 type="text"
                 pInputText
-                title="Search leases by IP address, MAC, client-id, DUID or hostname"
-                placeholder="IP address, MAC, client-id, DUID or hostname"
+                i18n-title title="Search leases by IP address, MAC, client-id, DUID or hostname"
+                i18n-placeholder placeholder="IP address, MAC, client-id, DUID or hostname"
                 class="w-18rem sm:w-25rem"
                 #searchInput
             />
@@ -114,10 +114,10 @@
     <ng-template #header>
         <tr>
             <th style="width: 3rem"></th>
-            <th>Lease</th>
-            <th>Type</th>
-            <th>State</th>
-            <th>Daemon</th>
+            <th i18n>Lease</th>
+            <th i18n>Type</th>
+            <th i18n>State</th>
+            <th i18n>Daemon</th>
         </tr>
     </ng-template>
     <ng-template #body let-lease let-expanded="expanded">
@@ -130,7 +130,7 @@
                         severity="info"
                         rounded="true"
                         [pRowToggler]="lease"
-                        aria-label="Hide Details"
+                        i18n-aria-label aria-label="Hide Details"
                     />
                 } @else {
                     <p-button
@@ -139,7 +139,7 @@
                         severity="info"
                         rounded="true"
                         [pRowToggler]="lease"
-                        aria-label="Show Details"
+                        i18n-aria-label aria-label="Show Details"
                     />
                 }
             </td>
@@ -174,15 +174,15 @@
                         styleClass="gray-spinner mx-3"
                         strokeWidth="6"
                     ></p-progressSpinner>
-                    Searching for leases on Kea servers...
+                    <ng-container i18n>Searching for leases on Kea servers...</ng-container>
                 </td>
             } @else if (searchStatus === Status.Searched) {
-                <td colspan="5">No leases found matching {{ lastSearchText }}.</td>
+                <td colspan="5" i18n>No leases found matching {{ lastSearchText }}.</td>
             } @else if (searchStatus === Status.NotSearched) {
                 <td colspan="5">
                     <i class="pi pi-info-circle text-2xl vertical-align-middle text-primary-600"></i>
-                    Search for leases on the Kea DHCP servers by IP address, delegated prefix, MAC address, client
-                    identifier, DHCPv6 DUID, or hostname. Click the help button next to the search form for details.
+                    <ng-container i18n>Search for leases on the Kea DHCP servers by IP address, delegated prefix, MAC address, client
+                    identifier, DHCPv6 DUID, or hostname. Click the help button next to the search form for details.</ng-container>
                 </td>
             }
         </tr>

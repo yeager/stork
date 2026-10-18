@@ -1865,6 +1865,10 @@
           <context context-type="sourcefile">src/app/host-tab/host-tab.component.html</context>
           <context context-type="linenumber">31,32</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-page/leases-list-page.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
       <target state="translated">Leaser</target></trans-unit>
       <trans-unit id="7585826646011739428" datatype="html">
         <source>Edit</source>
@@ -2369,6 +2373,98 @@
           <context context-type="linenumber">16</context>
         </context-group>
       <target state="translated">nej</target></trans-unit>
+      <trans-unit id="1400360462517782404" datatype="html">
+        <source>Search leases:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      <target state="translated">Sök efter leaser:</target></trans-unit>
+      <trans-unit id="5202363450876403399" datatype="html">
+        <source>Search leases by IP address, MAC, client-id, DUID or hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      <target state="translated">Sök leaser efter IP-adress, MAC-adress, klient-ID, DUID eller värdnamn</target></trans-unit>
+      <trans-unit id="1504899247074731760" datatype="html">
+        <source>IP address, MAC, client-id, DUID or hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+      <target state="translated">IP-adress, MAC-adress, klient-ID, DUID eller värdnamn</target></trans-unit>
+      <trans-unit id="3895922381037089308" datatype="html">
+        <source>Lease</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">117,120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-page/leases-list-page.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      <target state="translated">Lease</target></trans-unit>
+      <trans-unit id="8650499415827640724" datatype="html">
+        <source>Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">118,121</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      <target state="translated">Typ</target></trans-unit>
+      <trans-unit id="5911214550882917183" datatype="html">
+        <source>State</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">119,123</context>
+        </context-group>
+      <target state="translated">Tillstånd</target></trans-unit>
+      <trans-unit id="5445409664838149993" datatype="html">
+        <source>Daemon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">120,123</context>
+        </context-group>
+      <target state="translated">Demon</target></trans-unit>
+      <trans-unit id="6957891556134371559" datatype="html">
+        <source>Hide Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">133,136</context>
+        </context-group>
+      <target state="translated">Dölj detaljer</target></trans-unit>
+      <trans-unit id="2109348818976292721" datatype="html">
+        <source>Show Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">142,146</context>
+        </context-group>
+      <target state="translated">Visa detaljer</target></trans-unit>
+      <trans-unit id="3334846498950107940" datatype="html">
+        <source>Searching for leases on Kea servers...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">177,179</context>
+        </context-group>
+      <target state="translated">Söker efter leaser på Kea-servrar…</target></trans-unit>
+      <trans-unit id="539093150842645292" datatype="html">
+        <source>No leases found matching <x id="INTERPOLATION" equiv-text="{{ lastSearchText }}" />.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">180,181</context>
+        </context-group>
+      <target state="translated">Inga leaser matchar <x id="INTERPOLATION" equiv-text="{{ lastSearchText }}" />.</target></trans-unit>
+      <trans-unit id="4600552868479644095" datatype="html">
+        <source>Search for leases on the Kea DHCP servers by IP address, delegated prefix, MAC address, client identifier, DHCPv6 DUID, or hostname. Click the help button next to the search form for details.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lease-search-page/lease-search-page.component.html</context>
+          <context context-type="linenumber">184,188</context>
+        </context-group>
+      <target state="translated">Sök efter leaser på Kea DHCP-servrar efter IP-adress, delegerat prefix, MAC-adress, klientidentifierare, DHCPv6 DUID eller värdnamn. Klicka på hjälpknappen bredvid sökformuläret för mer information.</target></trans-unit>
       <trans-unit id="login.choose.method" datatype="html">
         <source>Choose a Method</source>
         <context-group purpose="location">
@@ -3524,13 +3620,6 @@
           <context context-type="linenumber">179</context>
         </context-group>
       <target state="translated">Det gick inte att tolka en giltig semver från versionen <x id="PH" equiv-text="daemon.version" />!</target></trans-unit>
-      <trans-unit id="8650499415827640724" datatype="html">
-        <source>Type</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zone-viewer/zone-viewer.component.html</context>
-          <context context-type="linenumber">66,68</context>
-        </context-group>
-      <target state="translated">Typ</target></trans-unit>
       <trans-unit id="2594120130663787606" datatype="html">
         <source>Name or Data</source>
         <context-group purpose="location">
