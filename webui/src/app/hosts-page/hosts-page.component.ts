@@ -49,7 +49,7 @@ export class HostsPageComponent {
      */
     hostsTable = viewChild<HostsTableComponent>('hostsTableComponent')
 
-    breadcrumbs = [{ label: 'DHCP' }, { label: 'Host Reservations' }]
+    breadcrumbs = [{ label: $localize`:@@menu.dhcp:DHCP` }, { label: $localize`:@@menu.host-reservations:Host reservations` }]
 
     /**
      * Function used to asynchronously provide the host reservation based on given host ID.
@@ -103,8 +103,8 @@ export class HostsPageComponent {
             const msg = getErrorMessage(err)
             this.messageService.add({
                 severity: 'error',
-                summary: 'Failed to delete configuration transaction',
-                detail: 'Failed to delete configuration transaction: ' + msg,
+                summary: $localize`:@@hosts.delete-transaction-failed:Failed to delete configuration transaction`,
+                detail: $localize`:@@hosts.delete-transaction-failed-detail:Failed to delete configuration transaction: ${msg}:error message:`,
                 life: 10000,
             })
         })
@@ -118,8 +118,8 @@ export class HostsPageComponent {
             const msg = getErrorMessage(err)
             this.messageService.add({
                 severity: 'error',
-                summary: 'Failed to delete configuration transaction',
-                detail: 'Failed to delete configuration transaction: ' + msg,
+                summary: $localize`:@@hosts.delete-transaction-failed:Failed to delete configuration transaction`,
+                detail: $localize`:@@hosts.delete-transaction-failed-detail:Failed to delete configuration transaction: ${msg}:error message:`,
                 life: 10000,
             })
         })

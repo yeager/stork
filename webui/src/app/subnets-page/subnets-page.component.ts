@@ -30,7 +30,7 @@ export class SubnetsPageComponent implements OnInit, OnDestroy {
     private messageService = inject(MessageService)
 
     private subscriptions = new Subscription()
-    breadcrumbs = [{ label: 'DHCP' }, { label: 'Subnets' }]
+    breadcrumbs = [{ label: $localize`:@@menu.dhcp:DHCP` }, { label: $localize`:@@menu.subnets:Subnets` }]
 
     /**
      * Table with subnets component.
@@ -97,7 +97,7 @@ export class SubnetsPageComponent implements OnInit, OnDestroy {
                 (error) => {
                     this.messageService.add({
                         severity: 'error',
-                        summary: 'Cannot fetch server settings',
+                        summary: $localize`:@@subnets.server-settings-failed:Cannot fetch server settings`,
                         detail: getErrorMessage(error),
                     })
                 }
@@ -113,8 +113,8 @@ export class SubnetsPageComponent implements OnInit, OnDestroy {
             const msg = getErrorMessage(err)
             this.messageService.add({
                 severity: 'error',
-                summary: 'Failed to delete configuration transaction',
-                detail: 'Failed to delete configuration transaction: ' + msg,
+                summary: $localize`:@@subnets.delete-transaction-failed:Failed to delete configuration transaction`,
+                detail: $localize`:@@subnets.delete-transaction-failed-detail:Failed to delete configuration transaction: ${msg}:error message:`,
                 life: 10000,
             })
         })
@@ -128,8 +128,8 @@ export class SubnetsPageComponent implements OnInit, OnDestroy {
             const msg = getErrorMessage(err)
             this.messageService.add({
                 severity: 'error',
-                summary: 'Failed to delete configuration transaction',
-                detail: 'Failed to delete configuration transaction: ' + msg,
+                summary: $localize`:@@subnets.delete-transaction-failed:Failed to delete configuration transaction`,
+                detail: $localize`:@@subnets.delete-transaction-failed-detail:Failed to delete configuration transaction: ${msg}:error message:`,
                 life: 10000,
             })
         })

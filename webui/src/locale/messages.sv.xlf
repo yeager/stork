@@ -129,7 +129,11 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">167</context>
         </context-group>
-      <target state="translated">Delnät</target></trans-unit>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      <target state="translated">Subnät</target></trans-unit>
       <trans-unit id="menu.shared.networks" datatype="html">
         <source>Shared Networks</source>
         <context-group purpose="location">
@@ -1038,6 +1042,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/config-migration-page/config-migration-page.component.ts</context>
           <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
+          <context context-type="linenumber">33</context>
         </context-group>
       <target state="translated">DHCP</target></trans-unit>
       <trans-unit id="config-migrations.tab-title" datatype="html">
@@ -2614,6 +2626,35 @@
           <context context-type="linenumber">396,399</context>
         </context-group>
       <target state="translated">Värden förekommer flera gånger i konfigurationsfilen och värddatabasen.</target></trans-unit>
+      <trans-unit id="menu.host-reservations" datatype="html">
+        <source>Host reservations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      <target state="translated">Värdreservationer</target></trans-unit>
+      <trans-unit id="hosts.delete-transaction-failed" datatype="html">
+        <source>Failed to delete configuration transaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort konfigurationstransaktionen</target></trans-unit>
+      <trans-unit id="hosts.delete-transaction-failed-detail" datatype="html">
+        <source>Failed to delete configuration transaction: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort konfigurationstransaktionen: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="hosts.migrate-confirmation" datatype="html">
         <source>Are you sure you want to migrate host reservations to the database?</source>
         <context-group purpose="location">
@@ -5429,6 +5470,35 @@
           <context context-type="linenumber">30,31</context>
         </context-group>
       <target state="translated">Delnät</target></trans-unit>
+      <trans-unit id="subnets.server-settings-failed" datatype="html">
+        <source>Cannot fetch server settings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      <target state="translated">Kan inte hämta serverinställningarna</target></trans-unit>
+      <trans-unit id="subnets.delete-transaction-failed" datatype="html">
+        <source>Failed to delete configuration transaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort konfigurationstransaktionen</target></trans-unit>
+      <trans-unit id="subnets.delete-transaction-failed-detail" datatype="html">
+        <source>Failed to delete configuration transaction: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort konfigurationstransaktionen: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="subnets.filter-help-intro" datatype="html">
         <source> The table below can be filtered by entering text in the search box; the table shows all subnets matching the filter text. The currently supported fields for filtering are: </source>
         <context-group purpose="location">
