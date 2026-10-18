@@ -282,16 +282,16 @@ export class KeaDaemonComponent {
                 // Copy hook path to the clipboard success.
                 this.msgService.add({
                     severity: 'success',
-                    summary: 'Hook path copied',
-                    detail: 'Hook path ' + hookPath + ' was copied to the clipboard.',
+                    summary: $localize`:@@kea.hook-path-copied:Hook path copied`,
+                    detail: $localize`:@@kea.hook-path-copied-detail:Hook path ${hookPath}:hook path: was copied to the clipboard.`,
                 })
             },
             () => {
                 // Copy hook path to the clipboard fail.
                 this.msgService.add({
                     severity: 'error',
-                    summary: 'Copy to clipboard failed',
-                    detail: 'Hook path ' + hookPath + ' failed to copy to the clipboard.',
+                    summary: $localize`:@@kea.clipboard-copy-failed:Copy to clipboard failed`,
+                    detail: $localize`:@@kea.clipboard-copy-failed-detail:Hook path ${hookPath}:hook path: failed to copy to the clipboard.`,
                     life: 10000,
                 })
             }
