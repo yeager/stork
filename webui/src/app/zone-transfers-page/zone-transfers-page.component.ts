@@ -119,7 +119,10 @@ export class ZoneTransfersPageComponent implements OnInit {
      * Configures the breadcrumbs for the component.
      * @protected
      */
-    protected readonly breadcrumbs: MenuItem[] = [{ label: 'DNS' }, { label: 'Zone Transfers' }]
+    protected readonly breadcrumbs: MenuItem[] = [
+        { label: $localize`:@@menu.dns:DNS` },
+        { label: $localize`:@@menu.zone-transfers:Zone Transfers` },
+    ]
 
     /**
      * Collection of zone transfers fetched from backend.

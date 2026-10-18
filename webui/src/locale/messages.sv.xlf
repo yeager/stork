@@ -154,6 +154,10 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">197</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
       <target state="translated">Zoner</target></trans-unit>
       <trans-unit id="menu.zone.transfers" datatype="html">
         <source>Zone Transfers</source>
@@ -867,7 +871,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">616</context>
+          <context context-type="linenumber">619</context>
         </context-group>
       <target state="translated">Avbryt</target></trans-unit>
       <trans-unit id="checkers.globally" datatype="html">
@@ -1724,7 +1728,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">615</context>
+          <context context-type="linenumber">618</context>
         </context-group>
       <target state="translated">Fortsätt</target></trans-unit>
       <trans-unit id="daemons.resync-request-sent" datatype="html">
@@ -6704,32 +6708,50 @@
           <context context-type="linenumber">538,539</context>
         </context-group>
       <target state="translated">Loggmeddelande</target></trans-unit>
+      <trans-unit id="menu.dns" datatype="html">
+        <source>DNS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      <target state="translated">DNS</target></trans-unit>
+      <trans-unit id="menu.zone-transfers" datatype="html">
+        <source>Zone Transfers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      <target state="translated">Zonöverföringar</target></trans-unit>
       <trans-unit id="zone-transfers.error.retrieve-machines" datatype="html">
         <source>Error retrieving machines</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
-          <context context-type="linenumber">245</context>
+          <context context-type="linenumber">248</context>
         </context-group>
       <target state="translated">Det gick inte att hämta maskiner</target></trans-unit>
       <trans-unit id="zone-transfers.error.retrieve-machines-detail" datatype="html">
         <source>Failed to retrieve machines information for filtering by primary and secondary: <x id="error message" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
-          <context context-type="linenumber">246</context>
+          <context context-type="linenumber">249</context>
         </context-group>
       <target state="translated">Det gick inte att hämta maskininformation för filtrering efter primär och sekundär: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="zone-transfers.error.retrieve" datatype="html">
         <source>Error retrieving zone transfers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
-          <context context-type="linenumber">303</context>
+          <context context-type="linenumber">306</context>
         </context-group>
       <target state="translated">Det gick inte att hämta zonöverföringar</target></trans-unit>
       <trans-unit id="zone-transfers.error.retrieve-detail" datatype="html">
         <source>Retrieving zone transfers information failed: <x id="error message" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
-          <context context-type="linenumber">304</context>
+          <context context-type="linenumber">307</context>
         </context-group>
       <target state="translated">Det gick inte att hämta information om zonöverföringar: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="zone-viewer.cached-from" datatype="html">
@@ -6863,7 +6885,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">994</context>
+          <context context-type="linenumber">997</context>
         </context-group>
       <target state="translated">Hämta zoner</target></trans-unit>
       <trans-unit id="zones.serial-mismatch" datatype="html">
@@ -7079,7 +7101,7 @@ med hur många som har konfigurerats.
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">989</context>
+          <context context-type="linenumber">992</context>
         </context-group>
       <target state="translated">Hämtningsstatus</target></trans-unit>
       <trans-unit id="zones.zone-name" datatype="html">
@@ -7142,142 +7164,142 @@ med hur många som har konfigurerats.
         <source>Zones fetch complete</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">343</context>
+          <context context-type="linenumber">346</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">571</context>
+          <context context-type="linenumber">574</context>
         </context-group>
       <target state="translated">Zonhämtningen är klar</target></trans-unit>
       <trans-unit id="zones.fetch-complete-detail" datatype="html">
         <source>Zones fetched successfully!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">344</context>
+          <context context-type="linenumber">347</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">572</context>
+          <context context-type="linenumber">575</context>
         </context-group>
       <target state="translated">Zonerna har hämtats!</target></trans-unit>
       <trans-unit id="zones.error.send-request" datatype="html">
         <source>Error sending request</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">357</context>
+          <context context-type="linenumber">360</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">594</context>
+          <context context-type="linenumber">597</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">677</context>
+          <context context-type="linenumber">680</context>
         </context-group>
       <target state="translated">Det gick inte att skicka begäran</target></trans-unit>
       <trans-unit id="zones.error.fetch-status" datatype="html">
         <source>Sending GET /dns-management/zones-fetch request failed: <x id="error message" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">358</context>
+          <context context-type="linenumber">361</context>
         </context-group>
       <target state="translated">Det gick inte att skicka GET begäran till /dns-management/zones-fetch: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="zones.not-fetched" datatype="html">
         <source>Zones not fetched</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">542</context>
+          <context context-type="linenumber">545</context>
         </context-group>
       <target state="translated">Zoner har inte hämtats</target></trans-unit>
       <trans-unit id="zones.not-fetched-detail" datatype="html">
         <source>Zones fetch status not available because zones have not been fetched yet.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">543</context>
+          <context context-type="linenumber">546</context>
         </context-group>
       <target state="translated">Status för zonhämtning saknas eftersom zonerna inte har hämtats ännu.</target></trans-unit>
       <trans-unit id="zones.unexpected-response" datatype="html">
         <source>Unexpected response</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">583</context>
+          <context context-type="linenumber">586</context>
         </context-group>
       <target state="translated">Oväntat svar</target></trans-unit>
       <trans-unit id="zones.unexpected-response-detail" datatype="html">
         <source>Unexpected response while fetching zones: received HTTP status code <x id="status code" equiv-text="resp.status" />.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">585</context>
+          <context context-type="linenumber">588</context>
         </context-group>
       <target state="translated">Oväntat svar vid hämtning av zoner: HTTP-statuskod <x id="status code" equiv-text="resp.status" />.</target></trans-unit>
       <trans-unit id="zones.fetch-failed" datatype="html">
         <source>Fetching zones failed: <x id="error message" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">595</context>
+          <context context-type="linenumber">598</context>
         </context-group>
       <target state="translated">Det gick inte att hämta zoner: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="zones.confirm-fetch-help" datatype="html">
         <source>This operation instructs the Stork server to fetch the zones from all Stork agents and update them in the Stork database. Stork agents cache zones from their local DNS servers. By default, this operation will fetch the zones cached by the Stork agents. If cached zones are outdated after new zones were added to the DNS configurations, the user can select the checkbox below to force the agents to refresh the cached zones from the DNS servers. Fetching the zones may take up to several minutes, depending on the number of servers and zones. The zone list will be replaced with a new list.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">612</context>
+          <context context-type="linenumber">615</context>
         </context-group>
       <target state="translated">Åtgärden instruerar Storkservern att hämta zoner från alla Storkagenter och uppdatera dem i Storkdatabasen. Storkagenter lagrar zoner från sina lokala DNS-servrar i cacheminnet. Som standard hämtar åtgärden zonerna som ligger i Storkagenternas cache. Om cachelagrade zoner är inaktuella efter att nya zoner har lagts till i DNS-konfigurationen kan du markera kryssrutan nedan för att tvinga agenterna att uppdatera sina cachelagrade zoner från DNS-servrarna. Zonhämtningen kan ta flera minuter beroende på antalet servrar och zoner. Zonlistan ersätts med en ny lista.</target></trans-unit>
       <trans-unit id="zones.confirm-fetch" datatype="html">
         <source>Confirm Fetching Zones!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">613</context>
+          <context context-type="linenumber">616</context>
         </context-group>
       <target state="translated">Bekräfta zonhämtning!</target></trans-unit>
       <trans-unit id="zones.request-sent" datatype="html">
         <source>Request sent</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">668</context>
+          <context context-type="linenumber">671</context>
         </context-group>
       <target state="translated">Begäran har skickats</target></trans-unit>
       <trans-unit id="zones.request-sent-detail" datatype="html">
         <source>Fetching zones started successfully.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">669</context>
+          <context context-type="linenumber">672</context>
         </context-group>
       <target state="translated">Zonhämtningen har startat.</target></trans-unit>
       <trans-unit id="zones.start-failed" datatype="html">
         <source>Failed to start fetching zones: <x id="error message" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">678</context>
+          <context context-type="linenumber">681</context>
         </context-group>
       <target state="translated">Det gick inte att starta zonhämtningen: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="zones.agent-communication-error" datatype="html">
         <source>Error when communicating with a zone inventory on an agent: <x id="error message" equiv-text="err" />.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">696</context>
+          <context context-type="linenumber">699</context>
         </context-group>
       <target state="translated">Fel vid kommunikation med en agents zoninventering: <x id="error message" equiv-text="err" />.</target></trans-unit>
       <trans-unit id="zones.error.retrieve" datatype="html">
         <source>Error retrieving zones</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">756</context>
+          <context context-type="linenumber">759</context>
         </context-group>
       <target state="translated">Det gick inte att hämta zoner</target></trans-unit>
       <trans-unit id="zones.error.retrieve-detail" datatype="html">
         <source>Retrieving zones information failed: <x id="error message" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">757</context>
+          <context context-type="linenumber">760</context>
         </context-group>
       <target state="translated">Det gick inte att hämta zoninformation: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="zones.error.daemon-directory" datatype="html">
         <source>Cannot get daemons directory</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">1010</context>
+          <context context-type="linenumber">1013</context>
         </context-group>
       <target state="translated">Det gick inte att hämta daemonkatalogen</target></trans-unit>
     </body>

@@ -177,7 +177,10 @@ export class ZonesPageComponent implements OnInit, OnDestroy {
     /**
      * Configures the breadcrumbs for the component.
      */
-    breadcrumbs: MenuItem[] = [{ label: 'DNS' }, { label: 'Zones' }]
+    breadcrumbs: MenuItem[] = [
+        { label: $localize`:@@menu.dns:DNS` },
+        { label: $localize`:@@menu.zones:Zones` },
+    ]
 
     /**
      * Collection of zones fetched from backend.
