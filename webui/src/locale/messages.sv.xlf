@@ -1,37 +1,295 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" target-language="sv" datatype="plaintext" original="ng2.template">
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="menu.profile" datatype="html"><source>Profile</source><target>Profil</target></trans-unit>
-      <trans-unit id="menu.dashboard" datatype="html"><source>Dashboard</source><target>Översikt</target></trans-unit>
-      <trans-unit id="menu.leases.search" datatype="html"><source>Leases Search</source><target>Sök efter adresstilldelningar</target></trans-unit>
-      <trans-unit id="menu.leases.list" datatype="html"><source>Leases List</source><target>Tilldelningslista</target></trans-unit>
-      <trans-unit id="menu.host.reservations" datatype="html"><source>Host Reservations</source><target>Värdreservationer</target></trans-unit>
-      <trans-unit id="menu.subnets" datatype="html"><source>Subnets</source><target>Delnät</target></trans-unit>
-      <trans-unit id="menu.shared.networks" datatype="html"><source>Shared Networks</source><target>Delade nätverk</target></trans-unit>
-      <trans-unit id="menu.config.migrations" datatype="html"><source>Config migrations</source><target>Konfigurationsmigreringar</target></trans-unit>
-      <trans-unit id="menu.zones" datatype="html"><source>Zones</source><target>Zoner</target></trans-unit>
-      <trans-unit id="menu.zone.transfers" datatype="html"><source>Zone Transfers</source><target>Zonöverföringar</target></trans-unit>
-      <trans-unit id="menu.services" datatype="html"><source>Services</source><target>Tjänster</target></trans-unit>
-      <trans-unit id="menu.all.daemons" datatype="html"><source>All Daemons</source><target>Alla demoner</target></trans-unit>
-      <trans-unit id="menu.kea.daemons" datatype="html"><source>Kea Daemons</source><target>Kea-demoner</target></trans-unit>
-      <trans-unit id="menu.dns.daemons" datatype="html"><source>DNS Daemons</source><target>DNS-demoner</target></trans-unit>
-      <trans-unit id="menu.machines" datatype="html"><source>Machines</source><target>Maskiner</target></trans-unit>
-      <trans-unit id="menu.monitoring" datatype="html"><source>Monitoring</source><target>Övervakning</target></trans-unit>
-      <trans-unit id="menu.events" datatype="html"><source>Events</source><target>Händelser</target></trans-unit>
-      <trans-unit id="menu.communication" datatype="html"><source>Communication</source><target>Kommunikation</target></trans-unit>
-      <trans-unit id="menu.software.versions" datatype="html"><source>Software versions</source><target>Programvaruversioner</target></trans-unit>
-      <trans-unit id="menu.configuration" datatype="html"><source>Configuration</source><target>Konfiguration</target></trans-unit>
-      <trans-unit id="menu.users" datatype="html"><source>Users</source><target>Användare</target></trans-unit>
-      <trans-unit id="menu.review.checkers" datatype="html"><source>Review Checkers</source><target>Granskningskontroller</target></trans-unit>
-      <trans-unit id="menu.settings" datatype="html"><source>Settings</source><target>Inställningar</target></trans-unit>
-      <trans-unit id="menu.help" datatype="html"><source>Help</source><target>Hjälp</target></trans-unit>
-      <trans-unit id="menu.stork.manual" datatype="html"><source>Stork Manual</source><target>Stork-handbok</target></trans-unit>
-      <trans-unit id="menu.stork.api.docs.swaggerui" datatype="html"><source>Stork API Docs (SwaggerUI)</source><target>Stork API-dokumentation (SwaggerUI)</target></trans-unit>
-      <trans-unit id="menu.stork.api.docs.redoc" datatype="html"><source>Stork API Docs (Redoc)</source><target>Stork API-dokumentation (Redoc)</target></trans-unit>
-      <trans-unit id="menu.bind.9.manual" datatype="html"><source>BIND 9 Manual</source><target>BIND 9-handbok</target></trans-unit>
-      <trans-unit id="menu.kea.manual" datatype="html"><source>Kea Manual</source><target>Kea-handbok</target></trans-unit>
-      <trans-unit id="menu.categories" datatype="html"><source>Categories</source><target>Kategorier</target></trans-unit>
+      <trans-unit id="menu.categories" datatype="html">
+        <source>Categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      <target state="translated">Kategorier</target></trans-unit>
+      <trans-unit id="menu.profile" datatype="html">
+        <source>Profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      <target state="translated">Profil</target></trans-unit>
+      <trans-unit id="menu.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      <target state="translated">Översikt</target></trans-unit>
+      <trans-unit id="menu.leases.search" datatype="html">
+        <source>Leases Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      <target state="translated">Sök efter adresstilldelningar</target></trans-unit>
+      <trans-unit id="menu.leases.list" datatype="html">
+        <source>Leases List</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      <target state="translated">Tilldelningslista</target></trans-unit>
+      <trans-unit id="menu.host.reservations" datatype="html">
+        <source>Host Reservations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      <target state="translated">Värdreservationer</target></trans-unit>
+      <trans-unit id="menu.subnets" datatype="html">
+        <source>Subnets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      <target state="translated">Delnät</target></trans-unit>
+      <trans-unit id="menu.shared.networks" datatype="html">
+        <source>Shared Networks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      <target state="translated">Delade nätverk</target></trans-unit>
+      <trans-unit id="menu.config.migrations" datatype="html">
+        <source>Config migrations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      <target state="translated">Konfigurationsmigreringar</target></trans-unit>
+      <trans-unit id="menu.zones" datatype="html">
+        <source>Zones</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      <target state="translated">Zoner</target></trans-unit>
+      <trans-unit id="menu.zone.transfers" datatype="html">
+        <source>Zone Transfers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+      <target state="translated">Zonöverföringar</target></trans-unit>
+      <trans-unit id="menu.services" datatype="html">
+        <source>Services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">207</context>
+        </context-group>
+      <target state="translated">Tjänster</target></trans-unit>
+      <trans-unit id="menu.all.daemons" datatype="html">
+        <source>All Daemons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+      <target state="translated">Alla demoner</target></trans-unit>
+      <trans-unit id="menu.kea.daemons" datatype="html">
+        <source>Kea Daemons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">218</context>
+        </context-group>
+      <target state="translated">Kea-demoner</target></trans-unit>
+      <trans-unit id="menu.dns.daemons" datatype="html">
+        <source>DNS Daemons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+      <target state="translated">DNS-demoner</target></trans-unit>
+      <trans-unit id="menu.machines" datatype="html">
+        <source>Machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      <target state="translated">Maskiner</target></trans-unit>
+      <trans-unit id="menu.monitoring" datatype="html">
+        <source>Monitoring</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      <target state="translated">Övervakning</target></trans-unit>
+      <trans-unit id="menu.events" datatype="html">
+        <source>Events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+      <target state="translated">Händelser</target></trans-unit>
+      <trans-unit id="menu.communication" datatype="html">
+        <source>Communication</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">260</context>
+        </context-group>
+      <target state="translated">Kommunikation</target></trans-unit>
+      <trans-unit id="menu.software.versions" datatype="html">
+        <source>Software versions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+      <target state="translated">Programvaruversioner</target></trans-unit>
+      <trans-unit id="menu.configuration" datatype="html">
+        <source>Configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">274</context>
+        </context-group>
+      <target state="translated">Konfiguration</target></trans-unit>
+      <trans-unit id="menu.users" datatype="html">
+        <source>Users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+      <target state="translated">Användare</target></trans-unit>
+      <trans-unit id="menu.review.checkers" datatype="html">
+        <source>Review Checkers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">285</context>
+        </context-group>
+      <target state="translated">Granskningskontroller</target></trans-unit>
+      <trans-unit id="menu.settings" datatype="html">
+        <source>Settings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">291</context>
+        </context-group>
+      <target state="translated">Inställningar</target></trans-unit>
+      <trans-unit id="menu.help" datatype="html">
+        <source>Help</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">299</context>
+        </context-group>
+      <target state="translated">Hjälp</target></trans-unit>
+      <trans-unit id="menu.stork.manual" datatype="html">
+        <source>Stork Manual</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+      <target state="translated">Stork-handbok</target></trans-unit>
+      <trans-unit id="menu.stork.api.docs.swaggerui" datatype="html">
+        <source>Stork API Docs (SwaggerUI)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">310</context>
+        </context-group>
+      <target state="translated">Stork API-dokumentation (SwaggerUI)</target></trans-unit>
+      <trans-unit id="menu.stork.api.docs.redoc" datatype="html">
+        <source>Stork API Docs (Redoc)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">316</context>
+        </context-group>
+      <target state="translated">Stork API-dokumentation (Redoc)</target></trans-unit>
+      <trans-unit id="menu.bind.9.manual" datatype="html">
+        <source>BIND 9 Manual</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">323</context>
+        </context-group>
+      <target state="translated">BIND 9-handbok</target></trans-unit>
+      <trans-unit id="menu.kea.manual" datatype="html">
+        <source>Kea Manual</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">330</context>
+        </context-group>
+      <target state="translated">Kea-handbok</target></trans-unit>
+      <trans-unit id="error.forbidden" datatype="html">
+        <source>Forbidden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/forbidden-page/forbidden-page.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      <target state="translated">Åtkomst nekad</target></trans-unit>
+      <trans-unit id="error.http.403" datatype="html">
+        <source>HTTP 403 Forbidden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/forbidden-page/forbidden-page.component.html</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+      <target state="translated">HTTP 403 Åtkomst nekad</target></trans-unit>
+      <trans-unit id="error.forbidden.description" datatype="html">
+        <source> Access to the page or to the API endpoint is forbidden for the current user. If you think you should have the access, please contact your system administrator to verify your permissions </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/forbidden-page/forbidden-page.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      <target state="translated"> Den aktuella användaren saknar åtkomst till sidan eller API-slutpunkten. Om du anser att du ska ha åtkomst kontaktar du systemadministratören för att kontrollera dina behörigheter </target></trans-unit>
+      <trans-unit id="error.go.dashboard" datatype="html">
+        <source>Go to Dashboard page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/forbidden-page/forbidden-page.component.html</context>
+          <context context-type="linenumber">13,18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found-page/not-found-page.component.html</context>
+          <context context-type="linenumber">12,17</context>
+        </context-group>
+      <target state="translated">Gå till översikten</target></trans-unit>
+      <trans-unit id="login.choose.method" datatype="html">
+        <source>Choose a Method</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login-screen/login-screen.component.html</context>
+          <context context-type="linenumber">59,62</context>
+        </context-group>
+      <target state="translated">Välj metod</target></trans-unit>
+      <trans-unit id="login.sign.in" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login-screen/login-screen.component.html</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+      <target state="translated">Logga in</target></trans-unit>
+      <trans-unit id="login.copyright" datatype="html">
+        <source> Copyright 2019-2026 by ISC. All Rights Reserved. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login-screen/login-screen.component.html</context>
+          <context context-type="linenumber">142,146</context>
+        </context-group>
+      <target state="translated"> Upphovsrätt 2019-2026 ISC. Alla rättigheter förbehållna. </target></trans-unit>
+      <trans-unit id="error.page.not.found" datatype="html">
+        <source>Page Not Found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found-page/not-found-page.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      <target state="translated">Sidan hittades inte</target></trans-unit>
+      <trans-unit id="error.http.404" datatype="html">
+        <source>HTTP 404 Not Found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found-page/not-found-page.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      <target state="translated">HTTP 404 Sidan hittades inte</target></trans-unit>
+      <trans-unit id="error.page.not.found.description" datatype="html">
+        <source> The page you have tried to open doesn't exist. Please check if the URL is correct. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found-page/not-found-page.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      <target state="translated"> Sidan som du försökte öppna finns inte. Kontrollera att webbadressen är korrekt. </target></trans-unit>
     </body>
   </file>
 </xliff>

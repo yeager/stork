@@ -3,11 +3,13 @@
         <p-message severity="error">
             <div class="flex flex-column gap-3 text-xl">
                 <div class="flex justify-content-top">
-                    <span class="text-3xl flex-1">Page Not Found</span>
-                    <span class="text-sm flex-0">HTTP 404 Not Found</span>
+                    <span class="text-3xl flex-1" i18n="@@error.page.not.found">Page Not Found</span>
+                    <span class="text-sm flex-0" i18n="@@error.http.404">HTTP 404 Not Found</span>
                 </div>
-                <div>The page you have tried to open doesn't exist. Please check if the URL is correct.</div>
-                <a class="text-xl" routerLink="/">Go to Dashboard page</a>
+                <div i18n="@@error.page.not.found.description">
+                    The page you have tried to open doesn't exist. Please check if the URL is correct.
+                </div>
+                <a class="text-xl" routerLink="/" i18n="@@error.go.dashboard">Go to Dashboard page</a>
             </div>
         </p-message>
     </div>

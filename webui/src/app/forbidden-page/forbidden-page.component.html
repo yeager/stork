@@ -3,14 +3,14 @@
         <p-message severity="error">
             <div class="flex flex-column gap-3 text-xl">
                 <div class="flex justify-content-top">
-                    <span class="text-3xl flex-1">Forbidden</span>
-                    <span class="text-sm flex-0">HTTP 403 Forbidden</span>
+                    <span class="text-3xl flex-1" i18n="@@error.forbidden">Forbidden</span>
+                    <span class="text-sm flex-0" i18n="@@error.http.403">HTTP 403 Forbidden</span>
                 </div>
-                <div>
+                <div i18n="@@error.forbidden.description">
                     Access to the page or to the API endpoint is forbidden for the current user. If you think you should
                     have the access, please contact your system administrator to verify your permissions
                 </div>
-                <a class="text-xl" routerLink="/">Go to Dashboard page</a>
+                <a class="text-xl" routerLink="/" i18n="@@error.go.dashboard">Go to Dashboard page</a>
             </div>
         </p-message>
     </div>

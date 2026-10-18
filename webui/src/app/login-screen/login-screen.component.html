@@ -55,7 +55,9 @@
                                             ></ng-container>
                                         </ng-template>
                                     </p-select>
-                                    <label for="authenticationMethod" class="text-white">Choose a Method</label>
+                                    <label for="authenticationMethod" class="text-white" i18n="@@login.choose.method"
+                                        >Choose a Method</label
+                                    >
                                 </p-floatlabel>
                                 <p>
                                     {{ loginForm.get('authenticationMethod')?.value.description }}
@@ -112,6 +114,7 @@
                                     <p-button
                                         id="sign-in-button"
                                         label="Sign In"
+                                        i18n-label="@@login.sign.in"
                                         (click)="signIn()"
                                         [disabled]="!loginForm.valid"
                                     ></p-button>
@@ -135,6 +138,8 @@
             </div>
         }
 
-        <div class="login-screen__footer">Copyright 2019-2026 by ISC. All Rights Reserved.</div>
+        <div class="login-screen__footer" i18n="@@login.copyright">
+            Copyright 2019-2026 by ISC. All Rights Reserved.
+        </div>
     </div>
 </div>
