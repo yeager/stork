@@ -72,17 +72,13 @@ export class DaemonTabComponent {
      */
     confirmDelete() {
         this.confirmService.confirm({
-            message:
-                'Are you sure that you want to delete this daemon? <br/> If ' +
-                'the daemon becomes active again, Stork will re-detect it. ' +
-                'Any adjusted settings for the Configuration Review Reports ' +
-                'tool will be permanently deleted and cannot be recovered.',
-            header: 'Delete Daemon',
+            message: $localize`:@@daemon.delete.confirm:Are you sure that you want to delete this daemon? <br/> If the daemon becomes active again, Stork will re-detect it. Any adjusted settings for the Configuration Review Reports tool will be permanently deleted and cannot be recovered.`,
+            header: $localize`:@@daemon.delete.title:Delete Daemon`,
             icon: 'pi pi-exclamation-triangle',
-            rejectButtonProps: { text: true, icon: 'pi pi-times', label: 'Cancel' },
+            rejectButtonProps: { text: true, icon: 'pi pi-times', label: $localize`:@@common.cancel:Cancel` },
             acceptButtonProps: {
                 icon: 'pi pi-check',
-                label: 'Delete',
+                label: $localize`:@@common.delete:Delete`,
             },
             accept: () => {
                 this.delete()
@@ -102,7 +98,7 @@ export class DaemonTabComponent {
                 next: () => {
                     this.msgService.add({
                         severity: 'success',
-                        summary: 'Daemon successfully deleted',
+                        summary: $localize`:@@daemon.deleted:Daemon successfully deleted`,
                     })
                     this.deleteDaemon.emit(daemon.id)
                 },
@@ -110,8 +106,8 @@ export class DaemonTabComponent {
                     const msg = getErrorMessage(err)
                     this.msgService.add({
                         severity: 'error',
-                        summary: 'Cannot delete the daemon',
-                        detail: 'Failed to delete the daemon: ' + msg,
+                        summary: $localize`:@@daemon.delete.error:Cannot delete the daemon`,
+                        detail: $localize`:@@daemon.delete.error-detail:Failed to delete the daemon: ${msg}:error message:`,
                         life: 10000,
                     })
                 },
