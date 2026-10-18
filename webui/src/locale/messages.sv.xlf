@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
@@ -216,6 +216,63 @@
           <context context-type="linenumber">330</context>
         </context-group>
       <target state="translated">Kea-handbok</target></trans-unit>
+      <trans-unit id="auth.session.retrieve.failed" datatype="html">
+        <source>Failed to retrieve session</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth.service.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta sessionen</target></trans-unit>
+      <trans-unit id="auth.session.retrieve.failed.detail" datatype="html">
+        <source>Failed to retrieve session: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth.service.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta sessionen: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="auth.error" datatype="html">
+        <source>Authentication error</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth.service.ts</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login-screen/login-screen.component.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      <target state="translated">Autentiseringsfel</target></trans-unit>
+      <trans-unit id="auth.error.detail" datatype="html">
+        <source>Error during authentication process. Please contact Stork admin.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth.service.ts</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login-screen/login-screen.component.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      <target state="translated">Ett fel uppstod under autentiseringen. Kontakta Stork-administratören.</target></trans-unit>
+      <trans-unit id="auth.invalid.credentials" datatype="html">
+        <source>Invalid login or password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth.service.ts</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+      <target state="translated">Felaktigt användarnamn eller lösenord</target></trans-unit>
+      <trans-unit id="auth.logout.failed" datatype="html">
+        <source>Failed to logout user</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth.service.ts</context>
+          <context context-type="linenumber">240</context>
+        </context-group>
+      <target state="translated">Det gick inte att logga ut användaren</target></trans-unit>
+      <trans-unit id="auth.logout.failed.detail" datatype="html">
+        <source>Failed to logout user <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth.service.ts</context>
+          <context context-type="linenumber">241</context>
+        </context-group>
+      <target state="translated">Det gick inte att logga ut användaren: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="dashboard.welcome" datatype="html">
         <source>Welcome to Stork!</source>
         <context-group purpose="location">
@@ -250,7 +307,7 @@
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
           <context context-type="linenumber">33,36</context>
         </context-group>
-      <target state="translated"> Stork använder kommandot ”status-get” för att hämta statusinformation från Kea. Kommandot finns bara i Kea 1.6.3 och senare, så Stork kan inte interagera fullt ut med äldre Kea-versioner. </target></trans-unit>
+      <target state="translated"> Stork använder kommandot ”status-get” för att hämta statusinformation från Kea. Kommandot finns bara i Kea 1.6.3 och senare, så Stork kan inte interagera fullt ut med äldre versioner av Kea. </target></trans-unit>
       <trans-unit id="dashboard.dhcp" datatype="html">
         <source>DHCP Dashboard</source>
         <context-group purpose="location">
@@ -311,6 +368,13 @@
           <context context-type="linenumber">142,146</context>
         </context-group>
       <target state="translated"> Upphovsrätt 2019-2026 ISC. Alla rättigheter förbehållna. </target></trans-unit>
+      <trans-unit id="auth.user.unauthorized" datatype="html">
+        <source>User unauthorized</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login-screen/login-screen.component.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      <target state="translated">Användaren saknar behörighet</target></trans-unit>
       <trans-unit id="error.page.not.found" datatype="html">
         <source>Page Not Found</source>
         <context-group purpose="location">

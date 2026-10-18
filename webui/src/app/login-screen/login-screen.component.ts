@@ -130,9 +130,9 @@ export class LoginScreenComponent implements OnInit {
         if (this.router.url === '/login/auth-err') {
             this.messageService.add({
                 severity: 'error',
-                summary: 'Authentication error',
+                summary: $localize`:@@auth.error:Authentication error`,
                 sticky: true,
-                detail: 'Error during authentication process. Please contact Stork admin.',
+                detail: $localize`:@@auth.error.detail:Error during authentication process. Please contact Stork admin.`,
             })
             this.router.navigate(['/login'])
             return
@@ -144,7 +144,7 @@ export class LoginScreenComponent implements OnInit {
         if (this.router.url === '/login/unauthorized') {
             this.messageService.add({
                 severity: 'error',
-                summary: 'User unauthorized',
+                summary: $localize`:@@auth.user.unauthorized:User unauthorized`,
                 sticky: true,
             })
             this.router.navigate(['/login'])

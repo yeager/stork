@@ -143,8 +143,8 @@ export class AuthService {
                             const msg = getErrorMessage(err)
                             this.msgSrv.add({
                                 severity: 'error',
-                                summary: 'Failed to retrieve session',
-                                detail: 'Failed to retrieve session: ' + msg,
+                                summary: $localize`:@@auth.session.retrieve.failed:Failed to retrieve session`,
+                                detail: $localize`:@@auth.session.retrieve.failed.detail:Failed to retrieve session: ${msg}:error message:`,
                             })
                         }
 
@@ -210,14 +210,14 @@ export class AuthService {
                         // (e.g. DB unique constraints violation).
                         this.msgSrv.add({
                             severity: 'error',
-                            summary: 'Authentication error',
+                            summary: $localize`:@@auth.error:Authentication error`,
                             sticky: true,
-                            detail: 'Error during authentication process. Please contact Stork admin.',
+                            detail: $localize`:@@auth.error.detail:Error during authentication process. Please contact Stork admin.`,
                         })
                         return
                     }
 
-                    this.msgSrv.add({ severity: 'error', summary: 'Invalid login or password' })
+                    this.msgSrv.add({ severity: 'error', summary: $localize`:@@auth.invalid.credentials:Invalid login or password` })
                 },
             })
     }
@@ -237,8 +237,8 @@ export class AuthService {
                     const msg = getErrorMessage(err)
                     this.msgSrv.add({
                         severity: 'error',
-                        summary: 'Failed to logout user',
-                        detail: 'Failed to logout user ' + msg,
+                        summary: $localize`:@@auth.logout.failed:Failed to logout user`,
+                        detail: $localize`:@@auth.logout.failed.detail:Failed to logout user ${msg}:error message:`,
                     })
                 },
             })
