@@ -715,6 +715,48 @@
           <context context-type="linenumber">144</context>
         </context-group>
       <target state="translated">Det gick inte att uppdatera inställningarna för konfigurationskontrollerna</target></trans-unit>
+      <trans-unit id="daemon.filter.label" datatype="html">
+        <source>Daemon (type or pick)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemon-filter/daemon-filter.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      <target state="translated">Demon, skriv eller välj</target></trans-unit>
+      <trans-unit id="daemon.filter.error" datatype="html">
+        <source>Failed to retrieve daemons from Stork server: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemon-filter/daemon-filter.component.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta demoner från Stork-servern: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="daemon.tab.daemon" datatype="html">
+        <source>Daemon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemon-tab/daemon-tab.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      <target state="translated">Demon</target></trans-unit>
+      <trans-unit id="daemon.tab.on-machine" datatype="html">
+        <source>on machine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemon-tab/daemon-tab.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      <target state="translated">på maskinen</target></trans-unit>
+      <trans-unit id="common.refresh" datatype="html">
+        <source>Refresh</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemon-tab/daemon-tab.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      <target state="translated">Uppdatera</target></trans-unit>
+      <trans-unit id="common.delete" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemon-tab/daemon-tab.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      <target state="translated">Ta bort</target></trans-unit>
       <trans-unit id="dashboard.welcome" datatype="html">
         <source>Welcome to Stork!</source>
         <context-group purpose="location">

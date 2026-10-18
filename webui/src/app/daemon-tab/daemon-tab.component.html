@@ -5,21 +5,23 @@
                 <div class="flex align-items-center gap-3">
                     <div class="text-xl text-primary">
                         <i class="fa fa-server pr-2"></i>
-                        Daemon
+                        <ng-container i18n="@@daemon.tab.daemon">Daemon</ng-container>
                         <app-entity-link [showEntityName]="false" entity="daemon" [attrs]="daemon()"></app-entity-link>
                         <i class="{{ daemonStatusIconClass() }} text-xl" pTooltip="{{ daemonStatusIconTooltip() }}"></i>
-                        on machine
+                        <ng-container i18n="@@daemon.tab.on-machine">on machine</ng-container>
                         <app-entity-link [showEntityName]="false" [attrs]="daemon()" entity="machine"></app-entity-link>
                     </div>
                 </div>
                 <div class="flex gap-2">
                     <p-button
+                        i18n-label="@@common.refresh"
                         label="Refresh"
                         icon="pi pi-refresh"
                         (onClick)="refresh()"
                         [disabled]="daemon().id === undefined"
                     ></p-button>
                     <p-button
+                        i18n-label="@@common.delete"
                         label="Delete"
                         severity="danger"
                         icon="pi pi-trash"

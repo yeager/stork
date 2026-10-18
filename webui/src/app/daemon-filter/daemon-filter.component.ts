@@ -71,7 +71,7 @@ export class DaemonFilterComponent implements OnInit, OnDestroy {
     /**
      * Input property with autocomplete form label value.
      */
-    label = input<string>('Daemon (type or pick)')
+    label = input<string>($localize`:@@daemon.filter.label:Daemon (type or pick)`)
 
     /**
      * Input/Output (ModelSignal) property emitting daemon ID whenever selected daemon changes.
@@ -126,7 +126,9 @@ export class DaemonFilterComponent implements OnInit, OnDestroy {
                 }),
                 catchError((err) => {
                     const msg = getErrorMessage(err)
-                    this.errorOccurred.emit(`Failed to retrieve daemons from Stork server: ${msg}`)
+                    this.errorOccurred.emit(
+                        $localize`:@@daemon.filter.error:Failed to retrieve daemons from Stork server: ${msg}`
+                    )
                     return of({ items: [] })
                 })
             )
