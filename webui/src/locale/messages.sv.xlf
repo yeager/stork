@@ -5386,6 +5386,34 @@
           <context context-type="linenumber">538,539</context>
         </context-group>
       <target state="translated">Loggmeddelande</target></trans-unit>
+      <trans-unit id="zone-transfers.error.retrieve-machines" datatype="html">
+        <source>Error retrieving machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskiner</target></trans-unit>
+      <trans-unit id="zone-transfers.error.retrieve-machines-detail" datatype="html">
+        <source>Failed to retrieve machines information for filtering by primary and secondary: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
+          <context context-type="linenumber">246</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskininformation för filtrering efter primär och sekundär: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="zone-transfers.error.retrieve" datatype="html">
+        <source>Error retrieving zone transfers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta zonöverföringar</target></trans-unit>
+      <trans-unit id="zone-transfers.error.retrieve-detail" datatype="html">
+        <source>Retrieving zone transfers information failed: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta information om zonöverföringar: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="zone-viewer.cached-from" datatype="html">
         <source>Cached from DNS server on</source>
         <context-group purpose="location">

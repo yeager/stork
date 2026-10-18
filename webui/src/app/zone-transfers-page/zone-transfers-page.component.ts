@@ -242,8 +242,8 @@ export class ZoneTransfersPageComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Error retrieving machines',
-                    detail: 'Failed to retrieve machines information for filtering by primary and secondary: ' + msg,
+                    summary: $localize`:@@zone-transfers.error.retrieve-machines:Error retrieving machines`,
+                    detail: $localize`:@@zone-transfers.error.retrieve-machines-detail:Failed to retrieve machines information for filtering by primary and secondary: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -300,8 +300,8 @@ export class ZoneTransfersPageComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Error retrieving zone transfers',
-                    detail: 'Retrieving zone transfers information failed: ' + msg,
+                    summary: $localize`:@@zone-transfers.error.retrieve:Error retrieving zone transfers`,
+                    detail: $localize`:@@zone-transfers.error.retrieve-detail:Retrieving zone transfers information failed: ${msg}:error message:`,
                     life: 10000,
                 })
             })
