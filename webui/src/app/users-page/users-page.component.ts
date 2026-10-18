@@ -120,7 +120,7 @@ export class UsersPageComponent implements OnInit, OnDestroy {
     private _updateToolbarButtons() {
         const buttons: MenuItem[] = [
             {
-                label: 'Create User Account',
+                label: $localize`:@@users.create-account:Create User Account`,
                 icon: 'pi pi-plus',
                 routerLink: '/users/new',
                 disabled: !this.canCreateUser(),
@@ -179,8 +179,8 @@ export class UsersPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Loading user accounts failed',
-                    detail: 'Failed to load user accounts from the database: ' + msg,
+                    summary: $localize`:@@users.error.load:Loading user accounts failed`,
+                    detail: $localize`:@@users.error.load-detail:Failed to load user accounts from the database: ${msg}`,
                     life: 10000,
                 })
             })
@@ -192,8 +192,8 @@ export class UsersPageComponent implements OnInit, OnDestroy {
      */
     confirmDeleteUser(id: number) {
         this.confirmService.confirm({
-            message: 'Are you sure that you want to permanently delete this user?',
-            header: 'Delete User',
+            message: $localize`:@@users.delete.confirm:Are you sure that you want to permanently delete this user?`,
+            header: $localize`:@@users.delete.title:Delete User`,
             icon: 'pi pi-exclamation-triangle',
             rejectButtonProps: { text: true, icon: 'pi pi-times' },
             acceptButtonProps: {
@@ -216,8 +216,8 @@ export class UsersPageComponent implements OnInit, OnDestroy {
             .then((/* data */) => {
                 this.msgSrv.add({
                     severity: 'success',
-                    summary: 'User account deleted',
-                    detail: 'Successfully deleted user account.',
+                    summary: $localize`:@@users.deleted:User account deleted`,
+                    detail: $localize`:@@users.deleted-detail:Successfully deleted user account.`,
                 })
                 this.tabView()?.onDeleteEntity(id)
             })
@@ -225,8 +225,8 @@ export class UsersPageComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.msgSrv.add({
                     severity: 'error',
-                    summary: 'Failed to delete user account',
-                    detail: 'Failed to delete user account: ' + msg,
+                    summary: $localize`:@@users.error.delete:Failed to delete user account`,
+                    detail: $localize`:@@users.error.delete-detail:Failed to delete user account: ${msg}`,
                     life: 10000,
                 })
             })

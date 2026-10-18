@@ -1569,6 +1569,69 @@
           <context context-type="linenumber">238,240</context>
         </context-group>
       <target state="translated">Spara</target></trans-unit>
+      <trans-unit id="users.create-account" datatype="html">
+        <source>Create User Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      <target state="translated">Skapa användarkonto</target></trans-unit>
+      <trans-unit id="users.error.load" datatype="html">
+        <source>Loading user accounts failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      <target state="translated">Det gick inte att läsa in användarkonton</target></trans-unit>
+      <trans-unit id="users.error.load-detail" datatype="html">
+        <source>Failed to load user accounts from the database: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      <target state="translated">Det gick inte att läsa in användarkonton från databasen: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="users.delete.confirm" datatype="html">
+        <source>Are you sure that you want to permanently delete this user?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      <target state="translated">Är du säker på att du vill ta bort den här användaren permanent?</target></trans-unit>
+      <trans-unit id="users.delete.title" datatype="html">
+        <source>Delete User</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      <target state="translated">Ta bort användare</target></trans-unit>
+      <trans-unit id="users.deleted" datatype="html">
+        <source>User account deleted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      <target state="translated">Användarkontot har tagits bort</target></trans-unit>
+      <trans-unit id="users.deleted-detail" datatype="html">
+        <source>Successfully deleted user account.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+      <target state="translated">Användarkontot har tagits bort.</target></trans-unit>
+      <trans-unit id="users.error.delete" datatype="html">
+        <source>Failed to delete user account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">228</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort användarkontot</target></trans-unit>
+      <trans-unit id="users.error.delete-detail" datatype="html">
+        <source>Failed to delete user account: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">229</context>
+        </context-group>
+      <target state="translated">Det gick inte att ta bort användarkontot: <x id="PH" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="version.more-info" datatype="html">
         <source>More Version Info</source>
         <context-group purpose="location">
