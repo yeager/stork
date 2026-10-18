@@ -133,7 +133,7 @@ export class Bind9ConfigViewFeederComponent implements OnInit {
                                 // Handle communication errors.
                                 this._messageService.add({
                                     severity: 'error',
-                                    summary: 'Error getting BIND 9 configuration',
+                                    summary: $localize`:@@bind9-config.get-failed:Error getting BIND 9 configuration`,
                                     detail: error.message,
                                     life: 10000,
                                 })

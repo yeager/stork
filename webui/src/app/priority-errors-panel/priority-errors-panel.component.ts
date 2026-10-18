@@ -221,8 +221,8 @@ export class PriorityErrorsPanelComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot get unregistered machines count',
-                    detail: `Error getting unregistered machines count: ${msg}`,
+                    summary: $localize`:@@priority.unregistered-count-failed:Cannot get unregistered machines count`,
+                    detail: $localize`:@@priority.unregistered-count-failed-detail:Error getting unregistered machines count: ${msg}`,
                     life: 10000,
                 })
             }

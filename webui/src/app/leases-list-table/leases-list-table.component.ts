@@ -145,8 +145,8 @@ export class LeasesListTableComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot get leases list',
-                    detail: 'Error getting leases list: ' + msg,
+                    summary: $localize`:@@leases-list.get-failed:Cannot get leases list`,
+                    detail: $localize`:@@leases-list.get-failed-detail:Error getting leases list: ${msg}`,
                     life: 10000,
                 })
             })
@@ -183,8 +183,8 @@ export class LeasesListTableComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Error retrieving machines',
-                    detail: 'Failed to retrieve machines information for filtering by machine: ' + msg,
+                    summary: $localize`:@@leases-list.machines-get-failed:Error retrieving machines`,
+                    detail: $localize`:@@leases-list.machines-get-failed-detail:Failed to retrieve machines information for filtering by machine: ${msg}`,
                     life: 10000,
                 })
             })
@@ -299,7 +299,7 @@ export class LeasesListTableComponent implements OnInit, OnDestroy {
     onAutocompleteError(message: string) {
         this.messageService.add({
             severity: 'error',
-            summary: 'Cannot get daemons directory',
+            summary: $localize`:@@leases-list.daemons-directory-failed:Cannot get daemons directory`,
             detail: message,
             life: 10000,
         })

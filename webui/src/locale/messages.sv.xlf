@@ -541,6 +541,13 @@
           <context context-type="linenumber">38,42</context>
         </context-group>
       <target state="translated">Visa zoner och vyer</target></trans-unit>
+      <trans-unit id="bind9-config.get-failed" datatype="html">
+        <source>Error getting BIND 9 configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-config-view-feeder/bind9-config-view-feeder.component.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta BIND 9-konfigurationen</target></trans-unit>
       <trans-unit id="7854096377528381074" datatype="html">
         <source>BIND 9 Config</source>
         <context-group purpose="location">
@@ -4461,6 +4468,41 @@
           <context context-type="linenumber">313,316</context>
         </context-group>
       <target state="translated">Visa detaljer</target></trans-unit>
+      <trans-unit id="leases-list.get-failed" datatype="html">
+        <source>Cannot get leases list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta listan över klienthyror</target></trans-unit>
+      <trans-unit id="leases-list.get-failed-detail" datatype="html">
+        <source>Error getting leases list: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta listan över klienthyror: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="leases-list.machines-get-failed" datatype="html">
+        <source>Error retrieving machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.ts</context>
+          <context context-type="linenumber">186</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskinerna</target></trans-unit>
+      <trans-unit id="leases-list.machines-get-failed-detail" datatype="html">
+        <source>Failed to retrieve machines information for filtering by machine: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta maskininformationen för maskinfiltret: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="leases-list.daemons-directory-failed" datatype="html">
+        <source>Cannot get daemons directory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/leases-list-table/leases-list-table.component.ts</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta demonregistret</target></trans-unit>
       <trans-unit id="login.choose.method" datatype="html">
         <source>Choose a Method</source>
         <context-group purpose="location">
@@ -5172,6 +5214,20 @@
           <context context-type="linenumber">213</context>
         </context-group>
       <target state="translated">Oregistrerade maskiner</target></trans-unit>
+      <trans-unit id="priority.unregistered-count-failed" datatype="html">
+        <source>Cannot get unregistered machines count</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.ts</context>
+          <context context-type="linenumber">224</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta antalet oregistrerade maskiner</target></trans-unit>
+      <trans-unit id="priority.unregistered-count-failed-detail" datatype="html">
+        <source>Error getting unregistered machines count: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.ts</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta antalet oregistrerade maskiner: <x id="PH" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="profile.settings" datatype="html">
         <source>Settings</source>
         <context-group purpose="location">
