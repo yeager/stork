@@ -16,7 +16,9 @@
                     <div class="flex flex-row align-items-center gap-4">
                         <p-button
                             label="Refresh"
+                            i18n-label="@@common.refresh"
                             pTooltip="Refresh the configuration from the DNS server."
+                            i18n-pTooltip="@@bind.refresh-config"
                             size="small"
                             icon="pi pi-refresh"
                             (click)="handleConfigRefresh()"
@@ -25,6 +27,7 @@
                             <div
                                 class="flex flex-row align-items-center"
                                 pTooltip="Toggle between reduced configuration including only BIND 9 configuration options, and the full configuration also including the views and zones."
+                                i18n-pTooltip="@@bind.toggle-config"
                             >
                                 <p-checkbox
                                     inputId="toggle-full-config"
@@ -32,7 +35,7 @@
                                     [(ngModel)]="showFullConfig"
                                     (onChange)="handleFullConfigToggle($event)"
                                 />
-                                <label for="toggle-full-config" class="ml-2">Show Zones and Views</label>
+                                <label for="toggle-full-config" class="ml-2" i18n="@@bind.show-zones-and-views">Show Zones and Views</label>
                             </div>
                         }
                     </div>

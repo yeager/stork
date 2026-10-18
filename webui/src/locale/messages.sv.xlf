@@ -372,6 +372,38 @@
           <context context-type="linenumber">241</context>
         </context-group>
       <target state="translated">Det gick inte att logga ut användaren: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="common.refresh" datatype="html">
+        <source>Refresh</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-config-preview/bind9-config-preview.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemon-tab/daemon-tab.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      <target state="translated">Uppdatera</target></trans-unit>
+      <trans-unit id="bind.refresh-config" datatype="html">
+        <source>Refresh the configuration from the DNS server.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-config-preview/bind9-config-preview.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      <target state="translated">Läs in konfigurationen från DNS-servern igen.</target></trans-unit>
+      <trans-unit id="bind.toggle-config" datatype="html">
+        <source>Toggle between reduced configuration including only BIND 9 configuration options, and the full configuration also including the views and zones.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-config-preview/bind9-config-preview.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      <target state="translated">Växla mellan reducerad konfiguration med endast BIND 9-alternativ och den fullständiga konfigurationen som även innehåller vyer och zoner.</target></trans-unit>
+      <trans-unit id="bind.show-zones-and-views" datatype="html">
+        <source>Show Zones and Views</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-config-preview/bind9-config-preview.component.html</context>
+          <context context-type="linenumber">38,42</context>
+        </context-group>
+      <target state="translated">Visa zoner och vyer</target></trans-unit>
       <trans-unit id="daemon.overview" datatype="html">
         <source>Overview</source>
         <context-group purpose="location">
@@ -913,13 +945,6 @@
           <context context-type="linenumber">11,12</context>
         </context-group>
       <target state="translated">på maskinen</target></trans-unit>
-      <trans-unit id="common.refresh" datatype="html">
-        <source>Refresh</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/daemon-tab/daemon-tab.component.html</context>
-          <context context-type="linenumber">19,20</context>
-        </context-group>
-      <target state="translated">Uppdatera</target></trans-unit>
       <trans-unit id="common.delete" datatype="html">
         <source>Delete</source>
         <context-group purpose="location">
