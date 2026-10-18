@@ -263,12 +263,20 @@
           <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
           <context context-type="linenumber">72</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
       <target state="translated">Konfiguration</target></trans-unit>
       <trans-unit id="menu.users" datatype="html">
         <source>Users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">278</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
+          <context context-type="linenumber">77</context>
         </context-group>
       <target state="translated">Användare</target></trans-unit>
       <trans-unit id="menu.review.checkers" datatype="html">
@@ -5319,6 +5327,104 @@
           <context context-type="linenumber">238,240</context>
         </context-group>
       <target state="translated">Spara</target></trans-unit>
+      <trans-unit id="users.select-group" datatype="html">
+        <source>Select Group</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      <target state="translated">Välj grupp</target></trans-unit>
+      <trans-unit id="users.field-required" datatype="html">
+        <source>This field is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      <target state="translated">Det här fältet måste fyllas i.</target></trans-unit>
+      <trans-unit id="users.field-too-short" datatype="html">
+        <source>This field value is too short.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+      <target state="translated">Värdet i fältet är för kort.</target></trans-unit>
+      <trans-unit id="users.field-too-long" datatype="html">
+        <source>This field value is too long.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+      <target state="translated">Värdet i fältet är för långt.</target></trans-unit>
+      <trans-unit id="users.email-invalid" datatype="html">
+        <source>Email is invalid.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      <target state="translated">E-postadressen är ogiltig.</target></trans-unit>
+      <trans-unit id="users.field-incorrect" datatype="html">
+        <source>This field value is incorrect.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+      <target state="translated">Värdet i fältet är felaktigt.</target></trans-unit>
+      <trans-unit id="users.create-succeeded" datatype="html">
+        <source>New user account created</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      <target state="translated">Nytt användarkonto har skapats</target></trans-unit>
+      <trans-unit id="users.create-succeeded-detail" datatype="html">
+        <source>Successfully added new user account.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">269</context>
+        </context-group>
+      <target state="translated">Det nya användarkontot har lagts till.</target></trans-unit>
+      <trans-unit id="users.create-failed" datatype="html">
+        <source>Failed to create new user account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">279</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa ett nytt användarkonto</target></trans-unit>
+      <trans-unit id="users.create-failed-detail" datatype="html">
+        <source>Failed to create new user account: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">280</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa ett nytt användarkonto: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="users.update-succeeded" datatype="html">
+        <source>User account updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">308</context>
+        </context-group>
+      <target state="translated">Användarkontot har uppdaterats</target></trans-unit>
+      <trans-unit id="users.update-succeeded-detail" datatype="html">
+        <source>Successfully updated user account.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+      <target state="translated">Användarkontot har uppdaterats.</target></trans-unit>
+      <trans-unit id="users.update-failed" datatype="html">
+        <source>Failed to update user account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">317</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera användarkontot</target></trans-unit>
+      <trans-unit id="users.update-failed-detail" datatype="html">
+        <source>Failed to update user account: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-form/user-form.component.ts</context>
+          <context context-type="linenumber">318</context>
+        </context-group>
+      <target state="translated">Det gick inte att uppdatera användarkontot: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="4555457172864212828" datatype="html">
         <source>Users</source>
         <context-group purpose="location">
@@ -5484,63 +5590,63 @@
         <source>Create User Account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">123</context>
+          <context context-type="linenumber">126</context>
         </context-group>
       <target state="translated">Skapa användarkonto</target></trans-unit>
       <trans-unit id="users.error.load" datatype="html">
         <source>Loading user accounts failed</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">182</context>
+          <context context-type="linenumber">185</context>
         </context-group>
       <target state="translated">Det gick inte att läsa in användarkonton</target></trans-unit>
       <trans-unit id="users.error.load-detail" datatype="html">
         <source>Failed to load user accounts from the database: <x id="PH" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">183</context>
+          <context context-type="linenumber">186</context>
         </context-group>
       <target state="translated">Det gick inte att läsa in användarkonton från databasen: <x id="PH" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="users.delete.confirm" datatype="html">
         <source>Are you sure that you want to permanently delete this user?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">195</context>
+          <context context-type="linenumber">198</context>
         </context-group>
       <target state="translated">Är du säker på att du vill ta bort den här användaren permanent?</target></trans-unit>
       <trans-unit id="users.delete.title" datatype="html">
         <source>Delete User</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">196</context>
+          <context context-type="linenumber">199</context>
         </context-group>
       <target state="translated">Ta bort användare</target></trans-unit>
       <trans-unit id="users.deleted" datatype="html">
         <source>User account deleted</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">219</context>
+          <context context-type="linenumber">222</context>
         </context-group>
       <target state="translated">Användarkontot har tagits bort</target></trans-unit>
       <trans-unit id="users.deleted-detail" datatype="html">
         <source>Successfully deleted user account.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">220</context>
+          <context context-type="linenumber">223</context>
         </context-group>
       <target state="translated">Användarkontot har tagits bort.</target></trans-unit>
       <trans-unit id="users.error.delete" datatype="html">
         <source>Failed to delete user account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">228</context>
+          <context context-type="linenumber">231</context>
         </context-group>
       <target state="translated">Det gick inte att ta bort användarkontot</target></trans-unit>
       <trans-unit id="users.error.delete-detail" datatype="html">
         <source>Failed to delete user account: <x id="PH" equiv-text="msg" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users-page/users-page.component.ts</context>
-          <context context-type="linenumber">229</context>
+          <context context-type="linenumber">232</context>
         </context-group>
       <target state="translated">Det gick inte att ta bort användarkontot: <x id="PH" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="utilization.utilization" datatype="html">

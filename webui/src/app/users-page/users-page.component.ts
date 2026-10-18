@@ -72,7 +72,10 @@ export class UsersPageComponent implements OnInit, OnDestroy {
     private confirmService = inject(ConfirmationService)
     private router = inject(Router)
 
-    breadcrumbs = [{ label: 'Configuration' }, { label: 'Users' }]
+    breadcrumbs = [
+        { label: $localize`:@@menu.configuration:Configuration` },
+        { label: $localize`:@@menu.users:Users` },
+    ]
 
     groups: Group[] = []
     // users table

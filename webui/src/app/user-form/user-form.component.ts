@@ -60,7 +60,7 @@ export class UserFormComponent implements OnInit {
     userGroups = computed<SelectItem[]>(() => {
         const initUserGroups = [
             {
-                label: 'Select Group',
+                label: $localize`:@@users.select-group:Select Group`,
                 value: null,
             },
         ]
@@ -198,23 +198,23 @@ export class UserFormComponent implements OnInit {
         const errors: string[] = []
 
         if (this.formGroup.get(name).errors?.['required']) {
-            errors.push('This field is required.')
+            errors.push($localize`:@@users.field-required:This field is required.`)
         }
 
         if (this.formGroup.get(name).errors?.['minlength']) {
-            errors.push('This field value is too short.')
+            errors.push($localize`:@@users.field-too-short:This field value is too short.`)
         }
 
         if (this.formGroup.get(name).errors?.['maxlength']) {
-            errors.push('This field value is too long.')
+            errors.push($localize`:@@users.field-too-long:This field value is too long.`)
         }
 
         if (this.formGroup.get(name).errors?.['email']) {
-            errors.push('Email is invalid.')
+            errors.push($localize`:@@users.email-invalid:Email is invalid.`)
         }
 
         if (this.formGroup.get(name).errors?.['pattern']) {
-            errors.push(formatFeedback ?? 'This field value is incorrect.')
+            errors.push(formatFeedback ?? $localize`:@@users.field-incorrect:This field value is incorrect.`)
         }
 
         return errors.join(' ')
@@ -265,8 +265,8 @@ export class UserFormComponent implements OnInit {
             .then((user) => {
                 this.messageService.add({
                     severity: 'success',
-                    summary: 'New user account created',
-                    detail: 'Successfully added new user account.',
+                    summary: $localize`:@@users.create-succeeded:New user account created`,
+                    detail: $localize`:@@users.create-succeeded-detail:Successfully added new user account.`,
                 })
                 this.user.set(user)
                 this.formState.user = user
@@ -276,8 +276,8 @@ export class UserFormComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Failed to create new user account',
-                    detail: 'Failed to create new user account: ' + msg,
+                    summary: $localize`:@@users.create-failed:Failed to create new user account`,
+                    detail: $localize`:@@users.create-failed-detail:Failed to create new user account: ${msg}:error message:`,
                     life: 10000,
                 })
             })
@@ -305,8 +305,8 @@ export class UserFormComponent implements OnInit {
             .then(() => {
                 this.messageService.add({
                     severity: 'success',
-                    summary: 'User account updated',
-                    detail: 'Successfully updated user account.',
+                    summary: $localize`:@@users.update-succeeded:User account updated`,
+                    detail: $localize`:@@users.update-succeeded-detail:Successfully updated user account.`,
                 })
                 this.formSubmit.emit(this.formState)
             })
@@ -314,8 +314,8 @@ export class UserFormComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Failed to update user account',
-                    detail: 'Failed to update user account: ' + msg,
+                    summary: $localize`:@@users.update-failed:Failed to update user account`,
+                    detail: $localize`:@@users.update-failed-detail:Failed to update user account: ${msg}:error message:`,
                     life: 10000,
                 })
             })
