@@ -968,6 +968,14 @@
           <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
           <context context-type="linenumber">132,134</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">169,171</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">177,179</context>
+        </context-group>
       <target state="translated">Uppdatera lista</target></trans-unit>
       <trans-unit id="common.version" datatype="html">
         <source>Version</source>
@@ -1031,6 +1039,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">453,454</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">364,365</context>
         </context-group>
       <target state="translated">Rensa</target></trans-unit>
       <trans-unit id="dashboard.welcome" datatype="html">
@@ -1295,6 +1307,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">78,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">190,192</context>
         </context-group>
       <target state="translated">Delnät</target></trans-unit>
       <trans-unit id="host.select-subnet" datatype="html">
@@ -1574,6 +1590,14 @@
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">356,360</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">205,207</context>
+        </context-group>
       <target state="translated">Demon</target></trans-unit>
       <trans-unit id="hosts.subnet-id" datatype="html">
         <source>Subnet ID</source>
@@ -1587,6 +1611,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">198,201</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">87,90</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">245,247</context>
         </context-group>
       <target state="translated">Kea-delnäts-ID</target></trans-unit>
       <trans-unit id="hosts.global" datatype="html">
@@ -1608,6 +1640,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">278,280</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">142,144</context>
         </context-group>
       <target state="translated">Sök IP-adress eller identifierare</target></trans-unit>
       <trans-unit id="hosts.migrate-to-database" datatype="html">
@@ -1679,6 +1715,10 @@
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">442,443</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">375,376</context>
+        </context-group>
       <target state="translated">Totalt:</target></trans-unit>
       <trans-unit id="hosts.none-found" datatype="html">
         <source>No hosts found.</source>
@@ -1692,6 +1732,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">450,453</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">361,364</context>
         </context-group>
       <target state="translated">Rensa filtreringen och försök igen.</target></trans-unit>
       <trans-unit id="value.invalid" datatype="html">
@@ -2022,12 +2066,24 @@
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">112,116</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">202,204</context>
+        </context-group>
       <target state="translated">Delat nät</target></trans-unit>
       <trans-unit id="common.name" datatype="html">
         <source>Name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
           <context context-type="linenumber">33,36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">193,195</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">243,244</context>
         </context-group>
       <target state="translated">Namn</target></trans-unit>
       <trans-unit id="shared-network.name-exists" datatype="html">
@@ -2128,6 +2184,10 @@
           <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
           <context context-type="linenumber">154,155</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">199,201</context>
+        </context-group>
       <target state="translated">Pooler</target></trans-unit>
       <trans-unit id="subnet.delete-pool" datatype="html">
         <source>Delete Pool</source>
@@ -2165,6 +2225,88 @@
           <context context-type="linenumber">324,325</context>
         </context-group>
       <target state="translated">Fortsätt</target></trans-unit>
+      <trans-unit id="subnets.dhcp-version" datatype="html">
+        <source>DHCP Version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">116,119</context>
+        </context-group>
+      <target state="translated">DHCP-version</target></trans-unit>
+      <trans-unit id="subnets.new-subnet" datatype="html">
+        <source>New Subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">160,162</context>
+        </context-group>
+      <target state="translated">Nytt delnät</target></trans-unit>
+      <trans-unit id="subnets.addresses" datatype="html">
+        <source>Addresses</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">195,197</context>
+        </context-group>
+      <target state="translated">Adresser</target></trans-unit>
+      <trans-unit id="subnets.prefixes" datatype="html">
+        <source>Prefixes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">197,200</context>
+        </context-group>
+      <target state="translated">Prefix</target></trans-unit>
+      <trans-unit id="subnets.grafana-link" datatype="html">
+        <source>Link to Grafana charts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">207,208</context>
+        </context-group>
+      <target state="translated">Länk till Grafana-diagram</target></trans-unit>
+      <trans-unit id="subnets.total" datatype="html">
+        <source>Total</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">215,216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">232,233</context>
+        </context-group>
+      <target state="translated">Totalt</target></trans-unit>
+      <trans-unit id="subnets.assigned" datatype="html">
+        <source>Assigned</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">221,222</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">235,236</context>
+        </context-group>
+      <target state="translated">Tilldelade</target></trans-unit>
+      <trans-unit id="subnets.used-percent" datatype="html">
+        <source>Used %</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">227,229</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">239,240</context>
+        </context-group>
+      <target state="translated">Använt %</target></trans-unit>
+      <trans-unit id="subnets.inconsistent-ids" datatype="html">
+        <source>Inconsistent IDs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">327,329</context>
+        </context-group>
+      <target state="translated">Inkonsekventa ID:n</target></trans-unit>
+      <trans-unit id="subnets.none-found" datatype="html">
+        <source>No subnets found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">358,360</context>
+        </context-group>
+      <target state="translated">Inga delnät hittades.</target></trans-unit>
       <trans-unit id="table.clear" datatype="html">
         <source>Clear</source>
         <context-group purpose="location">
