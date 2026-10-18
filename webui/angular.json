@@ -65,6 +65,12 @@
                                     "maximumError": "10kb"
                                 }
                             ]
+                        },
+                        "sv": {
+                            "localize": ["sv"],
+                            "outputPath": {
+                                "base": "dist/stork-sv"
+                            }
                         }
                     },
                     "defaultConfiguration": ""
@@ -118,6 +124,12 @@
                         "compodoc": false,
                         "browserTarget": "stork:build"
                     }
+                }
+            },
+            "i18n": {
+                "sourceLocale": "en-US",
+                "locales": {
+                    "sv": "src/locale/messages.sv.xlf"
                 }
             }
         }

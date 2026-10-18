@@ -118,7 +118,7 @@ export class AppComponent implements OnInit, OnDestroy {
     constructor() {
         this.initMenus()
 
-        this.breadcrumbItems = [{ label: 'Categories' }]
+        this.breadcrumbItems = [{ label: $localize`:@@menu.categories:Categories` }]
 
         this.loadingInProgress = this.loadingService.getState()
     }
@@ -126,7 +126,7 @@ export class AppComponent implements OnInit, OnDestroy {
     initMenus() {
         this.userMenuItems = [
             {
-                label: 'Profile',
+                label: $localize`:@@menu.profile:Profile`,
                 id: 'profile',
                 icon: 'fa fa-cog',
                 routerLink: '/profile',
@@ -140,43 +140,43 @@ export class AppComponent implements OnInit, OnDestroy {
                 visible: false,
                 items: [
                     {
-                        label: 'Dashboard',
+                        label: $localize`:@@menu.dashboard:Dashboard`,
                         id: 'dashboard',
                         icon: 'fa fa-tachometer-alt',
                         routerLink: '/dashboard',
                     },
                     {
-                        label: 'Leases Search',
+                        label: $localize`:@@menu.leases.search:Leases Search`,
                         id: 'leases-search',
                         icon: 'fa fa-search',
                         routerLink: '/dhcp/leases',
                     },
                     {
-                        label: 'Leases List',
+                        label: $localize`:@@menu.leases.list:Leases List`,
                         id: 'leases-list',
                         icon: 'fa fa-list',
                         routerLink: '/dhcp/leases-list',
                     },
                     {
-                        label: 'Host Reservations',
+                        label: $localize`:@@menu.host.reservations:Host Reservations`,
                         id: 'host-reservations',
                         icon: 'fa fa-laptop',
                         routerLink: '/dhcp/hosts',
                     },
                     {
-                        label: 'Subnets',
+                        label: $localize`:@@menu.subnets:Subnets`,
                         id: 'subnets',
                         icon: 'fa fa-project-diagram',
                         routerLink: '/dhcp/subnets',
                     },
                     {
-                        label: 'Shared Networks',
+                        label: $localize`:@@menu.shared.networks:Shared Networks`,
                         id: 'shared-networks',
                         icon: 'fa fa-network-wired',
                         routerLink: '/dhcp/shared-networks',
                     },
                     {
-                        label: 'Config migrations',
+                        label: $localize`:@@menu.config.migrations:Config migrations`,
                         id: 'config-migrations',
                         routerLink: '/config-migrations',
                         icon: 'fa fa-suitcase',
@@ -189,14 +189,14 @@ export class AppComponent implements OnInit, OnDestroy {
                 visible: false,
                 items: [
                     {
-                        label: 'Dashboard',
+                        label: $localize`:@@menu.dashboard:Dashboard`,
                         id: 'dns-dashboard',
                         icon: 'fa fa-tachometer-alt',
                         routerLink: '/dashboard',
                     },
-                    { label: 'Zones', id: 'zones', icon: 'pi pi-sitemap', routerLink: '/dns/zones' },
+                    { label: $localize`:@@menu.zones:Zones`, id: 'zones', icon: 'pi pi-sitemap', routerLink: '/dns/zones' },
                     {
-                        label: 'Zone Transfers',
+                        label: $localize`:@@menu.zone.transfers:Zone Transfers`,
                         id: 'zone-transfers',
                         icon: 'fa fa-exchange-alt',
                         routerLink: '/dns/zone-transfers',
@@ -204,18 +204,18 @@ export class AppComponent implements OnInit, OnDestroy {
                 ],
             },
             {
-                label: 'Services',
+                label: $localize`:@@menu.services:Services`,
                 id: 'services',
                 items: [
                     {
-                        label: 'All Daemons',
+                        label: $localize`:@@menu.all.daemons:All Daemons`,
                         id: 'all-daemons',
                         visible: false,
                         icon: 'fa fa-server',
                         routerLink: '/daemons/all',
                     },
                     {
-                        label: 'Kea Daemons',
+                        label: $localize`:@@menu.kea.daemons:Kea Daemons`,
                         id: 'kea-daemons',
                         visible: false,
                         icon: 'fa fa-server',
@@ -223,7 +223,7 @@ export class AppComponent implements OnInit, OnDestroy {
                         queryParams: { daemons: ['dhcp4', 'dhcp6', 'd2', 'ca', 'netconf'] },
                     },
                     {
-                        label: 'DNS Daemons',
+                        label: $localize`:@@menu.dns.daemons:DNS Daemons`,
                         id: 'dns-daemons',
                         visible: false,
                         icon: 'fa fa-server',
@@ -231,7 +231,7 @@ export class AppComponent implements OnInit, OnDestroy {
                         queryParams: { daemons: ['named', 'pdns'] },
                     },
                     {
-                        label: 'Machines',
+                        label: $localize`:@@menu.machines:Machines`,
                         id: 'machines',
                         icon: 'fa fa-server',
                         routerLink: '/machines/all',
@@ -247,23 +247,23 @@ export class AppComponent implements OnInit, OnDestroy {
                 ],
             },
             {
-                label: 'Monitoring',
+                label: $localize`:@@menu.monitoring:Monitoring`,
                 id: 'monitoring',
                 items: [
                     {
-                        label: 'Events',
+                        label: $localize`:@@menu.events:Events`,
                         id: 'events',
                         icon: 'fa fa-calendar-times',
                         routerLink: '/events',
                     },
                     {
-                        label: 'Communication',
+                        label: $localize`:@@menu.communication:Communication`,
                         id: 'communication',
                         icon: 'fa fa-signal',
                         routerLink: '/communication',
                     },
                     {
-                        label: 'Software versions',
+                        label: $localize`:@@menu.software.versions:Software versions`,
                         id: 'versions',
                         icon: 'pi pi-history',
                         routerLink: '/versions',
@@ -271,24 +271,24 @@ export class AppComponent implements OnInit, OnDestroy {
                 ],
             },
             {
-                label: 'Configuration',
+                label: $localize`:@@menu.configuration:Configuration`,
                 id: 'configuration',
                 items: [
                     {
-                        label: 'Users',
+                        label: $localize`:@@menu.users:Users`,
                         id: 'users',
                         visible: false,
                         icon: 'fa fa-user',
                         routerLink: '/users',
                     },
                     {
-                        label: 'Review Checkers',
+                        label: $localize`:@@menu.review.checkers:Review Checkers`,
                         id: 'checkers',
                         icon: 'fa fa-tasks',
                         routerLink: '/review-checkers',
                     },
                     {
-                        label: 'Settings',
+                        label: $localize`:@@menu.settings:Settings`,
                         id: 'settings',
                         icon: 'fa fa-cog',
                         routerLink: '/settings',
@@ -296,38 +296,38 @@ export class AppComponent implements OnInit, OnDestroy {
                 ],
             },
             {
-                label: 'Help',
+                label: $localize`:@@menu.help:Help`,
                 id: 'help',
                 items: [
                     {
-                        label: 'Stork Manual',
+                        label: $localize`:@@menu.stork.manual:Stork Manual`,
                         id: 'stork-manual',
                         icon: 'fa fa-book',
                         routerLink: '/assets/arm/index.html',
                         target: 'blank',
                     },
                     {
-                        label: 'Stork API Docs (SwaggerUI)',
+                        label: $localize`:@@menu.stork.api.docs.swaggerui:Stork API Docs (SwaggerUI)`,
                         id: 'stork-API-docs-swagger',
                         icon: 'fa fa-code',
                         routerLink: '/swagger-ui',
                     },
                     {
-                        label: 'Stork API Docs (Redoc)',
+                        label: $localize`:@@menu.stork.api.docs.redoc:Stork API Docs (Redoc)`,
                         id: 'stork-API-docs-redoc',
                         icon: 'fa fa-code',
                         routerLink: '/api/docs',
                         target: 'blank',
                     },
                     {
-                        label: 'BIND 9 Manual',
+                        label: $localize`:@@menu.bind.9.manual:BIND 9 Manual`,
                         id: 'bind9-manual',
                         icon: 'fa fa-book',
                         url: 'https://bind9.readthedocs.io/',
                         target: 'blank',
                     },
                     {
-                        label: 'Kea Manual',
+                        label: $localize`:@@menu.kea.manual:Kea Manual`,
                         id: 'kea-manual',
                         icon: 'fa fa-book',
                         url: 'https://kea.readthedocs.io/',
@@ -345,13 +345,13 @@ export class AppComponent implements OnInit, OnDestroy {
      *             that is defined in this.menuItems.
      * @returns A reference to found menu item or null if not found.
      */
-    getMenuItem(name) {
+    getMenuItem(id: string) {
         for (const menuItem of this.menuItems) {
-            if (menuItem['label'] === name) {
+            if (menuItem['id'] === id) {
                 return menuItem
             }
             for (const subMenu of menuItem.items) {
-                if (subMenu['label'] === name) {
+                if (subMenu['id'] === id) {
                     return subMenu
                 }
             }
@@ -359,7 +359,7 @@ export class AppComponent implements OnInit, OnDestroy {
         this.messageService.add({
             severity: 'error',
             summary: 'Error getting menu item',
-            detail: 'Menu item not found: ' + name,
+            detail: 'Menu item not found: ' + id,
             life: 10000,
         })
         return null
@@ -385,7 +385,7 @@ export class AppComponent implements OnInit, OnDestroy {
         this.subscriptions.add(
             this.auth.currentUser$.subscribe((x) => {
                 this.currentUser = x
-                const menuItem = this.getMenuItem('Users')
+                const menuItem = this.getMenuItem('users')
                 if (this.auth.superAdmin()) {
                     // super admin can see Configuration/Users menu
                     menuItem['visible'] = true
@@ -411,8 +411,8 @@ export class AppComponent implements OnInit, OnDestroy {
                     this.serverData.getDaemonsStats().subscribe((data) => {
                         // if there are Kea daemons then show DHCP/Kea menu items
                         // otherwise hide them
-                        const dhcpMenuItem = this.getMenuItem('DHCP')
-                        const keaDaemonsMenuItem = this.getMenuItem('Kea Daemons')
+                        const dhcpMenuItem = this.getMenuItem('dhcp')
+                        const keaDaemonsMenuItem = this.getMenuItem('kea-daemons')
                         if (data.dhcpDaemonsTotal) {
                             dhcpMenuItem.visible = true
                             keaDaemonsMenuItem['visible'] = true
@@ -422,8 +422,8 @@ export class AppComponent implements OnInit, OnDestroy {
                         }
                         // if there are DNS daemons then show DNS related menu items
                         // otherwise hide them
-                        const dnsDaemonsMenuItem = this.getMenuItem('DNS Daemons')
-                        const dnsMenuItem = this.getMenuItem('DNS')
+                        const dnsDaemonsMenuItem = this.getMenuItem('dns-daemons')
+                        const dnsMenuItem = this.getMenuItem('dns')
                         if (data.dnsDaemonsTotal) {
                             dnsDaemonsMenuItem['visible'] = true
                             dnsMenuItem['visible'] = true
@@ -432,7 +432,7 @@ export class AppComponent implements OnInit, OnDestroy {
                             dnsMenuItem['visible'] = false
                         }
                         // if there are any of DHCP or DNS daemons, show related menu item; otherwise hide it
-                        const allDaemonsMenuItem = this.getMenuItem('All Daemons')
+                        const allDaemonsMenuItem = this.getMenuItem('all-daemons')
                         allDaemonsMenuItem['visible'] = !!(data.dnsDaemonsTotal || data.dhcpDaemonsTotal)
 
                         // force refresh of top menu in UI
@@ -445,7 +445,7 @@ export class AppComponent implements OnInit, OnDestroy {
                     this.settingSvc.getSettings().subscribe((data: Settings) => {
                         const grafanaUrl = data?.grafanaUrl
 
-                        const grafanaMenuItem = this.getMenuItem('Grafana')
+                        const grafanaMenuItem = this.getMenuItem('grafana')
 
                         if (grafanaUrl && grafanaUrl !== '') {
                             grafanaMenuItem['visible'] = true
@@ -513,17 +513,17 @@ export class AppComponent implements OnInit, OnDestroy {
      */
     setMenuItemBadges() {
         if (this.displaySwVersionBadge) {
-            let item = this.getMenuItem('Software versions')
+            let item = this.getMenuItem('versions')
             item.badge = ' '
             item.badgeStyleClass = 'p-badge p-badge-dot ml-1 mb-2 ' + this.swVersionBadgeClass
 
-            item = this.getMenuItem('Monitoring')
+            item = this.getMenuItem('monitoring')
             item.badge = ' '
             item.badgeStyleClass = 'p-badge p-badge-dot ml-1 mb-2 ' + this.swVersionBadgeClass
         } else {
-            let i = this.getMenuItem('Software versions')
+            let i = this.getMenuItem('versions')
             i.badge = undefined
-            i = this.getMenuItem('Monitoring')
+            i = this.getMenuItem('monitoring')
             i.badge = undefined
         }
 

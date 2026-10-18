@@ -78,40 +78,41 @@ describe('AppComponent', () => {
     it(`should have necessary menu items`, () => {
         // This is the list of menu elements that are expected to be there.
         const expMenuItems = [
-            'DHCP',
-            'Dashboard',
-            'Host Reservations',
-            'Subnets',
-            'Shared Networks',
-            'Services',
-            'Kea Daemons',
-            'DNS Daemons',
-            'Machines',
-            'Grafana',
-            'Monitoring',
-            'Events',
-            'Configuration',
-            'Users',
-            'Settings',
-            'Help',
-            'Stork Manual',
-            'Stork API Docs (SwaggerUI)',
-            'Stork API Docs (Redoc)',
-            'BIND 9 Manual',
-            'Kea Manual',
+            ['dhcp', 'DHCP'],
+            ['dashboard', 'Dashboard'],
+            ['host-reservations', 'Host Reservations'],
+            ['subnets', 'Subnets'],
+            ['shared-networks', 'Shared Networks'],
+            ['services', 'Services'],
+            ['kea-daemons', 'Kea Daemons'],
+            ['dns-daemons', 'DNS Daemons'],
+            ['machines', 'Machines'],
+            ['grafana', 'Grafana'],
+            ['monitoring', 'Monitoring'],
+            ['events', 'Events'],
+            ['configuration', 'Configuration'],
+            ['users', 'Users'],
+            ['settings', 'Settings'],
+            ['help', 'Help'],
+            ['stork-manual', 'Stork Manual'],
+            ['stork-API-docs-swagger', 'Stork API Docs (SwaggerUI)'],
+            ['stork-API-docs-redoc', 'Stork API Docs (Redoc)'],
+            ['bind9-manual', 'BIND 9 Manual'],
+            ['kea-manual', 'Kea Manual'],
         ]
 
         // List of menu items that are expected to be hidden. Unless listed here, the test expects
         // the menu item to be visible.
-        const expHiddenItems = ['DHCP', 'Kea Daemons', 'DNS Daemons', 'Grafana', 'Users']
+        const expHiddenItems = ['dhcp', 'kea-daemons', 'dns-daemons', 'grafana', 'users']
 
-        for (const name of expMenuItems) {
-            // Check if the menu item is there
-            const m = component.getMenuItem(name)
+        for (const [id, label] of expMenuItems) {
+            // Check if the menu item is there and retains its source label.
+            const m = component.getMenuItem(id)
             expect(m).toBeTruthy()
+            expect(m.label).toEqual(label)
 
             // Check if the menu is hidden or visible. See the expHiddenItems list above.
-            if (expHiddenItems.includes(name)) {
+            if (expHiddenItems.includes(id)) {
                 expect(m.visible === true).toBeFalsy()
             } else {
                 // If defined, it must be visible. If not defined, the default is it's visible.
@@ -143,7 +144,7 @@ describe('AppComponent', () => {
 
         expect(serverDataService.getDaemonsStats).toHaveBeenCalled()
         expect(settingService.getSettings).toHaveBeenCalled()
-        const menuItem = component.getMenuItem('Grafana')
+        const menuItem = component.getMenuItem('grafana')
         expect(menuItem).toBeTruthy()
         expect(menuItem.visible).toBeTrue()
     }))
