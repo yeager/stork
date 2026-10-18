@@ -21,31 +21,31 @@
     <ng-template #caption>
         <app-table-caption [tableElement]="subnetsTable" tableKey="subnets-table">
             <ng-template #helptip>
-                <p>
+                <p i18n="@@subnets.filter-help-intro">
                     The table below can be filtered by entering text in the search box; the table shows all subnets
                     matching the filter text. The currently supported fields for filtering are:
                 </p>
                 <ul>
-                    <li>Subnet Prefix</li>
-                    <li>Lower and Upper Bound of Pools</li>
-                    <li>Shared Network Name</li>
-                    <li>Subnet Name</li>
+                    <li i18n="@@subnets.filter-help-prefix">Subnet Prefix</li>
+                    <li i18n="@@subnets.filter-help-pool-bounds">Lower and Upper Bound of Pools</li>
+                    <li i18n="@@subnets.filter-help-shared-network">Shared Network Name</li>
+                    <li i18n="@@subnets.filter-help-name">Subnet Name</li>
                 </ul>
-                <p>
+                <p i18n="@@subnets.filter-help-criteria">
                     The table can present subnets that meet certain criteria, e.g. "192.0" will show all subnets that
                     contain 192.0 octets. You can also filter by shared network name and/or pools.
                 </p>
-                <p>
+                <p i18n="@@subnets.filter-help-explicit">
                     Subnets can also be filtered by an explicitly selected field, using text input and dropdown filters.
                     The currently supported fields for explicit filtering are:
                 </p>
                 <ul>
-                    <li>
+                    <li i18n="@@subnets.filter-help-daemon">
                         Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's
                         hostname, address, daemon ID, or daemon name.
                     </li>
-                    <li>Kea Subnet ID - the subnet ID assigned in the Kea DHCP daemon configuration.</li>
-                    <li>DHCP Version</li>
+                    <li i18n="@@subnets.filter-help-kea-subnet-id">Kea Subnet ID - the subnet ID assigned in the Kea DHCP daemon configuration.</li>
+                    <li i18n="@@subnets.filter-help-dhcp-version">DHCP Version</li>
                 </ul>
             </ng-template>
             <ng-template #filters>
