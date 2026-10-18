@@ -625,7 +625,7 @@ export class HostTabComponent {
     confirmDeleteHost(id: string) {
         this.confirmService.confirm({
             key: id,
-            message: 'Are you sure that you want to permanently delete this host reservation?',
+            message: $localize`:@@host.delete-confirm:Are you sure that you want to permanently delete this host reservation?`,
             header: $localize`:@@host.delete-title:Delete Host`,
             icon: 'pi pi-exclamation-triangle',
             rejectButtonProps: { text: true, icon: 'pi pi-times', label: $localize`:@@common.cancel:Cancel` },

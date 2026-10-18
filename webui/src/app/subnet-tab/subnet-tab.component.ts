@@ -225,8 +225,8 @@ export class SubnetTabComponent implements OnInit {
     confirmDeleteSubnet(id: string): void {
         this.confirmService.confirm({
             key: id,
-            message: 'Are you sure that you want to permanently delete this subnet?',
-            header: 'Delete Subnet',
+            message: $localize`:@@subnet.delete-confirm:Are you sure that you want to permanently delete this subnet?`,
+            header: $localize`:@@subnet.delete-title:Delete Subnet`,
             icon: 'pi pi-exclamation-triangle',
             rejectButtonProps: { text: true, icon: 'pi pi-times' },
             acceptButtonProps: {

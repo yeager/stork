@@ -1451,6 +1451,20 @@
           <context context-type="linenumber">98</context>
         </context-group>
       <target state="translated">Fel vid hämtning av listan med konfigurationsmigreringar: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="config-migration.clear-confirm" datatype="html">
+        <source>Are you sure you want to clear finished migrations?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      <target state="translated">Vill du verkligen rensa slutförda migreringar?</target></trans-unit>
+      <trans-unit id="config-migration.clear-title" datatype="html">
+        <source>Clear finished migrations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-table/config-migration-table.component.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      <target state="translated">Rensa slutförda migreringar</target></trans-unit>
       <trans-unit id="config-review.refresh-failed" datatype="html">
         <source>Unable to refresh config review reports</source>
         <context-group purpose="location">
@@ -3122,6 +3136,13 @@
           <context context-type="linenumber">493</context>
         </context-group>
       <target state="translated">oanvänd</target></trans-unit>
+      <trans-unit id="host.delete-confirm" datatype="html">
+        <source>Are you sure that you want to permanently delete this host reservation?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-tab/host-tab.component.ts</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      <target state="translated">Vill du verkligen ta bort den här värdreserveringen permanent?</target></trans-unit>
       <trans-unit id="host.delete-title" datatype="html">
         <source>Delete Host</source>
         <context-group purpose="location">
@@ -3550,6 +3571,13 @@
           <context context-type="linenumber">143</context>
         </context-group>
       <target state="translated">Fel vid hämtning av listan med värdreservationer: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="hosts.migrate-title" datatype="html">
+        <source>Migrate host reservations to database</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.ts</context>
+          <context context-type="linenumber">294</context>
+        </context-group>
+      <target state="translated">Migrera värdreserveringar till databasen</target></trans-unit>
       <trans-unit id="hosts.migration-failed" datatype="html">
         <source>Cannot migrate host reservations</source>
         <context-group purpose="location">
@@ -6482,6 +6510,20 @@
           <context context-type="linenumber">221,223</context>
         </context-group>
       <target state="translated">Ingen användarkontext har konfigurerats.</target></trans-unit>
+      <trans-unit id="subnet.delete-confirm" datatype="html">
+        <source>Are you sure that you want to permanently delete this subnet?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.ts</context>
+          <context context-type="linenumber">228</context>
+        </context-group>
+      <target state="translated">Vill du verkligen ta bort det här subnätet permanent?</target></trans-unit>
+      <trans-unit id="subnet.delete-title" datatype="html">
+        <source>Delete Subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.ts</context>
+          <context context-type="linenumber">229</context>
+        </context-group>
+      <target state="translated">Ta bort subnät</target></trans-unit>
       <trans-unit id="subnet.delete-failed" datatype="html">
         <source>Cannot delete the subnet</source>
         <context-group purpose="location">

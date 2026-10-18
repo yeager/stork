@@ -109,8 +109,8 @@ export class ConfigMigrationTableComponent {
      */
     clearFinishedMigrations() {
         this.confirmationService.confirm({
-            message: 'Are you sure you want to clear finished migrations?',
-            header: 'Clear finished migrations',
+            message: $localize`:@@config-migration.clear-confirm:Are you sure you want to clear finished migrations?`,
+            header: $localize`:@@config-migration.clear-title:Clear finished migrations`,
             icon: 'pi pi-exclamation-triangle',
             rejectButtonProps: {
                 icon: 'pi pi-times',

@@ -291,7 +291,7 @@ export class HostsTableComponent implements OnInit, OnDestroy {
         // Display a confirmation dialog.
         this.confirmationService.confirm({
             key: 'migrationToDatabaseDialog',
-            header: 'Migrate host reservations to database',
+            header: $localize`:@@hosts.migrate-title:Migrate host reservations to database`,
             icon: 'pi pi-exclamation-triangle',
             rejectButtonProps: { icon: 'pi pi-times' },
             acceptButtonProps: {
