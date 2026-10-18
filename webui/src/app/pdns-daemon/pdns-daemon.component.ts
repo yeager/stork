@@ -5,7 +5,6 @@ import { DurationPipe } from '../pipes/duration.pipe'
 import { EventsPanelComponent } from '../events-panel/events-panel.component'
 import { AccessPointsComponent } from '../access-points/access-points.component'
 import { PdnsDaemonControlsComponent } from '../pdns-daemon-controls/pdns-daemon-controls.component'
-import { RouterLink } from '@angular/router'
 
 @Component({
     selector: 'app-pdns-daemon',
@@ -17,7 +16,6 @@ import { RouterLink } from '@angular/router'
         EventsPanelComponent,
         AccessPointsComponent,
         PdnsDaemonControlsComponent,
-        RouterLink,
     ],
 })
 export class PdnsDaemonComponent {
