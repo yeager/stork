@@ -5353,6 +5353,20 @@
           <context context-type="linenumber">305,308</context>
         </context-group>
       <target state="translated">Demonnamn: namnet på DNS-demonen.</target></trans-unit>
+      <trans-unit id="zones.filter-help-text" datatype="html">
+        <source> Zones can also be filtered by entering text in the search box; the table shows all zones matching the exact or partial filter text. The text is matched against the zone name or view. For clarity, the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />(root)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> keyword marks a root zone. Typing <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;font-italic white-space-nowrap&quot;&gt;" />(root)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> or <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;font-italic white-space-nowrap&quot;&gt;" />root<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> will return the root zone. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">308,314</context>
+        </context-group>
+      <target state="translated"> Zoner kan också filtreras genom att du skriver text i sökrutan. Tabellen visar alla zoner som matchar hela eller delar av filtertexten. Texten matchas mot zonnamnet eller vyn. För tydlighetens skull markerar nyckelordet <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />(root)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> en rotzon. Om du skriver <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;font-italic white-space-nowrap&quot;&gt;" />(root)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> eller <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;font-italic white-space-nowrap&quot;&gt;" />root<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> returneras rotzonen. </target></trans-unit>
+      <trans-unit id="zones.filter-help-multiple" datatype="html">
+        <source> Multiple filtering conditions are combined using logical AND (i.e., filtered zones match all specified conditions). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">316,319</context>
+        </context-group>
+      <target state="translated"> Flera filtervillkor kombineras med ett logiskt OCH, vilket innebär att filtrerade zoner matchar alla angivna villkor. </target></trans-unit>
       <trans-unit id="zones.toggle-builtin" datatype="html">
         <source>Toggle builtin zones</source>
         <context-group purpose="location">
