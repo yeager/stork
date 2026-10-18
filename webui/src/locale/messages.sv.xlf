@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
@@ -467,6 +467,20 @@
           <context context-type="linenumber">52,53</context>
         </context-group>
       <target state="translated">Händelser</target></trans-unit>
+      <trans-unit id="7489149606464014553" datatype="html">
+        <source>Marks an effective value.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cascaded-parameters-board/cascaded-parameters-board.component.html</context>
+          <context context-type="linenumber">55,58</context>
+        </context-group>
+      <target state="translated">Anger ett gällande värde.</target></trans-unit>
+      <trans-unit id="593408439650729628" datatype="html">
+        <source>No parameters configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cascaded-parameters-board/cascaded-parameters-board.component.html</context>
+          <context context-type="linenumber">71,73</context>
+        </context-group>
+      <target state="translated">Inga parametrar har konfigurerats.</target></trans-unit>
       <trans-unit id="communication.page.help" datatype="html">
         <source> This page displays a tree of the daemons for which the Stork server reports communication problems. The faulty processes are color-coded and marked with a triangle icon. Hover the cursor over the icons to see the error details. </source>
         <context-group purpose="location">
@@ -1187,6 +1201,48 @@
           <context context-type="linenumber">60,62</context>
         </context-group>
       <target state="translated">DHCP-översikt</target></trans-unit>
+      <trans-unit id="4778666050009085578" datatype="html">
+        <source>No client classes configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dhcp-client-class-set-view/dhcp-client-class-set-view.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      <target state="translated">Inga klientklasser har konfigurerats.</target></trans-unit>
+      <trans-unit id="4343658609448331001" datatype="html">
+        <source>always sent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dhcp-option-set-view/dhcp-option-set-view.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      <target state="translated">skickas alltid</target></trans-unit>
+      <trans-unit id="2221690673750318987" datatype="html">
+        <source>never sent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dhcp-option-set-view/dhcp-option-set-view.component.html</context>
+          <context context-type="linenumber">15,18</context>
+        </context-group>
+      <target state="translated">skickas aldrig</target></trans-unit>
+      <trans-unit id="7869629725519086089" datatype="html">
+        <source>empty option</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dhcp-option-set-view/dhcp-option-set-view.component.html</context>
+          <context context-type="linenumber">20,23</context>
+        </context-group>
+      <target state="translated">tom flagga</target></trans-unit>
+      <trans-unit id="5767078484005536548" datatype="html">
+        <source>Suboption <x id="INTERPOLATION" equiv-text="{{ node.data.code }}" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dhcp-option-set-view/dhcp-option-set-view.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      <target state="translated">Underalternativ <x id="INTERPOLATION" equiv-text="{{ node.data.code }}" /></target></trans-unit>
+      <trans-unit id="3265570576276423020" datatype="html">
+        <source>empty suboption</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dhcp-option-set-view/dhcp-option-set-view.component.html</context>
+          <context context-type="linenumber">77,81</context>
+        </context-group>
+      <target state="translated">tomt underalternativ</target></trans-unit>
       <trans-unit id="events.all" datatype="html">
         <source>All</source>
         <context-group purpose="location">
@@ -2881,6 +2937,27 @@
           <context context-type="linenumber">34</context>
         </context-group>
       <target state="translated">Nekade</target></trans-unit>
+      <trans-unit id="3448462145758383019" datatype="html">
+        <source>Total</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utilization-stats-charts/utilization-stats-charts.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      <target state="translated">Totalt</target></trans-unit>
+      <trans-unit id="3052052163179621161" datatype="html">
+        <source>Statistics collected at <x id="INTERPOLATION" equiv-text="{{ network.statsCollectedAt | date: 'short' | placeholder: 'never' }}" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utilization-stats-charts/utilization-stats-charts.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      <target state="translated">Statistik insamlad vid <x id="INTERPOLATION" equiv-text="{{ network.statsCollectedAt | date: 'short' | placeholder: 'never' }}" /></target></trans-unit>
+      <trans-unit id="2390503597459099395" datatype="html">
+        <source>Statistics data unavailable.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utilization-stats-charts/utilization-stats-charts.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      <target state="translated">Statistikdata är inte tillgängliga.</target></trans-unit>
       <trans-unit id="version.more-info" datatype="html">
         <source>More Version Info</source>
         <context-group purpose="location">

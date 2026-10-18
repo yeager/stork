@@ -3,7 +3,7 @@
         @if (network.addrUtilization || hasAddressPools) {
             <div class="min-w-0 overflow-auto">
                 <app-utilization-stats-chart
-                    title="Total"
+                    i18n-title title="Total"
                     leaseType="na"
                     [network]="network"
                 ></app-utilization-stats-chart>
@@ -42,9 +42,9 @@
         }
     </div>
     <p-divider></p-divider>
-    <span class="font-italic text-sm"
+    <span class="font-italic text-sm" i18n
         >Statistics collected at {{ network.statsCollectedAt | date: 'short' | placeholder: 'never' }}</span
     >
 } @else {
-    <div>Statistics data unavailable.</div>
+    <div i18n>Statistics data unavailable.</div>
 }

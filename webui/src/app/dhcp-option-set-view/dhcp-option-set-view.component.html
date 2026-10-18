@@ -7,17 +7,17 @@
             </div>
             @if (node.data.alwaysSend) {
                 <div class="ml-2">
-                    <p-tag>always sent</p-tag>
+                    <p-tag i18n>always sent</p-tag>
                 </div>
             }
             @if (node.data.neverSend) {
                 <div class="ml-2">
-                    <p-tag severity="warn">never sent</p-tag>
+                    <p-tag severity="warn" i18n>never sent</p-tag>
                 </div>
             }
             @if (isEmpty(node)) {
                 <div class="ml-2">
-                    <p-tag>empty option</p-tag>
+                    <p-tag i18n>empty option</p-tag>
                 </div>
             }
             @if (!currentLevelOnlyMode && optionNodes.length >= 2 && node.data.level.length > 0) {
@@ -71,10 +71,10 @@
     <ng-template let-node pTemplate="suboption">
         <div class="flex align-items-center p-1">
             <i class="tree-icon fa fa-cog"></i>
-            <div class="font-semibold ml-2">Suboption {{ node.data.code }}</div>
+            <div class="font-semibold ml-2" i18n>Suboption {{ node.data.code }}</div>
             @if (isEmpty(node)) {
                 <div class="ml-2">
-                    <p-tag>empty suboption</p-tag>
+                    <p-tag i18n>empty suboption</p-tag>
                 </div>
             }
         </div>

@@ -52,7 +52,7 @@
                             @if (level === row.parameters[j].level) {
                                 <span
                                     class="fa-solid fa-check ml-2 sm:ml-3 text-green-600"
-                                    pTooltip="Marks an effective value."
+                                    i18n-pTooltip pTooltip="Marks an effective value."
                                 ></span>
                             }
                         </td>
@@ -68,5 +68,5 @@
   when this empty component and the empty p-tree component are displayed
   side-by-side.
   -->
-    <span class="block mt-1 mb-1">No parameters configured.</span>
+    <span class="block mt-1 mb-1" i18n>No parameters configured.</span>
 }
