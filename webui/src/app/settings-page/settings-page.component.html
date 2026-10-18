@@ -33,14 +33,14 @@
     @case ('success') {
         <form [formGroup]="settingsForm">
             <div class="w-full max-w-50rem">
-                <p-fieldset legend="Security">
+                <p-fieldset i18n-legend legend="Security">
                     <div class="flex align-items-center">
                         <p-checkbox
                             formControlName="enableMachineRegistration"
                             [binary]="true"
                             inputId="machine-registration-checkbox"
                         />
-                        <label class="ml-2" for="machine-registration-checkbox">Enable machine registration</label>
+                        <label class="ml-2" for="machine-registration-checkbox" i18n>Enable machine registration</label>
                         <app-help-tip subject="Enable Machine Registration">
                             New machines begin registration in the Stork server using a dedicated REST API endpoint, and
                             the same endpoint is used for re-registering already-connected machines when they are
@@ -51,7 +51,7 @@
                         </app-help-tip>
                     </div>
                 </p-fieldset>
-                <p-fieldset legend="Automatic software update checking">
+                <p-fieldset i18n-legend legend="Automatic software update checking">
                     <div class="flex align-items-center">
                         <p-checkbox
                             formControlName="enableOnlineSoftwareVersions"
@@ -59,7 +59,7 @@
                             inputId="online-versions-checkbox"
                         />
                         <label class="ml-2" for="online-versions-checkbox"
-                            >Enable online checking for software updates</label
+                             i18n>Enable online checking for software updates</label
                         >
                         <app-help-tip subject="Online Software Update Checking Setting">
                             Stork can automatically check for software updates available for Kea, BIND 9, and Stork
@@ -71,7 +71,7 @@
                         </app-help-tip>
                     </div>
                 </p-fieldset>
-                <p-fieldset legend="Intervals">
+                <p-fieldset i18n-legend legend="Intervals">
                     @for (setting of intervalSettings; track setting) {
                         <div class="my-3 flex flex-column">
                             <label [for]="setting.formControlName"> {{ setting.title }} (in seconds): </label>
@@ -87,15 +87,15 @@
                                 ><app-help-tip [subject]="setting.title">{{ setting.help }}</app-help-tip>
                             </div>
                             @if (hasError(setting.formControlName, 'required')) {
-                                <div class="app-error">It is required.</div>
+                                <div class="app-error" i18n>It is required.</div>
                             }
                             @if (hasError(setting.formControlName, 'min')) {
-                                <div class="app-error">It must not be negative.</div>
+                                <div class="app-error" i18n>It must not be negative.</div>
                             }
                         </div>
                     }
                 </p-fieldset>
-                <p-fieldset legend="Zone Transfers">
+                <p-fieldset i18n-legend legend="Zone Transfers">
                     <div class="flex align-items-center">
                         <p-checkbox
                             formControlName="enableZoneTransferPruning"
@@ -103,7 +103,7 @@
                             inputId="enable-zone-transfer-pruning-checkbox"
                         />
                         <label class="ml-2" for="enable-zone-transfer-pruning-checkbox"
-                            >Enable zone transfer pruning</label
+                             i18n>Enable zone transfer pruning</label
                         >
                         <app-help-tip subject="Enable Zone Transfer Pruning">
                             Zone transfers are collected by the Stork server and stored in the database. Deployments
@@ -116,7 +116,7 @@
 
                     <div class="my-3 flex flex-column">
                         <label for="zoneTransferPruningMaxAge"
-                            >Maximum age of the zone transfers to keep (in seconds):</label
+                             i18n>Maximum age of the zone transfers to keep (in seconds):</label
                         >
                         <div class="flex align-items-center">
                             <p-inputNumber
@@ -138,11 +138,11 @@
                             <div class="app-error">It is required.</div>
                         }
                         @if (hasError('zoneTransferPruningMaxAge', 'min')) {
-                            <div class="app-error">It must be greater than or equal to 60 seconds.</div>
+                            <div class="app-error" i18n>It must be greater than or equal to 60 seconds.</div>
                         }
                     </div>
                 </p-fieldset>
-                <p-fieldset legend="Grafana">
+                <p-fieldset i18n-legend legend="Grafana">
                     @for (setting of grafanaUrlSettings; track setting) {
                         <div class="my-3 flex flex-column">
                             <label [for]="setting.formControlName">{{ setting.title }}:</label>
@@ -176,7 +176,7 @@
         </form>
         <p-button
             [disabled]="settingsForm.invalid"
-            label="Save Settings"
+            i18n-label label="Save Settings"
             id="save-settings-button"
             (click)="saveSettings()"
             styleClass="mt-2 ml-1"
@@ -185,12 +185,12 @@
             (appHasAccess)="$event === true ? settingsForm.enable() : settingsForm.disable()"
         ></p-button>
         @if (settingsForm.invalid) {
-            <span class="app-error ml-3"> There are issues with the form values. </span>
+            <span class="app-error ml-3" i18n> There are issues with the form values. </span>
         }
     }
     @case ('fail') {
-        <div class="text-lg">Fetching current settings from the server failed. Click the button to retry.</div>
-        <p-button label="Retry" id="retry-button" (click)="retry()" styleClass="mt-4"></p-button>
+        <div class="text-lg" i18n>Fetching current settings from the server failed. Click the button to retry.</div>
+        <p-button i18n-label label="Retry" id="retry-button" (click)="retry()" styleClass="mt-4"></p-button>
     }
     @default {
         <p-progressSpinner></p-progressSpinner>

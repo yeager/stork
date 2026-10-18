@@ -3036,6 +3036,118 @@
           <context context-type="linenumber">47</context>
         </context-group>
       <target state="translated">Byt lösenord</target></trans-unit>
+      <trans-unit id="8878700331247603166" datatype="html">
+        <source>Security</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+      <target state="translated">Säkerhet</target></trans-unit>
+      <trans-unit id="36823031110074258" datatype="html">
+        <source>Enable machine registration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      <target state="translated">Aktivera maskinregistrering</target></trans-unit>
+      <trans-unit id="6720266856205971724" datatype="html">
+        <source>Automatic software update checking</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">54,56</context>
+        </context-group>
+      <target state="translated">Automatiska sökningar efter programuppdateringar</target></trans-unit>
+      <trans-unit id="8349967662456783286" datatype="html">
+        <source>Enable online checking for software updates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+      <target state="translated">Aktivera sökning på nätet efter programuppdateringar</target></trans-unit>
+      <trans-unit id="7809727192182627644" datatype="html">
+        <source>Intervals</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      <target state="translated">Intervall</target></trans-unit>
+      <trans-unit id="9178923676247174250" datatype="html">
+        <source>It is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">90,92</context>
+        </context-group>
+      <target state="translated">Det är obligatoriskt.</target></trans-unit>
+      <trans-unit id="2348996071284053883" datatype="html">
+        <source>It must not be negative.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">93,96</context>
+        </context-group>
+      <target state="translated">Det får inte vara negativt.</target></trans-unit>
+      <trans-unit id="4466480960580935668" datatype="html">
+        <source>Zone Transfers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">98,100</context>
+        </context-group>
+      <target state="translated">Zonöverföringar</target></trans-unit>
+      <trans-unit id="6008710484857522450" datatype="html">
+        <source>Enable zone transfer pruning</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">106,108</context>
+        </context-group>
+      <target state="translated">Aktivera rensning av zonöverföringar</target></trans-unit>
+      <trans-unit id="2816348407426974625" datatype="html">
+        <source>Maximum age of the zone transfers to keep (in seconds):</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+      <target state="translated">Högsta ålder för zonöverföringar som ska behållas (i sekunder):</target></trans-unit>
+      <trans-unit id="1447695450655338097" datatype="html">
+        <source>It must be greater than or equal to 60 seconds.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">141,144</context>
+        </context-group>
+      <target state="translated">Det måste vara minst 60 sekunder.</target></trans-unit>
+      <trans-unit id="1161354728868858885" datatype="html">
+        <source>Grafana</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+      <target state="translated">Grafana</target></trans-unit>
+      <trans-unit id="263473846992399517" datatype="html">
+        <source>Save Settings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">179,181</context>
+        </context-group>
+      <target state="translated">Spara inställningar</target></trans-unit>
+      <trans-unit id="670378216612366742" datatype="html">
+        <source> There are issues with the form values. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">188,192</context>
+        </context-group>
+      <target state="translated"> Det finns problem med formulärvärdena. </target></trans-unit>
+      <trans-unit id="5219306457228717324" datatype="html">
+        <source>Fetching current settings from the server failed. Click the button to retry.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">192,193</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta aktuella inställningar från servern. Klicka på knappen för att försöka igen.</target></trans-unit>
+      <trans-unit id="7934833136974560675" datatype="html">
+        <source>Retry</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings-page/settings-page.component.html</context>
+          <context context-type="linenumber">193,195</context>
+        </context-group>
+      <target state="translated">Försök igen</target></trans-unit>
       <trans-unit id="subnet.shared-network" datatype="html">
         <source>Shared Network</source>
         <context-group purpose="location">
