@@ -132,6 +132,10 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">250</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-page/communication-status-page.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
       <target state="translated">Övervakning</target></trans-unit>
       <trans-unit id="menu.events" datatype="html">
         <source>Events</source>
@@ -145,6 +149,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">260</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-page/communication-status-page.component.ts</context>
+          <context context-type="linenumber">45</context>
         </context-group>
       <target state="translated">Kommunikation</target></trans-unit>
       <trans-unit id="menu.software.versions" datatype="html">
@@ -289,6 +297,112 @@
           <context context-type="linenumber">241</context>
         </context-group>
       <target state="translated">Det gick inte att logga ut användaren: <x id="error message" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="communication.page.help" datatype="html">
+        <source> This page displays a tree of the daemons for which the Stork server reports communication problems. The faulty processes are color-coded and marked with a triangle icon. Hover the cursor over the icons to see the error details. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-page/communication-status-page.component.html</context>
+          <context context-type="linenumber">4,11</context>
+        </context-group>
+      <target state="translated"> Den här sidan visar ett träd med de demoner där Stork-servern rapporterar kommunikationsproblem. Processer med fel är färgkodade och markerade med en triangelikon. Håll pekaren över ikonerna för att se felinformation. </target></trans-unit>
+      <trans-unit id="common.reload" datatype="html">
+        <source>Reload</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-page/communication-status-page.component.html</context>
+          <context context-type="linenumber">14,18</context>
+        </context-group>
+      <target state="translated">Läs in igen</target></trans-unit>
+      <trans-unit id="communication.error.get" datatype="html">
+        <source>Cannot get communication status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-page/communication-status-page.component.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta kommunikationsstatus</target></trans-unit>
+      <trans-unit id="communication.error.get-detail" datatype="html">
+        <source>Failed to get communication status: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-page/communication-status-page.component.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta kommunikationsstatus: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="communication.none" datatype="html">
+        <source>No communication issues found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">1,3</context>
+        </context-group>
+      <target state="translated">Inga kommunikationsproblem hittades.</target></trans-unit>
+      <trans-unit id="communication.stork-agent-on" datatype="html">
+        <source>Stork Agent on</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      <target state="translated">Stork-agent på</target></trans-unit>
+      <trans-unit id="communication.agent-tooltip" datatype="html">
+        <source>The Stork server reports that there are communication issues with the Stork agent on this machine. It may be a failure of the Stork agent or the machine may be down. Other daemons on this machine may be operational, but communication with them may not be possible due to the issues with the Stork agent.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">15,20</context>
+        </context-group>
+      <target state="translated">Stork-servern rapporterar kommunikationsproblem med Stork-agenten på den här maskinen. Det kan bero på ett fel i Stork-agenten eller på att maskinen är nere. Andra demoner på maskinen kan fungera, men det kan vara omöjligt att kommunicera med dem på grund av problemen med Stork-agenten.</target></trans-unit>
+      <trans-unit id="communication.kea-daemon-on" datatype="html">
+        <source>Kea daemon on</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">22,25</context>
+        </context-group>
+      <target state="translated">Kea-demon på</target></trans-unit>
+      <trans-unit id="communication.kea-tooltip" datatype="html">
+        <source>There are communication issues with the daemon. The Stork agent may be responding, but it is unable to forward commands to the Kea daemon.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">33,37</context>
+        </context-group>
+      <target state="translated">Det finns kommunikationsproblem med demonen. Stork-agenten kan svara men kan inte vidarebefordra kommandon till Kea-demonen.</target></trans-unit>
+      <trans-unit id="communication.not-monitored" datatype="html">
+        <source>This daemon is not monitored.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">40,46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">66,72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">92,99</context>
+        </context-group>
+      <target state="translated">Den här demonen övervakas inte.</target></trans-unit>
+      <trans-unit id="communication.daemon-on" datatype="html">
+        <source>Daemon on</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">48,51</context>
+        </context-group>
+      <target state="translated">Demon på</target></trans-unit>
+      <trans-unit id="communication.daemon-tooltip" datatype="html">
+        <source>There are communication issues with the daemon. The daemon may be down or failing.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">59,63</context>
+        </context-group>
+      <target state="translated">Det finns kommunikationsproblem med demonen. Demonen kan vara nere eller inte fungera.</target></trans-unit>
+      <trans-unit id="communication.channel-of" datatype="html">
+        <source>channel of</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">74,77</context>
+        </context-group>
+      <target state="translated">kanal för</target></trans-unit>
+      <trans-unit id="communication.named-tooltip" datatype="html">
+        <source>The named daemon has two communication channels for control and statistics. If only one of the channels is failing, the daemon is still operational. If both are failing, it may be an indication that the daemon is down.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/communication-status-tree/communication-status-tree.component.html</context>
+          <context context-type="linenumber">85,89</context>
+        </context-group>
+      <target state="translated">Den namngivna demonen har två kommunikationskanaler för styrning och statistik. Om bara en av kanalerna inte fungerar är demonen fortfarande i drift. Om båda inte fungerar kan det tyda på att demonen är nere.</target></trans-unit>
       <trans-unit id="checkers.page.intro" datatype="html">
         <source>This page displays the configurations of the review checkers.</source>
         <context-group purpose="location">
@@ -563,14 +677,14 @@
         <source>enabled</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
-          <context context-type="linenumber">234</context>
+          <context context-type="linenumber">239</context>
         </context-group>
       <target state="translated">aktiverad</target></trans-unit>
       <trans-unit id="checkers.state.disabled" datatype="html">
         <source>disabled</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/config-checker-preference-picker/config-checker-preference-picker.component.ts</context>
-          <context context-type="linenumber">235</context>
+          <context context-type="linenumber">240</context>
         </context-group>
       <target state="translated">inaktiverad</target></trans-unit>
       <trans-unit id="checkers.error.get" datatype="html">
@@ -998,6 +1112,69 @@
           <context context-type="linenumber">146</context>
         </context-group>
       <target state="translated">Det gick inte att uppdatera användarens lösenord</target></trans-unit>
+      <trans-unit id="priority.registration" datatype="html">
+        <source> Found <x id="INTERPOLATION" equiv-text="{{ formatNoun(registrationIssuesCount(), 'maskin', 'er') }}" /> requesting registration and awaiting approval. Visit the list of </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      <target state="translated"> Det finns <x id="INTERPOLATION" equiv-text="{{ formatNoun(registrationIssuesCount(), 'maskin', 'er') }}" /> som har begärt registrering och väntar på godkännande. Besök listan över </target></trans-unit>
+      <trans-unit id="priority.unauthorized-machines" datatype="html">
+        <source>unauthorized machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      <target state="translated">icke auktoriserade maskiner</target></trans-unit>
+      <trans-unit id="priority.review-requests" datatype="html">
+        <source>to review the requests.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      <target state="translated">för att granska begärandena.</target></trans-unit>
+      <trans-unit id="priority.communication" datatype="html">
+        <source> Stork server reports communication problems for <x id="INTERPOLATION" equiv-text="{{ formatNoun(connectivityIssuesCount(), 'demon', 'er') }}" /> on the monitored machines. You can check the details </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      <target state="translated"> Stork-servern rapporterar kommunikationsproblem för <x id="INTERPOLATION" equiv-text="{{ formatNoun(connectivityIssuesCount(), 'demon', 'er') }}" /> på de övervakade maskinerna. Du kan se informationen </target></trans-unit>
+      <trans-unit id="priority.here" datatype="html">
+        <source>here</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.html</context>
+          <context context-type="linenumber">31,35</context>
+        </context-group>
+      <target state="translated">här</target></trans-unit>
+      <trans-unit id="priority.communication-issues" datatype="html">
+        <source>Communication issues</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.ts</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      <target state="translated">Kommunikationsproblem</target></trans-unit>
+      <trans-unit id="priority.error.get-report" datatype="html">
+        <source>Cannot get communication issues report</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta rapporten om kommunikationsproblem</target></trans-unit>
+      <trans-unit id="priority.error.get-report-detail" datatype="html">
+        <source>Error getting communication issues report: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      <target state="translated">Fel när rapporten om kommunikationsproblem hämtades: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="priority.unregistered-machines" datatype="html">
+        <source>Unregistered machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/priority-errors-panel/priority-errors-panel.component.ts</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      <target state="translated">Oregistrerade maskiner</target></trans-unit>
       <trans-unit id="profile.settings" datatype="html">
         <source>Settings</source>
         <context-group purpose="location">

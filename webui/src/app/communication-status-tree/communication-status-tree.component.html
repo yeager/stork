@@ -1,7 +1,7 @@
-<p-tree [value]="nodes" emptyMessage="No communication issues found.">
+<p-tree [value]="nodes" i18n-emptyMessage="@@communication.none" emptyMessage="No communication issues found.">
     <ng-template let-node pTemplate="machine">
         <div class="flex align-items-center">
-            Stork Agent on
+            <ng-container i18n="@@communication.stork-agent-on">Stork Agent on</ng-container>
             <app-entity-link
                 [showEntityName]="false"
                 entity="machine"
@@ -11,6 +11,7 @@
             @if (node.data?.agentCommErrors) {
                 <span
                     class="ml-2 pi pi-exclamation-triangle"
+                    i18n-pTooltip="@@communication.agent-tooltip"
                     pTooltip="The Stork server reports that there are communication issues with the Stork agent on this machine. It may be a failure of the Stork agent or the machine may be down. Other daemons on this machine may be operational, but communication with them may not be possible due to the issues with the Stork agent."
                 ></span>
             }
@@ -18,7 +19,7 @@
     </ng-template>
     <ng-template let-node pTemplate="kea">
         <div class="flex align-items-center">
-            Kea daemon on
+            <ng-container i18n="@@communication.kea-daemon-on">Kea daemon on</ng-container>
             <app-entity-link
                 [showEntityName]="false"
                 entity="daemon"
@@ -28,17 +29,23 @@
             @if (node.data?.monitored && node.data?.daemonCommErrors) {
                 <span
                     class="ml-2 pi pi-exclamation-triangle"
+                    i18n-pTooltip="@@communication.kea-tooltip"
                     pTooltip="There are communication issues with the daemon. The Stork agent may be responding, but it is unable to forward commands to the Kea daemon."
                 ></span>
             }
             @if (!node.data?.monitored) {
-                <span class="ml-2 pi pi-ban" pTooltip="This daemon is not monitored."> </span>
+                <span
+                    class="ml-2 pi pi-ban"
+                    i18n-pTooltip="@@communication.not-monitored"
+                    pTooltip="This daemon is not monitored."
+                >
+                </span>
             }
         </div>
     </ng-template>
     <ng-template let-node pTemplate="other">
         <div class="flex align-items-center">
-            Daemon on
+            <ng-container i18n="@@communication.daemon-on">Daemon on</ng-container>
             <app-entity-link
                 [showEntityName]="false"
                 entity="daemon"
@@ -48,17 +55,23 @@
             @if (node.data?.monitored && (node.data?.daemonCommErrors || node.data?.caCommErrors)) {
                 <span
                     class="ml-2 pi pi-exclamation-triangle"
+                    i18n-pTooltip="@@communication.daemon-tooltip"
                     pTooltip="There are communication issues with the daemon. The daemon may be down or failing."
                 ></span>
             }
             @if (!node.data?.monitored) {
-                <span class="ml-2 pi pi-ban" pTooltip="This daemon is not monitored."> </span>
+                <span
+                    class="ml-2 pi pi-ban"
+                    i18n-pTooltip="@@communication.not-monitored"
+                    pTooltip="This daemon is not monitored."
+                >
+                </span>
             }
         </div>
     </ng-template>
     <ng-template let-node pTemplate="named-channel">
         <div class="flex align-items-center">
-            {{ node.data.channelName }} channel of
+            {{ node.data.channelName }} <ng-container i18n="@@communication.channel-of">channel of</ng-container>
             <app-entity-link
                 [showEntityName]="false"
                 entity="daemon"
@@ -68,11 +81,17 @@
             @if (node.data?.monitored && node.data?.channelCommErrors) {
                 <span
                     class="ml-2 pi pi-exclamation-triangle"
+                    i18n-pTooltip="@@communication.named-tooltip"
                     pTooltip="The named daemon has two communication channels for control and statistics. If only one of the channels is failing, the daemon is still operational. If both are failing, it may be an indication that the daemon is down."
                 ></span>
             }
             @if (!node.data?.monitored) {
-                <span class="ml-2 pi pi-ban" pTooltip="This daemon is not monitored."> </span>
+                <span
+                    class="ml-2 pi pi-ban"
+                    i18n-pTooltip="@@communication.not-monitored"
+                    pTooltip="This daemon is not monitored."
+                >
+                </span>
             }
         </div>
     </ng-template>

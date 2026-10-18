@@ -167,7 +167,7 @@ export class PriorityErrorsPanelComponent implements OnInit, OnDestroy {
                     const message: ToastMessageOptions = {
                         key: EventStream.Connectivity,
                         severity: 'warn',
-                        summary: 'Communication issues',
+                        summary: $localize`:@@priority.communication-issues:Communication issues`,
                     }
                     this.insertMessage(EventStream.Connectivity, message)
                 } else {
@@ -178,8 +178,8 @@ export class PriorityErrorsPanelComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot get communication issues report',
-                    detail: `Error getting communication issues report: ${msg}`,
+                    summary: $localize`:@@priority.error.get-report:Cannot get communication issues report`,
+                    detail: $localize`:@@priority.error.get-report-detail:Error getting communication issues report: ${msg}`,
                     life: 10000,
                 })
             }
@@ -210,7 +210,7 @@ export class PriorityErrorsPanelComponent implements OnInit, OnDestroy {
                     const message: ToastMessageOptions = {
                         key: EventStream.Registration,
                         severity: 'warn',
-                        summary: 'Unregistered machines',
+                        summary: $localize`:@@priority.unregistered-machines:Unregistered machines`,
                     }
                     this.insertMessage(EventStream.Registration, message)
                 } else {

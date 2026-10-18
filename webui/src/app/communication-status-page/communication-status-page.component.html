@@ -1,6 +1,6 @@
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
-        <p>
+        <p i18n="@@communication.page.help">
             This page displays a tree of the daemons for which the Stork server reports communication problems. The
             faulty processes are color-coded and marked with a triangle icon. Hover the cursor over the icons to see the
             error details.
@@ -11,7 +11,7 @@
     <div>
         @if (!loading) {
             <app-communication-status-tree [daemons]="daemons"></app-communication-status-tree>
-            <p-button label="Reload" styleClass="mt-3" (onClick)="onReload()"></p-button>
+            <p-button i18n-label="@@common.reload" label="Reload" styleClass="mt-3" (onClick)="onReload()"></p-button>
         }
     </div>
 } @else {

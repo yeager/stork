@@ -11,14 +11,24 @@
     >
         <div class="inline">
             @if (message.key === EventStream.Registration) {
-                Found {{ formatNoun(registrationIssuesCount(), 'machine', 's') }} requesting registration and awaiting
-                approval. Visit the list of
-                <a routerLink="/machines/all" [queryParams]="{ authorized: 'false' }">unauthorized machines</a> to
-                review the requests.
+                <ng-container i18n="@@priority.registration">
+                    Found {{ formatNoun(registrationIssuesCount(), 'maskin', 'er') }} requesting registration and
+                    awaiting approval. Visit the list of
+                </ng-container>
+                <a
+                    i18n="@@priority.unauthorized-machines"
+                    routerLink="/machines/all"
+                    [queryParams]="{ authorized: 'false' }"
+                    >unauthorized machines</a
+                >
+                <ng-container i18n="@@priority.review-requests">to review the requests.</ng-container>
             } @else if (message.key === EventStream.Connectivity) {
-                Stork server reports communication problems for
-                {{ formatNoun(connectivityIssuesCount(), 'daemon', 's') }} on the monitored machines. You can check the
-                details <a routerLink="/communication">here</a>.
+                <ng-container i18n="@@priority.communication">
+                    Stork server reports communication problems for
+                    {{ formatNoun(connectivityIssuesCount(), 'demon', 'er') }} on the monitored machines. You can check
+                    the details
+                </ng-container>
+                <a i18n="@@priority.here" routerLink="/communication">here</a>.
             } @else {
                 {{ message.detail }}
             }

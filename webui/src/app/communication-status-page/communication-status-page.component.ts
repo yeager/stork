@@ -40,7 +40,10 @@ export class CommunicationStatusPageComponent implements OnInit {
     /**
      * Configures the breadcrumbs for the component.
      */
-    breadcrumbs = [{ label: 'Monitoring' }, { label: 'Communication' }]
+    breadcrumbs = [
+        { label: $localize`:@@menu.monitoring:Monitoring` },
+        { label: $localize`:@@menu.communication:Communication` },
+    ]
 
     /**
      * A list of communication issues fetched from the server.
@@ -77,8 +80,8 @@ export class CommunicationStatusPageComponent implements OnInit {
                 const msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Cannot create new transaction',
-                    detail: 'Failed to create transaction for adding new host: ' + msg,
+                    summary: $localize`:@@communication.error.get:Cannot get communication status`,
+                    detail: $localize`:@@communication.error.get-detail:Failed to get communication status: ${msg}`,
                     life: 10000,
                 })
                 this.daemons = []
