@@ -38,7 +38,10 @@ export class ConfigMigrationPageComponent {
     /**
      * Configures the breadcrumbs for the component.
      */
-    breadcrumbs = [{ label: 'DHCP' }, { label: 'Config Migrations' }]
+    breadcrumbs = [
+        { label: $localize`:@@menu.dhcp:DHCP` },
+        { label: $localize`:@@config-migrations.title:Config Migrations` },
+    ]
 
     /**
      * Asynchronously provides a migration entity based on given ID.
@@ -50,7 +53,7 @@ export class ConfigMigrationPageComponent {
      * Provides tab title for migration.
      * @param entity migration for which the title is generated
      */
-    tabTitleProvider: (entity: MigrationStatus) => string = (entity: MigrationStatus) => `Migration ${entity.id}`
+    tabTitleProvider: (entity: MigrationStatus) => string = (entity: MigrationStatus) => $localize`:@@config-migrations.tab-title:Migration ${entity.id}:INTERPOLATION:`
 
     /**
      * View child ConfigMigrationTableComponent.
@@ -80,7 +83,7 @@ export class ConfigMigrationPageComponent {
                 const errorMessage = getErrorMessage(error)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Failed to cancel migration',
+                    summary: $localize`:@@config-migrations.cancel-failed:Failed to cancel migration`,
                     detail: errorMessage,
                 })
             },
@@ -104,7 +107,7 @@ export class ConfigMigrationPageComponent {
                 const errorMessage = getErrorMessage(error)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Failed to clean up finished migrations',
+                    summary: $localize`:@@config-migrations.cleanup-failed:Failed to clean up finished migrations`,
                     detail: errorMessage,
                 })
             },
