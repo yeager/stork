@@ -6036,6 +6036,34 @@
           <context context-type="linenumber">179</context>
         </context-group>
       <target state="translated">Det gick inte att tolka en giltig semver från versionen <x id="PH" equiv-text="daemon.version" />!</target></trans-unit>
+      <trans-unit id="zone-inventory.busy" datatype="html">
+        <source>Zone inventory on the agent is busy and cannot return zones at this time. Try again later.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-inventory-utils.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      <target state="translated">Zoninventeringen på agenten är upptagen och kan inte returnera zoner just nu. Försök igen senare.</target></trans-unit>
+      <trans-unit id="zone-inventory.ok" datatype="html">
+        <source>Stork server successfully fetched all zones from the DNS server.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-inventory-utils.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      <target state="translated">Stork-servern har hämtat alla zoner från DNS-servern.</target></trans-unit>
+      <trans-unit id="zone-inventory.erred" datatype="html">
+        <source>Error when communicating with a zone inventory on an agent.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-inventory-utils.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      <target state="translated">Ett fel uppstod vid kommunikation med zoninventeringen på en agent.</target></trans-unit>
+      <trans-unit id="zone-inventory.uninitialized" datatype="html">
+        <source>Zone inventory on the agent was not initialized. Trying again or restarting the agent can help.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-inventory-utils.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      <target state="translated">Zoninventeringen på agenten har inte initierats. Det kan hjälpa att försöka igen eller starta om agenten.</target></trans-unit>
       <trans-unit id="zone-transfers.help-intro" datatype="html">
         <source>This page displays a list of DNS zone transfers.</source>
         <context-group purpose="location">

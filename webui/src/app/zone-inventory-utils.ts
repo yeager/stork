@@ -9,13 +9,13 @@ import StatusEnum = ZoneInventoryState.StatusEnum
 export function getTooltip(status: StatusEnum) {
     switch (status) {
         case 'busy':
-            return 'Zone inventory on the agent is busy and cannot return zones at this time. Try again later.'
+            return $localize`:@@zone-inventory.busy:Zone inventory on the agent is busy and cannot return zones at this time. Try again later.`
         case 'ok':
-            return 'Stork server successfully fetched all zones from the DNS server.'
+            return $localize`:@@zone-inventory.ok:Stork server successfully fetched all zones from the DNS server.`
         case 'erred':
-            return 'Error when communicating with a zone inventory on an agent.'
+            return $localize`:@@zone-inventory.erred:Error when communicating with a zone inventory on an agent.`
         case 'uninitialized':
-            return 'Zone inventory on the agent was not initialized. Trying again or restarting the agent can help.'
+            return $localize`:@@zone-inventory.uninitialized:Zone inventory on the agent was not initialized. Trying again or restarting the agent can help.`
         default:
             return null
     }
