@@ -1,7 +1,7 @@
 <p-confirmDialog />
 <app-breadcrumbs [items]="breadcrumbs">
     <div page-help>
-        <p>
+        <p i18n="@@users.help-intro">
             Super-admin users can modify user privileges and passwords by clicking on the user name below. More
             information is available the Stork ARM in the
             <a href="https://stork.readthedocs.io/en/latest/usage.html#managing-users" target="_blank"
@@ -10,21 +10,21 @@
             chapter.
         </p>
         <dl>
-            <dt>ID</dt>
-            <dd>A sequential identifier number used internally by Stork.</dd>
-            <dt>Login</dt>
-            <dd>A friendly name identifying the user; it is unique for a given authentication method.</dd>
-            <dt>Email</dt>
-            <dd>An optional property.</dd>
-            <dt>Group</dt>
-            <dd>The group that the user belongs to.</dd>
-            <dt>Authentication</dt>
-            <dd>
+            <dt i18n="@@users.help-id">ID</dt>
+            <dd i18n="@@users.help-id-description">A sequential identifier number used internally by Stork.</dd>
+            <dt i18n="@@users.help-login">Login</dt>
+            <dd i18n="@@users.help-login-description">A friendly name identifying the user; it is unique for a given authentication method.</dd>
+            <dt i18n="@@users.help-email">Email</dt>
+            <dd i18n="@@users.help-email-description">An optional property.</dd>
+            <dt i18n="@@users.help-group">Group</dt>
+            <dd i18n="@@users.help-group-description">The group that the user belongs to.</dd>
+            <dt i18n="@@users.help-authentication">Authentication</dt>
+            <dd i18n="@@users.help-authentication-description">
                 The method used to authenticate a user. Internal authentication is the default method, using a login and
                 password stored in the Stork database.
             </dd>
-            <dt>External ID</dt>
-            <dd>
+            <dt i18n="@@users.help-external-id">External ID</dt>
+            <dd i18n="@@users.help-external-id-description">
                 An identifier returned by an external authentication service; it is not specified if the internal
                 authentication method is used.
             </dd>
@@ -65,15 +65,15 @@
             <ng-template #caption>
                 <app-table-caption [tableElement]="table" tableKey="users-table">
                     <ng-template #helptip>
-                        <p>
+                        <p i18n="@@users.filter-help">
                             The table below can be filtered by entering text in the search box; the table shows all
                             users matching the filter text. The currently supported fields for filtering are:
                         </p>
                         <ul>
-                            <li>Login</li>
-                            <li>E-mail address</li>
-                            <li>First name</li>
-                            <li>Last name</li>
+                            <li i18n="@@users.filter-login">Login</li>
+                            <li i18n="@@users.filter-email">E-mail address</li>
+                            <li i18n="@@users.filter-first-name">First name</li>
+                            <li i18n="@@users.filter-last-name">Last name</li>
                         </ul>
                     </ng-template>
                     <ng-template #filters>
