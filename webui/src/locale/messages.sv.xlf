@@ -969,6 +969,14 @@
           <context context-type="linenumber">132,134</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">137,139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">145,147</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
           <context context-type="linenumber">169,171</context>
         </context-group>
@@ -1039,6 +1047,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">453,454</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">259,260</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
@@ -1591,6 +1603,14 @@
           <context context-type="linenumber">356,360</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">166,169</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
           <context context-type="linenumber">60,61</context>
         </context-group>
@@ -1716,6 +1736,10 @@
           <context context-type="linenumber">442,443</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">270,271</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
           <context context-type="linenumber">375,376</context>
         </context-group>
@@ -1732,6 +1756,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hosts-table/hosts-table.component.html</context>
           <context context-type="linenumber">450,453</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">256,259</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
@@ -2078,6 +2106,10 @@
           <context context-type="linenumber">33,36</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">158,160</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
           <context context-type="linenumber">193,195</context>
         </context-group>
@@ -2122,6 +2154,124 @@
           <context context-type="linenumber">281,283</context>
         </context-group>
       <target state="translated">Lås upp inställning av DHCP-alternativ för enskilda servrar.</target></trans-unit>
+      <trans-unit id="subnets.dhcp-version" datatype="html">
+        <source>DHCP Version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">84,87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">116,119</context>
+        </context-group>
+      <target state="translated">DHCP-version</target></trans-unit>
+      <trans-unit id="shared-networks.search" datatype="html">
+        <source>Search shared networks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">110,112</context>
+        </context-group>
+      <target state="translated">Sök delade nät</target></trans-unit>
+      <trans-unit id="shared-networks.new" datatype="html">
+        <source>New Shared Network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">128,131</context>
+        </context-group>
+      <target state="translated">Nytt delat nät</target></trans-unit>
+      <trans-unit id="subnets.addresses" datatype="html">
+        <source>Addresses</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">161,163</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">195,197</context>
+        </context-group>
+      <target state="translated">Adresser</target></trans-unit>
+      <trans-unit id="subnets.prefixes" datatype="html">
+        <source>Prefixes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">163,165</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">197,200</context>
+        </context-group>
+      <target state="translated">Prefix</target></trans-unit>
+      <trans-unit id="shared-networks.subnets" datatype="html">
+        <source>Subnets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">165,167</context>
+        </context-group>
+      <target state="translated">Delnät</target></trans-unit>
+      <trans-unit id="subnets.total" datatype="html">
+        <source>Total</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">170,172</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">183,185</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">215,216</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">232,233</context>
+        </context-group>
+      <target state="translated">Totalt</target></trans-unit>
+      <trans-unit id="subnets.assigned" datatype="html">
+        <source>Assigned</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">174,176</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">187,189</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">221,222</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">235,236</context>
+        </context-group>
+      <target state="translated">Tilldelade</target></trans-unit>
+      <trans-unit id="subnets.used-percent" datatype="html">
+        <source>Used %</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">178,180</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">191,193</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">227,229</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
+          <context context-type="linenumber">239,240</context>
+        </context-group>
+      <target state="translated">Använt %</target></trans-unit>
+      <trans-unit id="shared-networks.none-found" datatype="html">
+        <source>No shared networks found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-table/shared-networks-table.component.html</context>
+          <context context-type="linenumber">253,256</context>
+        </context-group>
+      <target state="translated">Inga delade nät hittades.</target></trans-unit>
       <trans-unit id="subnet.dhcp-servers-and-tags" datatype="html">
         <source>DHCP Servers and/or Server Tags</source>
         <context-group purpose="location">
@@ -2225,13 +2375,6 @@
           <context context-type="linenumber">324,325</context>
         </context-group>
       <target state="translated">Fortsätt</target></trans-unit>
-      <trans-unit id="subnets.dhcp-version" datatype="html">
-        <source>DHCP Version</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">116,119</context>
-        </context-group>
-      <target state="translated">DHCP-version</target></trans-unit>
       <trans-unit id="subnets.new-subnet" datatype="html">
         <source>New Subnet</source>
         <context-group purpose="location">
@@ -2239,20 +2382,6 @@
           <context context-type="linenumber">160,162</context>
         </context-group>
       <target state="translated">Nytt delnät</target></trans-unit>
-      <trans-unit id="subnets.addresses" datatype="html">
-        <source>Addresses</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">195,197</context>
-        </context-group>
-      <target state="translated">Adresser</target></trans-unit>
-      <trans-unit id="subnets.prefixes" datatype="html">
-        <source>Prefixes</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">197,200</context>
-        </context-group>
-      <target state="translated">Prefix</target></trans-unit>
       <trans-unit id="subnets.grafana-link" datatype="html">
         <source>Link to Grafana charts</source>
         <context-group purpose="location">
@@ -2260,39 +2389,6 @@
           <context context-type="linenumber">207,208</context>
         </context-group>
       <target state="translated">Länk till Grafana-diagram</target></trans-unit>
-      <trans-unit id="subnets.total" datatype="html">
-        <source>Total</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">215,216</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">232,233</context>
-        </context-group>
-      <target state="translated">Totalt</target></trans-unit>
-      <trans-unit id="subnets.assigned" datatype="html">
-        <source>Assigned</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">221,222</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">235,236</context>
-        </context-group>
-      <target state="translated">Tilldelade</target></trans-unit>
-      <trans-unit id="subnets.used-percent" datatype="html">
-        <source>Used %</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">227,229</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-table/subnets-table.component.html</context>
-          <context context-type="linenumber">239,240</context>
-        </context-group>
-      <target state="translated">Använt %</target></trans-unit>
       <trans-unit id="subnets.inconsistent-ids" datatype="html">
         <source>Inconsistent IDs</source>
         <context-group purpose="location">

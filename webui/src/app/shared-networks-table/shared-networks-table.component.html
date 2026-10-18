@@ -51,6 +51,7 @@
                                 (daemonIDChange)="filterTable($event, filterMetadata)"
                                 [daemonNames]="['dhcp4', 'dhcp6']"
                                 label="Daemon"
+                                i18n-label="@@hosts.daemon"
                                 (errorOccurred)="onAutocompleteError($event)"
                             />
                             <p-button
@@ -80,7 +81,7 @@
                                     [ngModel]="value"
                                     styleClass="w-10rem"
                                 ></p-select>
-                                <label for="dhcp-version">DHCP Version</label>
+                                <label for="dhcp-version" i18n="@@subnets.dhcp-version">DHCP Version</label>
                             </p-floatlabel>
                             <p-button
                                 icon="pi pi-filter-slash"
@@ -107,6 +108,7 @@
                                     (input)="filterTable($event.target.value, filterMetadata)"
                                     [ngModel]="value"
                                     placeholder="Search shared networks"
+                                    i18n-placeholder="@@shared-networks.search"
                                 />
                             </p-iconfield>
                             <p-button
@@ -124,6 +126,7 @@
             <ng-template #buttons>
                 <p-button
                     label="New Shared Network"
+                    i18n-label="@@shared-networks.new"
                     icon="pi pi-plus"
                     routerLink="/dhcp/shared-networks/new"
                     appAccessEntity="shared-network"
@@ -132,6 +135,7 @@
                 ></p-button>
                 <p-button
                     label="Refresh List"
+                    i18n-label="@@daemons.refresh-list"
                     icon="pi pi-refresh"
                     (onClick)="loadData(networksTable.createLazyLoadMetadata())"
                 ></p-button>
@@ -139,6 +143,7 @@
             <ng-template #splitbutton>
                 <p-splitbutton
                     label="Refresh List"
+                    i18n-label="@@daemons.refresh-list"
                     icon="pi pi-refresh"
                     (onClick)="loadData(networksTable.createLazyLoadMetadata())"
                     [model]="toolbarButtons"
@@ -150,40 +155,40 @@
     <ng-template #header>
         <tr>
             <th rowspan="2" style="width: 16rem" [pSortableColumn]="NetworkSortField.Name">
-                Name
+                <ng-container i18n="@@common.name">Name</ng-container>
                 <p-sortIcon [field]="NetworkSortField.Name" />
             </th>
-            <th colspan="3" style="width: 16rem">Addresses</th>
+            <th colspan="3" style="width: 16rem" i18n="@@subnets.addresses">Addresses</th>
             @if (ipV6SubnetsFilterIncluded()) {
-                <th colspan="3" style="width: 16rem">Prefixes</th>
+                <th colspan="3" style="width: 16rem" i18n="@@subnets.prefixes">Prefixes</th>
             }
-            <th rowspan="2">Subnets</th>
-            <th rowspan="2" style="width: 14rem">Daemon</th>
+            <th rowspan="2" i18n="@@shared-networks.subnets">Subnets</th>
+            <th rowspan="2" style="width: 14rem" i18n="@@hosts.daemon">Daemon</th>
         </tr>
         <tr>
             <th [pSortableColumn]="NetworkSortField.TotalAddresses">
-                Total
+                <ng-container i18n="@@subnets.total">Total</ng-container>
                 <p-sortIcon [field]="NetworkSortField.TotalAddresses" />
             </th>
             <th style="padding: 0.571rem 0.5rem" [pSortableColumn]="NetworkSortField.AssignedAddresses">
-                Assigned
+                <ng-container i18n="@@subnets.assigned">Assigned</ng-container>
                 <p-sortIcon [field]="NetworkSortField.AssignedAddresses" />
             </th>
             <th [pSortableColumn]="NetworkSortField.AddrUtilization">
-                Used %
+                <ng-container i18n="@@subnets.used-percent">Used %</ng-container>
                 <p-sortIcon [field]="NetworkSortField.AddrUtilization" />
             </th>
             @if (ipV6SubnetsFilterIncluded()) {
                 <th [pSortableColumn]="NetworkSortField.TotalPds">
-                    Total
+                    <ng-container i18n="@@subnets.total">Total</ng-container>
                     <p-sortIcon [field]="NetworkSortField.TotalPds" />
                 </th>
                 <th style="padding: 0.571rem 0.5rem" [pSortableColumn]="NetworkSortField.AssignedPds">
-                    Assigned
+                    <ng-container i18n="@@subnets.assigned">Assigned</ng-container>
                     <p-sortIcon [field]="NetworkSortField.AssignedPds" />
                 </th>
                 <th [pSortableColumn]="NetworkSortField.PdUtilization">
-                    Used %
+                    <ng-container i18n="@@subnets.used-percent">Used %</ng-container>
                     <p-sortIcon [field]="NetworkSortField.PdUtilization" />
                 </th>
             }
@@ -245,12 +250,13 @@
     <ng-template #emptymessage>
         <tr>
             <td [attr.colspan]="emptyMessageColspan()">
-                No shared networks found.
+                <ng-container i18n="@@shared-networks.none-found">No shared networks found.</ng-container>
                 @if (tableHasFilter(networksTable)) {
                     <span>
-                        Clear filtering and try again.
+                        <ng-container i18n="@@hosts.clear-filtering">Clear filtering and try again.</ng-container>
                         <p-button
                             label="Clear"
+                            i18n-label="@@common.clear"
                             [outlined]="true"
                             icon="pi pi-filter-slash"
                             (click)="clearTableFiltering()"
@@ -261,6 +267,6 @@
         </tr>
     </ng-template>
     <ng-template #paginatorright let-paginatorState>
-        Total: {{ paginatorState.totalRecords | pluralize: 'shared network' }}
+        <ng-container i18n="@@hosts.total">Total:</ng-container> {{ paginatorState.totalRecords | pluralize: 'shared network' }}
     </ng-template>
 </p-table>
