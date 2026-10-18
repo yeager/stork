@@ -24,6 +24,16 @@ import { PositivePipe } from '../pipes/positive.pipe'
     imports: [UIChart, HumanCountComponent, PositivePipe],
 })
 export class UtilizationStatsChartComponent {
+    readonly labels = {
+        address: $localize`:@@utilization.address:Address`,
+        prefix: $localize`:@@utilization.prefix:Prefix`,
+        addresses: $localize`:@@subnets.addresses:Addresses`,
+        prefixes: $localize`:@@subnets.prefixes:Prefixes`,
+        free: $localize`:@@utilization.free:Free`,
+        used: $localize`:@@utilization.used:Used`,
+        declined: $localize`:@@utilization.declined:Declined`,
+    }
+
     /**
      * Pie chart data initialized during the component initialization.
      */
@@ -138,7 +148,7 @@ export class UtilizationStatsChartComponent {
                     // chart contains free, used and possibly declined leases.
                     this.chartCase = 'valid'
                     this.data = {
-                        labels: ['Free', 'Used'].concat(!this.isPD ? 'Declined' : []),
+                        labels: [this.labels.free, this.labels.used].concat(!this.isPD ? this.labels.declined : []),
                         datasets: [
                             {
                                 data: [total64 - assigned64, assigned64 - declined64].concat(

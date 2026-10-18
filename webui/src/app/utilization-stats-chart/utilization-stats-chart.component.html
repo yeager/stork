@@ -5,7 +5,7 @@
         }
         @if (chartCase !== 'invalid' && hasUtilization) {
             <div class="flex justify-content-center">
-                {{ isPD ? 'Prefix' : 'Address' }} Utilization ({{ utilization.toFixed(0) }}%)
+                {{ isPD ? labels.prefix : labels.address }} <ng-container i18n="@@utilization.utilization">Utilization</ng-container> ({{ utilization.toFixed(0) }}%)
             </div>
         }
         @if (!!data) {
@@ -17,33 +17,33 @@
             <div class="flex justify-content-center">
                 <table>
                     <tr>
-                        <td class="whitespace-no-wrap">Total {{ isPD ? 'Prefixes' : 'Addresses' }}:</td>
+                        <td class="whitespace-no-wrap"><ng-container i18n="@@subnets.total">Total</ng-container> {{ isPD ? labels.prefixes : labels.addresses }}:</td>
                         <td class="pl-2"><app-human-count [value]="total | positive"></app-human-count></td>
                     </tr>
                     @if (chartCase === 'valid') {
                         <tr>
-                            <td class="whitespace-no-wrap">Assigned {{ isPD ? 'Prefixes' : 'Addresses' }}:</td>
+                            <td class="whitespace-no-wrap"><ng-container i18n="@@subnets.assigned">Assigned</ng-container> {{ isPD ? labels.prefixes : labels.addresses }}:</td>
                             <td class="pl-2"><app-human-count [value]="assigned | positive"></app-human-count></td>
                         </tr>
                     }
                     <tr>
-                        <td class="whitespace-no-wrap">Free {{ isPD ? 'Prefixes' : 'Addresses' }}:</td>
+                        <td class="whitespace-no-wrap"><ng-container i18n="@@utilization.free">Free</ng-container> {{ isPD ? labels.prefixes : labels.addresses }}:</td>
                         <td class="pl-2"><app-human-count [value]="free | positive"></app-human-count></td>
                     </tr>
                     @if (!isPD) {
                         @if (chartCase === 'valid') {
                             <tr>
-                                <td class="whitespace-no-wrap">Used Addresses:</td>
+                            <td class="whitespace-no-wrap" i18n="@@utilization.used-addresses">Used Addresses:</td>
                                 <td class="pl-2"><app-human-count [value]="used | positive"></app-human-count></td>
                             </tr>
                         } @else if (chartCase === 'invalid') {
                             <tr>
-                                <td class="whitespace-no-wrap">Uncertain Addresses:</td>
+                            <td class="whitespace-no-wrap" i18n="@@utilization.uncertain-addresses">Uncertain Addresses:</td>
                                 <td class="pl-2"><app-human-count [value]="uncertain | positive"></app-human-count></td>
                             </tr>
                         }
                         <tr>
-                            <td class="whitespace-no-wrap">Declined Addresses:</td>
+                            <td class="whitespace-no-wrap" i18n="@@utilization.declined-addresses">Declined Addresses:</td>
                             <td class="pl-2"><app-human-count [value]="declined | positive"></app-human-count></td>
                         </tr>
                     }
