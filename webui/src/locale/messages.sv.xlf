@@ -2435,12 +2435,20 @@
           <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
           <context context-type="linenumber">59,60</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
       <target state="translated">Redigera</target></trans-unit>
       <trans-unit id="7022070615528435141" datatype="html">
         <source>Delete</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
           <context context-type="linenumber">69,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">124,125</context>
         </context-group>
       <target state="translated">Ta bort</target></trans-unit>
       <trans-unit id="1380395161278047833" datatype="html">
@@ -2477,12 +2485,20 @@
           <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
           <context context-type="linenumber">108,112</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">176,178</context>
+        </context-group>
       <target state="translated">Inga pooler har konfigurerats.</target></trans-unit>
       <trans-unit id="1069523139277190436" datatype="html">
         <source>Statistics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
           <context context-type="linenumber">114,115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">196,197</context>
         </context-group>
       <target state="translated">Statistik</target></trans-unit>
       <trans-unit id="514719710630649016" datatype="html">
@@ -2491,12 +2507,20 @@
           <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
           <context context-type="linenumber">121,122</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">233,234</context>
+        </context-group>
       <target state="translated">DHCP-parametrar</target></trans-unit>
       <trans-unit id="6917842114109831962" datatype="html">
         <source>DHCP Options /  <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualDhcpOptions()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                             entity=&quot;daemon&quot;                                             [showEntityName]=&quot;false&quot;                                             [attrs]=&quot;localSharedNetwork&quot;                                         &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
           <context context-type="linenumber">136,146</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">252,262</context>
         </context-group>
       <target state="translated">DHCP-alternativ /  Alla servrar <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualDhcpOptions()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                             entity=&quot;daemon&quot;                                             [showEntityName]=&quot;false&quot;                                             [attrs]=&quot;localSharedNetwork&quot;                                         &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
       <trans-unit id="subnets.dhcp-version" datatype="html">
@@ -2736,6 +2760,48 @@
           <context context-type="linenumber">324,325</context>
         </context-group>
       <target state="translated">Fortsätt</target></trans-unit>
+      <trans-unit id="5997715932509676553" datatype="html">
+        <source>DHCP Servers Using the Subnet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">133,134</context>
+        </context-group>
+      <target state="translated">DHCP-servrar som använder delnätet</target></trans-unit>
+      <trans-unit id="2188854519574316630" datatype="html">
+        <source>Server</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">137,139</context>
+        </context-group>
+      <target state="translated">Server</target></trans-unit>
+      <trans-unit id="4325987028736840876" datatype="html">
+        <source>Kea Subnet ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">138,141</context>
+        </context-group>
+      <target state="translated">Kea-delnäts-ID</target></trans-unit>
+      <trans-unit id="1793942176618475496" datatype="html">
+        <source>Pools /  <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualPools()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                         entity=&quot;daemon&quot;                                         [showEntityName]=&quot;false&quot;                                         [attrs]=&quot;localSubnet&quot;                                     &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">160,170</context>
+        </context-group>
+      <target state="translated">Pooler /  Alla servrar <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualPools()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                         entity=&quot;daemon&quot;                                         [showEntityName]=&quot;false&quot;                                         [attrs]=&quot;localSubnet&quot;                                     &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
+      <trans-unit id="3642400664092909738" datatype="html">
+        <source>User Context /  <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualUserContext()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                         entity=&quot;daemon&quot;                                         [showEntityName]=&quot;false&quot;                                         [attrs]=&quot;localSubnet&quot;                                     &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">208,218</context>
+        </context-group>
+      <target state="translated">Användarkontext /  Alla servrar <x id="START_BLOCK_IF" equiv-text="@if (!allDaemonsHaveEqualUserContext()) {" /><x id="START_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;app-entity-link                                         entity=&quot;daemon&quot;                                         [showEntityName]=&quot;false&quot;                                         [attrs]=&quot;localSubnet&quot;                                     &gt;" /><x id="CLOSE_TAG_APP_ENTITY_LINK" ctype="x-app_entity_link" equiv-text="&lt;/app-entity-link&gt;" /><x id="CLOSE_BLOCK_IF" equiv-text="}" /><x id="START_BLOCK_ELSE" equiv-text="@else {" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-normal&quot;&gt;" /> All Servers <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="CLOSE_BLOCK_ELSE" equiv-text="}" /></target></trans-unit>
+      <trans-unit id="8484038936178880663" datatype="html">
+        <source>No user context configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-tab/subnet-tab.component.html</context>
+          <context context-type="linenumber">221,223</context>
+        </context-group>
+      <target state="translated">Ingen användarkontext har konfigurerats.</target></trans-unit>
       <trans-unit id="subnets.new-subnet" datatype="html">
         <source>New Subnet</source>
         <context-group purpose="location">

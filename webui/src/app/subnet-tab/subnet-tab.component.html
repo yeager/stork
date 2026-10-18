@@ -110,7 +110,7 @@
             <div class="flex flex-column sm:flex-row gap-2 my-2 sm:my-0">
                 @if (subnet.localSubnets?.length > 0) {
                     <p-button
-                        label="Edit"
+                        i18n-label label="Edit"
                         icon="pi pi-pencil"
                         severity="info"
                         (click)="onSubnetEditBegin()"
@@ -120,7 +120,7 @@
                 }
                 <p-button
                     [disabled]="subnetDeleting"
-                    label="Delete"
+                    i18n-label label="Delete"
                     icon="pi pi-times"
                     severity="danger"
                     (click)="confirmDeleteSubnet(subnet.id.toString())"
@@ -130,12 +130,12 @@
             </div>
         </div>
         <div class="my-4">
-            <p-fieldset id="daemons-fieldset" legend="DHCP Servers Using the Subnet">
+            <p-fieldset id="daemons-fieldset" i18n-legend legend="DHCP Servers Using the Subnet">
                 <p-table [value]="subnet.localSubnets" styleClass="subnet-servers-table">
                     <ng-template #header>
                         <tr>
-                            <th>Server</th>
-                            <th>Kea Subnet ID</th>
+                            <th i18n>Server</th>
+                            <th i18n>Kea Subnet ID</th>
                         </tr>
                     </ng-template>
                     <ng-template #body let-l>
@@ -157,7 +157,7 @@
                     <p-fieldset>
                         <ng-template #header>
                             <span class="stork-fieldset-legend-text"
-                                >Pools&nbsp;/&nbsp;
+                                i18n>Pools&nbsp;/&nbsp;
                                 @if (!allDaemonsHaveEqualPools()) {
                                     <app-entity-link
                                         entity="daemon"
@@ -173,7 +173,7 @@
                             (!localSubnet.pools || localSubnet.pools.length === 0) &&
                             (!localSubnet.prefixDelegationPools || localSubnet.prefixDelegationPools.length === 0)
                         ) {
-                            <div>No pools configured.</div>
+                            <div i18n>No pools configured.</div>
                         } @else {
                             <app-pool-bars [source]="localSubnet"></app-pool-bars>
                         }
@@ -193,7 +193,7 @@
             (subnet.stats && (subnetHasAddressPools() || subnetHasPrefixPools()))
         ) {
             <div class="mb-4">
-                <p-fieldset id="stats-fieldset" legend="Statistics">
+                <p-fieldset id="stats-fieldset" i18n-legend legend="Statistics">
                     <app-utilization-stats-charts [network]="subnet"></app-utilization-stats-charts>
                 </p-fieldset>
             </div>
@@ -205,7 +205,7 @@
                     <p-fieldset>
                         <ng-template #header>
                             <span class="stork-fieldset-legend-text"
-                                >User Context&nbsp;/&nbsp;
+                                i18n>User Context&nbsp;/&nbsp;
                                 @if (!allDaemonsHaveEqualUserContext()) {
                                     <app-entity-link
                                         entity="daemon"
@@ -218,7 +218,7 @@
                             </span>
                         </ng-template>
                         @if (!localSubnet.userContext) {
-                            <div>No user context configured.</div>
+                            <div i18n>No user context configured.</div>
                         } @else {
                             <!-- JSON viewer -->
                             <app-json-tree-root [value]="localSubnet.userContext"></app-json-tree-root>
@@ -230,7 +230,7 @@
 
         @if (subnet.localSubnets?.length > 0) {
             <div class="mb-4">
-                <p-fieldset legend="DHCP Parameters" [toggleable]="true" collapsed="true">
+                <p-fieldset i18n-legend legend="DHCP Parameters" [toggleable]="true" collapsed="true">
                     <app-cascaded-parameters-board
                         [levels]="
                             subnet.sharedNetwork?.length > 0
@@ -249,7 +249,7 @@
                         <p-fieldset [toggleable]="true" collapsed="true">
                             <ng-template #header>
                                 <span class="stork-fieldset-legend-text"
-                                    >DHCP Options&nbsp;/&nbsp;
+                                    i18n>DHCP Options&nbsp;/&nbsp;
                                     @if (!allDaemonsHaveEqualDhcpOptions()) {
                                         <app-entity-link
                                             entity="daemon"
