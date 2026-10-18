@@ -1099,7 +1099,7 @@
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">4,10</context>
         </context-group>
-      <target state="translated">Den här sidan visar en lista med demoner.</target></trans-unit>
+      <target state="translated">Den här sidan visar en lista över demoner.</target></trans-unit>
       <trans-unit id="table.page-report" datatype="html">
         <source>{currentPage} of {totalPages} pages</source>
         <context-group purpose="location">
@@ -1117,7 +1117,7 @@
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">48,51</context>
         </context-group>
-      <target state="translated"> Filtrera demonerna i tabellen nedan genom att skriva text i sökrutan. Tabellen visar alla demoner som matchar filtertexten. Följande fält kan för närvarande filtreras: </target></trans-unit>
+      <target state="translated"> Demonerna i tabellen nedan kan filtreras genom att du skriver text i sökrutan. Tabellen visar alla demoner som matchar filtertexten. Följande fält kan för närvarande filtreras: </target></trans-unit>
       <trans-unit id="daemons.daemon-name" datatype="html">
         <source>Daemon Name</source>
         <context-group purpose="location">
@@ -1149,14 +1149,14 @@
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">56,59</context>
         </context-group>
-      <target state="translated">Maskinvärdnamn</target></trans-unit>
+      <target state="translated">Maskinens värdnamn</target></trans-unit>
       <trans-unit id="daemons.filter.name-help" datatype="html">
         <source> Daemons can also be filtered by an explicitly selected Daemon Name, using the multiselect filter. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">59,62</context>
         </context-group>
-      <target state="translated"> Du kan också filtrera demoner genom att välja ett demonnamn i flervalsfiltret. </target></trans-unit>
+      <target state="translated"> Demoner kan också filtreras efter ett uttryckligen valt demonnamn med flervalsfiltret. </target></trans-unit>
       <trans-unit id="daemons.search" datatype="html">
         <source>Search daemons</source>
         <context-group purpose="location">
