@@ -2223,6 +2223,113 @@
           <context context-type="linenumber">99,103</context>
         </context-group>
       <target state="translated">Inga resultat</target></trans-unit>
+      <trans-unit id="ha.summary" datatype="html">
+        <source>Summary</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+      <target state="translated">Sammanfattning</target></trans-unit>
+      <trans-unit id="common.unknown" datatype="html">
+        <source>unknown</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">378</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">398</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/server-data.service.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/server-data.service.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      <target state="translated">okänd</target></trans-unit>
+      <trans-unit id="ha.failed" datatype="html">
+        <source>failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">380</context>
+        </context-group>
+      <target state="translated">misslyckades</target></trans-unit>
+      <trans-unit id="common.ok" datatype="html">
+        <source>ok</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">382</context>
+        </context-group>
+      <target state="translated">ok</target></trans-unit>
+      <trans-unit id="ha.online" datatype="html">
+        <source>online</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">401</context>
+        </context-group>
+      <target state="translated">ansluten</target></trans-unit>
+      <trans-unit id="ha.offline" datatype="html">
+        <source>offline</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">403</context>
+        </context-group>
+      <target state="translated">frånkopplad</target></trans-unit>
+      <trans-unit id="common.fetching" datatype="html">
+        <source>fetching...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">418</context>
+        </context-group>
+      <target state="translated">hämtar …</target></trans-unit>
+      <trans-unit id="common.not-applicable" datatype="html">
+        <source>n/a</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">454</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">522</context>
+        </context-group>
+      <target state="translated">saknas</target></trans-unit>
+      <trans-unit id="ha.just-now" datatype="html">
+        <source>just now</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">457</context>
+        </context-group>
+      <target state="translated">just nu</target></trans-unit>
+      <trans-unit id="ha.failover-started" datatype="html">
+        <source>Server has started the failover procedure.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">559</context>
+        </context-group>
+      <target state="translated">Servern har påbörjat redundansväxlingen.</target></trans-unit>
+      <trans-unit id="ha.no-dhcp-traffic" datatype="html">
+        <source>Server is responding to no DHCP traffic.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">563</context>
+        </context-group>
+      <target state="translated">Servern svarar inte på någon DHCP-trafik.</target></trans-unit>
+      <trans-unit id="ha.all-dhcp-traffic" datatype="html">
+        <source>Server is responding to all DHCP traffic.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">567</context>
+        </context-group>
+      <target state="translated">Servern svarar på all DHCP-trafik.</target></trans-unit>
+      <trans-unit id="ha.dhcp-traffic" datatype="html">
+        <source>Server is responding to DHCP traffic.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ha-status/ha-status.component.ts</context>
+          <context context-type="linenumber">569</context>
+        </context-group>
+      <target state="translated">Servern svarar på DHCP-trafik.</target></trans-unit>
       <trans-unit id="help.for" datatype="html">
         <source>Help for <x id="subject" equiv-text="this.subject" /></source>
         <context-group purpose="location">
@@ -4687,17 +4794,6 @@
           <context context-type="linenumber">213</context>
         </context-group>
       <target state="translated">Oregistrerade maskiner</target></trans-unit>
-      <trans-unit id="common.unknown" datatype="html">
-        <source>unknown</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/server-data.service.ts</context>
-          <context context-type="linenumber">96</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/server-data.service.ts</context>
-          <context context-type="linenumber">110</context>
-        </context-group>
-      <target state="translated">okänd</target></trans-unit>
       <trans-unit id="profile.settings" datatype="html">
         <source>Settings</source>
         <context-group purpose="location">

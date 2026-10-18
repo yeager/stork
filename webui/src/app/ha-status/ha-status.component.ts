@@ -311,7 +311,7 @@ export class HaStatusComponent implements OnInit, OnDestroy {
                                     }),
                                     {
                                         relationship: relationshipRow,
-                                        title: 'Summary',
+                                        title: $localize`:@@ha.summary:Summary`,
                                         cells: [
                                             { value: this.createSummary(servers[0], servers[1]) },
                                             { value: this.createSummary(servers[1], servers[0]) },
@@ -375,11 +375,11 @@ export class HaStatusComponent implements OnInit, OnDestroy {
      */
     formatHeartbeatStatus(serverStatus: KeaHAServerStatus): string {
         if (serverStatus.commInterrupted < 0) {
-            return 'unknown'
+            return $localize`:@@common.unknown:unknown`
         } else if (serverStatus.commInterrupted > 0) {
-            return 'failed'
+            return $localize`:@@ha.failed:failed`
         }
-        return 'ok'
+        return $localize`:@@common.ok:ok`
     }
 
     /**
@@ -395,12 +395,12 @@ export class HaStatusComponent implements OnInit, OnDestroy {
      */
     formatControlStatus(serverStatus: KeaHAServerStatus): string {
         if (serverStatus.inTouch == null) {
-            return 'unknown'
+            return $localize`:@@common.unknown:unknown`
         }
         if (serverStatus.inTouch) {
-            return 'online'
+            return $localize`:@@ha.online:online`
         }
-        return 'offline'
+        return $localize`:@@ha.offline:offline`
     }
 
     /**
@@ -415,7 +415,7 @@ export class HaStatusComponent implements OnInit, OnDestroy {
      */
     formatState(serverStatus: KeaHAServerStatus): string {
         if (!serverStatus.state) {
-            return 'fetching...'
+            return $localize`:@@common.fetching:fetching...`
         }
         return serverStatus.state
     }
@@ -451,10 +451,10 @@ export class HaStatusComponent implements OnInit, OnDestroy {
      */
     formatAge(age: number | null): string {
         if (age && age < 0) {
-            return 'n/a'
+            return $localize`:@@common.not-applicable:n/a`
         }
         if (!age) {
-            return 'just now'
+            return $localize`:@@ha.just-now:just now`
         }
         if (age < 60) {
             return age + ' seconds ago'
@@ -519,7 +519,7 @@ export class HaStatusComponent implements OnInit, OnDestroy {
      */
     formatFailoverNumber(serverStatus: KeaHAServerStatus, n: number): string | number {
         if (!serverStatus.unackedClients && !serverStatus.unackedClientsLeft) {
-            return 'n/a'
+            return $localize`:@@common.not-applicable:n/a`
         }
         return Math.max(0, n)
     }
@@ -556,17 +556,17 @@ export class HaStatusComponent implements OnInit, OnDestroy {
      */
     createSummary(serverStatus: KeaHAServerStatus, otherServerStatus: KeaHAServerStatus): string {
         if (this.calculateServerFailoverProgress(serverStatus) >= 0) {
-            return 'Server has started the failover procedure.'
+            return $localize`:@@ha.failover-started:Server has started the failover procedure.`
         }
         const scopes = serverStatus?.scopes || []
         if (scopes.length === 0) {
-            return 'Server is responding to no DHCP traffic.'
+            return $localize`:@@ha.no-dhcp-traffic:Server is responding to no DHCP traffic.`
         }
         const otherScopes = otherServerStatus?.scopes || []
         if (otherScopes.length === 0) {
-            return 'Server is responding to all DHCP traffic.'
+            return $localize`:@@ha.all-dhcp-traffic:Server is responding to all DHCP traffic.`
         }
-        return 'Server is responding to DHCP traffic.'
+        return $localize`:@@ha.dhcp-traffic:Server is responding to DHCP traffic.`
     }
 
     /**
