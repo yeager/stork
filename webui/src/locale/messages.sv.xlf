@@ -5010,6 +5010,62 @@
           <context context-type="linenumber">90,92</context>
         </context-group>
       <target state="translated">Zonöverföringar</target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-intro" datatype="html">
+        <source> Zone transfers in the table below can be filtered by explicitly selected fields using text, dropdown or multiselect input filters. The currently supported fields for explicit filtering are: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">125,128</context>
+        </context-group>
+      <target state="translated"> Zonöverföringarna i tabellen nedan kan filtreras med textfält, listrutor eller flervalsfält. Följande fält kan filtreras direkt: </target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-status" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Status<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> - multiple statuses can be specified. If unspecified, zone transfers with all statuses are returned. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">131,132</context>
+        </context-group>
+      <target state="translated"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Status<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" />: du kan ange flera statusvärden. Om inget anges returneras zonöverföringar med alla statusvärden. </target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-serial" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Serial<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> - partial or exact zone serial.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">134,135</context>
+        </context-group>
+      <target state="translated"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Serie<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" />: helt eller delvis zonserienummer.</target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-primary" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Primary<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> - zone transfers for a specific machine where the primary DNS server is running can be selected. In this case, the primary DNS server must be monitored by Stork. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">136,138</context>
+        </context-group>
+      <target state="translated"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Primär<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" />: du kan välja zonöverföringar för en viss maskin där den primära DNS-servern körs. Den primära DNS-servern måste då övervakas av Stork. </target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-secondary" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Secondary<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> - zone transfers for a specific machine where the secondary DNS server is running can be selected. In this case, the secondary DNS server must be monitored by Stork. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">141,143</context>
+        </context-group>
+      <target state="translated"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Sekundär<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" />: du kan välja zonöverföringar för en viss maskin där den sekundära DNS-servern körs. Den sekundära DNS-servern måste då övervakas av Stork. </target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-text-search" datatype="html">
+        <source> Zone transfers can also be filtered by entering text in the search box; the table shows all transfers matching the exact or partial filter text. The text is matched against the zone name, view, primary IP address, secondary IP address or log message emitted during the zone transfer. For clarity, the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />(root)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> keyword marks a root zone. Typing <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;font-italic white-space-nowrap&quot;&gt;" />(root)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> or <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;font-italic white-space-nowrap&quot;&gt;" />root<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> will return the transfer for the root zone. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">147,154</context>
+        </context-group>
+      <target state="translated"> Du kan också filtrera zonöverföringar genom att skriva text i sökrutan. Tabellen visar alla överföringar som matchar hela eller delar av filtertexten. Texten matchas mot zonnamn, vy, primär IP-adress, sekundär IP-adress eller loggmeddelandet som skrevs under zonöverföringen. För tydlighetens skull markerar nyckelordet <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />(rot)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> en rotzon. Om du skriver <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;font-italic white-space-nowrap&quot;&gt;" />(rot)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> eller <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;font-italic white-space-nowrap&quot;&gt;" />rot<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> visas överföringen för rotzonen. </target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-local" datatype="html">
+        <source> The <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Include local transfers<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> checkbox toggles the local zone transfers on/off. Turning them on will show all transfers initiated by Stork agent to get the zone contents from the DNS servers. It will also show all other local zone transfers. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">157,159</context>
+        </context-group>
+      <target state="translated"> Kryssrutan <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Inkludera lokala överföringar<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> visar eller döljer de lokala zonöverföringarna. När de visas ser du alla överföringar som Stork agenten har startat för att hämta zoninnehållet från DNS-servrarna, samt alla andra lokala zonöverföringar. </target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-and" datatype="html">
+        <source> Multiple filtering conditions are combined using logical AND (i.e., filtered zone transfers match all specified conditions). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">162,165</context>
+        </context-group>
+      <target state="translated"> Flera filtreringsvillkor kombineras med det logiska OCH, vilket innebär att filtrerade zonöverföringar matchar alla angivna villkor. </target></trans-unit>
       <trans-unit id="zone-transfers.filter-help-server-pair" datatype="html">
         <source> Some operators may be interested in filtering the zone transfers for the specific primary/secondary server pair. It can be done by selecting the primary and the secondary machines using the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Primary<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> and <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Secondary<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> dropdowns in the filtering panel. However, the dropdown cannot be used in cases when the primary or the secondary is external (i.e., is not monitored by Stork). In this case, use the text filter to search by the external server's IP address instead. </source>
         <context-group purpose="location">

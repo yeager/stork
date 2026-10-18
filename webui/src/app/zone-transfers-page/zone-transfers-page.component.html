@@ -121,29 +121,29 @@
                     tableKey="zone-transfers-table"
                 >
                     <ng-template #helptip>
-                        <p>
+                        <p i18n="@@zone-transfers.filter-help-intro">
                             Zone transfers in the table below can be filtered by explicitly selected fields using text,
                             dropdown or multiselect input filters. The currently supported fields for explicit filtering
                             are:
                         </p>
                         <ul>
-                            <li>
+                            <li i18n="@@zone-transfers.filter-help-status">
                                 <span class="font-bold">Status</span> - multiple statuses can be specified. If
                                 unspecified, zone transfers with all statuses are returned.
                             </li>
-                            <li><span class="font-bold">Serial</span> - partial or exact zone serial.</li>
-                            <li>
+                            <li i18n="@@zone-transfers.filter-help-serial"><span class="font-bold">Serial</span> - partial or exact zone serial.</li>
+                            <li i18n="@@zone-transfers.filter-help-primary">
                                 <span class="font-bold">Primary</span> - zone transfers for a specific machine where the
                                 primary DNS server is running can be selected. In this case, the primary DNS server must
                                 be monitored by Stork.
                             </li>
-                            <li>
+                            <li i18n="@@zone-transfers.filter-help-secondary">
                                 <span class="font-bold">Secondary</span> - zone transfers for a specific machine where
                                 the secondary DNS server is running can be selected. In this case, the secondary DNS
                                 server must be monitored by Stork.
                             </li>
                         </ul>
-                        <p>
+                        <p i18n="@@zone-transfers.filter-help-text-search">
                             Zone transfers can also be filtered by entering text in the search box; the table shows all
                             transfers matching the exact or partial filter text. The text is matched against the zone
                             name, view, primary IP address, secondary IP address or log message emitted during the zone
@@ -153,12 +153,12 @@
                             <span class="font-italic white-space-nowrap">root</span> will return the transfer for the
                             root zone.
                         </p>
-                        <p>
+                        <p i18n="@@zone-transfers.filter-help-local">
                             The <span class="font-bold">Include local transfers</span> checkbox toggles the local zone
                             transfers on/off. Turning them on will show all transfers initiated by Stork agent to get
                             the zone contents from the DNS servers. It will also show all other local zone transfers.
                         </p>
-                        <p>
+                        <p i18n="@@zone-transfers.filter-help-and">
                             Multiple filtering conditions are combined using logical AND (i.e., filtered zone transfers
                             match all specified conditions).
                         </p>
