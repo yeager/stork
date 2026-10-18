@@ -9,13 +9,13 @@
                 appAccessType="update"
                 styleClass="block"
             ></p-toggleswitch>
-            <label for="monitored-switch" class="ml-2 my-auto">Monitoring</label>
+            <label for="monitored-switch" class="ml-2 my-auto" i18n>Monitoring</label>
         </div>
         @if (isDhcpDaemon()) {
             <p-button
                 routerLink="/dhcp/hosts"
                 [queryParams]="{ daemonId: daemon().id }"
-                label="Host Reservations"
+                i18n-label label="Host Reservations"
                 icon="fa fa-laptop"
                 severity="secondary"
                 class="mr-2 my-2"
@@ -24,7 +24,7 @@
             <p-button
                 routerLink="/dhcp/subnets"
                 [queryParams]="{ daemonId: daemon().id }"
-                label="Subnets"
+                i18n-label label="Subnets"
                 icon="fa fa-project-diagram"
                 class="mr-2 my-2"
                 severity="secondary"
@@ -33,7 +33,7 @@
             <p-button
                 routerLink="/dhcp/shared-networks"
                 [queryParams]="{ daemonId: daemon().id }"
-                label="Shared Networks"
+                i18n-label label="Shared Networks"
                 icon="fa fa-network-wired"
                 class="mr-2 my-2"
                 severity="secondary"
@@ -41,7 +41,7 @@
             ></p-button>
             <p-button
                 routerLink="/daemons/{{ daemon().id }}/global-config"
-                label="Global Configuration"
+                i18n-label label="Global Configuration"
                 icon="fa-solid fa-globe"
                 class="mr-2 my-2"
                 severity="secondary"
@@ -49,7 +49,7 @@
             ></p-button>
         }
         <p-button
-            label="Raw configuration"
+            i18n-label label="Raw configuration"
             icon="fa fa-file-alt"
             severity="secondary"
             class="mr-2 my-2"
@@ -120,32 +120,32 @@
         <div class="grid">
             <!-- Overview -->
             <div class="col-12 md:col-6" [ngClass]="{ disabled: !daemon().active }">
-                <h3 class="underlined">Overview</h3>
+                <h3 class="underlined" i18n>Overview</h3>
                 <div class="grid">
                     <div class="col-12 lg:col-7">
-                        <p-fieldset legend="Daemon Information">
+                        <p-fieldset i18n-legend legend="Daemon Information">
                             <div class="grid grid-nogutter">
-                                <div class="col-12 sm:col-3 pb-0 font-medium">Version</div>
+                                <div class="col-12 sm:col-3 pb-0 font-medium" i18n>Version</div>
                                 <div class="col-12 sm:col-9">
                                     <app-version-status
                                         [daemon]="daemon()"
                                         [includeAnchor]="false"
                                     ></app-version-status>
                                 </div>
-                                <div class="col-12 sm:col-3 pb-0 font-medium">Version Ext</div>
+                                <div class="col-12 sm:col-3 pb-0 font-medium" i18n>Version Ext</div>
                                 <div class="col-12 sm:col-9 white-space-preline">
                                     {{ daemon().extendedVersion }}
                                 </div>
-                                <div class="col-12 sm:col-3 pb-0 font-medium">Uptime</div>
+                                <div class="col-12 sm:col-3 pb-0 font-medium" i18n>Uptime</div>
                                 <div class="col-12 sm:col-9">{{ daemon().uptime | duration }}</div>
-                                <div class="col-12 sm:col-3 pb-0 font-medium">Last Reloaded At</div>
+                                <div class="col-12 sm:col-3 pb-0 font-medium" i18n>Last Reloaded At</div>
                                 <div class="col-12 sm:col-9">
                                     {{ daemon().reloadedAt | localtime | placeholder: 'never' }}
                                 </div>
                                 @if (cbCmdsLoaded()) {
                                     <div class="col-12 sm:col-3 pb-0 font-medium">
                                         <div class="flex align-items-center gap-1">
-                                            <span>Server Tag</span>
+                                            <span i18n>Server Tag</span>
                                             <app-help-tip subject="server tag">
                                                 <p>
                                                     The server tag is an arbitrary string assigned by the Kea
@@ -177,7 +177,7 @@
                         </p-fieldset>
                     </div>
                     <div class="col-12 lg:col-5">
-                        <p-fieldset id="hooks-fieldset" legend="Hooks">
+                        <p-fieldset id="hooks-fieldset" i18n-legend legend="Hooks">
                             <ol>
                                 @for (hook of daemon().hooks; track hook) {
                                     <li class="word-break-all">
@@ -209,7 +209,7 @@
                                 <div class="text-gray-400">No hooks</div>
                             }
                         </p-fieldset>
-                        <p-fieldset id="hooks-fieldset" legend="Access points">
+                        <p-fieldset id="hooks-fieldset" i18n-legend legend="Access points">
                             <app-access-points [daemon]="daemon()"></app-access-points>
                         </p-fieldset>
                     </div>
@@ -220,11 +220,11 @@
                     (daemon().files && daemon().files.length > 0) || (daemon().backends && daemon().backends.length > 0)
                 ) {
                     <div id="data-storage-div" class="mt-4">
-                        <h3 class="underlined">Data Storage</h3>
+                        <h3 class="underlined" i18n>Data Storage</h3>
                         <div class="grid">
                             @if (daemon().files) {
                                 <div class="col-12 lg:col-6">
-                                    <p-fieldset id="data-storage-files-fieldset" legend="Files">
+                                    <p-fieldset id="data-storage-files-fieldset" i18n-legend legend="Files">
                                         <table style="width: 100%">
                                             @for (file of daemon().files; track file) {
                                                 <tr>
@@ -240,7 +240,7 @@
                             }
                             @if (daemon().backends) {
                                 <div class="col-12 lg:col-6">
-                                    <p-fieldset id="data-storage-backends-fieldset" legend="Database Backends">
+                                    <p-fieldset id="data-storage-backends-fieldset" i18n-legend legend="Database Backends">
                                         @for (backend of daemon().backends; track backend) {
                                             <div>
                                                 <i class="fa fa-database text-gray-400"></i>

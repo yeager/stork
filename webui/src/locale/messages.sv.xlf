@@ -404,6 +404,31 @@
           <context context-type="linenumber">38,42</context>
         </context-group>
       <target state="translated">Visa zoner och vyer</target></trans-unit>
+      <trans-unit id="7854096377528381074" datatype="html">
+        <source>BIND 9 Config</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon-controls/bind9-daemon-controls.component.html</context>
+          <context context-type="linenumber">20,23</context>
+        </context-group>
+      <target state="translated">BIND 9-konfiguration</target></trans-unit>
+      <trans-unit id="9223064689371353645" datatype="html">
+        <source>RNDC Key Config</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon-controls/bind9-daemon-controls.component.html</context>
+          <context context-type="linenumber">28,31</context>
+        </context-group>
+      <target state="translated">RNDC-nyckelkonfiguration</target></trans-unit>
+      <trans-unit id="4377629928032707348" datatype="html">
+        <source>Zones</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bind9-daemon-controls/bind9-daemon-controls.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pdns-daemon-controls/pdns-daemon-controls.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      <target state="translated">Zoner</target></trans-unit>
       <trans-unit id="daemon.overview" datatype="html">
         <source>Overview</source>
         <context-group purpose="location">
@@ -2328,6 +2353,140 @@
           <context context-type="linenumber">53,56</context>
         </context-group>
       <target state="translated">Det gick inte att hämta demonens konfiguration</target></trans-unit>
+      <trans-unit id="3338661424985495365" datatype="html">
+        <source>Monitoring</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+      <target state="translated">Övervakning</target></trans-unit>
+      <trans-unit id="8825820766251147114" datatype="html">
+        <source>Host Reservations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      <target state="translated">Värdreservationer</target></trans-unit>
+      <trans-unit id="819294309848780791" datatype="html">
+        <source>Subnets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
+          <context context-type="linenumber">91,93</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.html</context>
+          <context context-type="linenumber">31,34</context>
+        </context-group>
+      <target state="translated">Delnät</target></trans-unit>
+      <trans-unit id="7857266940364448193" datatype="html">
+        <source>Shared Networks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+      <target state="translated">Delade nätverk</target></trans-unit>
+      <trans-unit id="5827533731616034658" datatype="html">
+        <source>Global Configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+      <target state="translated">Global konfiguration</target></trans-unit>
+      <trans-unit id="2364558671474387795" datatype="html">
+        <source>Raw configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">52,55</context>
+        </context-group>
+      <target state="translated">Rå konfiguration</target></trans-unit>
+      <trans-unit id="2614607010577950577" datatype="html">
+        <source>Overview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">123,125</context>
+        </context-group>
+      <target state="translated">Översikt</target></trans-unit>
+      <trans-unit id="6946886633934481528" datatype="html">
+        <source>Daemon Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">126,128</context>
+        </context-group>
+      <target state="translated">Demoninformation</target></trans-unit>
+      <trans-unit id="2724055831234181057" datatype="html">
+        <source>Version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">128,130</context>
+        </context-group>
+      <target state="translated">Version</target></trans-unit>
+      <trans-unit id="4840578682258337662" datatype="html">
+        <source>Version Ext</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+      <target state="translated">Utökad version</target></trans-unit>
+      <trans-unit id="1929039531311944328" datatype="html">
+        <source>Uptime</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">139,140</context>
+        </context-group>
+      <target state="translated">Drifttid</target></trans-unit>
+      <trans-unit id="5333129171761171015" datatype="html">
+        <source>Last Reloaded At</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">141,143</context>
+        </context-group>
+      <target state="translated">Senast inläst</target></trans-unit>
+      <trans-unit id="4884593790934938824" datatype="html">
+        <source>Server Tag</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">148,149</context>
+        </context-group>
+      <target state="translated">Servertagg</target></trans-unit>
+      <trans-unit id="7751775482396341913" datatype="html">
+        <source>Hooks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">181,182</context>
+        </context-group>
+      <target state="translated">Hookar</target></trans-unit>
+      <trans-unit id="8051952797585480987" datatype="html">
+        <source>Access points</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">212,213</context>
+        </context-group>
+      <target state="translated">Åtkomstpunkter</target></trans-unit>
+      <trans-unit id="5738452796118734506" datatype="html">
+        <source>Data Storage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">223,225</context>
+        </context-group>
+      <target state="translated">Datalagring</target></trans-unit>
+      <trans-unit id="4116911651502837995" datatype="html">
+        <source>Files</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">228,229</context>
+        </context-group>
+      <target state="translated">Filer</target></trans-unit>
+      <trans-unit id="8604782229319404201" datatype="html">
+        <source>Database Backends</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
+          <context context-type="linenumber">243,244</context>
+        </context-group>
+      <target state="translated">Databasbakändar</target></trans-unit>
       <trans-unit id="4661609117337319901" datatype="html">
         <source>This page displays the DHCP parameters and options configured at the global level.</source>
         <context-group purpose="location">
@@ -2945,17 +3104,6 @@
           <context context-type="linenumber">78,79</context>
         </context-group>
       <target state="translated">DHCP-servrar som använder det delade nätverket</target></trans-unit>
-      <trans-unit id="819294309848780791" datatype="html">
-        <source>Subnets</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-network-tab/shared-network-tab.component.html</context>
-          <context context-type="linenumber">91,93</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.html</context>
-          <context context-type="linenumber">31,34</context>
-        </context-group>
-      <target state="translated">Delnät</target></trans-unit>
       <trans-unit id="7413509252210192965" datatype="html">
         <source>No subnets configured.</source>
         <context-group purpose="location">

@@ -17,7 +17,7 @@
 <div class="flex flex-wrap px-2 border-1 border-round surface-border">
     <!-- Shows the main BIND 9 configuration dialog.-->
     <p-button
-        label="BIND 9 Config"
+        i18n-label label="BIND 9 Config"
         icon="fa fa-file-alt"
         severity="secondary"
         class="mr-2 my-2"
@@ -25,7 +25,7 @@
     ></p-button>
     <!-- Shows the RNDC key configuration dialog. -->
     <p-button
-        label="RNDC Key Config"
+        i18n-label label="RNDC Key Config"
         icon="fa fa-key"
         severity="secondary"
         class="mr-2 my-2"
@@ -34,7 +34,7 @@
     <p-button
         routerLink="/dns/zones"
         [queryParams]="{ daemonId: daemonId }"
-        label="Zones"
+        i18n-label label="Zones"
         icon="pi pi-sitemap"
         class="mr-2 my-2"
         severity="secondary"
