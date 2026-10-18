@@ -19,6 +19,7 @@
     routePath="/config-migrations/"
     [entityProvider]="migrationProvider"
     firstTabTitle="Config Migrations"
+    i18n-firstTabTitle="@@config-migrations.title"
     [entityTitleProvider]="tabTitleProvider"
     [entitiesTable]="migrationsTableComponent()?.table"
     (activeTabChange)="activeTabMigrationID.set($event)"

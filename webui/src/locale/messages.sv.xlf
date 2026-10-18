@@ -379,6 +379,10 @@
           <context context-type="linenumber">19,20</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemon-tab/daemon-tab.component.html</context>
           <context context-type="linenumber">19,20</context>
         </context-group>
@@ -966,6 +970,168 @@
           <context context-type="linenumber">11,19</context>
         </context-group>
       <target state="translated"> Den här sidan visar information om den valda migreringen. Du kan följa migreringens förlopp och avbryta den vid behov. </target></trans-unit>
+      <trans-unit id="config-migrations.title" datatype="html">
+        <source>Config Migrations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-page/config-migration-page.component.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+      <target state="translated">Konfigurationsmigreringar</target></trans-unit>
+      <trans-unit id="config-migrations.migration-title" datatype="html">
+        <source>Migration: <x id="INTERPOLATION" equiv-text="{{ migration.id }}" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      <target state="translated">Migrering: <x id="INTERPOLATION" equiv-text="{{ migration.id }}" /></target></trans-unit>
+      <trans-unit id="common.status" datatype="html">
+        <source>Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
+          <context context-type="linenumber">174,176</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">192,194</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">401,402</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">184,186</context>
+        </context-group>
+      <target state="translated">Status</target></trans-unit>
+      <trans-unit id="common.status-label" datatype="html">
+        <source>Status:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      <target state="translated">Status:</target></trans-unit>
+      <trans-unit id="config-migrations.general-error" datatype="html">
+        <source>General error:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      <target state="translated">Allmänt fel:</target></trans-unit>
+      <trans-unit id="common.errors-label" datatype="html">
+        <source>Errors:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      <target state="translated">Fel:</target></trans-unit>
+      <trans-unit id="common.progress-label" datatype="html">
+        <source>Progress:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      <target state="translated">Förlopp:</target></trans-unit>
+      <trans-unit id="config-migrations.entities" datatype="html">
+        <source>Entities:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      <target state="translated">Entiteter:</target></trans-unit>
+      <trans-unit id="config-migrations.start-date" datatype="html">
+        <source>Start Date:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      <target state="translated">Startdatum:</target></trans-unit>
+      <trans-unit id="config-migrations.end-date" datatype="html">
+        <source>End Date:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+      <target state="translated">Slutdatum:</target></trans-unit>
+      <trans-unit id="config-migrations.duration" datatype="html">
+        <source>Duration:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      <target state="translated">Varaktighet:</target></trans-unit>
+      <trans-unit id="config-migrations.estimated-left" datatype="html">
+        <source>Estimated Left:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">60,62</context>
+        </context-group>
+      <target state="translated">Beräknad återstående tid:</target></trans-unit>
+      <trans-unit id="config-migrations.started-by" datatype="html">
+        <source>Started by:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">65,68</context>
+        </context-group>
+      <target state="translated">Startad av:</target></trans-unit>
+      <trans-unit id="config-migrations.cancel" datatype="html">
+        <source>Cancel Migration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">77,79</context>
+        </context-group>
+      <target state="translated">Avbryt migrering</target></trans-unit>
+      <trans-unit id="common.errors" datatype="html">
+        <source>Errors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">92,94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
+          <context context-type="linenumber">419,421</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
+          <context context-type="linenumber">334,336</context>
+        </context-group>
+      <target state="translated">Fel</target></trans-unit>
+      <trans-unit id="config-migrations.entity" datatype="html">
+        <source>Entity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">105,107</context>
+        </context-group>
+      <target state="translated">Entitet</target></trans-unit>
+      <trans-unit id="common.error" datatype="html">
+        <source>Error</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">106,108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
+          <context context-type="linenumber">231,234</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
+          <context context-type="linenumber">185,188</context>
+        </context-group>
+      <target state="translated">Fel</target></trans-unit>
+      <trans-unit id="config-migrations.no-error-details" datatype="html">
+        <source>No error details available</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-tab/config-migration-tab.component.html</context>
+          <context context-type="linenumber">133,136</context>
+        </context-group>
+      <target state="translated">Inga feluppgifter är tillgängliga</target></trans-unit>
       <trans-unit id="5841407370625340639" datatype="html">
         <source>Clear Finished Migrations</source>
         <context-group purpose="location">
@@ -1263,25 +1429,6 @@
           <context context-type="linenumber">170,171</context>
         </context-group>
       <target state="translated">Version</target></trans-unit>
-      <trans-unit id="common.status" datatype="html">
-        <source>Status</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
-          <context context-type="linenumber">174,176</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
-          <context context-type="linenumber">192,194</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
-          <context context-type="linenumber">401,402</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">184,186</context>
-        </context-group>
-      <target state="translated">Status</target></trans-unit>
       <trans-unit id="common.machine" datatype="html">
         <source>Machine</source>
         <context-group purpose="location">
@@ -1943,21 +2090,6 @@
           <context context-type="linenumber">412,416</context>
         </context-group>
       <target state="translated"> Den inskickade värdreservationen skapas i Kea men kanske inte visas i Stork direkt. Uppdatera listan över värdreservationer för att se den nya reservationen. </target></trans-unit>
-      <trans-unit id="common.errors" datatype="html">
-        <source>Errors</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
-          <context context-type="linenumber">419,421</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-network-form/shared-network-form.component.html</context>
-          <context context-type="linenumber">102,104</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnet-form/subnet-form.component.html</context>
-          <context context-type="linenumber">334,336</context>
-        </context-group>
-      <target state="translated">Fel</target></trans-unit>
       <trans-unit id="host.init-error" datatype="html">
         <source> In order to apply configuration changes, the server should begin a transaction between the user and the server. The server should also return the current data required, in the form where the host information is specified. Unfortunately, starting the new transaction failed with the following error: </source>
         <context-group purpose="location">
@@ -3549,17 +3681,6 @@
           <context context-type="linenumber">219,220</context>
         </context-group>
       <target state="translated">Drifttid</target></trans-unit>
-      <trans-unit id="common.error" datatype="html">
-        <source>Error</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/machines-table/machines-table.component.html</context>
-          <context context-type="linenumber">231,234</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zones-page/zones-page.component.html</context>
-          <context context-type="linenumber">185,188</context>
-        </context-group>
-      <target state="translated">Fel</target></trans-unit>
       <trans-unit id="error.page.not.found" datatype="html">
         <source>Page Not Found</source>
         <context-group purpose="location">

@@ -2,26 +2,26 @@
     <div class="mt-4 mx-2">
         <div class="flex text-xl align-items-baseline font-normal text-primary mb-4">
             <div class="fa fa-suitcase mr-2"></div>
-            <div id="tab-title-span">Migration: {{ migration.id }}</div>
+            <div id="tab-title-span" i18n="@@config-migrations.migration-title">Migration: {{ migration.id }}</div>
         </div>
         <div class="grid gap-4">
             <!-- Status Info -->
             <div class="col flex-initial max-w-50rem">
-                <p-fieldset legend="Status">
+                <p-fieldset legend="Status" i18n-legend="@@common.status">
                     <div class="flex flex-column gap-3">
                         <div class="flex align-items-center">
-                            <span class="font-semibold w-8rem">Status:</span>
+                            <span class="font-semibold w-8rem" i18n="@@common.status-label">Status:</span>
                             <p-tag [severity]="statusSeverity" [value]="statusText" styleClass="capitalize"></p-tag>
                         </div>
                         @if (migration.generalError) {
                             <div class="flex align-items-center">
-                                <span class="font-semibold w-8rem">General error:</span>
+                                <span class="font-semibold w-8rem" i18n="@@config-migrations.general-error">General error:</span>
                                 <span class="text-red-500">{{ migration.generalError }}</span>
                             </div>
                         }
                         @if (totalErrors > 0) {
                             <div class="flex align-items-center">
-                                <span class="font-semibold w-8rem">Errors:</span>
+                                <span class="font-semibold w-8rem" i18n="@@common.errors-label">Errors:</span>
                                 <p-tag
                                     severity="danger"
                                     [value]="totalErrors + ' errors'"
@@ -30,7 +30,7 @@
                             </div>
                         }
                         <div class="flex align-items-center">
-                            <span class="font-semibold w-8rem">Progress:</span>
+                            <span class="font-semibold w-8rem" i18n="@@common.progress-label">Progress:</span>
                             <p-progressBar
                                 [value]="completionPercentage"
                                 [showValue]="true"
@@ -38,31 +38,31 @@
                             ></p-progressBar>
                         </div>
                         <div class="flex align-items-center">
-                            <span class="font-semibold w-8rem">Entities:</span>
+                            <span class="font-semibold w-8rem" i18n="@@config-migrations.entities">Entities:</span>
                             <span>{{ migration.processedItemsCount }} / {{ migration.totalItemsCount }}</span>
                         </div>
                         <div class="flex align-items-center">
-                            <span class="font-semibold w-8rem">Start Date:</span>
+                            <span class="font-semibold w-8rem" i18n="@@config-migrations.start-date">Start Date:</span>
                             <span>{{ migration.startDate | localtime }}</span>
                         </div>
                         @if (migration.endDate) {
                             <div class="flex align-items-center">
-                                <span class="font-semibold w-8rem">End Date:</span>
+                                <span class="font-semibold w-8rem" i18n="@@config-migrations.end-date">End Date:</span>
                                 <span>{{ migration.endDate | localtime }}</span>
                             </div>
                         }
                         <div class="flex align-items-center">
-                            <span class="font-semibold w-8rem">Duration:</span>
+                            <span class="font-semibold w-8rem" i18n="@@config-migrations.duration">Duration:</span>
                             <span>{{ migration.elapsedTime | duration }}</span>
                         </div>
                         @if (isRunning) {
                             <div class="flex align-items-center">
-                                <span class="font-semibold w-8rem">Estimated Left:</span>
+                                <span class="font-semibold w-8rem" i18n="@@config-migrations.estimated-left">Estimated Left:</span>
                                 <span>{{ migration.estimatedLeftTime | duration }}</span>
                             </div>
                         }
                         <div class="flex align-items-center">
-                            <span class="font-semibold w-8rem">Started by:</span>
+                            <span class="font-semibold w-8rem" i18n="@@config-migrations.started-by">Started by:</span>
                             <app-entity-link
                                 entity="user"
                                 [attrs]="{ id: migration.authorId, login: migration.authorLogin }"
@@ -72,9 +72,10 @@
                 </p-fieldset>
                 <!-- Actions Section -->
                 <div class="mt-4 flex gap-2 flex-wrap">
-                    <p-button label="Refresh" icon="pi pi-refresh" (click)="onRefresh()"></p-button>
+                    <p-button label="Refresh" i18n-label="@@common.refresh" icon="pi pi-refresh" (click)="onRefresh()"></p-button>
                     <p-button
                         label="Cancel Migration"
+                        i18n-label="@@config-migrations.cancel"
                         icon="pi pi-times"
                         severity="danger"
                         [disabled]="!isRunning || migration.canceling || !canCancelMigration"
@@ -88,7 +89,7 @@
             <div class="col max-w-50rem">
                 @if (totalErrors > 0) {
                     <div>
-                        <p-fieldset legend="Errors">
+                        <p-fieldset legend="Errors" i18n-legend="@@common.errors">
                             <p-table
                                 [value]="errorItems"
                                 [totalRecords]="totalErrors"
@@ -101,8 +102,8 @@
                             >
                                 <ng-template #header>
                                     <tr>
-                                        <th>Entity</th>
-                                        <th>Error</th>
+                                        <th i18n="@@config-migrations.entity">Entity</th>
+                                        <th i18n="@@common.error">Error</th>
                                     </tr>
                                 </ng-template>
                                 <ng-template #body let-error>
@@ -129,7 +130,7 @@
                                 </ng-template>
                                 <ng-template #emptymessage>
                                     <tr>
-                                        <td colspan="2">No error details available</td>
+                                        <td colspan="2" i18n="@@config-migrations.no-error-details">No error details available</td>
                                     </tr>
                                 </ng-template>
                             </p-table>
