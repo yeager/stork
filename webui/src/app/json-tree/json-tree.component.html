@@ -93,7 +93,7 @@
 <!-- Value of a leaf -->
 <ng-template #leafValue>
     <!-- prettier-ignore -->
-    <span [ngClass]="{ 'tree-level__value--string': isString(), 'tree-level__value--object': isObject(), 'tree-level__value--array': isArray(), 'tree-level__value--not-assigned': !hasAssignedValue(), 'tree-level__value--clickable': isRecursionLevelReached() }">@if ((isPrimitive() || isEmpty()) && !isObject() && hasAssignedValue()) {{{ value + '' }}}@if (!hasAssignedValue()) {<i class="fa fa-spinner fa-spin"></i>}@if (isComplex() && !isEmpty() && isRecursionLevelReached()) {<span (click)="onClickResetRecursionLevel()">Load more...</span>}</span>
+    <span [ngClass]="{ 'tree-level__value--string': isString(), 'tree-level__value--object': isObject(), 'tree-level__value--array': isArray(), 'tree-level__value--not-assigned': !hasAssignedValue(), 'tree-level__value--clickable': isRecursionLevelReached() }">@if ((isPrimitive() || isEmpty()) && !isObject() && hasAssignedValue()) {{{ value + '' }}}@if (!hasAssignedValue()) {<i class="fa fa-spinner fa-spin"></i>}@if (isComplex() && !isEmpty() && isRecursionLevelReached()) {<span (click)="onClickResetRecursionLevel()" i18n="@@json-tree.load-more">Load more...</span>}</span>
 </ng-template>
 
 <!-- Secret placeholder -->
@@ -121,6 +121,6 @@
         step="1"
         #jumpToPageBox
         (keyup.enter)="onEnterJumpToPage(jumpToPageBox.value - 1); jumpToPageBox.value = ''"
-        placeholder="Page"
+        i18n-placeholder="@@json-tree.page" placeholder="Page"
     />
 </ng-template>
