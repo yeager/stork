@@ -10,21 +10,21 @@
                 ></p-selectButton>
             </div>
             <div class="flex align-items-center gap-2 flex-none">
-                <div>Machine:</div>
+                <div i18n>Machine:</div>
                 <p-select
                     [options]="machines"
                     [(ngModel)]="selectedMachine"
                     optionLabel="address"
                     id="machines-events"
-                    placeholder="any"
+                    i18n-placeholder placeholder="any"
                     showClear="true"
-                    tooltip="Show events related to selected machine"
+                    i18n-tooltip tooltip="Show events related to selected machine"
                     styleClass="max-w-14rem w-12rem"
                     (onChange)="onMachineSelect($event)"
                 ></p-select>
             </div>
             <div class="flex align-items-center gap-2 flex-none">
-                <div>Daemon Name:</div>
+                <div i18n>Daemon Name:</div>
                 <p-select
                     [options]="daemonNames"
                     [(ngModel)]="selectedDaemonName"
@@ -32,29 +32,29 @@
                     id="daemon-events"
                     placeholder="any"
                     showClear="true"
-                    tooltip="Show events related to selected daemon name"
+                    i18n-tooltip tooltip="Show events related to selected daemon name"
                     styleClass="max-w-14rem w-10rem"
                     (onChange)="onDaemonNameSelect($event)"
                 ></p-select>
             </div>
             <div class="flex align-items-center gap-2 flex-none" appAccessEntity="users" [appHideIfNoAccess]="true">
-                <div>User:</div>
+                <div i18n>User:</div>
                 <p-select
                     [options]="users"
                     [(ngModel)]="selectedUser"
                     id="user-events"
                     placeholder="any"
                     showClear="true"
-                    tooltip="Show events related to selected user"
+                    i18n-tooltip tooltip="Show events related to selected user"
                     class="max-w-14rem w-12rem"
                     (onChange)="onUserSelect($event)"
                 ></p-select>
             </div>
         </div>
         <p-button
-            pTooltip="Clear all events (on all pages)"
+            i18n-pTooltip pTooltip="Clear all events (on all pages)"
             tooltipPosition="left"
-            label="Clear"
+            i18n-label label="Clear"
             severity="warn"
             icon="pi pi-trash"
             appAccessEntity="events"
@@ -96,20 +96,20 @@
         <ng-template #header>
             <tr>
                 <th class="events-table__level" [pSortableColumn]="EventSortField.Level">
-                    <div class="flex gap-1">Level <p-sortIcon [field]="EventSortField.Level" /></div>
+                    <div class="flex gap-1" i18n>Level <p-sortIcon [field]="EventSortField.Level" /></div>
                 </th>
                 <th class="events-table__date" [pSortableColumn]="EventSortField.CreatedAt">
-                    <div class="flex gap-1 white-space-nowrap">
+                    <div class="flex gap-1 white-space-nowrap" i18n>
                         Created At <p-sortIcon [field]="EventSortField.CreatedAt" />
                     </div>
                 </th>
                 <th class="events-table__text" [pSortableColumn]="EventSortField.Text">
-                    <div class="flex gap-1 white-space-nowrap">
+                    <div class="flex gap-1 white-space-nowrap" i18n>
                         Event Text <p-sortIcon [field]="EventSortField.Text" />
                     </div>
                 </th>
                 <th class="events-table__details" [pSortableColumn]="EventSortField.Details">
-                    <div class="flex gap-1">Details <p-sortIcon [field]="EventSortField.Details" /></div>
+                    <div class="flex gap-1" i18n>Details <p-sortIcon [field]="EventSortField.Details" /></div>
                 </th>
             </tr>
         </ng-template>

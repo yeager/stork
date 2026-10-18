@@ -1369,6 +1369,105 @@
           <context context-type="linenumber">7,12</context>
         </context-group>
       <target state="translated">Varje händelse i listan innehåller länkar till mer information om den berörda demonen eller maskinen.</target></trans-unit>
+      <trans-unit id="4483193162547694121" datatype="html">
+        <source>Machine:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">13,16</context>
+        </context-group>
+      <target state="translated">Maskin:</target></trans-unit>
+      <trans-unit id="2296681895307893686" datatype="html">
+        <source>any</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      <target state="translated">valfri</target></trans-unit>
+      <trans-unit id="5670596338066745375" datatype="html">
+        <source>Show events related to selected machine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      <target state="translated">Visa händelser kopplade till den valda maskinen</target></trans-unit>
+      <trans-unit id="5104607577137415441" datatype="html">
+        <source>Daemon Name:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      <target state="translated">Demonens namn:</target></trans-unit>
+      <trans-unit id="1179048667342097970" datatype="html">
+        <source>Show events related to selected daemon name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      <target state="translated">Visa händelser kopplade till den valda demonens namn</target></trans-unit>
+      <trans-unit id="7035314289264169914" datatype="html">
+        <source>User:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">41,44</context>
+        </context-group>
+      <target state="translated">Användare:</target></trans-unit>
+      <trans-unit id="2868805930213875534" datatype="html">
+        <source>Show events related to selected user</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      <target state="translated">Visa händelser kopplade till den valda användaren</target></trans-unit>
+      <trans-unit id="6979240095684345946" datatype="html">
+        <source>Clear all events (on all pages)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">55,58</context>
+        </context-group>
+      <target state="translated">Rensa alla händelser (på alla sidor)</target></trans-unit>
+      <trans-unit id="8700121026680200191" datatype="html">
+        <source>Clear</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      <target state="translated">Rensa</target></trans-unit>
+      <trans-unit id="8748331192746026800" datatype="html">
+        <source>Level <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Level&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Level&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+      <target state="translated">Nivå <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Level&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Level&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="8229552393196244761" datatype="html">
+        <source> Created At <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.CreatedAt&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.CreatedAt&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+      <target state="translated"> Skapad <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.CreatedAt&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.CreatedAt&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="8183090484199366918" datatype="html">
+        <source> Event Text <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Text&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Text&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">108,109</context>
+        </context-group>
+      <target state="translated"> Händelsetext <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Text&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Text&quot; /&gt;" /></target></trans-unit>
+      <trans-unit id="8406362102664142529" datatype="html">
+        <source>Details <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Details&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Details&quot; /&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events-panel/events-panel.component.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+      <target state="translated">Detaljer <x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Details&quot; /&gt;" /><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon [field]=&quot;EventSortField.Details&quot; /&gt;" /></target></trans-unit>
       <trans-unit id="events.all" datatype="html">
         <source>All</source>
         <context-group purpose="location">
@@ -3109,17 +3208,6 @@
           <context context-type="linenumber">149,151</context>
         </context-group>
       <target state="translated">Något annat</target></trans-unit>
-      <trans-unit id="8700121026680200191" datatype="html">
-        <source>Clear</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
-          <context context-type="linenumber">156</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-parameters-form/shared-parameters-form.component.html</context>
-          <context context-type="linenumber">167</context>
-        </context-group>
-      <target state="translated">Rensa</target></trans-unit>
       <trans-unit id="subnet.dhcp-servers-and-tags" datatype="html">
         <source>DHCP Servers and/or Server Tags</source>
         <context-group purpose="location">
