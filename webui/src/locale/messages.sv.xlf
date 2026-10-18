@@ -165,6 +165,10 @@
           <context context-type="linenumber">207</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">207</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
           <context context-type="linenumber">69</context>
         </context-group>
@@ -393,6 +397,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemon-tab/daemon-tab.component.html</context>
           <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">214</context>
         </context-group>
       <target state="translated">Uppdatera</target></trans-unit>
       <trans-unit id="bind.refresh-config" datatype="html">
@@ -799,7 +807,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
-          <context context-type="linenumber">432</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">424</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/host-form/host-form.component.html</context>
@@ -1302,11 +1314,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
-          <context context-type="linenumber">216</context>
+          <context context-type="linenumber">219</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
-          <context context-type="linenumber">435</context>
+          <context context-type="linenumber">427</context>
         </context-group>
       <target state="translated">Ta bort</target></trans-unit>
       <trans-unit id="daemon.delete.confirm" datatype="html">
@@ -1317,7 +1329,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
-          <context context-type="linenumber">429</context>
+          <context context-type="linenumber">421</context>
         </context-group>
       <target state="translated">Vill du verkligen ta bort den här daemonen? &lt;br/&gt; Om daemonen blir aktiv igen upptäcks den på nytt av Stork. Eventuella justerade inställningar för verktyget Konfigurationsgranskningsrapporter tas bort permanent och kan inte återställas.</target></trans-unit>
       <trans-unit id="daemon.delete.title" datatype="html">
@@ -1328,7 +1340,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
-          <context context-type="linenumber">430</context>
+          <context context-type="linenumber">422</context>
         </context-group>
       <target state="translated">Ta bort daemon</target></trans-unit>
       <trans-unit id="daemon.deleted" datatype="html">
@@ -1339,7 +1351,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
-          <context context-type="linenumber">454</context>
+          <context context-type="linenumber">446</context>
         </context-group>
       <target state="translated">Daemonen har tagits bort</target></trans-unit>
       <trans-unit id="daemon.delete.error" datatype="html">
@@ -1350,7 +1362,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
-          <context context-type="linenumber">462</context>
+          <context context-type="linenumber">454</context>
         </context-group>
       <target state="translated">Det gick inte att ta bort daemonen</target></trans-unit>
       <trans-unit id="daemon.delete.error-detail" datatype="html">
@@ -1361,7 +1373,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
-          <context context-type="linenumber">463</context>
+          <context context-type="linenumber">455</context>
         </context-group>
       <target state="translated">Det gick inte att ta bort daemonen: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="daemons.page.help" datatype="html">
@@ -1444,6 +1456,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.html</context>
           <context context-type="linenumber">130,132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">312</context>
         </context-group>
       <target state="translated">Synkronisera Kea-konfigurationer igen</target></trans-unit>
       <trans-unit id="daemons.refresh-list" datatype="html">
@@ -1586,6 +1606,67 @@
           <context context-type="linenumber">364,365</context>
         </context-group>
       <target state="translated">Rensa</target></trans-unit>
+      <trans-unit id="search.daemons" datatype="html">
+        <source>Daemons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/global-search/global-search.component.html</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      <target state="translated">Demoner</target></trans-unit>
+      <trans-unit id="daemons.resync-confirmation" datatype="html">
+        <source>This operation instructs the server to fetch the configurations from all Kea servers and update them in the Stork database. Use it if you suspect that the configuration information differs between Kea and Stork. This operation should be harmless and typically causes only some additional overhead to populate the fetched data. Populating the data can take some time, depending on the puller-interval settings and the availability of the Kea servers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">311</context>
+        </context-group>
+      <target state="translated">Åtgärden instruerar servern att hämta konfigurationerna från alla Kea-servrar och uppdatera dem i Stork-databasen. Använd den om du misstänker att konfigurationsinformationen skiljer sig mellan Kea och Stork. Åtgärden är normalt ofarlig och medför vanligen bara en mindre extra belastning när de hämtade uppgifterna läggs in. Det kan ta en stund beroende på intervallen för insamling och Kea-servrarnas tillgänglighet.</target></trans-unit>
+      <trans-unit id="common.continue" datatype="html">
+        <source>Continue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
+          <context context-type="linenumber">615</context>
+        </context-group>
+      <target state="translated">Fortsätt</target></trans-unit>
+      <trans-unit id="daemons.resync-request-sent" datatype="html">
+        <source>Request to resynchronize sent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">331</context>
+        </context-group>
+      <target state="translated">Begäran om omsynkronisering har skickats</target></trans-unit>
+      <trans-unit id="daemons.resync-request-sent-detail" datatype="html">
+        <source>The request to resynchronize Kea configurations has been sent to the Stork server. It may take some time before it takes effect.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">332</context>
+        </context-group>
+      <target state="translated">Begäran om att omsynkronisera Kea-konfigurationerna har skickats till Stork-servern. Det kan ta en stund innan den får verkan.</target></trans-unit>
+      <trans-unit id="daemons.resync-request-failed" datatype="html">
+        <source>Request to resynchronize failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">339</context>
+        </context-group>
+      <target state="translated">Omsynkronisering misslyckades</target></trans-unit>
+      <trans-unit id="daemons.resync-request-failed-detail" datatype="html">
+        <source>The request to resynchronize Kea configurations in Stork failed because of an internal server error. Try again to see if the error disappears.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/daemons-page/daemons-page.component.ts</context>
+          <context context-type="linenumber">340</context>
+        </context-group>
+      <target state="translated">Begäran om att omsynkronisera Kea-konfigurationerna i Stork misslyckades på grund av ett internt serverfel. Försök igen för att se om felet försvinner.</target></trans-unit>
       <trans-unit id="dashboard.welcome" datatype="html">
         <source>Welcome to Stork!</source>
         <context-group purpose="location">
@@ -1912,17 +1993,6 @@
           <context context-type="linenumber">55,57</context>
         </context-group>
       <target state="translated">Maskiner</target></trans-unit>
-      <trans-unit id="search.daemons" datatype="html">
-        <source>Daemons</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/global-search/global-search.component.html</context>
-          <context context-type="linenumber">68,70</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
-          <context context-type="linenumber">70</context>
-        </context-group>
-      <target state="translated">Demoner</target></trans-unit>
       <trans-unit id="search.users" datatype="html">
         <source>Users</source>
         <context-group purpose="location">
@@ -6172,13 +6242,6 @@ med hur många som har konfigurerats.
           <context context-type="linenumber">613</context>
         </context-group>
       <target state="translated">Bekräfta zonhämtning!</target></trans-unit>
-      <trans-unit id="common.continue" datatype="html">
-        <source>Continue</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">615</context>
-        </context-group>
-      <target state="translated">Fortsätt</target></trans-unit>
       <trans-unit id="zones.request-sent" datatype="html">
         <source>Request sent</source>
         <context-group purpose="location">

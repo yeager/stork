@@ -193,7 +193,7 @@ export class DaemonsPageComponent implements OnInit, OnDestroy {
     private _updateToolbarButtons() {
         const buttons: MenuItem[] = [
             {
-                label: 'Resynchronize Kea Configs',
+                label: $localize`:@@daemons.resync:Resynchronize Kea Configs`,
                 icon: 'pi pi-file-import',
                 command: () => this.onSyncKeaConfigs(),
                 disabled: !this.canResyncConfig(),
@@ -203,12 +203,15 @@ export class DaemonsPageComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        this.breadcrumbs = [{ label: 'Services' }, { label: 'Daemons' }]
+        this.breadcrumbs = [
+            { label: $localize`:@@menu.services:Services` },
+            { label: $localize`:@@search.daemons:Daemons` },
+        ]
 
         this.daemons = []
         this.daemonMenuItems = [
             {
-                label: 'Refresh',
+                label: $localize`:@@common.refresh:Refresh`,
                 id: 'refresh-single-daemon',
                 icon: 'pi pi-refresh',
             },
@@ -305,16 +308,11 @@ export class DaemonsPageComponent implements OnInit, OnDestroy {
      */
     onSyncKeaConfigs(): void {
         this.confirmService.confirm({
-            message:
-                'This operation instructs the server to fetch the configurations from all Kea servers' +
-                ' and update them in the Stork database. Use it if you suspect that the configuration' +
-                ' information differs between Kea and Stork. This operation should be harmless and typically' +
-                ' causes only some additional overhead to populate the fetched data. Populating the data can' +
-                ' take some time, depending on the puller-interval settings and the availability of the Kea servers.',
-            header: 'Resynchronize Kea Configs',
+            message: $localize`:@@daemons.resync-confirmation:This operation instructs the server to fetch the configurations from all Kea servers and update them in the Stork database. Use it if you suspect that the configuration information differs between Kea and Stork. This operation should be harmless and typically causes only some additional overhead to populate the fetched data. Populating the data can take some time, depending on the puller-interval settings and the availability of the Kea servers.`,
+            header: $localize`:@@daemons.resync:Resynchronize Kea Configs`,
             icon: 'pi pi-exclamation-triangle',
-            acceptLabel: 'Continue',
-            rejectLabel: 'Cancel',
+            acceptLabel: $localize`:@@common.continue:Continue`,
+            rejectLabel: $localize`:@@common.cancel:Cancel`,
             rejectButtonProps: {
                 text: true,
                 icon: 'pi pi-times',
@@ -330,22 +328,16 @@ export class DaemonsPageComponent implements OnInit, OnDestroy {
                     .then(() => {
                         this.msgSrv.add({
                             severity: 'success',
-                            summary: 'Request to resynchronize sent',
-                            detail:
-                                'Successfully sent the request to the server to resynchronize' +
-                                ' Kea configurations in the Stork server. It may take a while' +
-                                ' before it takes effect.',
+                            summary: $localize`:@@daemons.resync-request-sent:Request to resynchronize sent`,
+                            detail: $localize`:@@daemons.resync-request-sent-detail:The request to resynchronize Kea configurations has been sent to the Stork server. It may take some time before it takes effect.`,
                             life: 10000,
                         })
                     })
                     .catch(() => {
                         this.msgSrv.add({
                             severity: 'error',
-                            summary: 'Request to resynchronize failed',
-                            detail:
-                                'The request to resynchronize Kea configurations in Stork failed' +
-                                ' due to an internal server error. You can try again to see' +
-                                ' if the error goes away.',
+                            summary: $localize`:@@daemons.resync-request-failed:Request to resynchronize failed`,
+                            detail: $localize`:@@daemons.resync-request-failed-detail:The request to resynchronize Kea configurations in Stork failed because of an internal server error. Try again to see if the error disappears.`,
                             life: 10000,
                         })
                     })
