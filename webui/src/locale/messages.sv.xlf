@@ -5010,6 +5010,13 @@
           <context context-type="linenumber">90,92</context>
         </context-group>
       <target state="translated">Zonöverföringar</target></trans-unit>
+      <trans-unit id="zone-transfers.filter-help-server-pair" datatype="html">
+        <source> Some operators may be interested in filtering the zone transfers for the specific primary/secondary server pair. It can be done by selecting the primary and the secondary machines using the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Primary<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> and <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Secondary<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> dropdowns in the filtering panel. However, the dropdown cannot be used in cases when the primary or the secondary is external (i.e., is not monitored by Stork). In this case, use the text filter to search by the external server's IP address instead. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.html</context>
+          <context context-type="linenumber">166,172</context>
+        </context-group>
+      <target state="translated"> Vissa administratörer vill kanske filtrera zonöverföringarna för ett visst primärt och sekundärt serverpar. Det gör du genom att välja de primära och sekundära maskinerna med listrutorna <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Primär<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> och <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;font-bold&quot;&gt;" />Sekundär<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> i filterpanelen. Listrutan kan dock inte användas när primären eller sekundären är extern, det vill säga inte övervakas av Stork. Använd då textfiltret för att söka efter den externa serverns IP-adress. </target></trans-unit>
       <trans-unit id="zone-transfers.serial" datatype="html">
         <source>Serial</source>
         <context-group purpose="location">
