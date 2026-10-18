@@ -71,17 +71,20 @@ export class VersionPageComponent implements OnInit, OnDestroy {
      * the "summary of ISC software versions detected by Stork" table.
      */
     private _groupHeaderMap: string[] = [
-        'Some issues were detected for the ISC software running on these machines (security updates available, versions mismatch)!',
-        'These machines are running ISC software versions that require your attention. Software updates are available.',
-        'ISC software updates are available for these machines.',
+        $localize`:@@versions.group-errors:Issues were detected for ISC software running on these machines. Security updates are available or versions do not match.`,
+        $localize`:@@versions.group-warnings:These machines run ISC software versions that need attention. Software updates are available.`,
+        $localize`:@@versions.group-updates:ISC software updates are available for these machines.`,
         '',
-        'These machines are running up-to-date ISC software',
+        $localize`:@@versions.group-current:These machines run current ISC software.`,
     ]
 
     /**
      * Configures the breadcrumbs for the component.
      */
-    breadcrumbs = [{ label: 'Monitoring' }, { label: 'Software versions' }]
+    breadcrumbs = [
+        { label: $localize`:@@menu.monitoring:Monitoring` },
+        { label: $localize`:@@menu.software-versions:Software versions` },
+    ]
 
     /**
      * An array of version details of current Kea releases.
@@ -247,8 +250,8 @@ export class VersionPageComponent implements OnInit, OnDestroy {
                                 const msg = getErrorMessage(err)
                                 this.messageService.add({
                                     severity: 'error',
-                                    summary: 'Error retrieving software version data',
-                                    detail: 'An error occurred when retrieving software version data: ' + msg,
+                                    summary: $localize`:@@versions.data-failed:Error retrieving software version data`,
+                                    detail: $localize`:@@versions.data-failed-detail:An error occurred when retrieving software version data: ${msg}:error message:`,
                                     life: 10000,
                                 })
                                 this.summaryDataLoading = false
@@ -311,8 +314,8 @@ export class VersionPageComponent implements OnInit, OnDestroy {
                         const msg = getErrorMessage(err)
                         this.messageService.add({
                             severity: 'error',
-                            summary: 'Error retrieving software version data',
-                            detail: 'An error occurred when retrieving software version data: ' + msg,
+                            summary: $localize`:@@versions.data-failed:Error retrieving software version data`,
+                            detail: $localize`:@@versions.data-failed-detail:An error occurred when retrieving software version data: ${msg}:error message:`,
                             life: 10000,
                         })
                         this.machines = []

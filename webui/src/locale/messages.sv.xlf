@@ -227,6 +227,10 @@
           <context context-type="sourcefile">src/app/communication-status-page/communication-status-page.component.ts</context>
           <context context-type="linenumber">44</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
       <target state="translated">Övervakning</target></trans-unit>
       <trans-unit id="menu.events" datatype="html">
         <source>Events</source>
@@ -6134,6 +6138,63 @@
           <context context-type="linenumber">49,51</context>
         </context-group>
       <target state="translated">Statistikdata är inte tillgängliga.</target></trans-unit>
+      <trans-unit id="versions.group-errors" datatype="html">
+        <source>Issues were detected for ISC software running on these machines. Security updates are available or versions do not match.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      <target state="translated">Problem har upptäckts i ISC-programvaran på dessa maskiner. Säkerhetsuppdateringar är tillgängliga eller versionerna stämmer inte överens.</target></trans-unit>
+      <trans-unit id="versions.group-warnings" datatype="html">
+        <source>These machines run ISC software versions that need attention. Software updates are available.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      <target state="translated">Dessa maskiner kör ISC-programvaruversioner som behöver ses över. Programuppdateringar är tillgängliga.</target></trans-unit>
+      <trans-unit id="versions.group-updates" datatype="html">
+        <source>ISC software updates are available for these machines.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      <target state="translated">ISC-programuppdateringar är tillgängliga för dessa maskiner.</target></trans-unit>
+      <trans-unit id="versions.group-current" datatype="html">
+        <source>These machines run current ISC software.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      <target state="translated">Dessa maskiner kör aktuell ISC-programvara.</target></trans-unit>
+      <trans-unit id="menu.software-versions" datatype="html">
+        <source>Software versions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      <target state="translated">Programvaruversioner</target></trans-unit>
+      <trans-unit id="versions.data-failed" datatype="html">
+        <source>Error retrieving software version data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">317</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av programversionsdata</target></trans-unit>
+      <trans-unit id="versions.data-failed-detail" datatype="html">
+        <source>An error occurred when retrieving software version data: <x id="error message" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/version-page/version-page.component.ts</context>
+          <context context-type="linenumber">318</context>
+        </context-group>
+      <target state="translated">Ett fel uppstod vid hämtning av programversionsdata: <x id="error message" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="version.more-info" datatype="html">
         <source>More Version Info</source>
         <context-group purpose="location">
