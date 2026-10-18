@@ -91,6 +91,29 @@
           <context context-type="linenumber">129</context>
         </context-group>
       <target state="translated">Profil</target></trans-unit>
+      <trans-unit id="menu.dhcp" datatype="html">
+        <source>DHCP</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/config-migration-page/config-migration-page.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      <target state="translated">DHCP</target></trans-unit>
       <trans-unit id="menu.dashboard" datatype="html">
         <source>Dashboard</source>
         <context-group purpose="location">
@@ -148,6 +171,21 @@
           <context context-type="linenumber">179</context>
         </context-group>
       <target state="translated">Konfigurationsmigreringar</target></trans-unit>
+      <trans-unit id="menu.dns" datatype="html">
+        <source>DNS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      <target state="translated">DNS</target></trans-unit>
       <trans-unit id="menu.zones" datatype="html">
         <source>Zones</source>
         <context-group purpose="location">
@@ -221,6 +259,13 @@
           <context context-type="linenumber">120</context>
         </context-group>
       <target state="translated">Maskiner</target></trans-unit>
+      <trans-unit id="menu.grafana" datatype="html">
+        <source>Grafana</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">241</context>
+        </context-group>
+      <target state="translated">Grafana</target></trans-unit>
       <trans-unit id="menu.monitoring" datatype="html">
         <source>Monitoring</source>
         <context-group purpose="location">
@@ -367,6 +412,34 @@
           <context context-type="linenumber">330</context>
         </context-group>
       <target state="translated">Kea-handbok</target></trans-unit>
+      <trans-unit id="menu.item-failed" datatype="html">
+        <source>Error getting menu item</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">361</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av menyalternativ</target></trans-unit>
+      <trans-unit id="menu.item-not-found" datatype="html">
+        <source>Menu item not found: <x id="menu item" equiv-text="id" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">362</context>
+        </context-group>
+      <target state="translated">Menyalternativet hittades inte: <x id="menu item" equiv-text="id" /></target></trans-unit>
+      <trans-unit id="app.software-versions-failed" datatype="html">
+        <source>Error retrieving software versions data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">405</context>
+        </context-group>
+      <target state="translated">Fel vid hämtning av programversionsdata</target></trans-unit>
+      <trans-unit id="app.software-versions-failed-detail" datatype="html">
+        <source>Error occurred when retrieving software versions data: <x id="error message" equiv-text="err" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">406</context>
+        </context-group>
+      <target state="translated">Ett fel uppstod vid hämtning av programversionsdata: <x id="error message" equiv-text="err" /></target></trans-unit>
       <trans-unit id="auth.session.retrieve.failed" datatype="html">
         <source>Failed to retrieve session</source>
         <context-group purpose="location">
@@ -1053,25 +1126,6 @@
           <context context-type="linenumber">43</context>
         </context-group>
       <target state="translated">Konfigurationsmigreringar</target></trans-unit>
-      <trans-unit id="menu.dhcp" datatype="html">
-        <source>DHCP</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/config-migration-page/config-migration-page.component.ts</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/hosts-page/hosts-page.component.ts</context>
-          <context context-type="linenumber">52</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared-networks-page/shared-networks-page.component.ts</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/subnets-page/subnets-page.component.ts</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
-      <target state="translated">DHCP</target></trans-unit>
       <trans-unit id="config-migrations.tab-title" datatype="html">
         <source>Migration <x id="INTERPOLATION" equiv-text="entity.id" /></source>
         <context-group purpose="location">
@@ -6708,17 +6762,6 @@
           <context context-type="linenumber">538,539</context>
         </context-group>
       <target state="translated">Loggmeddelande</target></trans-unit>
-      <trans-unit id="menu.dns" datatype="html">
-        <source>DNS</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zone-transfers-page/zone-transfers-page.component.ts</context>
-          <context context-type="linenumber">123</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/zones-page/zones-page.component.ts</context>
-          <context context-type="linenumber">181</context>
-        </context-group>
-      <target state="translated">DNS</target></trans-unit>
       <trans-unit id="menu.zone-transfers" datatype="html">
         <source>Zone Transfers</source>
         <context-group purpose="location">

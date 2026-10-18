@@ -135,7 +135,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
         this.menuItems = [
             {
-                label: 'DHCP',
+                label: $localize`:@@menu.dhcp:DHCP`,
                 id: 'dhcp',
                 visible: false,
                 items: [
@@ -184,7 +184,7 @@ export class AppComponent implements OnInit, OnDestroy {
                 ],
             },
             {
-                label: 'DNS',
+                label: $localize`:@@menu.dns:DNS`,
                 id: 'dns',
                 visible: false,
                 items: [
@@ -238,7 +238,7 @@ export class AppComponent implements OnInit, OnDestroy {
                         queryParams: { authorized: 'true' },
                     },
                     {
-                        label: 'Grafana',
+                        label: $localize`:@@menu.grafana:Grafana`,
                         id: 'grafana',
                         icon: 'pi pi-chart-line',
                         url: '',
@@ -358,8 +358,8 @@ export class AppComponent implements OnInit, OnDestroy {
         }
         this.messageService.add({
             severity: 'error',
-            summary: 'Error getting menu item',
-            detail: 'Menu item not found: ' + id,
+            summary: $localize`:@@menu.item-failed:Error getting menu item`,
+            detail: $localize`:@@menu.item-not-found:Menu item not found: ${id}:menu item:`,
             life: 10000,
         })
         return null
@@ -402,8 +402,8 @@ export class AppComponent implements OnInit, OnDestroy {
                     firstValueFrom(this.versionService.getCurrentData()).catch((err) =>
                         this.messageService.add({
                             severity: 'error',
-                            summary: 'Error retrieving software versions data',
-                            detail: 'Error occurred when retrieving software versions data: ' + err,
+                            summary: $localize`:@@app.software-versions-failed:Error retrieving software versions data`,
+                            detail: $localize`:@@app.software-versions-failed-detail:Error occurred when retrieving software versions data: ${err}:error message:`,
                             life: 10000,
                         })
                     )
