@@ -2453,6 +2453,10 @@
           <context context-type="sourcefile">src/app/kea-daemon/kea-daemon.component.html</context>
           <context context-type="linenumber">139,140</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">301,302</context>
+        </context-group>
       <target state="translated">Drifttid</target></trans-unit>
       <trans-unit id="5333129171761171015" datatype="html">
         <source>Last Reloaded At</source>
@@ -2767,6 +2771,153 @@
           <context context-type="linenumber">147</context>
         </context-group>
       <target state="translated">Användaren saknar behörighet</target></trans-unit>
+      <trans-unit id="1657319477612155268" datatype="html">
+        <source>Agent Installation Instructions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      <target state="translated">Installationsanvisningar för Stork-agenten</target></trans-unit>
+      <trans-unit id="4500616106253489253" datatype="html">
+        <source>Copy commands to clipboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">59,62</context>
+        </context-group>
+      <target state="translated">Kopiera kommandon till urklipp</target></trans-unit>
+      <trans-unit id="5944235473374361306" datatype="html">
+        <source>Copy server token to clipboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">71,75</context>
+        </context-group>
+      <target state="translated">Kopiera servertoken till urklipp</target></trans-unit>
+      <trans-unit id="7037738623445841512" datatype="html">
+        <source>Regenerate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      <target state="translated">Generera på nytt</target></trans-unit>
+      <trans-unit id="3704077369908349930" datatype="html">
+        <source>If the server token has been compromised, regenerate it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">78,80</context>
+        </context-group>
+      <target state="translated">Generera en ny token om servertoken har äventyrats.</target></trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+      <target state="translated">Stäng</target></trans-unit>
+      <trans-unit id="6935250775030622228" datatype="html">
+        <source>Machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">116,119</context>
+        </context-group>
+      <target state="translated">Maskiner</target></trans-unit>
+      <trans-unit id="9013300006710956980" datatype="html">
+        <source>Installing Stork Agent on a New Machine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">123,125</context>
+        </context-group>
+      <target state="translated">Installera Stork-agenten på en ny maskin</target></trans-unit>
+      <trans-unit id="8022654664811599438" datatype="html">
+        <source>Change Machine Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">173,175</context>
+        </context-group>
+      <target state="translated">Ändra maskinadress</target></trans-unit>
+      <trans-unit id="2159130950882492111" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">210,211</context>
+        </context-group>
+      <target state="translated">Avbryt</target></trans-unit>
+      <trans-unit id="1230154438678955604" datatype="html">
+        <source>Change</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">217,218</context>
+        </context-group>
+      <target state="translated">Ändra</target></trans-unit>
+      <trans-unit id="3788975074238145076" datatype="html">
+        <source>System Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">249,250</context>
+        </context-group>
+      <target state="translated">Systeminformation</target></trans-unit>
+      <trans-unit id="6304432362546770951" datatype="html">
+        <source>Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">252,253</context>
+        </context-group>
+      <target state="translated">Adress</target></trans-unit>
+      <trans-unit id="1605455101862010019" datatype="html">
+        <source>Hostname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">256,258</context>
+        </context-group>
+      <target state="translated">Värdnamn</target></trans-unit>
+      <trans-unit id="7620979627803224181" datatype="html">
+        <source>Agent Version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">260,262</context>
+        </context-group>
+      <target state="translated">Agentversion</target></trans-unit>
+      <trans-unit id="4027647877328291519" datatype="html">
+        <source>CPUs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">270,272</context>
+        </context-group>
+      <target state="translated">Processorer</target></trans-unit>
+      <trans-unit id="2018242385791949208" datatype="html">
+        <source>CPUs Load</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">275,276</context>
+        </context-group>
+      <target state="translated">Processorbelastning</target></trans-unit>
+      <trans-unit id="1548129644093494406" datatype="html">
+        <source>Memory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">293,294</context>
+        </context-group>
+      <target state="translated">Minne</target></trans-unit>
+      <trans-unit id="1130608889235633982" datatype="html">
+        <source>Used Memory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">297,299</context>
+        </context-group>
+      <target state="translated">Använt minne</target></trans-unit>
+      <trans-unit id="1419569261746199221" datatype="html">
+        <source>Daemons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">368,370</context>
+        </context-group>
+      <target state="translated">Demoner</target></trans-unit>
+      <trans-unit id="5729418620241283277" datatype="html">
+        <source>Events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/machines-page/machines-page.component.html</context>
+          <context context-type="linenumber">380,381</context>
+        </context-group>
+      <target state="translated">Händelser</target></trans-unit>
       <trans-unit id="machines.refresh.state" datatype="html">
         <source>Refresh machine state information</source>
         <context-group purpose="location">

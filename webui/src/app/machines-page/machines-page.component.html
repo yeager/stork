@@ -39,7 +39,7 @@
 </app-breadcrumbs>
 
 <div appAccessType="read" appAccessEntity="machines-server-token" [appHideIfNoAccess]="true">
-    <p-dialog header="Agent Installation Instructions" [(visible)]="displayAgentInstallationInstruction">
+    <p-dialog i18n-header header="Agent Installation Instructions" [(visible)]="displayAgentInstallationInstruction">
         <p class="max-w-40rem my-2 mr-2">
             Copy these commands and paste them into a terminal on the machine where the Stork agent is being installed.
             <br />
@@ -56,7 +56,7 @@ sudo ./stork-install-agent.sh</textarea>
             <p-button
                 (click)="copyToClipboard(agentInstallationText)"
                 icon="pi pi-copy"
-                pTooltip="Copy commands to clipboard"
+                i18n-pTooltip pTooltip="Copy commands to clipboard"
                 class="flex-none"
             ></p-button>
         </div>
@@ -68,14 +68,14 @@ sudo ./stork-install-agent.sh</textarea>
             <p-button
                 (click)="copyToClipboard(serverTokenInput)"
                 icon="pi pi-copy"
-                pTooltip="Copy server token to clipboard"
+                i18n-pTooltip pTooltip="Copy server token to clipboard"
                 class="mr-1"
             ></p-button>
 
             <p-button
                 icon="pi pi-refresh"
-                label="Regenerate"
-                pTooltip="If the server token has been compromised, regenerate it."
+                i18n-label label="Regenerate"
+                i18n-pTooltip pTooltip="If the server token has been compromised, regenerate it."
                 severity="secondary"
                 (click)="regenerateServerToken()"
                 id="regenerate-server-token-button"
@@ -93,7 +93,7 @@ sudo ./stork-install-agent.sh</textarea>
         <div class="flex justify-content-end">
             <p-button
                 icon="pi pi-times"
-                label="Close"
+                i18n-label label="Close"
                 (click)="displayAgentInstallationInstruction = false"
                 id="close-agent-installation-instruction-button"
             ></p-button>
@@ -113,14 +113,14 @@ sudo ./stork-install-agent.sh</textarea>
     }"
     [entitiesTable]="machinesTable()?.machinesTable"
     (activeTabChange)="activeTabEntityID.set($event)"
-    firstTabTitle="Machines"
+    i18n-firstTabTitle firstTabTitle="Machines"
 >
     <ng-template #firstTab>
         <div class="flex flex-wrap gap-2 justify-content-end mb-3">
             <div class="flex flex-auto gap-2 flex-wrap justify-content-end">
                 <div class="flex-auto"></div>
                 <p-button
-                    label="Installing Stork Agent on a New Machine"
+                    i18n-label label="Installing Stork Agent on a New Machine"
                     icon="pi pi-download"
                     (click)="showAgentInstallationInstruction()"
                     id="show-agent-installation-instruction-button"
@@ -170,7 +170,7 @@ sudo ./stork-install-agent.sh</textarea>
     <ng-template #entityTab let-machineTab>
         <div appAccessEntity="machine-address" appAccessType="update" [appHideIfNoAccess]="true">
             <p-dialog
-                header="Change Machine Address"
+                i18n-header header="Change Machine Address"
                 [(visible)]="changeMachineAddressDialogVisible"
                 [style]="{ 'max-width': '100rem' }"
             >
@@ -206,14 +206,14 @@ sudo ./stork-install-agent.sh</textarea>
                     <p-button
                         (click)="changeMachineAddressDialogVisible = false"
                         icon="pi pi-times"
-                        label="Cancel"
+                        i18n-label label="Cancel"
                         [text]="true"
                         id="cancel-machine-edit-button"
                     ></p-button>
                     <p-button
                         (click)="saveMachine(machineTab)"
                         icon="pi pi-check"
-                        label="Change"
+                        i18n-label label="Change"
                         id="change-machine-button"
                     ></p-button>
                 </ng-template>
@@ -246,18 +246,18 @@ sudo ./stork-install-agent.sh</textarea>
 
             <div class="col-12 xl:col-7 grid">
                 <div class="col-12 md:col-6">
-                    <h3 class="underlined">System Information</h3>
+                    <h3 class="underlined" i18n>System Information</h3>
                     <table [class.text-color-secondary]="machineTab?.error">
                         <tr>
-                            <td>Address</td>
+                            <td i18n>Address</td>
                             <td>{{ machineTab?.address }}:{{ machineTab?.agentPort }}</td>
                         </tr>
                         <tr>
-                            <td>Hostname</td>
+                            <td i18n>Hostname</td>
                             <td>{{ machineTab?.hostname }}</td>
                         </tr>
                         <tr>
-                            <td>Agent Version</td>
+                            <td i18n>Agent Version</td>
                             <td>
                                 @if (machineTab?.authorized) {
                                     <app-version-status
@@ -267,12 +267,12 @@ sudo ./stork-install-agent.sh</textarea>
                             </td>
                         </tr>
                         <tr>
-                            <td>CPUs</td>
+                            <td i18n>CPUs</td>
                             <td>{{ machineTab?.cpus }}</td>
                         </tr>
                         <tr>
                             <td class="flex align-items-center justify-content-between">
-                                <span>CPUs Load</span>
+                                <span i18n>CPUs Load</span>
                                 <app-help-tip subject="CPU Load" id="cpu-load-2-help-button">
                                     <p>
                                         These three numbers are CPU load averages for the last 1 minute, 5 minutes, and
@@ -290,15 +290,15 @@ sudo ./stork-install-agent.sh</textarea>
                             <td>{{ machineTab?.cpusLoad }}</td>
                         </tr>
                         <tr>
-                            <td>Memory</td>
+                            <td i18n>Memory</td>
                             <td>{{ machineTab?.memory || '?' }} GiB</td>
                         </tr>
                         <tr>
-                            <td>Used Memory</td>
+                            <td i18n>Used Memory</td>
                             <td>{{ machineTab?.usedMemory }} %</td>
                         </tr>
                         <tr>
-                            <td>Uptime</td>
+                            <td i18n>Uptime</td>
                             <td>{{ machineTab?.uptime || '?' }} days</td>
                         </tr>
                         <tr>
@@ -365,7 +365,7 @@ sudo ./stork-install-agent.sh</textarea>
                     }
                 </div>
                 <div class="col-12 md:col-6">
-                    <h3 class="underlined">Daemons</h3>
+                    <h3 class="underlined" i18n>Daemons</h3>
                     <div class="inline-flex flex-column gap-1">
                         @for (daemon of machineTab?.daemons; track daemon) {
                             <div class="flex flex-row justify-content-between">
@@ -377,7 +377,7 @@ sudo ./stork-install-agent.sh</textarea>
                 </div>
             </div>
             <div class="col-12 xl:col-5">
-                <h3 class="underlined">Events</h3>
+                <h3 class="underlined" i18n>Events</h3>
                 <app-events-panel #eventsTable [filter]="{ machineId: machineTab?.id || 42 }"></app-events-panel>
             </div>
         </div>
