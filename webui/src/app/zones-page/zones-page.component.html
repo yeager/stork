@@ -125,10 +125,11 @@
     }
 </ng-template>
 
-<p-dialog header="Zones Fetch Status" [modal]="true" [(visible)]="fetchStatusVisible" styleClass="max-w-screen">
+<p-dialog header="Zones Fetch Status" i18n-header="@@zones.fetch-status-dialog" [modal]="true" [(visible)]="fetchStatusVisible" styleClass="max-w-screen">
     <div class="mb-2 flex gap-2 flex-wrap justify-content-end">
         <p-button
             label="Refresh List"
+            i18n-label="@@daemons.refresh-list"
             icon="pi pi-refresh"
             (onClick)="refreshFetchStatusTable()"
             id="refresh-fetch-status-data"
@@ -147,7 +148,7 @@
     >
         <ng-template #header>
             <tr>
-                <th>Daemon</th>
+                <th i18n="@@hosts.daemon">Daemon</th>
                 <th
                     pTooltip="Zone config is a zone specification in the BIND9 view.
 If the zone appears in several views, this count is increased
@@ -155,7 +156,7 @@ for each occurrence of that zone.
 "
                     class="cursor-pointer"
                 >
-                    Zone Configs Count
+                    <ng-container i18n="@@zones.zone-configs-count">Zone Configs Count</ng-container>
                 </th>
                 <th
                     pTooltip="The number of distinct zone (zone names) in all views.
@@ -163,7 +164,7 @@ If the zone appears in several views, it is counted only once.
 "
                     class="cursor-pointer"
                 >
-                    Distinct Zones
+                    <ng-container i18n="@@zones.distinct-zones">Distinct Zones</ng-container>
                 </th>
                 <th
                     pTooltip="The number of distinct builtin zones in all views.
@@ -173,11 +174,11 @@ to the number of configured zones.
 "
                     class="cursor-pointer"
                 >
-                    Builtin Zones
+                    <ng-container i18n="@@zones.builtin-zones">Builtin Zones</ng-container>
                 </th>
-                <th>Status</th>
-                <th>Error</th>
-                <th>Created At</th>
+                <th i18n="@@common.status">Status</th>
+                <th i18n="@@common.error">Error</th>
+                <th i18n="@@zones.created-at">Created At</th>
             </tr>
         </ng-template>
         <ng-template #body let-state>
@@ -223,7 +224,7 @@ to the number of configured zones.
             <i class="pi pi-exclamation-triangle p-confirmdialog-icon"></i>
             <div class="flex flex-column gap-4 p-confirmdialog-message">
                 <div>{{ message.message }}</div>
-                <div>Are you sure you want to continue?</div>
+                <div i18n="@@zones.confirm-continue">Are you sure you want to continue?</div>
                 <div class="flex items-center">
                     <p-checkbox
                         inputId="force-populate-zone-inventory"
@@ -231,6 +232,7 @@ to the number of configured zones.
                         binary="true"
                     />
                     <label for="force-populate-zone-inventory" class="ml-2"
+                        i18n="@@zones.refresh-cached"
                         >Refresh cached zones from DNS servers</label
                     >
                 </div>
@@ -243,6 +245,7 @@ to the number of configured zones.
     routePath="/dns/zones/"
     [entityProvider]="zoneProvider"
     firstTabTitle="Zones"
+    i18n-firstTabTitle="@@zones.title"
     [entityTitleProvider]="tabTitleProvider"
     [tableQueryParamFilters]="supportedQueryParamFilters"
     [entitiesTable]="zonesTable"
@@ -322,6 +325,7 @@ to the number of configured zones.
                             "
                             (onClick)="toggleBuiltinZones()"
                             label="Toggle builtin zones"
+                            i18n-label="@@zones.toggle-builtin"
                             iconPos="right"
                         />
                         <p-columnFilter
@@ -340,7 +344,7 @@ to the number of configured zones.
                                             styleClass="w-12rem"
                                             (onChange)="filterZonesTable($event.value, filterConstraint)"
                                         />
-                                        <label for="zone-type">Zone Type</label>
+                                        <label for="zone-type" i18n="@@zones.zone-type">Zone Type</label>
                                     </p-floatlabel>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -394,6 +398,7 @@ to the number of configured zones.
                                         (daemonIDChange)="filterZonesTable($event, filterConstraint)"
                                         [daemonNames]="['named', 'pdns']"
                                         label="Daemon"
+                                        i18n-label="@@hosts.daemon"
                                         (errorOccurred)="onAutocompleteError($event)"
                                     />
                                     <ng-container
@@ -425,7 +430,7 @@ to the number of configured zones.
                                             id="zone-serial"
                                             class="w-8rem"
                                         />
-                                        <label for="zone-serial">Serial</label>
+                                        <label for="zone-serial" i18n="@@zone-transfers.serial">Serial</label>
                                     </p-floatlabel>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -455,7 +460,7 @@ to the number of configured zones.
                                             [ngModel]="value"
                                             styleClass="w-10rem"
                                         ></p-select>
-                                        <label for="zone-class">Zone Class</label>
+                                        <label for="zone-class" i18n="@@zones.zone-class">Zone Class</label>
                                     </p-floatlabel>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -487,7 +492,7 @@ to the number of configured zones.
                                             [ngModel]="value"
                                             styleClass="w-10rem"
                                         ></p-select>
-                                        <label for="daemon-name">Daemon Name</label>
+                                        <label for="daemon-name" i18n="@@daemons.daemon-name">Daemon Name</label>
                                     </p-floatlabel>
                                     <ng-container
                                         *ngTemplateOutlet="
@@ -515,6 +520,7 @@ to the number of configured zones.
                                             (input)="filterZonesTable($event.target.value, filterConstraint)"
                                             [ngModel]="value"
                                             placeholder="Zone name or view"
+                                            i18n-placeholder="@@zones.search"
                                             class="max-w-13rem sm:w-18rem sm:max-w-18rem"
                                         />
                                     </p-iconfield>
@@ -534,12 +540,14 @@ to the number of configured zones.
                     <ng-template #buttons>
                         <p-button
                             label="Fetch Status"
+                            i18n-label="@@zones.fetch-status"
                             [icon]="fetchInProgress() ? 'pi pi-spin pi-spinner' : 'pi pi-info-circle'"
                             (onClick)="fetchStatusVisible = true"
                             id="fetch-status"
                         />
                         <p-button
                             label="Fetch Zones"
+                            i18n-label="@@zones.fetch-zones"
                             icon="pi pi-download"
                             (onClick)="sendPutZonesFetch()"
                             [disabled]="fetchInProgress() || putZonesFetchLocked()"
@@ -549,6 +557,7 @@ to the number of configured zones.
                         />
                         <p-button
                             label="Refresh List"
+                            i18n-label="@@daemons.refresh-list"
                             icon="pi pi-refresh"
                             (onClick)="onLazyLoadZones(zonesTable.createLazyLoadMetadata())"
                             id="refresh-zones-data"
@@ -557,6 +566,7 @@ to the number of configured zones.
                     <ng-template #splitbutton>
                         <p-splitbutton
                             label="Refresh List"
+                            i18n-label="@@daemons.refresh-list"
                             icon="pi pi-refresh"
                             (onClick)="onLazyLoadZones(zonesTable.createLazyLoadMetadata())"
                             [model]="toolbarButtons"
@@ -570,18 +580,18 @@ to the number of configured zones.
                     <th class="w-3rem sm:w-5rem"></th>
                     <th [pSortableColumn]="ZoneSortField.Rname">
                         <div class="flex gap-1 white-space-nowrap">
-                            Zone Name<p-sortIcon [field]="ZoneSortField.Rname" />
+                            <ng-container i18n="@@zones.zone-name">Zone Name</ng-container><p-sortIcon [field]="ZoneSortField.Rname" />
                         </div>
                     </th>
                     <th [pSortableColumn]="ZoneSortField.Serial">
-                        <div class="flex gap-1">Serial<p-sortIcon [field]="ZoneSortField.Serial" /></div>
+                        <div class="flex gap-1"><ng-container i18n="@@zone-transfers.serial">Serial</ng-container><p-sortIcon [field]="ZoneSortField.Serial" /></div>
                     </th>
                     <th [pSortableColumn]="ZoneSortField.Type">
                         <div class="flex gap-1 white-space-nowrap">
-                            Zone Type<p-sortIcon [field]="ZoneSortField.Type" />
+                            <ng-container i18n="@@zones.zone-type">Zone Type</ng-container><p-sortIcon [field]="ZoneSortField.Type" />
                         </div>
                     </th>
-                    <th>Number of Associated DNS Views</th>
+                    <th i18n="@@zones.associated-views">Number of Associated DNS Views</th>
                 </tr>
             </ng-template>
             <ng-template #body let-zone let-expanded="expanded">
@@ -652,7 +662,7 @@ to the number of configured zones.
                                 <ng-template #emptymessage let-columns>
                                     <tr>
                                         <td [attr.colspan]="columns.length">
-                                            There are no DNS views associated with this zone.
+                                            <ng-container i18n="@@zones.no-associated-views">There are no DNS views associated with this zone.</ng-container>
                                         </td>
                                     </tr>
                                 </ng-template>
@@ -676,7 +686,7 @@ to the number of configured zones.
                 ></ng-container>
             </ng-template>
             <ng-template #paginatorright let-paginatorState>
-                Total: {{ paginatorState.totalRecords | pluralize: 'zone' }}
+                <ng-container i18n="@@hosts.total">Total:</ng-container> {{ paginatorState.totalRecords | pluralize: 'zone' }}
             </ng-template>
         </p-table>
     </ng-template>
@@ -685,19 +695,19 @@ to the number of configured zones.
             <div class="flex text-xl align-items-baseline font-normal text-primary mb-4">
                 <div class="pi pi-sitemap mr-2"></div>
                 <div class="word-break-all">
-                    DNS Zone <span class="font-semibold">{{ zone.name | unroot }}</span>
+                    <ng-container i18n="@@zones.dns-zone">DNS Zone</ng-container> <span class="font-semibold">{{ zone.name | unroot }}</span>
                 </div>
             </div>
             <div class="mb-4">
-                <p-fieldset legend="Zone Data">
+                <p-fieldset legend="Zone Data" i18n-legend="@@zones.zone-data">
                     <p-table [value]="[zone]">
                         <ng-template #body let-zoneData>
                             <tr>
-                                <td class="font-semibold w-14rem">Name</td>
+                                <td class="font-semibold w-14rem" i18n="@@common.name">Name</td>
                                 <td>{{ zoneData.name | unroot }}</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold w-14rem">Stork Internal Zone ID</td>
+                                <td class="font-semibold w-14rem" i18n="@@zones.internal-id">Stork Internal Zone ID</td>
                                 <td>{{ zoneData.id }}</td>
                             </tr>
                         </ng-template>
@@ -705,7 +715,7 @@ to the number of configured zones.
                 </p-fieldset>
             </div>
             <div class="mb-4">
-                <p-fieldset legend="DNS Views Associated with the Zone">
+                <p-fieldset legend="DNS Views Associated with the Zone" i18n-legend="@@zones.associated-dns-views">
                     <p-table
                         [value]="zone.localZones"
                         dataKey="serial"
@@ -722,8 +732,8 @@ to the number of configured zones.
                                 @for (col of columns; track col) {
                                     <th>{{ col }}</th>
                                 }
-                                <th>Fetch Status</th>
-                                <th>Show Zone</th>
+                                <th i18n="@@zones.fetch-status">Fetch Status</th>
+                                <th i18n="@@zones.show-zone">Show Zone</th>
                             </tr>
                         </ng-template>
                         <ng-template #body let-localZone>
