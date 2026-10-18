@@ -19,27 +19,27 @@
     <ng-template #caption>
         <app-table-caption [tableElement]="networksTable" tableKey="shared-networks-table">
             <ng-template #helptip>
-                <p>
+                <p i18n="@@shared-networks.filter-help-intro">
                     The table below can be filtered by entering text in the search box; the table shows all shared
                     networks matching the filter text. The only field currently supported for such filtering is:
                 </p>
                 <ul>
-                    <li>Name</li>
+                    <li i18n="@@shared-networks.filter-help-name">Name</li>
                 </ul>
-                <p>
+                <p i18n="@@shared-networks.filter-help-criteria">
                     The table can present shared networks that meet certain criteria, e.g. "alpha" shows all shared
                     networks that contain "alpha" in their names.
                 </p>
-                <p>
+                <p i18n="@@shared-networks.filter-help-explicit">
                     Shared networks can also be filtered by an explicitly selected field, using text input and dropdown
                     filters. The currently supported fields for explicit filtering are:
                 </p>
                 <ul>
-                    <li>
+                    <li i18n="@@shared-networks.filter-help-daemon">
                         Daemon - pick a daemon from the dropdown list or type to search the daemon by machine's
                         hostname, address, daemon ID, or daemon name.
                     </li>
-                    <li>DHCP Version</li>
+                    <li i18n="@@shared-networks.filter-help-dhcp-version">DHCP Version</li>
                 </ul>
             </ng-template>
             <ng-template #filters>
