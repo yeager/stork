@@ -3,14 +3,14 @@
     (onClick)="togglePopover($event)"
     icon="pi pi-question-circle"
     [text]="true"
-    title="Help for {{ subject }}"
+    [title]="helpTitle"
     [dt]="helpTipButton"
     [rounded]="true"
 ></p-button>
 <p-popover #po styleClass="help-tip-inserted">
     <div class="help-tip" [ngStyle]="{ width: width }" id="{{ 'help-for-' + subject }}">
         <div class="flex gap-2">
-            <h3 class="underlined flex-auto">Help for {{ subject }}</h3>
+            <h3 class="underlined flex-auto">{{ helpTitle }}</h3>
         </div>
         <p-button
             icon="pi pi-times"

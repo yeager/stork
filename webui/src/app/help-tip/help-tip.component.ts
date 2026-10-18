@@ -42,6 +42,10 @@ export class HelpTipComponent {
      */
     @Input() variant: 'big' | '' = ''
 
+    get helpTitle(): string {
+        return $localize`:@@help.for:Help for ${this.subject}:subject:`
+    }
+
     /**
      * Custom button style.
      */
