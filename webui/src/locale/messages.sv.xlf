@@ -4714,6 +4714,20 @@
           <context context-type="linenumber">302</context>
         </context-group>
       <target state="translated">Det gick inte att hämta demonregistret</target></trans-unit>
+      <trans-unit id="login.version" datatype="html">
+        <source>Version:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login-screen/login-screen.component.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      <target state="translated">Version:</target></trans-unit>
+      <trans-unit id="login.intro" datatype="html">
+        <source> Dashboard for <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://kea.isc.org&quot; target=&quot;_blank&quot;&gt;" />ISC Kea<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> and <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://bind.isc.org&quot; target=&quot;_blank&quot;&gt;" />ISC BIND 9<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login-screen/login-screen.component.html</context>
+          <context context-type="linenumber">24,28</context>
+        </context-group>
+      <target state="translated"> Instrumentpanel för <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://kea.isc.org&quot; target=&quot;_blank&quot;&gt;" />ISC Kea<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> och <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://bind.isc.org&quot; target=&quot;_blank&quot;&gt;" />ISC BIND 9<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /></target></trans-unit>
       <trans-unit id="login.choose.method" datatype="html">
         <source>Choose a Method</source>
         <context-group purpose="location">
