@@ -173,6 +173,10 @@
           <context context-type="linenumber">69</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-page/kea-global-configuration-page.component.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/machines-page/machines-page.component.ts</context>
           <context context-type="linenumber">119</context>
         </context-group>
@@ -1294,6 +1298,10 @@
           <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
           <context context-type="linenumber">71</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-page/kea-global-configuration-page.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
       <target state="translated">Demon</target></trans-unit>
       <trans-unit id="daemon.tab.on-machine" datatype="html">
         <source>on machine</source>
@@ -1619,6 +1627,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/kea-daemon-configuration-page/kea-daemon-configuration-page.component.ts</context>
           <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-page/kea-global-configuration-page.component.ts</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       <target state="translated">Demoner</target></trans-unit>
       <trans-unit id="daemons.resync-confirmation" datatype="html">
@@ -3251,6 +3263,27 @@
           <context context-type="linenumber">10,11</context>
         </context-group>
       <target state="translated">Tillbaka till <x id="INTERPOLATION" equiv-text="{{ daemonLabel ?? 'Daemon' }}" /></target></trans-unit>
+      <trans-unit id="kea.global-configuration" datatype="html">
+        <source>Global Configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-page/kea-global-configuration-page.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      <target state="translated">Global konfiguration</target></trans-unit>
+      <trans-unit id="kea.global-config-fetch-failed" datatype="html">
+        <source>Failed to fetch Kea daemon configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-page/kea-global-configuration-page.component.ts</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta Kea-daemonens konfiguration</target></trans-unit>
+      <trans-unit id="kea.global-config-fetch-failed-detail" datatype="html">
+        <source>Failed to fetch Kea daemon configuration: <x id="INTERPOLATION" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/kea-global-configuration-page/kea-global-configuration-page.component.ts</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+      <target state="translated">Det gick inte att hämta Kea-daemonens konfiguration: <x id="INTERPOLATION" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="6568528235266559788" datatype="html">
         <source>Global DHCP Parameters</source>
         <context-group purpose="location">

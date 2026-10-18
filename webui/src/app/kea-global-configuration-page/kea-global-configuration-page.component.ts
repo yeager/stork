@@ -51,10 +51,10 @@ export class KeaGlobalConfigurationPageComponent implements OnInit, OnDestroy {
      * Breadcrumbs for this view.
      */
     breadcrumbs: MenuItem[] = [
-        { label: 'Services' },
-        { label: 'Daemons', routerLink: '/daemons/all' },
-        { label: 'Daemon' },
-        { label: 'Global Configuration' },
+        { label: $localize`:@@menu.services:Services` },
+        { label: $localize`:@@search.daemons:Daemons`, routerLink: '/daemons/all' },
+        { label: $localize`:@@daemon.tab.daemon:Daemon` },
+        { label: $localize`:@@kea.global-configuration:Global Configuration` },
     ]
 
     /**
@@ -196,8 +196,8 @@ export class KeaGlobalConfigurationPageComponent implements OnInit, OnDestroy {
                 let msg = getErrorMessage(err)
                 this.messageService.add({
                     severity: 'error',
-                    summary: 'Failed to fetch Kea daemon configuration',
-                    detail: `Failed to fetch Kea daemon configuration: ${msg}`,
+                    summary: $localize`:@@kea.global-config-fetch-failed:Failed to fetch Kea daemon configuration`,
+                    detail: $localize`:@@kea.global-config-fetch-failed-detail:Failed to fetch Kea daemon configuration: ${msg}:INTERPOLATION:`,
                     life: 10000,
                 })
             })
