@@ -64,7 +64,8 @@
                                     "maximumWarning": "6kb",
                                     "maximumError": "10kb"
                                 }
-                            ]
+                            ],
+                            "localize": true
                         }
                     },
                     "defaultConfiguration": ""
@@ -118,6 +119,15 @@
                         "compodoc": false,
                         "browserTarget": "stork:build"
                     }
+                }
+            },
+            "i18n": {
+                "sourceLocale": {
+                    "code": "en-US",
+                    "subPath": ""
+                },
+                "locales": {
+                    "sv": "src/locale/messages.sv.xlf"
                 }
             }
         }

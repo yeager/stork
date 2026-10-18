@@ -29,6 +29,8 @@ func TestFileServerMiddleware(t *testing.T) {
 	_, _ = sb.Join("public/file.ext")
 	_, _ = sb.Write("public/index.html", "index")
 	_, _ = sb.JoinDir("public/dir")
+	_, _ = sb.JoinDir("public/sv")
+	_, _ = sb.Write("public/sv/index.html", "swedish index")
 	_, _ = sb.Join("private/file.ext")
 	_, _ = sb.JoinDir("private/dir")
 	err := os.Symlink(
@@ -112,6 +114,22 @@ func TestFileServerMiddleware(t *testing.T) {
 		resp := w.Result()
 		defer resp.Body.Close()
 		requireIsIndex(resp)
+	})
+
+	t.Run("request a localized route", func(t *testing.T) {
+		for _, requestPath := range []string{"/sv", "/sv/", "/sv/dashboard"} {
+			t.Run(requestPath, func(t *testing.T) {
+				req := httptest.NewRequestWithContext(t.Context(), "GET", "http://localhost"+requestPath, nil)
+				w := httptest.NewRecorder()
+				handler.ServeHTTP(w, req)
+				resp := w.Result()
+				defer resp.Body.Close()
+				body, err := io.ReadAll(resp.Body)
+				require.NoError(t, err)
+				require.EqualValues(t, http.StatusOK, resp.StatusCode)
+				require.Equal(t, "swedish index", string(body))
+			})
+		}
 	})
 
 	t.Run("request a file outside of the static files directory using path traversal", func(t *testing.T) {

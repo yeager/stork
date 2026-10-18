@@ -109,6 +109,23 @@ func loggingMiddleware(next http.Handler) http.Handler {
 
 // Install a middleware that is serving static files for UI
 // and assets/pkgs content ie. stork rpm and deb packages.
+// localeIndexPath returns the localized application entry point for a request when
+// the requested first path segment is a built locale directory. It only returns
+// paths that have been checked relative to staticRoot.
+func localeIndexPath(staticRoot *os.Root, resourcePath string) string {
+	locale := strings.Split(resourcePath, "/")[0]
+	if locale == "" {
+		return "index.html"
+	}
+
+	indexPath := path.Join(locale, "index.html")
+	stat, err := staticRoot.Stat(indexPath)
+	if err == nil && !stat.IsDir() {
+		return indexPath
+	}
+	return "index.html"
+}
+
 func fileServerMiddleware(next http.Handler, staticFilesDir string) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if strings.HasPrefix(r.URL.Path, "/api") || r.URL.Path == "/swagger.json" {
@@ -142,6 +159,7 @@ func fileServerMiddleware(next http.Handler, staticFilesDir string) http.Handler
 			}
 
 			stat, err := staticRoot.Stat(resourcePath)
+			indexPath := localeIndexPath(staticRoot, resourcePath)
 			switch {
 			case os.IsNotExist(err):
 				// The static-page-content subdirectory contains optional files that
@@ -162,8 +180,9 @@ func fileServerMiddleware(next http.Handler, staticFilesDir string) http.Handler
 					// response instead of serving the file.
 					r.URL.Path = path.Clean(r.URL.Path)
 
-					// If file does not exist then return content of index.html.
-					http.ServeFile(w, r, path.Join(staticFilesDir, "index.html"))
+					// If file does not exist then return the locale's application entry
+					// point when the request targets a built locale directory.
+					http.ServeFile(w, r, path.Join(staticFilesDir, indexPath))
 				}
 			case err != nil:
 				// If there is an error other than file not existing, return
@@ -173,8 +192,8 @@ func fileServerMiddleware(next http.Handler, staticFilesDir string) http.Handler
 				fmt.Fprint(w, "Bad request")
 			case stat.IsDir():
 				r.URL.Path = path.Clean(r.URL.Path)
-				// If the path is a directory, return content of index.html.
-				http.ServeFile(w, r, path.Join(staticFilesDir, "index.html"))
+				// If the path is a locale directory, return its index.html.
+				http.ServeFile(w, r, path.Join(staticFilesDir, indexPath))
 			default:
 				// If file exists then serve it.
 				http.FileServer(http.Dir(staticFilesDir)).ServeHTTP(w, r)
