@@ -2858,6 +2858,84 @@
           <context context-type="linenumber">278,279</context>
         </context-group>
       <target state="translated">DHCP-alternativ</target></trans-unit>
+      <trans-unit id="host-form.transaction-create-failed" datatype="html">
+        <source>Cannot create new transaction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">510</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa en ny transaktion</target></trans-unit>
+      <trans-unit id="host-form.transaction-create-new-failed" datatype="html">
+        <source>Failed to create transaction for adding new host: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">476</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa transaktionen för att lägga till den nya värdreserveringen: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="host-form.transaction-create-update-failed" datatype="html">
+        <source>Failed to create transaction for updating host <x id="PH" equiv-text="this.hostId" />: <x id="PH_1" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">511</context>
+        </context-group>
+      <target state="translated">Det gick inte att skapa transaktionen för att uppdatera värdreserveringen <x id="PH" equiv-text="this.hostId" />: <x id="PH_1" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="host-form.commit-new-failed" datatype="html">
+        <source>Cannot commit new host</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">1189</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">1308</context>
+        </context-group>
+      <target state="translated">Det gick inte att spara den nya värdreserveringen</target></trans-unit>
+      <trans-unit id="host-form.options-process-failed" datatype="html">
+        <source>Failed to process specified DHCP options: <x id="PH" equiv-text="err" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">1190</context>
+        </context-group>
+      <target state="translated">Det gick inte att behandla de angivna DHCP-alternativen: <x id="PH" equiv-text="err" /></target></trans-unit>
+      <trans-unit id="host-form.update-success" datatype="html">
+        <source>Host reservation successfully updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">1273</context>
+        </context-group>
+      <target state="translated">Värdreserveringen har uppdaterats</target></trans-unit>
+      <trans-unit id="host-form.update-failed" datatype="html">
+        <source>Cannot commit host updates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">1285</context>
+        </context-group>
+      <target state="translated">Det gick inte att spara ändringarna av värdreserveringen</target></trans-unit>
+      <trans-unit id="host-form.update-failed-detail" datatype="html">
+        <source>The transaction to update the host failed: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">1286</context>
+        </context-group>
+      <target state="translated">Transaktionen för att uppdatera värdreserveringen misslyckades: <x id="PH" equiv-text="msg" /></target></trans-unit>
+      <trans-unit id="host-form.create-success" datatype="html">
+        <source>Host reservation successfully added</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">1299</context>
+        </context-group>
+      <target state="translated">Värdreserveringen har lagts till</target></trans-unit>
+      <trans-unit id="host-form.commit-new-failed-detail" datatype="html">
+        <source>The transaction to add a new host failed: <x id="PH" equiv-text="msg" /></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/host-form/host-form.component.ts</context>
+          <context context-type="linenumber">1309</context>
+        </context-group>
+      <target state="translated">Transaktionen för att lägga till den nya värdreserveringen misslyckades: <x id="PH" equiv-text="msg" /></target></trans-unit>
       <trans-unit id="4343388126555133229" datatype="html">
         <source>Leases</source>
         <context-group purpose="location">

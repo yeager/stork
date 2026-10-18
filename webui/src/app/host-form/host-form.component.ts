@@ -472,8 +472,8 @@ export class HostFormComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this._messageService.add({
                     severity: 'error',
-                    summary: 'Cannot create new transaction',
-                    detail: 'Failed to create transaction for adding new host: ' + msg,
+                    summary: $localize`:@@host-form.transaction-create-failed:Cannot create new transaction`,
+                    detail: $localize`:@@host-form.transaction-create-new-failed:Failed to create transaction for adding new host: ${msg}`,
                     life: 10000,
                 })
                 this.form.initError = msg
@@ -507,8 +507,8 @@ export class HostFormComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this._messageService.add({
                     severity: 'error',
-                    summary: 'Cannot create new transaction',
-                    detail: `Failed to create transaction for updating host ${this.hostId}: ` + msg,
+                    summary: $localize`:@@host-form.transaction-create-failed:Cannot create new transaction`,
+                    detail: $localize`:@@host-form.transaction-create-update-failed:Failed to create transaction for updating host ${this.hostId}\: ${msg}`,
                     life: 10000,
                 })
                 this.form.initError = msg
@@ -1186,8 +1186,8 @@ export class HostFormComponent implements OnInit, OnDestroy {
             } catch (err) {
                 this._messageService.add({
                     severity: 'error',
-                    summary: 'Cannot commit new host',
-                    detail: 'Failed to process specified DHCP options: ' + err,
+                    summary: $localize`:@@host-form.commit-new-failed:Cannot commit new host`,
+                    detail: $localize`:@@host-form.options-process-failed:Failed to process specified DHCP options: ${err}`,
                     life: 10000,
                 })
                 return
@@ -1270,7 +1270,7 @@ export class HostFormComponent implements OnInit, OnDestroy {
                 .then(() => {
                     this._messageService.add({
                         severity: 'success',
-                        summary: 'Host reservation successfully updated',
+                        summary: $localize`:@@host-form.update-success:Host reservation successfully updated`,
                     })
                     // Notify the parent component about successful submission.
                     this.formSubmit.emit(this.form)
@@ -1282,8 +1282,8 @@ export class HostFormComponent implements OnInit, OnDestroy {
                     }
                     this._messageService.add({
                         severity: 'error',
-                        summary: 'Cannot commit host updates',
-                        detail: 'The transaction to update the host failed: ' + msg,
+                        summary: $localize`:@@host-form.update-failed:Cannot commit host updates`,
+                        detail: $localize`:@@host-form.update-failed-detail:The transaction to update the host failed: ${msg}`,
                         life: 10000,
                     })
                 })
@@ -1296,7 +1296,7 @@ export class HostFormComponent implements OnInit, OnDestroy {
             .then(() => {
                 this._messageService.add({
                     severity: 'success',
-                    summary: 'Host reservation successfully added',
+                    summary: $localize`:@@host-form.create-success:Host reservation successfully added`,
                 })
                 // Notify the parent component about successful submission.
                 this.formSubmit.emit(this.form)
@@ -1305,8 +1305,8 @@ export class HostFormComponent implements OnInit, OnDestroy {
                 const msg = getErrorMessage(err)
                 this._messageService.add({
                     severity: 'error',
-                    summary: 'Cannot commit new host',
-                    detail: 'The transaction to add a new host failed: ' + msg,
+                    summary: $localize`:@@host-form.commit-new-failed:Cannot commit new host`,
+                    detail: $localize`:@@host-form.commit-new-failed-detail:The transaction to add a new host failed: ${msg}`,
                     life: 10000,
                 })
             })
